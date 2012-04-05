@@ -17,26 +17,28 @@ namespace JKR.GUI.Controls
         {
             if (dt != null)
             {
-                Telerik.WinControls.
+                GridViewInfo view = (GridViewInfo)grd.ViewDefinition;
                 DataView dv = new DataView(dt);
                 dv.RowFilter = "1=1";
                 dv.Sort = " Visible desc,VisibleIndex asc";
                 for (int i = 0; i <= dv.Count; i++)
                 {
-                    //GridViewDataColumn[] col = view.Columns.GetColumnByFieldName(dv[i]["ColumnField"].ToString());
-                    GridViewDataColumn col = grd.Columns.GetColumnByFieldName(dv[i]["ColumnField"].ToString());
+
+                    GridViewDataColumn[] col = view.ViewTemplate.Columns.GetColumnByFieldName(dv[i]["ColumnField"].ToString());
+
                     if (col != null)
                     {
                         if (dv[i]["Visible"].Equals("1"))
                         {
-
-                            col.IsVisible = Convert.ToInt32(dv[i]["VisibleIndex"]);
-                            col.Width = Convert.ToInt32(dv[i]["Width"]);
+                           
+                            //col.IsVisible = Convert.ToInt32(dv[i]["VisibleIndex"]);
+                            //col.Width = Convert.ToInt32(dv[i]["Width"]);
                         }
                         else
                         {
-                            col.VisibleIndex = -1;
-                            col.Width = Convert.ToInt32(dv[i]["Width"]);
+
+                            //col.VisibleIndex = -1;
+                            //col.Width = Convert.ToInt32(dv[i]["Width"]);
                         }
                     }
                 }

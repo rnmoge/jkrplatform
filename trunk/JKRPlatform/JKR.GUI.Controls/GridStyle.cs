@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text;
 using Telerik.WinControls.UI;
-using JKR.GUI.LogixConnector;
+//using JKR.GUI.LogixConnector;
 using System.IO;
 using System.Xml;
 using JKR.Util;
@@ -32,7 +32,8 @@ namespace JKR.GUI.Controls
                 }
             }
 
-            this.m_xmlName = UIProxy.GetCurrentUserFolder() + @"\GridStyle.xml";
+            this.m_xmlName = "";
+            //this.m_xmlName = UIProxy.GetCurrentUserFolder() + @"\GridStyle.xml";
             if (File.Exists(this.m_xmlName))
             {
                 try
