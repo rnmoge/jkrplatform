@@ -31,7 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(BaseCommandForm));
             this.ImageCommonList = new System.Windows.Forms.ImageList(this.components);
-            this.pmGridControl = new System.Windows.Forms.ContextMenu(this.components);
             this.SuspendLayout();
             // 
             // ImageCommonList
@@ -39,11 +38,6 @@
             this.ImageCommonList.ColorDepth = System.Windows.Forms.ColorDepth.Depth8Bit;
             resources.ApplyResources(this.ImageCommonList, "ImageCommonList");
             this.ImageCommonList.TransparentColor = System.Drawing.Color.Transparent;
-            // 
-            // pmGridControl
-            // 
-            this.pmGridControl.Name = "pmGridControl";
-            resources.ApplyResources(this.pmGridControl, "pmGridControl");
             // 
             // BaseCommandForm
             // 
@@ -57,8 +51,6 @@
         #endregion
 
         public System.Windows.Forms.Panel pnlButton;
-        public JKR.GUI.Command.CommandFrame cmdMain;
-        public System.Windows.Forms.ContextMenu pmGridControl;
         protected System.Windows.Forms.ImageList ImageCommonList;
 
     }
