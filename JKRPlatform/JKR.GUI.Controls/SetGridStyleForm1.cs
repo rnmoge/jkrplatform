@@ -7,7 +7,7 @@ using System.Text;
 using System.Windows.Forms;
 using Telerik.WinControls.UI;
 using System.IO;
-using JKR.GUI.LogixConnector;
+//using JKR.GUI.LogixConnector;
 
 namespace JKR.GUI.Controls
 {
@@ -18,7 +18,6 @@ namespace JKR.GUI.Controls
         private const string GRID_STYLE_LIST = "GridStyleList";    
         private const string STYLE_FILE_PATH = "GridStyle";
         #endregion
-
 
         #region Property
         public static string StyleFileName
@@ -34,7 +33,6 @@ namespace JKR.GUI.Controls
             }
         }
  
-
         #endregion
 
         private static string m_CurrentStyleName;
@@ -51,14 +49,14 @@ namespace JKR.GUI.Controls
 
         public static DataTable GetDefaultStyleDataTable(RadGridView grd)
         {
-           
-            return GetDefaultStyleDataTable((ColumnView)grd.MainView);
+            //TableViewDefinition
+            return GetDefaultStyleDataTable((GridViewInfo)grd.ViewDefinition);
         }
 
-        public static DataTable GetDefaultStyleDataTable(ColumnView view)
+        public static DataTable GetDefaultStyleDataTable(GridViewInfo view)
         {
-            
-            StyleFileName = GetStyleFileName(view);
+
+            StyleFileName = GetStyleFileName((RadGridView)view.ViewTemplate.ViewDefinition);
             if ((m_DsStyle != null) && (m_DsStyle.Tables["GridStyleList"] != null))
             {
                 foreach (DataRow row in m_DsStyle.Tables["GridStyleList"].Select("", "UPDATEDATE DESC", DataViewRowState.CurrentRows))
@@ -70,15 +68,16 @@ namespace JKR.GUI.Controls
             return null;
         }
 
-        private static string GetStyleFileName(ColumnView view)
+        private static string GetStyleFileName(RadGridView view)
         {
-            StyleFileName = view.GridControl.FindForm().Name + "." + view.GridControl.Name;
+            StyleFileName = view.TopLevelControl.FindForm().Name + "." + view.TopLevelControl.Name;
             return GetCurrentStyleFileName();
         }
 
         private static string GetCurrentStyleFileName()
         {
-            string pathstr = Path.Combine(UIProxy.GetCurrentUserFolder(), "GridStyle");
+            string pathstr = "";
+            //string pathstr = Path.Combine(UIProxy.GetCurrentUserFolder(), "GridStyle");
             if (!Directory.Exists(pathstr))
             {
                 Directory.CreateDirectory(pathstr);
@@ -113,6 +112,19 @@ namespace JKR.GUI.Controls
                 m_DsStyle = null;
             }
         }
+
+        public static string CurrentStyleName
+        {
+            get
+            {
+                return m_CurrentStyleName;
+            }
+            set
+            {
+                m_CurrentStyleName = value;
+            }
+        }
+ 
 
     }
 }
