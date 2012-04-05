@@ -1,6 +1,6 @@
 ﻿namespace JKRPlatform.CommmGUI
 {
-    partial class AccountInfoForm
+    partial class AccountsEditForm
     {
         /// <summary>
         /// Required designer variable.
@@ -28,77 +28,77 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn37 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn12 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn38 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn12 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn13 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn14 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn15 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn16 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn39 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn40 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn41 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn42 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn43 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn44 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn11 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn13 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn14 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn45 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn15 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn16 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn4 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
-            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn5 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
-            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn6 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn17 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn46 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn47 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn48 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn49 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn18 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn50 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn51 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn17 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn18 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn19 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn20 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn19 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn52 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn53 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn12 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn54 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn13 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn20 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn55 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn56 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn21 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn57 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn58 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn59 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn60 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn21 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn22 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn61 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn62 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn63 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn22 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn64 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn14 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn65 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn15 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn16 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn17 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn66 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn67 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn68 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn18 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn69 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn70 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn19 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn71 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn20 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn72 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn686 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn210 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn687 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn210 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn211 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn212 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn213 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn214 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn688 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn689 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn690 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn691 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn692 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn693 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn191 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn211 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn212 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn694 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn213 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn214 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn58 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
+            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn59 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
+            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn60 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn215 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn695 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn696 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn697 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn698 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn216 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn699 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn700 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn215 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn216 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn217 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn218 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn217 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn701 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn702 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn192 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn703 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn193 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn218 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn704 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn705 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn219 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn706 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn707 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn708 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn709 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn219 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewCheckBoxColumn gridViewCheckBoxColumn220 = new Telerik.WinControls.UI.GridViewCheckBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn710 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn711 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn712 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewComboBoxColumn gridViewComboBoxColumn220 = new Telerik.WinControls.UI.GridViewComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn713 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn194 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn714 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn195 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn196 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn197 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn715 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn716 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn717 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn198 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn718 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn719 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn199 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn720 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewDateTimeColumn gridViewDateTimeColumn200 = new Telerik.WinControls.UI.GridViewDateTimeColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn685 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.panel6 = new System.Windows.Forms.Panel();
             this.gbxGeneral = new System.Windows.Forms.GroupBox();
             this.btnAccountAddtion = new Telerik.WinControls.UI.RadButton();
@@ -135,6 +135,8 @@
             this.chkB_SHIPPER = new System.Windows.Forms.CheckBox();
             this.chkB_CUSTOMER = new System.Windows.Forms.CheckBox();
             this.gbxAddress = new System.Windows.Forms.GroupBox();
+            this.edtALLOCATION_DATE = new Telerik.WinControls.UI.RadDateTimePicker();
+            this.edtMONTHLY_DATE = new Telerik.WinControls.UI.RadDateTimePicker();
             this.edtBUSINESS_SCOPE = new System.Windows.Forms.TextBox();
             this.comboBox9 = new System.Windows.Forms.ComboBox();
             this.edtCUSTOMER_SERVICE_STATUS = new System.Windows.Forms.ComboBox();
@@ -179,8 +181,6 @@
             this.label8 = new System.Windows.Forms.Label();
             this.edtSEARCH_STR = new Telerik.WinControls.UI.RadMultiColumnComboBox();
             this.edtTHEIR_SALESMEN = new Telerik.WinControls.UI.RadMultiColumnComboBox();
-            this.edtALLOCATION_DATE = new Telerik.WinControls.UI.RadDateTimePicker();
-            this.edtMONTHLY_DATE = new Telerik.WinControls.UI.RadDateTimePicker();
             this.gbxName = new System.Windows.Forms.GroupBox();
             this.edtLINE_CREDIT = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -191,7 +191,11 @@
             this.edtACCOUNTS_NAME = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.tabContacts = new System.Windows.Forms.TabPage();
+            this.panel2 = new System.Windows.Forms.Panel();
             this.grdContacts = new Telerik.WinControls.UI.RadGridView();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.BtnDelete = new Telerik.WinControls.UI.RadButton();
+            this.BtnNew = new Telerik.WinControls.UI.RadButton();
             this.tabRequirements = new System.Windows.Forms.TabPage();
             this.panel4 = new System.Windows.Forms.Panel();
             this.grdRequirements = new Telerik.WinControls.UI.RadGridView();
@@ -238,8 +242,6 @@
             this.btnEventDelete = new Telerik.WinControls.UI.RadButton();
             this.btnEventAdd = new Telerik.WinControls.UI.RadButton();
             this.grdEvent = new Telerik.WinControls.UI.RadGridView();
-            this.BtnDelete = new Telerik.WinControls.UI.RadButton();
-            this.BtnNew = new Telerik.WinControls.UI.RadButton();
             this.panel6.SuspendLayout();
             this.gbxGeneral.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.btnAccountAddtion)).BeginInit();
@@ -249,13 +251,17 @@
             this.tabCommon.SuspendLayout();
             this.gbxRoles.SuspendLayout();
             this.gbxAddress.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edtSEARCH_STR)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtTHEIR_SALESMEN)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtALLOCATION_DATE)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtMONTHLY_DATE)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtSEARCH_STR)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtTHEIR_SALESMEN)).BeginInit();
             this.gbxName.SuspendLayout();
             this.tabContacts.SuspendLayout();
+            this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdContacts)).BeginInit();
+            this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnDelete)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnNew)).BeginInit();
             this.tabRequirements.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grdRequirements)).BeginInit();
@@ -292,8 +298,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnEventDelete)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEventAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdEvent)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnDelete)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnNew)).BeginInit();
             this.SuspendLayout();
             // 
             // panel6
@@ -738,6 +742,35 @@
             this.gbxAddress.TabStop = false;
             this.gbxAddress.Text = "详细地址";
             // 
+            // edtALLOCATION_DATE
+            // 
+            this.edtALLOCATION_DATE.Culture = new System.Globalization.CultureInfo("zh-CN");
+            this.edtALLOCATION_DATE.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.edtALLOCATION_DATE.Location = new System.Drawing.Point(270, 235);
+            this.edtALLOCATION_DATE.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.edtALLOCATION_DATE.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.edtALLOCATION_DATE.Name = "edtALLOCATION_DATE";
+            this.edtALLOCATION_DATE.NullDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.edtALLOCATION_DATE.Size = new System.Drawing.Size(195, 20);
+            this.edtALLOCATION_DATE.TabIndex = 28;
+            this.edtALLOCATION_DATE.TabStop = false;
+            this.edtALLOCATION_DATE.Value = new System.DateTime(2012, 3, 31, 9, 51, 29, 953);
+            // 
+            // edtMONTHLY_DATE
+            // 
+            this.edtMONTHLY_DATE.Culture = new System.Globalization.CultureInfo("zh-CN");
+            this.edtMONTHLY_DATE.Format = System.Windows.Forms.DateTimePickerFormat.Long;
+            this.edtMONTHLY_DATE.Location = new System.Drawing.Point(270, 261);
+            this.edtMONTHLY_DATE.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
+            this.edtMONTHLY_DATE.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.edtMONTHLY_DATE.Name = "edtMONTHLY_DATE";
+            this.edtMONTHLY_DATE.NullDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
+            this.edtMONTHLY_DATE.Size = new System.Drawing.Size(195, 20);
+            this.edtMONTHLY_DATE.TabIndex = 31;
+            this.edtMONTHLY_DATE.TabStop = false;
+            this.edtMONTHLY_DATE.Text = "radDateTimePicker1";
+            this.edtMONTHLY_DATE.Value = new System.DateTime(2012, 3, 31, 9, 50, 20, 125);
+            // 
             // edtBUSINESS_SCOPE
             // 
             this.edtBUSINESS_SCOPE.Location = new System.Drawing.Point(554, 236);
@@ -1121,7 +1154,6 @@
             this.edtSEARCH_STR.Size = new System.Drawing.Size(180, 20);
             this.edtSEARCH_STR.TabIndex = 17;
             this.edtSEARCH_STR.TabStop = false;
-            this.edtSEARCH_STR.SelectedIndexChanged += new System.EventHandler(this.edtSEARCH_STR_SelectedIndexChanged);
             this.edtSEARCH_STR.Click += new System.EventHandler(this.edtSEARCH_STR_Click);
             this.edtSEARCH_STR.KeyUp += new System.Windows.Forms.KeyEventHandler(this.edtSEARCH_STR_KeyUp);
             // 
@@ -1161,35 +1193,6 @@
             this.edtTHEIR_SALESMEN.Size = new System.Drawing.Size(121, 20);
             this.edtTHEIR_SALESMEN.TabIndex = 27;
             this.edtTHEIR_SALESMEN.TabStop = false;
-            // 
-            // edtALLOCATION_DATE
-            // 
-            this.edtALLOCATION_DATE.Culture = new System.Globalization.CultureInfo("zh-CN");
-            this.edtALLOCATION_DATE.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.edtALLOCATION_DATE.Location = new System.Drawing.Point(270, 235);
-            this.edtALLOCATION_DATE.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.edtALLOCATION_DATE.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.edtALLOCATION_DATE.Name = "edtALLOCATION_DATE";
-            this.edtALLOCATION_DATE.NullDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.edtALLOCATION_DATE.Size = new System.Drawing.Size(195, 20);
-            this.edtALLOCATION_DATE.TabIndex = 28;
-            this.edtALLOCATION_DATE.TabStop = false;
-            this.edtALLOCATION_DATE.Value = new System.DateTime(2012, 3, 31, 9, 51, 29, 953);
-            // 
-            // edtMONTHLY_DATE
-            // 
-            this.edtMONTHLY_DATE.Culture = new System.Globalization.CultureInfo("zh-CN");
-            this.edtMONTHLY_DATE.Format = System.Windows.Forms.DateTimePickerFormat.Long;
-            this.edtMONTHLY_DATE.Location = new System.Drawing.Point(270, 261);
-            this.edtMONTHLY_DATE.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.edtMONTHLY_DATE.MinDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.edtMONTHLY_DATE.Name = "edtMONTHLY_DATE";
-            this.edtMONTHLY_DATE.NullDate = new System.DateTime(1900, 1, 1, 0, 0, 0, 0);
-            this.edtMONTHLY_DATE.Size = new System.Drawing.Size(195, 20);
-            this.edtMONTHLY_DATE.TabIndex = 31;
-            this.edtMONTHLY_DATE.TabStop = false;
-            this.edtMONTHLY_DATE.Text = "radDateTimePicker1";
-            this.edtMONTHLY_DATE.Value = new System.DateTime(2012, 3, 31, 9, 50, 20, 125);
             // 
             // gbxName
             // 
@@ -1280,9 +1283,8 @@
             // 
             // tabContacts
             // 
-            this.tabContacts.Controls.Add(this.BtnDelete);
-            this.tabContacts.Controls.Add(this.BtnNew);
-            this.tabContacts.Controls.Add(this.grdContacts);
+            this.tabContacts.Controls.Add(this.panel2);
+            this.tabContacts.Controls.Add(this.panel3);
             this.tabContacts.Location = new System.Drawing.Point(4, 26);
             this.tabContacts.Name = "tabContacts";
             this.tabContacts.Padding = new System.Windows.Forms.Padding(3);
@@ -1291,69 +1293,108 @@
             this.tabContacts.Text = "联系人";
             this.tabContacts.UseVisualStyleBackColor = true;
             // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.grdContacts);
+            this.panel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.panel2.Location = new System.Drawing.Point(3, 38);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(766, 532);
+            this.panel2.TabIndex = 1;
+            // 
             // grdContacts
             // 
-            this.grdContacts.Location = new System.Drawing.Point(6, 32);
+            this.grdContacts.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.grdContacts.Location = new System.Drawing.Point(0, 0);
             // 
             // grdContacts
             // 
-            gridViewTextBoxColumn37.HeaderText = "联系人";
-            gridViewTextBoxColumn37.Name = "column1";
-            gridViewComboBoxColumn12.DisplayMember = null;
-            gridViewComboBoxColumn12.HeaderText = "性别";
-            gridViewComboBoxColumn12.Name = "column16";
-            gridViewComboBoxColumn12.ValueMember = null;
-            gridViewTextBoxColumn38.HeaderText = "职位";
-            gridViewTextBoxColumn38.Name = "column3";
-            gridViewCheckBoxColumn12.HeaderText = "客服";
-            gridViewCheckBoxColumn12.Name = "column2";
-            gridViewCheckBoxColumn13.HeaderText = "操作";
-            gridViewCheckBoxColumn13.Name = "column4";
-            gridViewCheckBoxColumn14.HeaderText = "销售";
-            gridViewCheckBoxColumn14.Name = "column5";
-            gridViewCheckBoxColumn15.HeaderText = "财务";
-            gridViewCheckBoxColumn15.Name = "column6";
-            gridViewCheckBoxColumn16.HeaderText = "主管";
-            gridViewCheckBoxColumn16.Name = "column7";
-            gridViewTextBoxColumn39.HeaderText = "电话";
-            gridViewTextBoxColumn39.Name = "column9";
-            gridViewTextBoxColumn40.HeaderText = "传真";
-            gridViewTextBoxColumn40.Name = "column10";
-            gridViewTextBoxColumn41.HeaderText = "电子邮件";
-            gridViewTextBoxColumn41.Name = "column11";
-            gridViewTextBoxColumn42.HeaderText = "移动电话";
-            gridViewTextBoxColumn42.Name = "column12";
-            gridViewTextBoxColumn43.HeaderText = "MSNQQ";
-            gridViewTextBoxColumn43.Name = "column13";
-            gridViewTextBoxColumn44.HeaderText = "附加说明";
-            gridViewTextBoxColumn44.Name = "column14";
-            gridViewDateTimeColumn11.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn11.HeaderText = "录入日期";
-            gridViewDateTimeColumn11.Name = "column8";
+            gridViewTextBoxColumn686.HeaderText = "联系人";
+            gridViewTextBoxColumn686.Name = "column1";
+            gridViewComboBoxColumn210.DisplayMember = null;
+            gridViewComboBoxColumn210.HeaderText = "性别";
+            gridViewComboBoxColumn210.Name = "column16";
+            gridViewComboBoxColumn210.ValueMember = null;
+            gridViewTextBoxColumn687.HeaderText = "职位";
+            gridViewTextBoxColumn687.Name = "column3";
+            gridViewCheckBoxColumn210.HeaderText = "客服";
+            gridViewCheckBoxColumn210.Name = "column2";
+            gridViewCheckBoxColumn211.HeaderText = "操作";
+            gridViewCheckBoxColumn211.Name = "column4";
+            gridViewCheckBoxColumn212.HeaderText = "销售";
+            gridViewCheckBoxColumn212.Name = "column5";
+            gridViewCheckBoxColumn213.HeaderText = "财务";
+            gridViewCheckBoxColumn213.Name = "column6";
+            gridViewCheckBoxColumn214.HeaderText = "主管";
+            gridViewCheckBoxColumn214.Name = "column7";
+            gridViewTextBoxColumn688.HeaderText = "电话";
+            gridViewTextBoxColumn688.Name = "column9";
+            gridViewTextBoxColumn689.HeaderText = "传真";
+            gridViewTextBoxColumn689.Name = "column10";
+            gridViewTextBoxColumn690.HeaderText = "电子邮件";
+            gridViewTextBoxColumn690.Name = "column11";
+            gridViewTextBoxColumn691.HeaderText = "移动电话";
+            gridViewTextBoxColumn691.Name = "column12";
+            gridViewTextBoxColumn692.HeaderText = "MSNQQ";
+            gridViewTextBoxColumn692.Name = "column13";
+            gridViewTextBoxColumn693.HeaderText = "附加说明";
+            gridViewTextBoxColumn693.Name = "column14";
+            gridViewDateTimeColumn191.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn191.HeaderText = "录入日期";
+            gridViewDateTimeColumn191.Name = "column8";
             this.grdContacts.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn37,
-            gridViewComboBoxColumn12,
-            gridViewTextBoxColumn38,
-            gridViewCheckBoxColumn12,
-            gridViewCheckBoxColumn13,
-            gridViewCheckBoxColumn14,
-            gridViewCheckBoxColumn15,
-            gridViewCheckBoxColumn16,
-            gridViewTextBoxColumn39,
-            gridViewTextBoxColumn40,
-            gridViewTextBoxColumn41,
-            gridViewTextBoxColumn42,
-            gridViewTextBoxColumn43,
-            gridViewTextBoxColumn44,
-            gridViewDateTimeColumn11});
+            gridViewTextBoxColumn686,
+            gridViewComboBoxColumn210,
+            gridViewTextBoxColumn687,
+            gridViewCheckBoxColumn210,
+            gridViewCheckBoxColumn211,
+            gridViewCheckBoxColumn212,
+            gridViewCheckBoxColumn213,
+            gridViewCheckBoxColumn214,
+            gridViewTextBoxColumn688,
+            gridViewTextBoxColumn689,
+            gridViewTextBoxColumn690,
+            gridViewTextBoxColumn691,
+            gridViewTextBoxColumn692,
+            gridViewTextBoxColumn693,
+            gridViewDateTimeColumn191});
             this.grdContacts.Name = "grdContacts";
             this.grdContacts.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
             // 
             // 
             this.grdContacts.RootElement.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
-            this.grdContacts.Size = new System.Drawing.Size(760, 535);
+            this.grdContacts.Size = new System.Drawing.Size(766, 532);
             this.grdContacts.TabIndex = 0;
+            this.grdContacts.Text = "radGridView1";
+            // 
+            // panel3
+            // 
+            this.panel3.Controls.Add(this.BtnDelete);
+            this.panel3.Controls.Add(this.BtnNew);
+            this.panel3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel3.Location = new System.Drawing.Point(3, 3);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(766, 35);
+            this.panel3.TabIndex = 0;
+            // 
+            // BtnDelete
+            // 
+            this.BtnDelete.Location = new System.Drawing.Point(683, 9);
+            this.BtnDelete.Name = "BtnDelete";
+            this.BtnDelete.Size = new System.Drawing.Size(80, 20);
+            this.BtnDelete.TabIndex = 11;
+            this.BtnDelete.Text = "删除(&D)";
+            this.BtnDelete.Click += new System.EventHandler(this.BtnDelete_Click);
+            // 
+            // BtnNew
+            // 
+            this.BtnNew.Location = new System.Drawing.Point(597, 9);
+            this.BtnNew.Name = "BtnNew";
+            this.BtnNew.Size = new System.Drawing.Size(80, 20);
+            this.BtnNew.TabIndex = 10;
+            this.BtnNew.Text = "新增(&N)";
+            this.BtnNew.Click += new System.EventHandler(this.BtnNew_Click);
             // 
             // tabRequirements
             // 
@@ -1383,20 +1424,20 @@
             // 
             // grdRequirements
             // 
-            gridViewComboBoxColumn13.DisplayMember = null;
-            gridViewComboBoxColumn13.HeaderText = "特殊要求";
-            gridViewComboBoxColumn13.Name = "column4";
-            gridViewComboBoxColumn13.ValueMember = null;
-            gridViewComboBoxColumn14.DisplayMember = null;
-            gridViewComboBoxColumn14.HeaderText = "业务类型";
-            gridViewComboBoxColumn14.Name = "column1";
-            gridViewComboBoxColumn14.ValueMember = null;
-            gridViewTextBoxColumn45.HeaderText = "附加说明";
-            gridViewTextBoxColumn45.Name = "column3";
+            gridViewComboBoxColumn211.DisplayMember = null;
+            gridViewComboBoxColumn211.HeaderText = "特殊要求";
+            gridViewComboBoxColumn211.Name = "column4";
+            gridViewComboBoxColumn211.ValueMember = null;
+            gridViewComboBoxColumn212.DisplayMember = null;
+            gridViewComboBoxColumn212.HeaderText = "业务类型";
+            gridViewComboBoxColumn212.Name = "column1";
+            gridViewComboBoxColumn212.ValueMember = null;
+            gridViewTextBoxColumn694.HeaderText = "附加说明";
+            gridViewTextBoxColumn694.Name = "column3";
             this.grdRequirements.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewComboBoxColumn13,
-            gridViewComboBoxColumn14,
-            gridViewTextBoxColumn45});
+            gridViewComboBoxColumn211,
+            gridViewComboBoxColumn212,
+            gridViewTextBoxColumn694});
             this.grdRequirements.Name = "grdRequirements";
             this.grdRequirements.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -1405,6 +1446,7 @@
             this.grdRequirements.RootElement.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.grdRequirements.Size = new System.Drawing.Size(766, 532);
             this.grdRequirements.TabIndex = 0;
+            this.grdRequirements.Text = "radGridView2";
             // 
             // panel5
             // 
@@ -1524,49 +1566,49 @@
             // 
             // grdAccounts2CompanyDetail
             // 
-            gridViewComboBoxColumn15.DisplayMember = null;
-            gridViewComboBoxColumn15.HeaderText = "业务类型";
-            gridViewComboBoxColumn15.Name = "column11";
-            gridViewComboBoxColumn15.ValueMember = null;
-            gridViewComboBoxColumn16.DisplayMember = null;
-            gridViewComboBoxColumn16.HeaderText = "放货方式";
-            gridViewComboBoxColumn16.Name = "column1";
-            gridViewComboBoxColumn16.ValueMember = null;
-            gridViewMultiComboBoxColumn4.DisplayMember = null;
-            gridViewMultiComboBoxColumn4.HeaderText = "业务员";
-            gridViewMultiComboBoxColumn4.Name = "column2";
-            gridViewMultiComboBoxColumn4.ValueMember = null;
-            gridViewMultiComboBoxColumn5.DisplayMember = null;
-            gridViewMultiComboBoxColumn5.HeaderText = "客户服务";
-            gridViewMultiComboBoxColumn5.Name = "column3";
-            gridViewMultiComboBoxColumn5.ValueMember = null;
-            gridViewMultiComboBoxColumn6.DisplayMember = null;
-            gridViewMultiComboBoxColumn6.HeaderText = "财务";
-            gridViewMultiComboBoxColumn6.Name = "column4";
-            gridViewMultiComboBoxColumn6.ValueMember = null;
-            gridViewComboBoxColumn17.DisplayMember = null;
-            gridViewComboBoxColumn17.HeaderText = "计提等级";
-            gridViewComboBoxColumn17.Name = "column5";
-            gridViewComboBoxColumn17.ValueMember = null;
-            gridViewTextBoxColumn46.HeaderText = "录入人";
-            gridViewTextBoxColumn46.Name = "column7";
-            gridViewTextBoxColumn47.HeaderText = "录入日期";
-            gridViewTextBoxColumn47.Name = "column8";
-            gridViewTextBoxColumn48.HeaderText = "更新人";
-            gridViewTextBoxColumn48.Name = "column9";
-            gridViewTextBoxColumn49.HeaderText = "更新日期";
-            gridViewTextBoxColumn49.Name = "column10";
+            gridViewComboBoxColumn213.DisplayMember = null;
+            gridViewComboBoxColumn213.HeaderText = "业务类型";
+            gridViewComboBoxColumn213.Name = "column11";
+            gridViewComboBoxColumn213.ValueMember = null;
+            gridViewComboBoxColumn214.DisplayMember = null;
+            gridViewComboBoxColumn214.HeaderText = "放货方式";
+            gridViewComboBoxColumn214.Name = "column1";
+            gridViewComboBoxColumn214.ValueMember = null;
+            gridViewMultiComboBoxColumn58.DisplayMember = null;
+            gridViewMultiComboBoxColumn58.HeaderText = "业务员";
+            gridViewMultiComboBoxColumn58.Name = "column2";
+            gridViewMultiComboBoxColumn58.ValueMember = null;
+            gridViewMultiComboBoxColumn59.DisplayMember = null;
+            gridViewMultiComboBoxColumn59.HeaderText = "客户服务";
+            gridViewMultiComboBoxColumn59.Name = "column3";
+            gridViewMultiComboBoxColumn59.ValueMember = null;
+            gridViewMultiComboBoxColumn60.DisplayMember = null;
+            gridViewMultiComboBoxColumn60.HeaderText = "财务";
+            gridViewMultiComboBoxColumn60.Name = "column4";
+            gridViewMultiComboBoxColumn60.ValueMember = null;
+            gridViewComboBoxColumn215.DisplayMember = null;
+            gridViewComboBoxColumn215.HeaderText = "计提等级";
+            gridViewComboBoxColumn215.Name = "column5";
+            gridViewComboBoxColumn215.ValueMember = null;
+            gridViewTextBoxColumn695.HeaderText = "录入人";
+            gridViewTextBoxColumn695.Name = "column7";
+            gridViewTextBoxColumn696.HeaderText = "录入日期";
+            gridViewTextBoxColumn696.Name = "column8";
+            gridViewTextBoxColumn697.HeaderText = "更新人";
+            gridViewTextBoxColumn697.Name = "column9";
+            gridViewTextBoxColumn698.HeaderText = "更新日期";
+            gridViewTextBoxColumn698.Name = "column10";
             this.grdAccounts2CompanyDetail.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewComboBoxColumn15,
-            gridViewComboBoxColumn16,
-            gridViewMultiComboBoxColumn4,
-            gridViewMultiComboBoxColumn5,
-            gridViewMultiComboBoxColumn6,
-            gridViewComboBoxColumn17,
-            gridViewTextBoxColumn46,
-            gridViewTextBoxColumn47,
-            gridViewTextBoxColumn48,
-            gridViewTextBoxColumn49});
+            gridViewComboBoxColumn213,
+            gridViewComboBoxColumn214,
+            gridViewMultiComboBoxColumn58,
+            gridViewMultiComboBoxColumn59,
+            gridViewMultiComboBoxColumn60,
+            gridViewComboBoxColumn215,
+            gridViewTextBoxColumn695,
+            gridViewTextBoxColumn696,
+            gridViewTextBoxColumn697,
+            gridViewTextBoxColumn698});
             this.grdAccounts2CompanyDetail.Name = "grdAccounts2CompanyDetail";
             this.grdAccounts2CompanyDetail.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -1584,75 +1626,75 @@
             // 
             // grdAccounts2Company
             // 
-            gridViewComboBoxColumn18.DisplayMember = null;
-            gridViewComboBoxColumn18.HeaderText = "分公司代码";
-            gridViewComboBoxColumn18.Name = "column21";
-            gridViewComboBoxColumn18.ValueMember = null;
-            gridViewTextBoxColumn50.HeaderText = "客户编码";
-            gridViewTextBoxColumn50.Name = "column2";
-            gridViewTextBoxColumn51.HeaderText = "供应商编码";
-            gridViewTextBoxColumn51.Name = "column3";
-            gridViewCheckBoxColumn17.HeaderText = "空出";
-            gridViewCheckBoxColumn17.Name = "column1";
-            gridViewCheckBoxColumn18.HeaderText = "空进";
-            gridViewCheckBoxColumn18.Name = "column22";
-            gridViewCheckBoxColumn19.HeaderText = "海出";
-            gridViewCheckBoxColumn19.Name = "column23";
-            gridViewCheckBoxColumn20.HeaderText = "海进";
-            gridViewCheckBoxColumn20.Name = "column24";
-            gridViewComboBoxColumn19.DisplayMember = null;
-            gridViewComboBoxColumn19.HeaderText = "信用等级";
-            gridViewComboBoxColumn19.Name = "column4";
-            gridViewComboBoxColumn19.ValueMember = null;
-            gridViewTextBoxColumn52.HeaderText = "付款运费信用金额(非代垫)";
-            gridViewTextBoxColumn52.Name = "column9";
-            gridViewTextBoxColumn53.HeaderText = "录入人";
-            gridViewTextBoxColumn53.Name = "column10";
-            gridViewDateTimeColumn12.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn12.HeaderText = "录入日期";
-            gridViewDateTimeColumn12.Name = "column5";
-            gridViewTextBoxColumn54.HeaderText = "更新人";
-            gridViewTextBoxColumn54.Name = "column12";
-            gridViewDateTimeColumn13.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn13.HeaderText = "更新日期";
-            gridViewDateTimeColumn13.Name = "column6";
-            gridViewComboBoxColumn20.DisplayMember = null;
-            gridViewComboBoxColumn20.HeaderText = "付款代垫信用日期类型";
-            gridViewComboBoxColumn20.Name = "column7";
-            gridViewComboBoxColumn20.ValueMember = null;
-            gridViewTextBoxColumn55.HeaderText = "付款代垫信用天数";
-            gridViewTextBoxColumn55.Name = "column15";
-            gridViewTextBoxColumn56.HeaderText = "付款代垫信用额度";
-            gridViewTextBoxColumn56.Name = "column16";
-            gridViewCheckBoxColumn21.HeaderText = "黑名单";
-            gridViewCheckBoxColumn21.Name = "column8";
-            gridViewTextBoxColumn57.HeaderText = "运费拖欠金额(非代垫)";
-            gridViewTextBoxColumn57.Name = "column18";
-            gridViewTextBoxColumn58.HeaderText = "代垫拖欠金额";
-            gridViewTextBoxColumn58.Name = "column19";
-            gridViewTextBoxColumn59.HeaderText = "最后计算日期";
-            gridViewTextBoxColumn59.Name = "column20";
+            gridViewComboBoxColumn216.DisplayMember = null;
+            gridViewComboBoxColumn216.HeaderText = "分公司代码";
+            gridViewComboBoxColumn216.Name = "column21";
+            gridViewComboBoxColumn216.ValueMember = null;
+            gridViewTextBoxColumn699.HeaderText = "客户编码";
+            gridViewTextBoxColumn699.Name = "column2";
+            gridViewTextBoxColumn700.HeaderText = "供应商编码";
+            gridViewTextBoxColumn700.Name = "column3";
+            gridViewCheckBoxColumn215.HeaderText = "空出";
+            gridViewCheckBoxColumn215.Name = "column1";
+            gridViewCheckBoxColumn216.HeaderText = "空进";
+            gridViewCheckBoxColumn216.Name = "column22";
+            gridViewCheckBoxColumn217.HeaderText = "海出";
+            gridViewCheckBoxColumn217.Name = "column23";
+            gridViewCheckBoxColumn218.HeaderText = "海进";
+            gridViewCheckBoxColumn218.Name = "column24";
+            gridViewComboBoxColumn217.DisplayMember = null;
+            gridViewComboBoxColumn217.HeaderText = "信用等级";
+            gridViewComboBoxColumn217.Name = "column4";
+            gridViewComboBoxColumn217.ValueMember = null;
+            gridViewTextBoxColumn701.HeaderText = "付款运费信用金额(非代垫)";
+            gridViewTextBoxColumn701.Name = "column9";
+            gridViewTextBoxColumn702.HeaderText = "录入人";
+            gridViewTextBoxColumn702.Name = "column10";
+            gridViewDateTimeColumn192.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn192.HeaderText = "录入日期";
+            gridViewDateTimeColumn192.Name = "column5";
+            gridViewTextBoxColumn703.HeaderText = "更新人";
+            gridViewTextBoxColumn703.Name = "column12";
+            gridViewDateTimeColumn193.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn193.HeaderText = "更新日期";
+            gridViewDateTimeColumn193.Name = "column6";
+            gridViewComboBoxColumn218.DisplayMember = null;
+            gridViewComboBoxColumn218.HeaderText = "付款代垫信用日期类型";
+            gridViewComboBoxColumn218.Name = "column7";
+            gridViewComboBoxColumn218.ValueMember = null;
+            gridViewTextBoxColumn704.HeaderText = "付款代垫信用天数";
+            gridViewTextBoxColumn704.Name = "column15";
+            gridViewTextBoxColumn705.HeaderText = "付款代垫信用额度";
+            gridViewTextBoxColumn705.Name = "column16";
+            gridViewCheckBoxColumn219.HeaderText = "黑名单";
+            gridViewCheckBoxColumn219.Name = "column8";
+            gridViewTextBoxColumn706.HeaderText = "运费拖欠金额(非代垫)";
+            gridViewTextBoxColumn706.Name = "column18";
+            gridViewTextBoxColumn707.HeaderText = "代垫拖欠金额";
+            gridViewTextBoxColumn707.Name = "column19";
+            gridViewTextBoxColumn708.HeaderText = "最后计算日期";
+            gridViewTextBoxColumn708.Name = "column20";
             this.grdAccounts2Company.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewComboBoxColumn18,
-            gridViewTextBoxColumn50,
-            gridViewTextBoxColumn51,
-            gridViewCheckBoxColumn17,
-            gridViewCheckBoxColumn18,
-            gridViewCheckBoxColumn19,
-            gridViewCheckBoxColumn20,
-            gridViewComboBoxColumn19,
-            gridViewTextBoxColumn52,
-            gridViewTextBoxColumn53,
-            gridViewDateTimeColumn12,
-            gridViewTextBoxColumn54,
-            gridViewDateTimeColumn13,
-            gridViewComboBoxColumn20,
-            gridViewTextBoxColumn55,
-            gridViewTextBoxColumn56,
-            gridViewCheckBoxColumn21,
-            gridViewTextBoxColumn57,
-            gridViewTextBoxColumn58,
-            gridViewTextBoxColumn59});
+            gridViewComboBoxColumn216,
+            gridViewTextBoxColumn699,
+            gridViewTextBoxColumn700,
+            gridViewCheckBoxColumn215,
+            gridViewCheckBoxColumn216,
+            gridViewCheckBoxColumn217,
+            gridViewCheckBoxColumn218,
+            gridViewComboBoxColumn217,
+            gridViewTextBoxColumn701,
+            gridViewTextBoxColumn702,
+            gridViewDateTimeColumn192,
+            gridViewTextBoxColumn703,
+            gridViewDateTimeColumn193,
+            gridViewComboBoxColumn218,
+            gridViewTextBoxColumn704,
+            gridViewTextBoxColumn705,
+            gridViewCheckBoxColumn219,
+            gridViewTextBoxColumn706,
+            gridViewTextBoxColumn707,
+            gridViewTextBoxColumn708});
             this.grdAccounts2Company.Name = "grdAccounts2Company";
             this.grdAccounts2Company.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -1734,18 +1776,18 @@
             // 
             // grdCUSTOMER_BILL_ADDRESS
             // 
-            gridViewTextBoxColumn60.HeaderText = "寄单地址/寄票地址";
-            gridViewTextBoxColumn60.Name = "column1";
-            gridViewComboBoxColumn21.DisplayMember = null;
-            gridViewComboBoxColumn21.HeaderText = "寄单/寄票";
-            gridViewComboBoxColumn21.Name = "column4";
-            gridViewComboBoxColumn21.ValueMember = null;
-            gridViewCheckBoxColumn22.HeaderText = "默认";
-            gridViewCheckBoxColumn22.Name = "column2";
+            gridViewTextBoxColumn709.HeaderText = "寄单地址/寄票地址";
+            gridViewTextBoxColumn709.Name = "column1";
+            gridViewComboBoxColumn219.DisplayMember = null;
+            gridViewComboBoxColumn219.HeaderText = "寄单/寄票";
+            gridViewComboBoxColumn219.Name = "column4";
+            gridViewComboBoxColumn219.ValueMember = null;
+            gridViewCheckBoxColumn220.HeaderText = "默认";
+            gridViewCheckBoxColumn220.Name = "column2";
             this.grdCUSTOMER_BILL_ADDRESS.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn60,
-            gridViewComboBoxColumn21,
-            gridViewCheckBoxColumn22});
+            gridViewTextBoxColumn709,
+            gridViewComboBoxColumn219,
+            gridViewCheckBoxColumn220});
             this.grdCUSTOMER_BILL_ADDRESS.Name = "grdCUSTOMER_BILL_ADDRESS";
             this.grdCUSTOMER_BILL_ADDRESS.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -1764,13 +1806,13 @@
             // 
             // grdCUSTOMER_INVOICE_ADDRESS
             // 
-            gridViewTextBoxColumn61.HeaderText = "发票抬头";
-            gridViewTextBoxColumn61.Name = "column1";
-            gridViewTextBoxColumn62.HeaderText = "付款方纳税人识别号";
-            gridViewTextBoxColumn62.Name = "column2";
+            gridViewTextBoxColumn710.HeaderText = "发票抬头";
+            gridViewTextBoxColumn710.Name = "column1";
+            gridViewTextBoxColumn711.HeaderText = "付款方纳税人识别号";
+            gridViewTextBoxColumn711.Name = "column2";
             this.grdCUSTOMER_INVOICE_ADDRESS.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn61,
-            gridViewTextBoxColumn62});
+            gridViewTextBoxColumn710,
+            gridViewTextBoxColumn711});
             this.grdCUSTOMER_INVOICE_ADDRESS.Name = "grdCUSTOMER_INVOICE_ADDRESS";
             this.grdCUSTOMER_INVOICE_ADDRESS.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -1906,29 +1948,29 @@
             // 
             // grdPreAlertAddress
             // 
-            gridViewTextBoxColumn63.HeaderText = "电子邮件";
-            gridViewTextBoxColumn63.Name = "column1";
-            gridViewComboBoxColumn22.DisplayMember = null;
-            gridViewComboBoxColumn22.HeaderText = "主送/抄送";
-            gridViewComboBoxColumn22.Name = "column7";
-            gridViewComboBoxColumn22.ValueMember = null;
-            gridViewTextBoxColumn64.HeaderText = "录入人";
-            gridViewTextBoxColumn64.Name = "column3";
-            gridViewDateTimeColumn14.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn14.HeaderText = "录入日期";
-            gridViewDateTimeColumn14.Name = "column2";
-            gridViewTextBoxColumn65.HeaderText = "更新人";
-            gridViewTextBoxColumn65.Name = "column5";
-            gridViewDateTimeColumn15.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn15.HeaderText = "更新日期";
-            gridViewDateTimeColumn15.Name = "column4";
+            gridViewTextBoxColumn712.HeaderText = "电子邮件";
+            gridViewTextBoxColumn712.Name = "column1";
+            gridViewComboBoxColumn220.DisplayMember = null;
+            gridViewComboBoxColumn220.HeaderText = "主送/抄送";
+            gridViewComboBoxColumn220.Name = "column7";
+            gridViewComboBoxColumn220.ValueMember = null;
+            gridViewTextBoxColumn713.HeaderText = "录入人";
+            gridViewTextBoxColumn713.Name = "column3";
+            gridViewDateTimeColumn194.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn194.HeaderText = "录入日期";
+            gridViewDateTimeColumn194.Name = "column2";
+            gridViewTextBoxColumn714.HeaderText = "更新人";
+            gridViewTextBoxColumn714.Name = "column5";
+            gridViewDateTimeColumn195.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn195.HeaderText = "更新日期";
+            gridViewDateTimeColumn195.Name = "column4";
             this.grdPreAlertAddress.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn63,
-            gridViewComboBoxColumn22,
-            gridViewTextBoxColumn64,
-            gridViewDateTimeColumn14,
-            gridViewTextBoxColumn65,
-            gridViewDateTimeColumn15});
+            gridViewTextBoxColumn712,
+            gridViewComboBoxColumn220,
+            gridViewTextBoxColumn713,
+            gridViewDateTimeColumn194,
+            gridViewTextBoxColumn714,
+            gridViewDateTimeColumn195});
             this.grdPreAlertAddress.Name = "grdPreAlertAddress";
             this.grdPreAlertAddress.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -1980,45 +2022,45 @@
             // grdExchangeRate
             // 
             this.grdExchangeRate.MasterTemplate.AllowAddNewRow = false;
-            gridViewDateTimeColumn16.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn16.HeaderText = "生效日期";
-            gridViewDateTimeColumn16.Name = "column12";
-            gridViewDateTimeColumn17.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn17.HeaderText = "失效日期";
-            gridViewDateTimeColumn17.Name = "column1";
-            gridViewTextBoxColumn66.HeaderText = "源币种";
-            gridViewTextBoxColumn66.Name = "column3";
-            gridViewTextBoxColumn67.HeaderText = "目标币种";
-            gridViewTextBoxColumn67.Name = "column4";
-            gridViewTextBoxColumn68.HeaderText = "汇率";
-            gridViewTextBoxColumn68.Name = "column5";
-            gridViewDateTimeColumn18.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn18.HeaderText = "分公司代码";
-            gridViewDateTimeColumn18.Name = "column2";
-            gridViewTextBoxColumn69.HeaderText = "附加说明";
-            gridViewTextBoxColumn69.Name = "column7";
-            gridViewTextBoxColumn70.HeaderText = "录入人";
-            gridViewTextBoxColumn70.Name = "column8";
-            gridViewDateTimeColumn19.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn19.HeaderText = "录入日期";
-            gridViewDateTimeColumn19.Name = "column6";
-            gridViewTextBoxColumn71.HeaderText = "更新人";
-            gridViewTextBoxColumn71.Name = "column10";
-            gridViewDateTimeColumn20.DataType = typeof(System.DateTime);
-            gridViewDateTimeColumn20.HeaderText = "更新日期";
-            gridViewDateTimeColumn20.Name = "column9";
+            gridViewDateTimeColumn196.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn196.HeaderText = "生效日期";
+            gridViewDateTimeColumn196.Name = "column12";
+            gridViewDateTimeColumn197.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn197.HeaderText = "失效日期";
+            gridViewDateTimeColumn197.Name = "column1";
+            gridViewTextBoxColumn715.HeaderText = "源币种";
+            gridViewTextBoxColumn715.Name = "column3";
+            gridViewTextBoxColumn716.HeaderText = "目标币种";
+            gridViewTextBoxColumn716.Name = "column4";
+            gridViewTextBoxColumn717.HeaderText = "汇率";
+            gridViewTextBoxColumn717.Name = "column5";
+            gridViewDateTimeColumn198.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn198.HeaderText = "分公司代码";
+            gridViewDateTimeColumn198.Name = "column2";
+            gridViewTextBoxColumn718.HeaderText = "附加说明";
+            gridViewTextBoxColumn718.Name = "column7";
+            gridViewTextBoxColumn719.HeaderText = "录入人";
+            gridViewTextBoxColumn719.Name = "column8";
+            gridViewDateTimeColumn199.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn199.HeaderText = "录入日期";
+            gridViewDateTimeColumn199.Name = "column6";
+            gridViewTextBoxColumn720.HeaderText = "更新人";
+            gridViewTextBoxColumn720.Name = "column10";
+            gridViewDateTimeColumn200.DataType = typeof(System.DateTime);
+            gridViewDateTimeColumn200.HeaderText = "更新日期";
+            gridViewDateTimeColumn200.Name = "column9";
             this.grdExchangeRate.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewDateTimeColumn16,
-            gridViewDateTimeColumn17,
-            gridViewTextBoxColumn66,
-            gridViewTextBoxColumn67,
-            gridViewTextBoxColumn68,
-            gridViewDateTimeColumn18,
-            gridViewTextBoxColumn69,
-            gridViewTextBoxColumn70,
-            gridViewDateTimeColumn19,
-            gridViewTextBoxColumn71,
-            gridViewDateTimeColumn20});
+            gridViewDateTimeColumn196,
+            gridViewDateTimeColumn197,
+            gridViewTextBoxColumn715,
+            gridViewTextBoxColumn716,
+            gridViewTextBoxColumn717,
+            gridViewDateTimeColumn198,
+            gridViewTextBoxColumn718,
+            gridViewTextBoxColumn719,
+            gridViewDateTimeColumn199,
+            gridViewTextBoxColumn720,
+            gridViewDateTimeColumn200});
             this.grdExchangeRate.Name = "grdExchangeRate";
             this.grdExchangeRate.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.grdExchangeRate.ReadOnly = true;
@@ -2071,10 +2113,10 @@
             // grdEvent
             // 
             this.grdEvent.MasterTemplate.AllowAddNewRow = false;
-            gridViewTextBoxColumn72.HeaderText = "column1";
-            gridViewTextBoxColumn72.Name = "column1";
+            gridViewTextBoxColumn685.HeaderText = "column1";
+            gridViewTextBoxColumn685.Name = "column1";
             this.grdEvent.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn72});
+            gridViewTextBoxColumn685});
             this.grdEvent.Name = "grdEvent";
             this.grdEvent.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.grdEvent.ReadOnly = true;
@@ -2085,22 +2127,6 @@
             this.grdEvent.Size = new System.Drawing.Size(759, 532);
             this.grdEvent.TabIndex = 10;
             this.grdEvent.Text = "radGridView9";
-            // 
-            // BtnDelete
-            // 
-            this.BtnDelete.Location = new System.Drawing.Point(686, 6);
-            this.BtnDelete.Name = "BtnDelete";
-            this.BtnDelete.Size = new System.Drawing.Size(80, 20);
-            this.BtnDelete.TabIndex = 13;
-            this.BtnDelete.Text = "删除(&D)";
-            // 
-            // BtnNew
-            // 
-            this.BtnNew.Location = new System.Drawing.Point(600, 6);
-            this.BtnNew.Name = "BtnNew";
-            this.BtnNew.Size = new System.Drawing.Size(80, 20);
-            this.BtnNew.TabIndex = 12;
-            this.BtnNew.Text = "新增(&N)";
             // 
             // AccountInfoForm
             // 
@@ -2129,14 +2155,18 @@
             this.gbxRoles.PerformLayout();
             this.gbxAddress.ResumeLayout(false);
             this.gbxAddress.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.edtSEARCH_STR)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.edtTHEIR_SALESMEN)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtALLOCATION_DATE)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.edtMONTHLY_DATE)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtSEARCH_STR)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.edtTHEIR_SALESMEN)).EndInit();
             this.gbxName.ResumeLayout(false);
             this.gbxName.PerformLayout();
             this.tabContacts.ResumeLayout(false);
+            this.panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdContacts)).EndInit();
+            this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.BtnDelete)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.BtnNew)).EndInit();
             this.tabRequirements.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grdRequirements)).EndInit();
@@ -2175,8 +2205,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.btnEventDelete)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.btnEventAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.grdEvent)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnDelete)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.BtnNew)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -2252,6 +2280,8 @@
         private System.Windows.Forms.TextBox edtACCOUNTS_NAME;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TabPage tabContacts;
+        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.TabPage tabRequirements;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
@@ -2285,6 +2315,8 @@
         private Telerik.WinControls.UI.RadGridView grdEvent;
         private Telerik.WinControls.UI.RadButton btnDeletePreAlertAddress;
         private Telerik.WinControls.UI.RadButton btnNewPreAlertAddress;
+        private Telerik.WinControls.UI.RadButton BtnDelete;
+        private Telerik.WinControls.UI.RadButton BtnNew;
         private Telerik.WinControls.UI.RadButton btnDeleteSpecialReqs;
         private Telerik.WinControls.UI.RadButton btnNewSpecialReqs;
         private Telerik.WinControls.UI.RadButton btnDeleteExchangeRate;
@@ -2322,8 +2354,6 @@
         private Telerik.WinControls.UI.RadMultiColumnComboBox edtTHEIR_SALESMEN;
         private Telerik.WinControls.UI.RadDateTimePicker edtMONTHLY_DATE;
         private Telerik.WinControls.UI.RadDateTimePicker edtALLOCATION_DATE;
-        private Telerik.WinControls.UI.RadButton BtnDelete;
-        private Telerik.WinControls.UI.RadButton BtnNew;
 
     }
 }
