@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace JKRPlatform.CommmGUI
 {
-    public partial class StructureDefinForm : Form
+    public partial class ApplyAccountsEditForm2 : Form
     {
-        public StructureDefinForm()
+        public ApplyAccountsEditForm2()
         {
             InitializeComponent();
         }
