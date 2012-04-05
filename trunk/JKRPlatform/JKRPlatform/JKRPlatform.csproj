@@ -1,0 +1,1348 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1A38CC9D-395A-4DA3-A9C2-DBD321E17D92}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>JKRPlatform</RootNamespace>
+    <AssemblyName>JKRPlatform</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>JKRPlatform.Program</StartupObject>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.mshtml, Version=7.0.3300.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="Telerik.WinControls, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.GridView, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadDock, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.RadMarkupEditor, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Black, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.Themes.Office2007Silver, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e, processorArchitecture=MSIL" />
+    <Reference Include="Telerik.WinControls.UI, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+    <Reference Include="TelerikCommon, Version=2010.2.10.713, Culture=neutral, PublicKeyToken=5bb2a467cbec794e" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="BizSeaExport\ExpensesInfor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BizSeaExport\ExpensesInfor.Designer.cs">
+      <DependentUpon>ExpensesInfor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\AdjustInfotSeForm .cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\AdjustInfotSeForm .designer.cs">
+      <DependentUpon>AdjustInfotSeForm .cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\CargoTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\CargoTypeForm.Designer.cs">
+      <DependentUpon>CargoTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Common.cs" />
+    <Compile Include="Common\MessageInfo.cs" />
+    <Compile Include="Customer\ucCustomerDetails.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Customer\ucCustomerDetails.designer.cs">
+      <DependentUpon>ucCustomerDetails.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BizSeaExport\ucFreightSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BizSeaExport\ucFreightSchedule.Designer.cs">
+      <DependentUpon>ucFreightSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BL\Models\DemoDataSource.cs" />
+    <Compile Include="BL\Models\IBugTrackerDataSource.cs" />
+    <Compile Include="BL\ViewModels\BugStatusViewModel.cs" />
+    <Compile Include="BL\ViewModels\BugTrackerProxy.cs" />
+    <Compile Include="BL\ViewModels\BugTrackerViewModel.cs" />
+    <Compile Include="BL\ViewModels\BugViewModel.cs" />
+    <Compile Include="BL\ViewModels\DragDropStatus.cs" />
+    <Compile Include="BL\ViewModels\DragDropViewModel.cs" />
+    <Compile Include="BL\ViewModels\IInfoProvider.cs" />
+    <Compile Include="BL\ViewModels\TeamMemberViewModel.cs" />
+    <Compile Include="BL\ViewModels\TeamObjectViewModel.cs" />
+    <Compile Include="BL\ViewModels\TeamViewModel.cs" />
+    <Compile Include="BL\ViewModels\ViewModelBase.cs" />
+    <Compile Include="BugDetailsView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BugDetailsView.designer.cs">
+      <DependentUpon>BugDetailsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BugListView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="BugListView.designer.cs">
+      <DependentUpon>BugListView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BugTrackerMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="BugTrackerMain.designer.cs">
+      <DependentUpon>BugTrackerMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\MBLForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\MBLForm.designer.cs">
+      <DependentUpon>MBLForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\JobNumForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\JobNumForm.designer.cs">
+      <DependentUpon>JobNumForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\DocumentationDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\DocumentationDetail.Designer.cs">
+      <DependentUpon>DocumentationDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\SeparateSheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\SeparateSheetForm.designer.cs">
+      <DependentUpon>SeparateSheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\AccountsListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\AccountsListForm.Designer.cs">
+      <DependentUpon>AccountsListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\BillsheetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\BillsheetForm.Designer.cs">
+      <DependentUpon>BillsheetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\BoxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\BoxForm.Designer.cs">
+      <DependentUpon>BoxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\eFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\eFileForm.Designer.cs">
+      <DependentUpon>eFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\EntireStateForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\EntireStateForm.Designer.cs">
+      <DependentUpon>EntireStateForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\FeeproForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\FeeproForm.Designer.cs">
+      <DependentUpon>FeeproForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\CostAllocationForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\CostAllocationForm.designer.cs">
+      <DependentUpon>CostAllocationForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\CostDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\CostDetailForm.designer.cs">
+      <DependentUpon>CostDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\GiveFileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\GiveFileForm.Designer.cs">
+      <DependentUpon>GiveFileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ProfitSeachForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\ProfitSeachForm.designer.cs">
+      <DependentUpon>ProfitSeachForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\NotesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\NotesForm.Designer.cs">
+      <DependentUpon>NotesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\PackingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\PackingForm.Designer.cs">
+      <DependentUpon>PackingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\PaperForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\PaperForm.Designer.cs">
+      <DependentUpon>PaperForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\PriceByCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\PriceByCheckForm.Designer.cs">
+      <DependentUpon>PriceByCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\SelectCargoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cargo\SelectCargoForm.Designer.cs">
+      <DependentUpon>SelectCargoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucShipmentDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucShipmentDetail.Designer.cs">
+      <DependentUpon>ucShipmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucShipmentView.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucShipmentView.Designer.cs">
+      <DependentUpon>ucShipmentView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsignAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsignAdd.Designer.cs">
+      <DependentUpon>ucSEConsignAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucConfigShipDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucConfigShipDetail.designer.cs">
+      <DependentUpon>ucConfigShipDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucDocumentationdetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucDocumentationdetail.designer.cs">
+      <DependentUpon>ucDocumentationdetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucScheduleAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucScheduleAdd.designer.cs">
+      <DependentUpon>ucScheduleAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucScheduleSeach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucScheduleSeach.Designer.cs">
+      <DependentUpon>ucScheduleSeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEVesseladd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEVesseladd.Designer.cs">
+      <DependentUpon>ucSEVesseladd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEVesselSeach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEVesselSeach.Designer.cs">
+      <DependentUpon>ucSEVesselSeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ContinentForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ContinentForm.Designer.cs">
+      <DependentUpon>ContinentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\AreaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\AreaForm.Designer.cs">
+      <DependentUpon>AreaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\CountryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\CountryForm.Designer.cs">
+      <DependentUpon>CountryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\PortForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\PortForm.Designer.cs">
+      <DependentUpon>PortForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\YardForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\YardForm.Designer.cs">
+      <DependentUpon>YardForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\PackageTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\PackageTypeForm.Designer.cs">
+      <DependentUpon>PackageTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\TradeStyle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\TradeStyle.Designer.cs">
+      <DependentUpon>TradeStyle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\IncoTerm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\IncoTerm.Designer.cs">
+      <DependentUpon>IncoTerm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\CreditLevelForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\CreditLevelForm.Designer.cs">
+      <DependentUpon>CreditLevelForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\HsCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\HsCode.Designer.cs">
+      <DependentUpon>HsCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\StatusCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\StatusCode.Designer.cs">
+      <DependentUpon>StatusCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\SpecialREQ.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\SpecialREQ.Designer.cs">
+      <DependentUpon>SpecialREQ.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ConductCompany.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ConductCompany.Designer.cs">
+      <DependentUpon>ConductCompany.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\FileType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\FileType.Designer.cs">
+      <DependentUpon>FileType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\FileProject.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\FileProject.Designer.cs">
+      <DependentUpon>FileProject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ReturnFileSettingExport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ReturnFileSettingExport.Designer.cs">
+      <DependentUpon>ReturnFileSettingExport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ReturnFileSettingImport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ReturnFileSettingImport.Designer.cs">
+      <DependentUpon>ReturnFileSettingImport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\Currency.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\Currency.Designer.cs">
+      <DependentUpon>Currency.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ChargeType.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ChargeType.Designer.cs">
+      <DependentUpon>ChargeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ChargeGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ChargeGroup.Designer.cs">
+      <DependentUpon>ChargeGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\CostGroup.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\CostGroup.Designer.cs">
+      <DependentUpon>CostGroup.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\ExchangeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\ExchangeRate.Designer.cs">
+      <DependentUpon>ExchangeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\IATAExchangeRate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\IATAExchangeRate.Designer.cs">
+      <DependentUpon>IATAExchangeRate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\Period.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\Period.Designer.cs">
+      <DependentUpon>Period.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\VoucherSign.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\VoucherSign.Designer.cs">
+      <DependentUpon>VoucherSign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\CheckHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\CheckHistoryForm.Designer.cs">
+      <DependentUpon>CheckHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\TaxInvoice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\TaxInvoice.designer.cs">
+      <DependentUpon>TaxInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\TicketCheckForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\TicketCheckForm.Designer.cs">
+      <DependentUpon>TicketCheckForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEShipmentForm.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEShipmentForm.Designer.cs">
+      <DependentUpon>ucSEShipmentForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsign.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsign.Designer.cs">
+      <DependentUpon>ucSEConsign.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsignDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsignDetail.Designer.cs">
+      <DependentUpon>ucSEConsignDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsignSave.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEConsignSave.Designer.cs">
+      <DependentUpon>ucSEConsignSave.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucConfigShip.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucConfigShip.Designer.cs">
+      <DependentUpon>ucConfigShip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEDocumentation.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEDocumentation.Designer.cs">
+      <DependentUpon>ucSEDocumentation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEVesselSchedule.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEVesselSchedule.Designer.cs">
+      <DependentUpon>ucSEVesselSchedule.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Cargo\ucSEVessel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Cargo\ucSEVessel.Designer.cs">
+      <DependentUpon>ucSEVessel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\AccountInfoForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\AccountInfoForm.designer.cs">
+      <DependentUpon>AccountInfoForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\StructureDefinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\StructureDefinForm.designer.cs">
+      <DependentUpon>StructureDefinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\UserDefinedForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\UserDefinedForm.designer.cs">
+      <DependentUpon>UserDefinedForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\UserQxForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\UserQxForm.designer.cs">
+      <DependentUpon>UserQxForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\WorkNumSetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\WorkNumSetForm.designer.cs">
+      <DependentUpon>WorkNumSetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\RoleDefinForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\RoleDefinForm.designer.cs">
+      <DependentUpon>RoleDefinForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\UserListForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\UserListForm.designer.cs">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\UserGropForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\UserGropForm.designer.cs">
+      <DependentUpon>UserGropForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CommmGUI\SysParamForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CommmGUI\SysParamForm.designer.cs">
+      <DependentUpon>SysParamForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\Bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\Bill.Designer.cs">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\billCreation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\billCreation.Designer.cs">
+      <DependentUpon>billCreation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\CostDetailed.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\CostDetailed.Designer.cs">
+      <DependentUpon>CostDetailed.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\StatisticalProjectForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\StatisticalProjectForm.Designer.cs">
+      <DependentUpon>StatisticalProjectForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\AfterVerification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\AfterVerification.Designer.cs">
+      <DependentUpon>AfterVerification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ProgramCosts.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\ProgramCosts.Designer.cs">
+      <DependentUpon>ProgramCosts.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\PushRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\PushRecord.Designer.cs">
+      <DependentUpon>PushRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\SchemeBillReports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\SchemeBillReports.Designer.cs">
+      <DependentUpon>SchemeBillReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\TaxInvoiceEditForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\TaxInvoiceEditForm.Designer.cs">
+      <DependentUpon>TaxInvoiceEditForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucSaleCommission.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucSaleCommission.Designer.cs">
+      <DependentUpon>ucSaleCommission.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucSaleCommissionDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucSaleCommissionDetail.Designer.cs">
+      <DependentUpon>ucSaleCommissionDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingApprove.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingApprove.Designer.cs">
+      <DependentUpon>ucBillingApprove.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillApproveAdd.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillApproveAdd.Designer.cs">
+      <DependentUpon>ucBillApproveAdd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillApproveSeach.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillApproveSeach.Designer.cs">
+      <DependentUpon>ucBillApproveSeach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingInvoice.Designer.cs">
+      <DependentUpon>ucBillingInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillInvoiceDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillInvoiceDetail.Designer.cs">
+      <DependentUpon>ucBillInvoiceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingChase.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingChase.Designer.cs">
+      <DependentUpon>ucBillingChase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingTaxInvoice.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingTaxInvoice.Designer.cs">
+      <DependentUpon>ucBillingTaxInvoice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\CreateTaxInvoiceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\CreateTaxInvoiceForm.Designer.cs">
+      <DependentUpon>CreateTaxInvoiceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillTaxInvoiceDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillTaxInvoiceDetail.Designer.cs">
+      <DependentUpon>ucBillTaxInvoiceDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingCashier.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingCashier.Designer.cs">
+      <DependentUpon>ucBillingCashier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillCashierPractical.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillCashierPractical.Designer.cs">
+      <DependentUpon>ucBillCashierPractical.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingAdjustment.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingAdjustment.Designer.cs">
+      <DependentUpon>ucBillingAdjustment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillAdjustmentDetail.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillAdjustmentDetail.Designer.cs">
+      <DependentUpon>ucBillAdjustmentDetail.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillAdjustmentSearch.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillAdjustmentSearch.Designer.cs">
+      <DependentUpon>ucBillAdjustmentSearch.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingSettlement.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingSettlement.Designer.cs">
+      <DependentUpon>ucBillingSettlement.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingVoucher.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingVoucher.Designer.cs">
+      <DependentUpon>ucBillingVoucher.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucBillingReports.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucBillingReports.Designer.cs">
+      <DependentUpon>ucBillingReports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\ucEnterpriseReport.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CwCount\ucEnterpriseReport.Designer.cs">
+      <DependentUpon>ucEnterpriseReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\Verification.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\Verification.Designer.cs">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </Compile>
+    <Compile Include="CwCount\verificationHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="CwCount\verificationHistory.Designer.cs">
+      <DependentUpon>verificationHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SystemManage\ucA011.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucA011.Designer.cs">
+      <DependentUpon>ucA011.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucAccountMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucAccountMaterial.designer.cs">
+      <DependentUpon>ucAccountMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucTranAddMaintenance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucTranAddMaintenance.designer.cs">
+      <DependentUpon>ucTranAddMaintenance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucStructGroupMainten.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucStructGroupMainten.Designer.cs">
+      <DependentUpon>ucStructGroupMainten.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucUserManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucUserManage.designer.cs">
+      <DependentUpon>ucUserManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucPermAndGroupManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucPermAndGroupManage.designer.cs">
+      <DependentUpon>ucPermAndGroupManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucOperationsLog.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucOperationsLog.designer.cs">
+      <DependentUpon>ucOperationsLog.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucSysParams.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucSysParams.designer.cs">
+      <DependentUpon>ucSysParams.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucSysCodeLib.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucSysCodeLib.designer.cs">
+      <DependentUpon>ucSysCodeLib.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucAutoCodeRules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucAutoCodeRules.Designer.cs">
+      <DependentUpon>ucAutoCodeRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucJobNumRules.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucJobNumRules.designer.cs">
+      <DependentUpon>ucJobNumRules.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucMasterData.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucMasterData.designer.cs">
+      <DependentUpon>ucMasterData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucRegAndPortManage.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucRegAndPortManage.designer.cs">
+      <DependentUpon>ucRegAndPortManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucBusinessMaterial.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucBusinessMaterial.designer.cs">
+      <DependentUpon>ucBusinessMaterial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucCubeType.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucCubeType.designer.cs">
+      <DependentUpon>ucCubeType.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SystemManage\ucBalance.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="SystemManage\ucBalance.Designer.cs">
+      <DependentUpon>ucBalance.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="BizSeaExport\ExpensesInfor.resx">
+      <DependentUpon>ExpensesInfor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\AdjustInfotSeForm .resx">
+      <DependentUpon>AdjustInfotSeForm .cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\CargoTypeForm.resx">
+      <DependentUpon>CargoTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Customer\ucCustomerDetails.resx">
+      <DependentUpon>ucCustomerDetails.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BizSeaExport\ucFreightSchedule.resx">
+      <DependentUpon>ucFreightSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BugDetailsView.resx">
+      <DependentUpon>BugDetailsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BugListView.resx">
+      <DependentUpon>BugListView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="BugTrackerMain.resx">
+      <DependentUpon>BugTrackerMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\MBLForm.resx">
+      <DependentUpon>MBLForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\JobNumForm.resx">
+      <DependentUpon>JobNumForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\DocumentationDetail.resx">
+      <DependentUpon>DocumentationDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\SeparateSheetForm.resx">
+      <DependentUpon>SeparateSheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\AccountsListForm.resx">
+      <DependentUpon>AccountsListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\BillsheetForm.resx">
+      <DependentUpon>BillsheetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\BoxForm.resx">
+      <DependentUpon>BoxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\eFileForm.resx">
+      <DependentUpon>eFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\EntireStateForm.resx">
+      <DependentUpon>EntireStateForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\FeeproForm.resx">
+      <DependentUpon>FeeproForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\CostAllocationForm.resx">
+      <DependentUpon>CostAllocationForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\CostDetailForm.resx">
+      <DependentUpon>CostDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\GiveFileForm.resx">
+      <DependentUpon>GiveFileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ProfitSeachForm.resx">
+      <DependentUpon>ProfitSeachForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\NotesForm.resx">
+      <DependentUpon>NotesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\PackingForm.resx">
+      <DependentUpon>PackingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\PaperForm.resx">
+      <DependentUpon>PaperForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\PriceByCheckForm.resx">
+      <DependentUpon>PriceByCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\SelectCargoForm.resx">
+      <DependentUpon>SelectCargoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucShipmentDetail.resx">
+      <DependentUpon>ucShipmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucShipmentView.resx">
+      <DependentUpon>ucShipmentView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEConsignAdd.resx">
+      <DependentUpon>ucSEConsignAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucConfigShipDetail.resx">
+      <DependentUpon>ucConfigShipDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucDocumentationdetail.resx">
+      <DependentUpon>ucDocumentationdetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucScheduleAdd.resx">
+      <DependentUpon>ucScheduleAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucScheduleSeach.resx">
+      <DependentUpon>ucScheduleSeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEVesseladd.resx">
+      <DependentUpon>ucSEVesseladd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEVesselSeach.resx">
+      <DependentUpon>ucSEVesselSeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ContinentForm.resx">
+      <DependentUpon>ContinentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\AreaForm.resx">
+      <DependentUpon>AreaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\CountryForm.resx">
+      <DependentUpon>CountryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\PortForm.resx">
+      <DependentUpon>PortForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\YardForm.resx">
+      <DependentUpon>YardForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\PackageTypeForm.resx">
+      <DependentUpon>PackageTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\TradeStyle.resx">
+      <DependentUpon>TradeStyle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\IncoTerm.resx">
+      <DependentUpon>IncoTerm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\CreditLevelForm.resx">
+      <DependentUpon>CreditLevelForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\HsCode.resx">
+      <DependentUpon>HsCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\StatusCode.resx">
+      <DependentUpon>StatusCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\SpecialREQ.resx">
+      <DependentUpon>SpecialREQ.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ConductCompany.resx">
+      <DependentUpon>ConductCompany.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\FileType.resx">
+      <DependentUpon>FileType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\FileProject.resx">
+      <DependentUpon>FileProject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ReturnFileSettingExport.resx">
+      <DependentUpon>ReturnFileSettingExport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ReturnFileSettingImport.resx">
+      <DependentUpon>ReturnFileSettingImport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\Currency.resx">
+      <DependentUpon>Currency.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ChargeType.resx">
+      <DependentUpon>ChargeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ChargeGroup.resx">
+      <DependentUpon>ChargeGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\CostGroup.resx">
+      <DependentUpon>CostGroup.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\ExchangeRate.resx">
+      <DependentUpon>ExchangeRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\IATAExchangeRate.resx">
+      <DependentUpon>IATAExchangeRate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\Period.resx">
+      <DependentUpon>Period.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\VoucherSign.resx">
+      <DependentUpon>VoucherSign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\CheckHistoryForm.resx">
+      <DependentUpon>CheckHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\TaxInvoice.resx">
+      <DependentUpon>TaxInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\TicketCheckForm.resx">
+      <DependentUpon>TicketCheckForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEShipmentForm.resx">
+      <DependentUpon>ucSEShipmentForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEConsign.resx">
+      <DependentUpon>ucSEConsign.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEConsignDetail.resx">
+      <DependentUpon>ucSEConsignDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEConsignSave.resx">
+      <DependentUpon>ucSEConsignSave.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucConfigShip.resx">
+      <DependentUpon>ucConfigShip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEDocumentation.resx">
+      <DependentUpon>ucSEDocumentation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEVesselSchedule.resx">
+      <DependentUpon>ucSEVesselSchedule.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Cargo\ucSEVessel.resx">
+      <DependentUpon>ucSEVessel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\AccountInfoForm.resx">
+      <DependentUpon>AccountInfoForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\StructureDefinForm.resx">
+      <DependentUpon>StructureDefinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\UserDefinedForm.resx">
+      <DependentUpon>UserDefinedForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\UserQxForm.resx">
+      <DependentUpon>UserQxForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\WorkNumSetForm.resx">
+      <DependentUpon>WorkNumSetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\RoleDefinForm.resx">
+      <DependentUpon>RoleDefinForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\UserListForm.resx">
+      <DependentUpon>UserListForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\UserGropForm.resx">
+      <DependentUpon>UserGropForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CommmGUI\SysParamForm.resx">
+      <DependentUpon>SysParamForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\Bill.resx">
+      <DependentUpon>Bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\billCreation.resx">
+      <DependentUpon>billCreation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\CostDetailed.resx">
+      <DependentUpon>CostDetailed.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\StatisticalProjectForm.resx">
+      <DependentUpon>StatisticalProjectForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\AfterVerification.resx">
+      <DependentUpon>AfterVerification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ProgramCosts.resx">
+      <DependentUpon>ProgramCosts.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\PushRecord.resx">
+      <DependentUpon>PushRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\SchemeBillReports.resx">
+      <DependentUpon>SchemeBillReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\TaxInvoiceEditForm.resx">
+      <DependentUpon>TaxInvoiceEditForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucSaleCommission.resx">
+      <DependentUpon>ucSaleCommission.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucSaleCommissionDetail.resx">
+      <DependentUpon>ucSaleCommissionDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingApprove.resx">
+      <DependentUpon>ucBillingApprove.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillApproveAdd.resx">
+      <DependentUpon>ucBillApproveAdd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillApproveSeach.resx">
+      <DependentUpon>ucBillApproveSeach.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingInvoice.resx">
+      <DependentUpon>ucBillingInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillInvoiceDetail.resx">
+      <DependentUpon>ucBillInvoiceDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingChase.resx">
+      <DependentUpon>ucBillingChase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingTaxInvoice.resx">
+      <DependentUpon>ucBillingTaxInvoice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\CreateTaxInvoiceForm.resx">
+      <DependentUpon>CreateTaxInvoiceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillTaxInvoiceDetail.resx">
+      <DependentUpon>ucBillTaxInvoiceDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingCashier.resx">
+      <DependentUpon>ucBillingCashier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillCashierPractical.resx">
+      <DependentUpon>ucBillCashierPractical.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingAdjustment.resx">
+      <DependentUpon>ucBillingAdjustment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillAdjustmentDetail.resx">
+      <DependentUpon>ucBillAdjustmentDetail.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillAdjustmentSearch.resx">
+      <DependentUpon>ucBillAdjustmentSearch.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingSettlement.resx">
+      <DependentUpon>ucBillingSettlement.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingVoucher.resx">
+      <DependentUpon>ucBillingVoucher.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucBillingReports.resx">
+      <DependentUpon>ucBillingReports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\ucEnterpriseReport.resx">
+      <DependentUpon>ucEnterpriseReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\Verification.resx">
+      <DependentUpon>Verification.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="CwCount\verificationHistory.resx">
+      <DependentUpon>verificationHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="SystemManage\ucA011.resx">
+      <DependentUpon>ucA011.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucAccountMaterial.resx">
+      <DependentUpon>ucAccountMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucTranAddMaintenance.resx">
+      <DependentUpon>ucTranAddMaintenance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucStructGroupMainten.resx">
+      <DependentUpon>ucStructGroupMainten.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucUserManage.resx">
+      <DependentUpon>ucUserManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucPermAndGroupManage.resx">
+      <DependentUpon>ucPermAndGroupManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucOperationsLog.resx">
+      <DependentUpon>ucOperationsLog.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucSysParams.resx">
+      <DependentUpon>ucSysParams.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucSysCodeLib.resx">
+      <DependentUpon>ucSysCodeLib.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucAutoCodeRules.resx">
+      <DependentUpon>ucAutoCodeRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucJobNumRules.resx">
+      <DependentUpon>ucJobNumRules.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucMasterData.resx">
+      <DependentUpon>ucMasterData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucRegAndPortManage.resx">
+      <DependentUpon>ucRegAndPortManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucBusinessMaterial.resx">
+      <DependentUpon>ucBusinessMaterial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucCubeType.resx">
+      <DependentUpon>ucCubeType.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SystemManage\ucBalance.resx">
+      <DependentUpon>ucBalance.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="BugListGridLayout.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="BugTrackerDemoLayout.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Themes\Sapphire\RibbonBar.xml" />
+    <Content Include="Themes\Sapphire\SplitContainer.xml" />
+    <Content Include="Themes\Sapphire\TabStrip.xml" />
+    <Content Include="Themes\Sapphire\ToolWindowCaption.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.0,Profile=Client">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4 Client Profile %28x86 和 x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Windows.Installer.3.1">
+      <Visible>False</Visible>
+      <ProductName>Windows Installer 3.1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\JKR.Cargo.Common\JKR.Cargo.Common.csproj">
+      <Project>{819660BC-18A7-4E95-B4C5-DAC03155CFFC}</Project>
+      <Name>JKR.Cargo.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JKR.Cargo.PubFunction\JKR.Cargo.PubFunction.csproj">
+      <Project>{01584D78-882A-42E8-9119-423BD6BEC751}</Project>
+      <Name>JKR.Cargo.PubFunction</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JKR.GUI.BaseForm\JKR.GUI.BaseForm.csproj">
+      <Project>{F518872F-1BBA-4F5F-91D6-0314C03E53EB}</Project>
+      <Name>JKR.GUI.BaseForm</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JKR.GUI.LogixConnector\JKR.GUI.LogixConnector.csproj">
+      <Project>{491585F6-0689-413A-8975-53DE5294703F}</Project>
+      <Name>JKR.GUI.LogixConnector</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\JKR.Util\JKR.Util.csproj">
+      <Project>{AE503023-2E75-4E68-99FB-387B1096E3A9}</Project>
+      <Name>JKR.Util</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Lib\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

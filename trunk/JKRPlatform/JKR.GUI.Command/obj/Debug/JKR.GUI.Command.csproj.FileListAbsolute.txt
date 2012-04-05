@@ -1,0 +1,8 @@
+E:\海运\JKRPlatform\JKRPlatform\JKR.GUI.Command\bin\Debug\JKR.GUI.Command.dll
+E:\海运\JKRPlatform\JKRPlatform\JKR.GUI.Command\bin\Debug\JKR.GUI.Command.pdb
+E:\海运\JKRPlatform\JKRPlatform\JKR.GUI.Command\obj\Debug\ResolveAssemblyReference.cache
+E:\海运\JKRPlatform\JKRPlatform\JKR.GUI.Command\obj\Debug\JKR.GUI.Command.dll
+E:\海运\JKRPlatform\JKRPlatform\JKR.GUI.Command\obj\Debug\JKR.GUI.Command.pdb
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.GUI.Command\obj\Debug\ResolveAssemblyReference.cache
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.GUI.Command\obj\Debug\JKR.GUI.Command.dll
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.GUI.Command\obj\Debug\JKR.GUI.Command.pdb
