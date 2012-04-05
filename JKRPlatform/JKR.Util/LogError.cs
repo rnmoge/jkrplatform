@@ -7,7 +7,7 @@ namespace JKR.Util
 {
     public sealed class LogError
     {
-        public extern  LogError();
+        //public LogError();
 
         private const string c_EventSource = "EVIN C6 SmartClient";
         private const string c_LogName = "Application";
