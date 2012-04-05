@@ -5,12 +5,12 @@ using System.Windows.Forms;
 using JKR.GUI.LogixConnector;
 using System.Data;
 using Telerik.WinControls.UI;
+using System.Drawing;
 
 namespace JKR.Cargo.Common
 {
    public class LookupData
     {
-       public LookupData() { }
 
        public static void SetJobTypeImageCombobox(Control Sender, UIProxy uip)
        {
@@ -125,7 +125,7 @@ namespace JKR.Cargo.Common
                ((RadDropDownList)Sender).ValueMember = ValueMember;
                ((RadDropDownList)Sender).NullText = "";
                ((RadDropDownList)Sender).Items.Clear();
-               ((RadDropDownList)Sender).Style = new Font("Courier New", 8.25f, FontStyle.Regular);
+               ((RadDropDownList)Sender).Font = new Font("Courier New", 8.25f, FontStyle.Regular);
                int num2 = 0;
                int upperBound = DisplayColumn.GetUpperBound(0);
                int num4 = upperBound;
