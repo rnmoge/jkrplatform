@@ -1,0 +1,10 @@
+E:\海运\JKRPlatform\JKRPlatform\JKR.Common.Zipper\bin\Debug\JKR.Common.Zipper.dll
+E:\海运\JKRPlatform\JKRPlatform\JKR.Common.Zipper\bin\Debug\JKR.Common.Zipper.pdb
+E:\海运\JKRPlatform\JKRPlatform\JKR.Common.Zipper\obj\Debug\ResolveAssemblyReference.cache
+E:\海运\JKRPlatform\JKRPlatform\JKR.Common.Zipper\obj\Debug\JKR.Common.Zipper.dll
+E:\海运\JKRPlatform\JKRPlatform\JKR.Common.Zipper\obj\Debug\JKR.Common.Zipper.pdb
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.Common.Zipper\bin\Debug\JKR.Common.Zipper.dll
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.Common.Zipper\bin\Debug\JKR.Common.Zipper.pdb
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.Common.Zipper\obj\Debug\ResolveAssemblyReference.cache
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.Common.Zipper\obj\Debug\JKR.Common.Zipper.dll
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\JKRPlatform\JKR.Common.Zipper\obj\Debug\JKR.Common.Zipper.pdb

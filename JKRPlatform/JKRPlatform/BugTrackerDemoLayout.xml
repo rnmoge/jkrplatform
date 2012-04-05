@@ -1,0 +1,55 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<RadDock IsCleanUpTarget="True" Orientation="Vertical" Text="radDock1" BackColor="191, 219, 254" Margin="2, 2, 2, 2" TabIndex="2" TabStop="False" Padding="4, 4, 4, 4">
+  <DocumentManager DocumentInsertOrder="InFront" />
+  <SerializableFloatingWindows>
+    <Telerik.WinControls.UI.Docking.SerializableFloatingWindow BackColor="191, 219, 255" Location="816, 411" ClientSize="292, 262">
+      <DockContainer Orientation="Vertical" Collapsed="True" ThemeName="Sapphire" Dock="Fill" Location="0, 0" Name="" Size="292, 262" TabIndex="0" TabStop="False">
+        <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+        <Controls>
+          <Telerik.WinControls.UI.Docking.ToolTabStrip Size="292, 262" Location="0, 0" ThemeName="Sapphire" Name="DockTabStrip9" TabIndex="0" TabStop="False">
+            <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+          </Telerik.WinControls.UI.Docking.ToolTabStrip>
+        </Controls>
+      </DockContainer>
+    </Telerik.WinControls.UI.Docking.SerializableFloatingWindow>
+  </SerializableFloatingWindows>
+  <Controls>
+    <Telerik.WinControls.UI.Docking.ToolTabStrip BackColor="191, 219, 254" SelectedIndex="0" Size="200, 580" Location="4, 4" ThemeName="Sapphire" Name="toolTabStrip1" TabIndex="1" TabStop="False">
+      <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.ToolWindow Name="toolWindow1" Size="198, 556" Location="1, 23" Text="Team Explorer" />
+      </Controls>
+    </Telerik.WinControls.UI.Docking.ToolTabStrip>
+    <Telerik.WinControls.UI.RadSplitContainer IsCleanUpTarget="True" Orientation="Horizontal" ThemeName="Sapphire" Location="207, 4" Name="" Size="1161, 580" TabIndex="2" TabStop="False">
+      <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+      <Controls>
+        <Telerik.WinControls.UI.Docking.ToolTabStrip Size="1161, 200" Location="0, 0" ThemeName="Sapphire" Name="DockTabStrip8" TabIndex="0" TabStop="False">
+          <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+        </Telerik.WinControls.UI.Docking.ToolTabStrip>
+        <Telerik.WinControls.UI.RadSplitContainer IsCleanUpTarget="True" Orientation="Vertical" ThemeName="Sapphire" Location="0, 0" Name="" Size="1161, 580" TabIndex="1" TabStop="False">
+          <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+          <Controls>
+            <Telerik.WinControls.UI.Docking.DocumentContainer IsMainDocumentContainer="True" Orientation="Vertical" ThemeName="Sapphire" BackColor="191, 219, 254" Location="0, 0" Name="documentContainer1" Size="958, 580" TabIndex="2" TabStop="False">
+              <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" SizeMode="Fill" />
+              <Controls>
+                <Telerik.WinControls.UI.Docking.DocumentTabStrip SelectedIndex="1" Size="958, 580" Location="0, 0" ThemeName="Sapphire" Name="DockTabStrip2" TabIndex="0" TabStop="False">
+                  <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+                  <Controls>
+                    <Telerik.WinControls.UI.Docking.DocumentWindow Name="documentWindow1" Size="1151, 343" Location="5, 29" Text="Missing template Binding in the TreeView" />
+                    <Telerik.WinControls.UI.Docking.DocumentWindow Name="documentWindow2" Size="948, 546" Location="5, 29" Text="DatePicker: NullValue not working!" />
+                  </Controls>
+                </Telerik.WinControls.UI.Docking.DocumentTabStrip>
+              </Controls>
+            </Telerik.WinControls.UI.Docking.DocumentContainer>
+            <Telerik.WinControls.UI.Docking.ToolTabStrip SelectedIndex="0" Size="200, 580" Location="961, 0" ThemeName="Sapphire" Name="DockTabStrip10" TabIndex="0" TabStop="False">
+              <SizeInfo SplitterCorrection="0, 0" AutoSizeScale="0, 0" />
+              <Controls>
+                <Telerik.WinControls.UI.Docking.ToolWindow AllowedDockState="Docked, TabbedDocument, Floating" Name="toolWindow2" Size="198, 556" Location="1, 23" Text="Bugs Filtered by Selected Team" />
+              </Controls>
+            </Telerik.WinControls.UI.Docking.ToolTabStrip>
+          </Controls>
+        </Telerik.WinControls.UI.RadSplitContainer>
+      </Controls>
+    </Telerik.WinControls.UI.RadSplitContainer>
+  </Controls>
+</RadDock>
