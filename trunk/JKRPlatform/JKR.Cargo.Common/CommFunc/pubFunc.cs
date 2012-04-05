@@ -60,10 +60,5 @@ namespace JKR.Cargo.Common.CommFunc
             return (str2 + " AND " + FieldName + " = '" + ValueFrom.Trim().Replace("'", "''") + "'");
         }
 
- 
-
-
- 
-
     }
 }
