@@ -29,6 +29,4 @@ namespace JKR.GUI.LogixConnector.Alarm
         // Nested Types
         public delegate void DelegateAlarm(IAlarm alarm);
     }
-
-
 }

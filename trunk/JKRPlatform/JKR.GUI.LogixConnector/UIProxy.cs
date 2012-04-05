@@ -1,17 +1,26 @@
 ﻿using System;
-using System.Collections;
-using System.Data;
-using System.Drawing;
-using System.IO;
-using System.Net;
-using System.Reflection;
-using System.Resources;
+using System.Collections.Generic;
 using System.Text;
+using System.Collections;
+using System.Net;
+using System.Data;
+using System.IO;
+using System.Resources;
+using System.Threading;
+using System.Reflection;
+using System.Configuration;
 using System.Windows.Forms;
-using JKR.Common.Zipper;
+using System.Drawing;
+using System.ComponentModel;
+using System.Security.Cryptography;
 using JKR.GUI.LogixConnector.Alarm;
-using JKR.Util;
 using Telerik.WinControls.UI;
+using JKR.Util;
+using JKR.Common.Zipper;
+using JKR.GUI.Controls;
+using JKR.GUI.LogixConnector.Report.Forms;
+using JKR.GUI.LogixConnector.CommonForm;
+using System.Diagnostics;
 
 namespace JKR.GUI.LogixConnector
 {
@@ -166,7 +175,7 @@ namespace JKR.GUI.LogixConnector
         /// 锁定成功
         /// </summary>
         MSG_LOCK_SUCCESS = 0x5e6,
-        
+
         /// <summary>
         /// 是否锁定
         /// </summary>
@@ -264,7 +273,7 @@ namespace JKR.GUI.LogixConnector
         /// 系统以前，现在不用
         /// </summary>
         MSG_SURE_DELETE = 400,
-        
+
         /// <summary>
         /// 系统以前，现在不用
         /// </summary>
@@ -360,7 +369,7 @@ namespace JKR.GUI.LogixConnector
 
         //平台逻辑DLL名
         private const string PLATFORM_LOGIX = "PlatformLogix";
-       
+
         public enum LanguageType
         {
             English,
@@ -407,7 +416,7 @@ namespace JKR.GUI.LogixConnector
         public static UserInformation m_CurrentUserInformation;
         //当前的日期，取自WS服务器,本地自己增加
         public static DateTime m_CurrDateTime;
-        
+
         private DataSet m_dsLocalMasterData;
         public static DataSet m_LocalDataSet;
 
@@ -430,7 +439,7 @@ namespace JKR.GUI.LogixConnector
         #region 公布的属性
 
         //主窗体传递的UI区域，由UIProxy进行控制
-         //主窗体传递进来的主界面状态行区域
+        //主窗体传递进来的主界面状态行区域
         public RadWaitingBar StatusBar
         {
             get
@@ -444,7 +453,7 @@ namespace JKR.GUI.LogixConnector
         }
 
         //主窗体传递进来的进度条区域
-        public RadProgressBar ProgressBarControl
+        public RadProgressBarElement ProgressBarControl
         {
             get
             {
@@ -475,7 +484,7 @@ namespace JKR.GUI.LogixConnector
             {
                 this.m_Alarm = alarm;
                 this.m_AlarmItem.Text = alarm.AlarmTitle;
-                this.m_AlarmItem.Font =RadProgressBar.DefaultFont;
+                this.m_AlarmItem.Font = RadProgressBar.DefaultFont;
                 Point p = new Point();
                 p.X = this.m_Lable.Location.X;
                 p.Y = this.m_Lable.Location.Y + 120;
@@ -487,8 +496,8 @@ namespace JKR.GUI.LogixConnector
             }
             else
             {
-                this.m_Alarm = null;              
-                this.m_AlarmItem.Text=(Language==LanguageType.Chinese?"无预警":"No alarm");
+                this.m_Alarm = null;
+                this.m_AlarmItem.Text = (Language == LanguageType.Chinese ? "无预警" : "No alarm");
                 this.m_AlarmItem.Font = RadProgressBar.DefaultFont;
             }
         }
@@ -588,7 +597,7 @@ namespace JKR.GUI.LogixConnector
                 //Interaction.Beep(); //错误声音
                 this.ShowMessage(HintMessageType.MSG_UNEXPECTED_ERROR);
                 throw ex;
-              
+
             }
             return InitUIProxy;
         }
@@ -599,10 +608,10 @@ namespace JKR.GUI.LogixConnector
             DataTable dtLocalIndex = new DataTable();
 
             //判断文件是否存在
-            if(File.Exists(UIProxy.GetCurrentUserFolder()+@"\masterdata.xml"))
+            if (File.Exists(UIProxy.GetCurrentUserFolder() + @"\masterdata.xml"))
             {
                 m_LocalDataSet.Clear();
-                m_LocalDataSet.ReadXml(UIProxy.GetCurrentUserFolder()+@"\masterdata.xml");
+                m_LocalDataSet.ReadXml(UIProxy.GetCurrentUserFolder() + @"\masterdata.xml");
 
             }
 
@@ -673,7 +682,7 @@ namespace JKR.GUI.LogixConnector
         {
 
             // 合并后新生成的Index TABLE
-            DataTable dtNewLocalIndex = new DataTable();       
+            DataTable dtNewLocalIndex = new DataTable();
             int iCount = 0;         //默认更新的表
 
             try
@@ -742,7 +751,7 @@ namespace JKR.GUI.LogixConnector
 
         private DataSet GetDataSet(string sDllName, string sClassName, string sFuncName, object[] args)
         {
-            DataSet GetDataSet = new DataSet() ;
+            DataSet GetDataSet;
             try
             {
                 GetDataSet = Compression.DecompressionDataSet(this.m_wsConnector.GetDataSetFunction(sDllName, sClassName, sFuncName, args));
@@ -750,7 +759,7 @@ namespace JKR.GUI.LogixConnector
             catch (Exception ex)
             {
                 throw ex;
-             
+
             }
             return GetDataSet;
         }
@@ -817,7 +826,7 @@ namespace JKR.GUI.LogixConnector
         /// <param name="msgOfZH">中文信息</param>
         /// <param name="msgOfEn">英文信息</param>
         /// <param name="msgOfOther">其他语言信息</param>
-        public void ShowErrorMsg(string msgOfZH, string msgOfEn,  string msgOfOther)
+        public void ShowErrorMsg(string msgOfZH, string msgOfEn, string msgOfOther)
         {
             if (!((this.m_StatusBar == null) | (this.m_StaticItemHint == null)))
             {
@@ -851,7 +860,7 @@ namespace JKR.GUI.LogixConnector
                 //Interaction.Beep();
             }
         }
-        
+
         /// <summary>
         /// 显示错误消息，并且发出警告声
         /// </summary>
@@ -924,20 +933,20 @@ namespace JKR.GUI.LogixConnector
             }
         }
 
-        ///// <summary>
-        ///// 显示警告信息,并且发出警告声
-        ///// </summary>
-        ///// <param name="hmt"></param>
-        //public void ShowErrorMsg(HintMessageType hmt)
-        //{
-        //    ResourceManager Resource = new ResourceManager("JKR.GUI.LogixConnector.Message", Assembly.GetExecutingAssembly());
-        //    if (!((this.m_StatusBar == null) | (this.m_StaticItemHint == null)))
-        //    {
-        //        this.m_StatusBar.BackColor = Color.Red;
-        //        this.m_StaticItemHint.Tag = Resource.GetString(hmt.ToString());
-        //        //Interaction.Beep();
-        //    }
-        //}
+        /// <summary>
+        /// 显示警告信息,并且发出警告声
+        /// </summary>
+        /// <param name="hmt"></param>
+        public void ShowErrorMsg(HintMessageType hmt)
+        {
+            ResourceManager Resource = new ResourceManager("JKR.GUI.LogixConnector.Message", Assembly.GetExecutingAssembly());
+            if (!((this.m_StatusBar == null) | (this.m_StaticItemHint == null)))
+            {
+                this.m_StatusBar.BackColor = Color.Red;
+                this.m_StaticItemHint.Tag = Resource.GetString(hmt.ToString());
+                //Interaction.Beep();
+            }
+        }
 
         /// <summary>
         /// 显示警告信息,并且发出警告声
@@ -1020,8 +1029,38 @@ namespace JKR.GUI.LogixConnector
             }
         }
 
-       // private static MessageForm MessageForm;
- 
+        private static MessageForm MessageForm;
+
+        private static DialogResult ShowPopupMessage(HintMessageType hmt)
+        {
+            ResourceManager Resource = new ResourceManager("JKR.GUI.LogixConnector.Message", Assembly.GetExecutingAssembly());
+            return MessageForm.ShowMessage(Resource.GetString(hmt.ToString()));
+
+        }
+
+        public static DialogResult ShowPopupMessage(HintMessageType hmt, string messageDemo, params string[] value)
+        {
+            ResourceManager Resource = new ResourceManager("JKR.GUI.LogixConnector.Message", Assembly.GetExecutingAssembly());
+            MessageForm.MessageDemo = messageDemo;
+            return MessageForm.ShowMessage(string.Format(Resource.GetString(hmt.ToString()), (object[])value));
+        }
+
+        public static DialogResult ShowPopupMessage(string text)
+        {
+            return MessageForm.ShowMessage(text);
+        }
+
+        public static DialogResult ShowPopupMessage(string text, MessageBoxButtons button)
+        {
+            return MessageForm.ShowMessage(text, string.Empty, button);
+        }
+
+        public static DialogResult ShowPopupMessage(string text, string messageDemo)
+        {
+            MessageForm.MessageDemo = messageDemo;
+            return MessageForm.ShowMessage(text);
+        }
+
         public void ShowMessage(string text)
         {
 
@@ -1052,7 +1091,7 @@ namespace JKR.GUI.LogixConnector
             }
             if (hmt.ToString().Trim().ToUpper().IndexOf("SURE") > -1)
             {
-                //return MessageForm.ShowMessage(Resource.GetString(hmt.ToString()));
+                return MessageForm.ShowMessage(Resource.GetString(hmt.ToString()));
             }
             switch (hmt)
             {
@@ -1069,13 +1108,51 @@ namespace JKR.GUI.LogixConnector
             return DialogResult.None;
         }
 
+        public string GetMessageByHintMessageType(HintMessageType hmt)
+        {
+            ResourceManager resource = new ResourceManager("JKR.GUI.LogixConnector.Message", Assembly.GetExecutingAssembly());
+            return resource.GetString(hmt.ToString());
+        }
+
+        public void ClearMessage()
+        {
+            this.m_StatusBar.BackColor = SystemColors.Control;
+            this.m_StaticItemHint.Tag = string.Empty;
+        }
+
         #endregion
 
-        #region
+        #region 计算性能时间
+
+        public static void TicksStart()
+        {
+            clsTicks.Start();
+        }
+
+        public static long GetTicksSecond(string Remark, bool Append)
+        {
+            return clsTicks.ReturnCountAfterStop(Remark, Append);
+
+        }
 
         #endregion
+
         #region 访问业务逻辑的通道
 
+        public void SetServerAddress(string server_address)
+        {
+            if (server_address.Trim() != "")
+            {
+                this.m_wsConnector.Url = "http://" + server_address + "/wsproxy2/Connector.asmx ";
+                string[] address = server_address.Split(new char[] { ':' });
+                _m_ExtensionCustomWSUrl = "http://" + address[0] + "/ExtensionCustom/WS/ExtensionCustom.asmx";
+            }
+            else
+            {
+                this.m_wsConnector.Url = "http://LocalHost/wsproxy2/Connector.asmx ";
+                _m_ExtensionCustomWSUrl = "http://LocalHost/ExtensionCustom/WS/ExtensionCustom.asmx";
+            }
+        }
 
         private object CallLocalMethod(string sDllName, string sClassName, string sFuncName, object[] args)
         {
@@ -1101,15 +1178,15 @@ namespace JKR.GUI.LogixConnector
                 }
 
                 switch (m_TypeOfConnection)
-                {                    
-                    case"LAN":
+                {
+                    case "LAN":
                         return CallLocalMethod(sDllName, sClassName, sFuncName, args);
-                        break;
-                    case"WS":
-                        object obj=new object();
+
+                    case "WS":
+                        object obj = new object();
                         if (args == null)
                         {
-                            obj= _m_wsConnector.ExecFunction(sDllName, sClassName, sFuncName, args);
+                            obj = _m_wsConnector.ExecFunction(sDllName, sClassName, sFuncName, args);
                         }
                         else
                         {
@@ -1129,7 +1206,6 @@ namespace JKR.GUI.LogixConnector
                             }
                         }
                         return obj;
-                        break;
                 }
 
                 return null;
@@ -1146,7 +1222,7 @@ namespace JKR.GUI.LogixConnector
         {
             try
             {
-                string sClassName=string.Empty;
+                string sClassName = string.Empty;
                 string sDLLName = string.Empty;
                 string sFuncName = string.Empty;
                 DataRow[] rows = m_FunctionList.Tables[0].Select(" FUNCTION_CODE='" + func_code + "'");
@@ -1161,10 +1237,10 @@ namespace JKR.GUI.LogixConnector
                 switch (m_TypeOfConnection)
                 {
                     case "LAN":
-                        return (DataSet) this.CallLocalMethod(sDLLName, sClassName, sFuncName, args);
-                        
+                        return (DataSet)this.CallLocalMethod(sDLLName, sClassName, sFuncName, args);
+
                     case "WS":
-                        Byte[] bytes={};
+                        Byte[] bytes;
 
                         if (args == null)
                         {
@@ -1214,14 +1290,1424 @@ namespace JKR.GUI.LogixConnector
             }
         }
 
+        public object ExecFunctionByName(string func_code, string business_function_name, object[] args)
+        {
+
+            try
+            {
+                string sClassName = string.Empty;
+                string sDllName = string.Empty;
+                DataRow[] rows = m_FunctionList.Tables[0].Select(" FUNCTION_CODE='" + func_code + "'");
+                if (rows.Length > 0)
+                {
+                    sDllName = rows[0]["DLL_NAME"].ToString();
+                    sClassName = rows[0]["CLASS_NAME"].ToString();
+                }
+
+                switch (m_TypeOfConnection)
+                {
+                    case "LAN":
+                        return this.CallLocalMethod(sDllName, sClassName, business_function_name, args);
+                    case "WS":
+                        object obj = new object();
+                        if (args == null)
+                        {
+                            obj = m_wsConnector.ExecFunction(sDllName, sClassName, business_function_name, args);
+                        }
+                        else
+                        {
+                            object args0 = args[0];
+                            if (!args0.GetType().Name.ToUpper().Equals("DATASET"))
+                            {
+                                obj = m_wsConnector.ExecFunction(sDllName, sClassName, business_function_name, args);
+                            }
+                            else
+                            {
+                                object[] dsArgs = new object[(args.Length - 1) + 1];
+                                for (int i = 0; i <= args.Length - 1; i++)
+                                {
+                                    dsArgs[i] = Compression.CompressionDataSet((DataSet)args[i]);
+                                }
+                                obj = m_wsConnector.ExecFunctionByDataSet(sDllName, sClassName, business_function_name, dsArgs);
+                            }
+                        }
+                        return obj;
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+
+            }
+            return null;
+        }
+
+        public DataSet GetDataSetByFunctionName(string func_code, string business_function_name, object[] args)
+        {
+            try
+            {
+                string sDLLName = string.Empty;
+                string sClassName = string.Empty;
+
+                DataRow[] rows = m_FunctionList.Tables[0].Select("FUNCTION_CODE='" + func_code + "'");
+
+                if (rows.Length > 0)
+                {
+                    sDLLName = rows[0]["DLL_NAME"].ToString();
+                    sClassName = rows[0]["CLASS_NAME"].ToString();
+                }
+
+                switch (m_TypeOfConnection)
+                {
+                    case "LAN":
+                        return (DataSet)CallLocalMethod(sDLLName, sClassName, business_function_name, args);
+                    case "WS":
+                        byte[] bytes;
+                        if (args == null)
+                        {
+                            bytes = m_wsConnector.GetDataSetFunction(sDLLName, sClassName, business_function_name, args);
+                            return Compression.DecompressionDataSet(bytes);
+                        }
+                        else
+                        {
+                            if (args.Length == 0)
+                            {
+                                bytes = m_wsConnector.GetDataSetFunction(sDLLName, sClassName, business_function_name, args);
+                                return Compression.DecompressionDataSet(bytes);
+                            }
+                            else
+                            {
+                                object[] dsArgs = new object[(args.Length - 1) + 1];
+                                for (int i = 0; i < args.Length - 1; i++)
+                                {
+                                    dsArgs[i] = Compression.CompressionDataSet((DataSet)args[i]);
+                                }
+                                bytes = m_wsConnector.GetDataSetFunctionByDataSet(sDLLName, sClassName, business_function_name, dsArgs);
+                                return Compression.DecompressionDataSet(bytes);
+                            }
+                        }
+                }
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+            }
+            return null;
+        }
+
         public void ShowException(Exception e)
         {
             LogError.Write(e.Message + "\r\n" + e.StackTrace);
         }
 
+        public string GetSingleValBySQL(string sql)
+        {
+            try
+            {
+                string sResult = this.ExecFunction("COM_GETSINGLEVALUEBYSQL", new object[] { sql }).ToString();
+                return sResult;
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+                return null;
+            }
+        }
+
+        public string GetMasterSeqId()
+        {
+            try
+            {
+                string sSeqNo = this.ExecFunction("COM_GETMASTERSEQID", new object[] { "SEQ_MASTER" }).ToString();
+                return sSeqNo;
+            }
+            catch (Exception ex)
+            {
+                ShowException(ex);
+                return null;
+            }
+        }
+
+        public bool UpdateSynchDataSet(DataSet ds)
+        {
+            return Convert.ToBoolean(this.ExecFunction("COM_UPDATESYNCHDATASET", new object[] { ds }));
+        }
+
+        public DataSet GetSynchDataSet(string TableName, string KeyFieldName, string[] ignoreFields, string sLimit)
+        {
+            return this.GetDataSetFunction("COM_GETSYNCHDATASET", new object[] { TableName, sLimit });
+        }
+
         #endregion
 
+        #region 平台直接支持的函数: Login
 
+        public LogixResult Login(string user_code, string password)
+        {
+            UserInformation newUserInfo;
+
+            m_CurrentUserInformation.UserCode = user_code;
+            m_CurrentUserInformation.UserPassword = password;
+
+            try
+            {
+                try
+                {
+                    if (!m_wsConnector.TestConnection())
+                    {
+                        return LogixResult.ConnectionFailure;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return LogixResult.ConnectionFailure;
+                }
+
+                try
+                {
+                    newUserInfo = this.m_wsConnector.Login(user_code, password);
+                    if (newUserInfo == null)
+                    {
+                        return LogixResult.AuthenticationFailure;
+                    }
+                }
+                catch (Exception ex)
+                {
+                    return LogixResult.AuthenticationFailure;
+                }
+            }
+            catch (Exception ex)
+            {
+                return HandleException(ex);
+            }
+
+            //更新当前的用户信息
+            UpdateUserInfo(newUserInfo);
+
+            // 记录登陆日志
+            WriteLog(m_CurrentUserInformation.AppName, "LOGIN", "", "", "");
+
+            return LogixResult.Success;
+
+        }
+
+        private void UpdateUserInfo(UserInformation newUserInfo)
+        {
+            m_CurrentUserInformation.UserCode = newUserInfo.UserCode;
+            m_CurrentUserInformation.UserFullName = newUserInfo.UserFullName;
+            m_CurrentUserInformation.OfficeCode = newUserInfo.OfficeCode;
+            m_CurrentUserInformation.UserEmail = newUserInfo.UserEmail;
+            m_CurrentUserInformation.SubOfficeCode = newUserInfo.SubOfficeCode;
+            m_CurrentUserInformation.OfficeAndSubOffice = newUserInfo.OfficeAndSubOffice;
+            m_CurrentUserInformation.LocalCurrency = newUserInfo.LocalCurrency;
+            m_CurrentUserInformation.OfficeName = newUserInfo.OfficeName;
+            m_CurrentUserInformation.AppName = newUserInfo.AppName;
+            m_CurrentUserInformation.BuildNo = newUserInfo.BuildNo;
+            m_CurrentUserInformation.LicenseTo = newUserInfo.LicenseTo;
+            m_CurrentUserInformation.SupportURL = newUserInfo.SupportURL;
+            m_CurrentUserInformation.VersionNo = newUserInfo.VersionNo;
+            m_CurrentUserInformation.LicenseDate = newUserInfo.LicenseDate;
+            m_CurrentUserInformation.OriginalName = newUserInfo.OriginalName;
+        }
+
+        private LogixResult GetAuthorizationTicket()
+        {
+            try
+            {
+                this.m_Ticket = this.m_wsConnector.GetAuthorizationTicket(m_CurrentUserInformation.UserCode, m_CurrentUserInformation.UserPassword);
+            }
+            catch (Exception ex)
+            {
+                LogixResult GetAuthorizationTicket = this.HandleException(ex);
+                return GetAuthorizationTicket;
+            }
+            if (this.m_Ticket == null)
+            {
+                return LogixResult.AuthenticationFailure;
+            }
+            return LogixResult.Success;
+        }
+
+        public bool ChangePassword(string sUserCode, string sOldPassword, string sNewPassword)
+        {
+            bool bResult = this.m_wsConnector.ChangePassword(sUserCode, sOldPassword, sNewPassword);
+            if (bResult)
+            {
+                this.WriteLog(m_CurrentUserInformation.AppName, "CHG_PWD", "User", sUserCode, "");
+            }
+            return bResult;
+        }
+
+        public void GetConnectionString()
+        {
+            m_ConnectionString = this.m_wsConnector.GetConnectionString();
+        }
+
+        #endregion
+
+        #region GetReportTemplate
+
+        public DataSet GetReportTemplate()
+        {
+
+            ReportLoadForm rlForm = ReportLoadForm.GetInstance();
+            rlForm.StartPosition = FormStartPosition.CenterScreen;
+            rlForm.LoadReport();
+            rlForm.ShowDialog();
+            return null;
+        }
+
+        #endregion
+
+        #region Office功能
+
+        #region Intranet Message
+
+        public DataSet NewMessage(string RefType, string RefNo)
+        {
+            return this.GetDataSet("PlatformLogix", "Message", "NewData", new object[] { m_CurrentUserInformation.UserCode, 0, RefType, RefNo, "" });
+        }
+
+        public void NewMessageAndPopup(string MessageReceiver, string RefType, string RefNo, string MessageType, string MessageContent)
+        {
+            //MessageEditForm frm = new MessageEditForm("");
+            MessageEditForm frm = new MessageEditForm();
+            frm.MessageReceiver = MessageReceiver;
+            frm.RefNo = RefNo;
+            frm.RefType = RefType;
+            if (MessageType.ToString() != "")
+            {
+                frm.MessageType = MessageType;
+            }
+            frm.MessageText = MessageContent;
+            frm.ShowDialog();
+            frm.Dispose();
+        }
+
+        public bool AutoMessage(string RefType, string RefNo, string Receiver, string message_text)
+        {
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "Message", "AutoMessage", new object[] { m_CurrentUserInformation.UserCode, RefType, RefNo, Receiver, message_text }));
+        }
+
+        public bool SaveMessage(DataSet ds)
+        {
+            object[] args = new object[] { Compression.CompressionDataSet(ds) };
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunctionByDataSet(PLATFORM_LOGIX, "Message", "SaveData", args));
+        }
+
+        public int GetMyMessageCount()
+        {
+            return Convert.ToInt32(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "Message", "GetRcvMessageCount", new object[] { m_CurrentUserInformation.UserCode }));
+        }
+
+        public DataSet GetMessage(string MessageID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Message", "GetMessage", new object[] { MessageID });
+        }
+
+        public DataSet ShowMyMessageList(int bStatus)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Message", "GetRcvMessageList", new object[] { m_CurrentUserInformation.UserCode, bStatus });
+        }
+
+        public bool DeleteMessage(string UserCode, string MessageID, bool bSender)
+        {
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "Message", "DeleteMessage", new object[] { UserCode, MessageID, bSender }));
+        }
+
+        public bool MarkMessageRead(string UserCode, string MessageID)
+        {
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "Message", "MarkMessageRead", new object[] { UserCode, MessageID }));
+        }
+
+        #endregion
+
+        #region Calendar and Task List
+
+        public DataSet NewEventData(string UserCode)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Calendar", "NewData", new object[] { UserCode });
+        }
+
+        public DataSet GetEventList(DateTime DateFrom, DateTime DateTo, string UserCode)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Calendar", "GetEventList", new object[] { DateFrom, DateTo, UserCode });
+        }
+
+        public DataSet GetEventData(string EventID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Calendar", "GetData", new object[] { EventID });
+        }
+
+        public bool SaveEventData(DataSet ds)
+        {
+            object[] args = new object[] { Compression.CompressionDataSet(ds) };
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunctionByDataSet(PLATFORM_LOGIX, "Calendar", "SaveData", args));
+        }
+
+        public bool DeleteEvent(string EventID)
+        {
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "Calendar", "DeleteEvent", new object[] { EventID }));
+        }
+
+        public DataSet GetTaskList(string UserCode, string Status)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Calendar", "GetTaskList", new object[] { UserCode, Status });
+        }
+
+        public DataSet NewTaskData(string UserCode)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Calendar", "NewTask", new object[] { UserCode });
+        }
+
+        public DataSet GetTaskData(string TaskID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "Calendar", "GetTask", new object[] { TaskID });
+        }
+
+        public bool SaveTaskData(DataSet ds)
+        {
+            object[] args = new object[] { Compression.CompressionDataSet(ds) };
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunctionByDataSet(PLATFORM_LOGIX, "Calendar", "SaveTask", args));
+        }
+
+        public bool DeleteTask(string TaskID)
+        {
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "Calendar", "DeleteTask", new object[] { TaskID }));
+        }
+
+        #endregion
+
+        #region e-Learning
+
+        public DataSet GetDocumentList(string TreeID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "GetDocumentList", new object[] { TreeID });
+        }
+
+        public DataSet GetDocumentHead(string DocID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "GetDocumentHead", new object[] { DocID });
+        }
+
+        public DataSet GetDocumentBody(string DocID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "GetDocumentBody", new object[] { DocID });
+        }
+
+
+        public DataSet NewDocumentData(string UserCode, string TreeID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "NewDocumentData", new object[] { UserCode, TreeID });
+        }
+
+        public bool SaveDocumentData(DataSet ds)
+        {
+            object[] args = new object[] { Compression.CompressionDataSet(ds) };
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunctionByDataSet(PLATFORM_LOGIX, "eLearning", "SaveDocumentData", args));
+        }
+
+        public bool DeleteDocumentData(string DocID)
+        {
+            return true;
+        }
+
+        public DataSet GetDocTypeList(string UserCode)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "GetDocTypeList", new object[] { UserCode });
+        }
+
+        public DataSet NewDocTypeData(string UserCode, string ParentTreeID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "NewDocTypeData", new object[] { UserCode, ParentTreeID });
+        }
+
+        public DataSet GetRocTypeData(string TreeID)
+        {
+            return this.GetDataSet(PLATFORM_LOGIX, "eLearning", "GetRocTypeData", new object[] { TreeID });
+        }
+
+        public bool SaveDocTypeData(DataSet ds)
+        {
+            object[] args = new object[] { Compression.CompressionDataSet(ds) };
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunctionByDataSet(PLATFORM_LOGIX, "eLearning", "SaveDocTypeData", args));
+        }
+
+        public bool DeleteDocTypeData(string TreeID)
+        {
+            return Convert.ToBoolean(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "eLearning", "DeleteDocTypeData", new object[] { TreeID }));
+        }
+
+        #endregion
+
+        #endregion
+
+        #region Common Forms
+
+        public string GetMultiNumber()
+        {
+            string sMultiNumber = "";
+            MultiNumberForm frm = new MultiNumberForm();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                sMultiNumber = frm.MultiNumberString;
+            }
+            return sMultiNumber;
+        }
+
+        public string GetGoToNumber(string LabelCaption)
+        {
+            string sNo = "";
+            GoToForm frm = new GoToForm();
+            frm.ShipmentType = LabelCaption;
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                sNo = frm.ShipmentNo;
+            }
+            return sNo;
+        }
+
+        #endregion
+
+        #region 用户和公司架构信息
+
+        public DataSet GetUserList(string keyword)
+        {
+            string strLimit = "USER_CODE LIKE '%" + keyword.Replace("'", "''") + "%' OR USER_FULLNAME LIKE '%" + keyword.Replace("'", "''") + "%'";
+            return this.GetDataSet(PLATFORM_LOGIX, "User", "GetUserList", new object[] { strLimit });
+        }
+
+        public DataSet GetUserList(string OfficeCode, string DeptCode)
+        {
+            string strLimit;
+            if ((OfficeCode.ToString() == "") & (DeptCode.ToString() == ""))
+            {
+                strLimit = " 1 = 1 ";
+            }
+            else if (DeptCode.ToString() != "")
+            {
+                strLimit = " COMPANY_CODE = '" + OfficeCode.ToString().Replace("'", "''") + "' and DEPARTMENT_CODE = '" + DeptCode.ToString().Replace("'", "''") + "'";
+            }
+            else
+            {
+                strLimit = " COMPANY_CODE = '" + OfficeCode.ToString().Replace("'", "''") + "' ";
+            }
+            return this.GetDataSet(PLATFORM_LOGIX, "User", "GetUserList", new object[] { strLimit });
+        }
+
+        public string GetMyTeamLeader(string UserCode)
+        {
+            return Convert.ToString(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "User", "GetMyTeamLeader", new object[Conversions.ToInteger(UserCode) + 1]));
+        }
+
+        public string GetMyDeptManager(string UserCode)
+        {
+            return Convert.ToString(this.m_wsConnector.ExecFunction(PLATFORM_LOGIX, "User", "GetMyDeptManager", new object[Conversions.ToInteger(UserCode) + 1]));
+        }
+
+        #endregion
+
+        #region 发邮件功能
+
+        public bool OpenEmail(string EmailAddress, string Subject, string[] Body, string cc, string att)
+        {
+            string bodyText=string.Empty;
+            bool bAns = true;
+            string sParams = EmailAddress;
+            if (sParams.Trim() != "")
+            {
+                if ((sParams.Substring(1, 7)).ToLower() != "mailto:")
+                {
+                    sParams = "mailto:" + sParams;
+                }
+            }
+            else
+            {
+                sParams = "mailto:";
+            }
+            if (Subject != "")
+            {
+                sParams = sParams + "?subject=" + Subject;
+            }
+            if (Body.Length != 0)
+            {
+                for (int index = 0; index <= Body.Length - 1; index++)
+                {
+                    bodyText = bodyText + Body[index] + "%0a%0d";
+                }
+            }
+            else
+            {
+                bodyText = string.Empty;
+            }
+            if (bodyText != "")
+            {
+                sParams = sParams + Subject == "" ? "?" : "&";
+                sParams = sParams + "body=" + bodyText;
+            }
+            if (cc != "")
+            {
+                sParams = sParams + "&cc=" + cc;
+            }
+            if (att != "")
+            {
+                sParams = sParams + "&attach=@" + att;
+            }
+            Process myProcess = new Process();
+            myProcess.StartInfo.FileName = sParams;
+            myProcess.StartInfo.UseShellExecute = true;
+            myProcess.StartInfo.RedirectStandardOutput = false;
+            try
+            {
+                myProcess.Start();
+            }
+            catch (Exception)
+            {
+
+                bAns = false;
+
+            }
+            return bAns;
+        }
+
+        #endregion
+
+        #region AutoUpdate
+
+        public string GetCurrentVersion()
+        {
+            return this.m_wsConnector.GetCurrentVersion();
+        }
+
+        public DataSet GetUpdateFileList(string VersionNo)
+        {
+            return this.m_wsConnector.GetUpdateFileList(VersionNo);
+        }
+
+        public object GetUpdateSinigleFile(string FileID)
+        {
+            return this.m_wsConnector.GetUpdateSingleFile(FileID);
+        }
+ 
+        #endregion
+
+        #region Privilege
+
+        public string GetGroupUsersByUserCode(string user_code)
+        {
+            string command = UIProxy.m_CurrentCommandCode;
+            string strsql = string.Empty;
+            strsql = "SELECT ROLE2P.USER_GROUP_CODES                   ";
+            strsql += "  FROM                                           ";
+            strsql += "  D_ROLE2PRIVILEGE ROLE2P,                       ";
+            strsql += "  D_USER2GROUP USER2G,                           ";
+            strsql += "  D_USER2ROLE USER2ROLE                          ";
+            strsql += " WHERE ROLE2P.ROLE_CODE = USER2ROLE.ROLE_CODE    ";
+            strsql += "   AND USER2G.USER_CODE = USER2ROLE.USER_CODE    ";
+            strsql += "   AND USER2ROLE.USER_CODE = '" + user_code + "'";
+            strsql += "   AND SUBSTR(ROLE2P.PRIVILEGE_ID, 0, 4) = '" + command + "'";
+            strsql += "   AND ROLE2P.USER_GROUP_CODES IS NOT NULL       ";
+            strsql += "   AND ROLE2P.DATA_OWNER_LEVEL=1                 ";
+            strsql += "   AND ROWNUM = 1                                ";
+
+            string groups = this.GetSingleValBySQL(strsql);
+            if (groups == "")
+            {
+                strsql = "SELECT DISTINCT USER_CODE  " +
+                    "  FROM D_USER2GROUP " +
+                    " WHERE USER_GROUP_CODE  " +
+                    "    IN (SELECT USER_GROUP_CODE FROM D_USER2GROUP WHERE USER_CODE = '" + user_code + "') ";
+            }
+            else
+            {
+                string[] group_array = groups.Split(new char[] { ',' });
+                string user_group_code = string.Empty;
+                foreach (string user in group_array)
+                {
+                    user_group_code = user_group_code + "'" + user + "',";
+                }
+                strsql = "SELECT DISTINCT USER_CODE  " +
+                             "  FROM D_USER2GROUP " +
+                             " WHERE USER_GROUP_CODE  " +
+                             "    IN (" + user_group_code.TrimEnd(',') + ") ";
+            }
+
+            return strsql;
+
+        }
+
+        public void LoadPrivileges()
+        {
+
+            DataSet ds = this.m_wsConnector.LoadPrivileges(m_CurrentUserInformation.UserCode);
+
+            if (m_Privileges == null)
+            {
+                m_Privileges = new ArrayList();
+            }
+
+            m_Privileges.Clear();
+
+            foreach (DataRow dr in ds.Tables[0].Rows)
+            {
+                if (dr["PRIVI_SELF"].ToString().Equals("1"))
+                {
+                    m_Privileges.Add(dr["PRIVILEGE_ID"].ToString());
+                }
+                if (dr["PRIVI_GROUP"].ToString() == "1")
+                {
+                    m_Privileges.Add(dr["PRIVILEGE_ID"].ToString() + ".G");
+                }
+            }
+
+            m_GroupUsers = this.GetGroupUsersByUserCode(m_CurrentUserInformation.UserCode);
+            userList.Remove(0, userList.Length);
+            if (ds.Tables[1].Rows.Count >= 800)
+            {
+                int j = 0;
+                int i = 0;
+                foreach (DataRow drUser in ds.Tables[1].Rows)
+                {
+                    if ((j == 800) & ((i * 800) != ds.Tables[1].Rows.Count))
+                    {
+                        userList.Append(") or {0} in ('" + drUser["USER_CODE"].ToString().Replace("'", "''") + "',");
+                        i++;
+                        j = 0;
+                    }
+                    else
+                    {
+                        if (j == 0x31f)
+                        {
+                            userList.Append("'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'");
+                        }
+                        else
+                        {
+                            userList.Append("'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "',");
+                        }
+                    }
+                    j++;
+                }
+            }
+            else
+            {
+
+                foreach (DataRow drUser in ds.Tables[1].Rows)
+                {
+
+                    if (userList.Length == 0)
+                    {
+                        userList.Append("'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'");
+                    }
+                    else
+                    {
+                        userList.Append(",'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'");
+                    }
+                }
+
+            }
+
+            foreach (DataRow drUser in ds.Tables[1].Rows)
+            {
+
+                if (m_UserList.Trim() == "")
+                {
+                    m_UserList = "'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'";
+                }
+                else
+                {
+                    m_UserList = m_UserList + ",'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'";
+                }
+            }
+
+            ds.Dispose();
+        }
+
+        public void SetPriviledgeByCommand(string user_code)
+        {
+            string command = UIProxy.m_CurrentCommandCode;
+            string strsql = string.Empty;
+            strsql = "SELECT ROLE2P.USER_GROUP_CODES                   ";
+            strsql += "  FROM                                           ";
+            strsql += "  D_ROLE2PRIVILEGE ROLE2P,                       ";
+            strsql += "  D_USER2GROUP USER2G,                           ";
+            strsql += "  D_USER2ROLE USER2ROLE                          ";
+            strsql += " WHERE ROLE2P.ROLE_CODE = USER2ROLE.ROLE_CODE    ";
+            strsql += "   AND USER2G.USER_CODE = USER2ROLE.USER_CODE    ";
+            strsql += "   AND USER2ROLE.USER_CODE = '" + user_code + "'";
+            strsql += "   AND SUBSTR(ROLE2P.PRIVILEGE_ID, 0, 4) = '" + command + "'";
+            strsql += "   AND ROLE2P.USER_GROUP_CODES IS NOT NULL       ";
+            strsql += "   AND ROLE2P.DATA_OWNER_LEVEL=1                 ";
+            strsql += "   AND ROWNUM = 1                                ";
+
+            string groups = this.GetSingleValBySQL(strsql);
+
+            if (!string.IsNullOrEmpty(groups))
+            {
+                string[] group_array = groups.Split(new char[] { ',' });
+                string user_group_code = string.Empty;
+
+                foreach (string user in group_array)
+                {
+                    user_group_code = user_group_code + "'" + user + "',";
+                }
+
+                strsql = "SELECT DISTINCT USER_CODE  " +
+                       "  FROM D_USER2GROUP " +
+                       " WHERE USER_GROUP_CODE  " +
+                       "    IN (" + user_group_code.TrimEnd(',') + ") ";
+
+                DataSet ds = this.GetDataSetByFunctionName("COM_ROLE_SAVEDATA", "GetUserCodeByGroup", new object[] { strsql });
+                userList.Remove(0, userList.Length);
+                if (ds.Tables[0].Rows.Count >= 800)
+                {
+                    int j = 0;
+                    int i = 0;
+
+                    foreach (DataRow drUser in ds.Tables[0].Rows)
+                    {
+                        if (j == 800 && i * 800 != ds.Tables[0].Rows.Count)
+                        {
+                            userList.Append(") or {0} in ('" + drUser["USER_CODE"].ToString().Replace("'", "''") + "',");
+                            i++;
+                            j = 0;
+                        }
+                        else
+                        {
+                            if (j == 0x31f)
+                            {
+                                userList.Append("'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'");
+                            }
+                            else
+                            {
+                                userList.Append("'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "',");
+                            }
+                            j++;
+                        }
+                    }
+                }
+                else
+                {
+                    foreach (DataRow drUser in ds.Tables[0].Rows)
+                    {
+                        if (userList.Length == 0)
+                        {
+                            userList.Append("'" + drUser["USER_CODE"].ToString().Replace("'", "''"));
+                        }
+                        else
+                        {
+                            userList.Append(",'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'");
+                        }
+                    }
+                }
+
+                foreach (DataRow drUser in ds.Tables[1].Rows)
+                {
+                    if (m_UserList.Trim() == "")
+                    {
+                        m_UserList = "'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'";
+                    }
+                    else
+                    {
+                        m_UserList = m_UserList + ",'" + drUser["USER_CODE"].ToString().Replace("'", "''") + "'";
+                    }
+                }
+
+            }
+            else
+            {
+                this.LoadPrivileges();
+            }
+        }
+
+        public bool CheckPrivilege(string PrivilegeID)
+        {
+            if (m_Privileges.IndexOf(PrivilegeID) == -1)
+            {
+                return false;
+            }
+            return true;
+        }
+
+        public string GenPrivilegeClause(string PrivilegeID, string sField)
+        {
+            string s = "";
+            if (PrivilegeID == "")
+            {
+                return "";
+            }
+            if (this.CheckPrivilege(PrivilegeID))
+            {
+                s = sField + " = '" + m_CurrentUserInformation.UserCode + "'";
+            }
+            if (this.CheckPrivilege(PrivilegeID + ".G") & (userList.Length != 0))
+            {
+                s = sField + " IN ( " + string.Format(userList.ToString().TrimEnd(new char[] { ',' }), sField) + " )";
+            }
+            if (s != "")
+            {
+                s = " AND  ( " + s + " OR " + sField + "='' OR " + sField + " IS NULL) ";
+            }
+            else
+            {
+                s = " AND  ( 1 = 0 ) ";
+            }
+            return s;
+        }
+
+        public string GenPrivilegeClause(string PrivilegeID, string sField, bool isSql)
+        {
+            string s = "";
+            if (PrivilegeID == "")
+            {
+                return "";
+            }
+            if (this.CheckPrivilege(PrivilegeID))
+            {
+                s = sField + " = '" + m_CurrentUserInformation.UserCode + "'";
+            }
+            if (this.CheckPrivilege(PrivilegeID + ".G") & (userList.Length != 0))
+            {
+                s = sField + " IN ( " + m_GroupUsers + " )";
+            }
+            if (s != "")
+            {
+                s = " AND  ( " + s + " OR " + sField + "='' OR " + sField + " IS NULL) ";
+            }
+            else
+            {
+                s = " AND  ( 1 = 0 ) ";
+            }
+            return s;
+        }
+
+        public string GenPrivilegeClause(string PrivilegeID, string[] sField)
+        {
+            string s = "";
+            string sResult = "";
+            if (PrivilegeID == "")
+            {
+                return "";
+            }
+            for (int i = 0; i <= sField.Length; i++)
+            {
+                if (this.CheckPrivilege(PrivilegeID))
+                {
+                    s = sField[i] + " = '" + m_CurrentUserInformation.UserCode + "'";
+                }
+                if (this.CheckPrivilege(PrivilegeID + ".G") & (userList.Length != 0))
+                {
+                    s = sField[i] + " IN ( " + string.Format(userList.ToString().TrimEnd(new char[] { ',' }), sField[i]) + " )";
+                }
+                if (s != "")
+                {
+                    s = " ( " + s + " OR " + sField[i] + "='' OR " + sField[i] + " IS NULL) ";
+                }
+                else
+                {
+                    s = " ( 1 = 0 ) ";
+                }
+                if (sResult != "")
+                {
+                    sResult = sResult + " OR " + s;
+                }
+                else
+                {
+                    sResult = s;
+                }
+            }
+            return (" AND (" + sResult + ")");
+        }
+
+        public string GenPrivilegeClause(string PrivilegeID, string[] sField, bool isSQL)
+        {
+            string s = "";
+            string sResult = "";
+            if (PrivilegeID == "")
+            {
+                return "";
+            }
+            for (int i = 0; i <= sField.Length; i++)
+            {
+                if (this.CheckPrivilege(PrivilegeID))
+                {
+                    s = sField[i] + " = '" + m_CurrentUserInformation.UserCode + "'";
+                }
+                if (this.CheckPrivilege(PrivilegeID + ".G") & (userList.Length != 0))
+                {
+                    s = sField[i] + " IN ( " + m_GroupUsers + " )";
+                }
+                if (s != "")
+                {
+                    s = " ( " + s + " OR " + sField[i] + "='' OR " + sField[i] + " IS NULL) ";
+                }
+                else
+                {
+                    s = " ( 1 = 0 ) ";
+                }
+                if (sResult != "")
+                {
+                    sResult = sResult + " OR " + s;
+                }
+                else
+                {
+                    sResult = s;
+                }
+            }
+            return (" AND (" + sResult + ")");
+        }
+
+        public bool HavePrivilegeByDataOwner(string PrivilegeID, string sDataOwner)
+        {
+            if (CheckPrivilege(PrivilegeID + ALL_PRIVILEGE_SUFFIX))
+            {
+                return true;
+            }
+
+            if (CheckPrivilege(PrivilegeID + GROUP_PRIVILEGE_SUFFIX) && (m_UserList.ToUpper().IndexOf(sDataOwner.ToUpper().Replace("'", "''")) >= 0))
+            {
+                return true;
+            }
+
+            if (sDataOwner == null)
+            {
+                return true;
+            }
+
+            if (CheckPrivilege(PrivilegeID))
+            {
+                if ((m_CurrentUserInformation.UserCode.ToUpper() == sDataOwner) || (sDataOwner.ToString() == ""))
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
+
+        public bool HavePrivilegeByDataOwner(string PrivilegeID, string[] sDataOwner)
+        {
+
+            if (CheckPrivilege(PrivilegeID + ALL_PRIVILEGE_SUFFIX))
+            {
+                return true;
+            }
+
+            if (sDataOwner == null)
+            {
+                return true;
+            }
+
+            for (int i = 0; i < sDataOwner.Length; i++)
+            {
+                if ((CheckPrivilege(PrivilegeID + GROUP_PRIVILEGE_SUFFIX) && m_UserList.ToUpper().IndexOf(sDataOwner[i].ToUpper().Replace("'", "''")) >= 0))
+                {
+                    return true;
+                }
+
+                if (CheckPrivilege(PrivilegeID))
+                {
+                    if ((m_CurrentUserInformation.UserCode.ToUpper() == sDataOwner[i]) || (sDataOwner.ToString() == ""))
+                    {
+                        return true;
+                    }
+                }
+            }
+
+            return false;
+        }
+
+        #endregion
+
+        #region Logs
+
+        public DataSet LoadLogs(string sLimit)
+        {
+            return this.m_wsConnector.LoadLogs(sLimit);
+        }
+
+        public bool DeleteLogs(string id)
+        {
+            return this.m_wsConnector.DeleteLogs(id);
+        }
+
+        public bool WriteLog(string ModuleCode, string EventCode, string DataType, string RefNo, string Remark)
+        {
+            LogInformation log = new LogInformation();
+            log.ModuleCode = ModuleCode;
+            log.EventCode = EventCode;
+            log.UserCode = m_CurrentUserInformation.UserCode;
+            log.CompanyCode = m_CurrentUserInformation.OfficeCode;
+            log.DataType = DataType;
+            log.RefNo = RefNo;
+            log.Remark = Remark;
+            return this.WriteLogInternal(log);
+        }
+
+        private bool WriteLogInternal(LogInformation Log)
+        {
+            return this.m_wsConnector.WriteLog(Log);
+        }
+
+        #endregion
+
+        #region License
+        #endregion
+
+        #region Command Desc
+
+        public DataSet GetDescByCommandCode(string commandCode)
+        {
+            return this.m_wsConnector.GetDescByCommandCode(commandCode);
+        }
+
+        #endregion
+
+        #region GetSqlFromTo
+
+        public static string GetSqlFromTo(string fieldName, DateTime dateFrom, DateTime dateTo)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, dateFrom, dateTo);
+        }
+
+        public static string GetSqlFromTo(string fieldName, DateTime dateFrom)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, dateFrom);
+        }
+
+        public static string GetSqlFromTo(string fieldName, RadDateTimePicker dateFrom, RadDateTimePicker dateTo)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, dateFrom, dateTo);
+        }
+
+        public static string GetSqlFromTo(string fieldName, RadDateTimePicker dateFrom)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, dateFrom);
+        }
+
+        public static string GetSqlFromTo(string fieldName, string valueFrom, string valueTo, bool isBlurry)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, valueFrom, valueTo, isBlurry);
+        }
+
+        public static string GetSqlFromTo(string fieldName, string valueFrom, string valueTo)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, valueFrom, valueTo, true);
+        }
+
+        public static string GetSqlFromTo(string fieldName, string valueFrom)
+        {
+            return OracleSqlHelper.GetSqlFromTo(fieldName, valueFrom, "", true);
+        }
+
+        #endregion
+
+        #region ServicePortal
+
+        private static readonly EnvironmentSetting localSet = new EnvironmentSetting(GetCurrentUserFolder() + @"\LocalSetting.Xml");
+        private static string url;
+
+        public static void SetServicePortalAddress(string bCode)
+        {
+            url = GetLSCUrl(bCode);
+            if (url.Trim() != "")
+            {
+                CurrentCAService.Url = url + "ws/CertificateService.asmx";
+            }
+            else
+            {
+                CurrentCAService.Url = "http://www.cargob2b.com/ServicePortal/ws/CertificateService.asmx";
+            }
+            if (url.Trim() != "")
+            {
+                CurrentBSService.Url = url + "ws/BusinessService.asmx";
+            }
+            else
+            {
+                CurrentBSService.Url = "http://www.cargob2b.com/ServicePortal/ws/BusinessService.asmx";
+            }
+        }
+
+        public static ServicePortalInfo CurrentServiceProtalPara;
+
+        public struct ServicePortalInfo
+        {
+            public string LSCUrl;
+            public string BCode;
+            public string UserCode;
+        }
+
+        public class ServicePortalEventArgs : EventArgs
+        {
+            // Fields
+            public UIProxy.ServicePortalInfo ServicePortalInfo;
+
+            // Methods
+            public ServicePortalEventArgs();
+        }
+
+        public enum ServicePortalStatus
+        {
+            UnLogin = 0,
+            Login = 1
+        }
+
+        public static event ServicePortalHandler ServicePortalLogin;
+        public delegate void ServicePortalHandler(object sender, UIProxy.ServicePortalEventArgs value);
+        public static object CurrentServicePortalStatus = ServicePortalStatus.UnLogin;
+        public static string CurrentServiceQSKey;
+        private static ServicePortalHandler ServicePortalLoginEvent;
+
+
+        public static void LoginServicePortal(string bCode, string userCode, string pwd)
+        {
+            if (bCode.ToUpper().Equals("GM"))
+            {
+                CurrentCAServiceGM.Login(bCode, userCode, pwd);
+                CurrentServiceQSKey = "0077";
+            }
+            else
+            {
+                CurrentCAService.Login(bCode, userCode, pwd);
+                CurrentServiceQSKey = _BusinessService.GetQueryStringKey();
+            }
+            CurrentServiceProtalPara.LSCUrl = url;
+            CurrentServiceProtalPara.BCode = bCode;
+            CurrentServiceProtalPara.UserCode = userCode;
+            ServicePortalEventArgs arg = new ServicePortalEventArgs();
+            arg.ServicePortalInfo = CurrentServiceProtalPara;
+            CurrentServicePortalStatus = ServicePortalStatus.Login;
+            ServicePortalHandler ServicePortalLogin = ServicePortalLoginEvent;
+            if (ServicePortalLogin != null)
+            {
+                ServicePortalLogin("Login", arg);
+            }
+        }
+
+
+        private static JKR.GUI.LogixConnector.BusinessService.BusinessService _BusinessService;
+        private static JKR.GUI.LogixConnector.CertificateService.CertificateService _CertificateService;
+        private static CookieContainer _CookieContainer;
+        private static BusinessService _BusinessServiceGM;
+        private static CertificateService _CertificateServiceGM;
+
+        public static CertificateService.CertificateService CurrentCAService
+        {
+            get
+            {
+                if (_CertificateService == null)
+                {
+                    _CertificateService = new CertificateService.CertificateService();
+                    _CertificateService.CookieContainer = _CookieContainer;
+                }
+                return _CertificateService;
+            }
+        }
+
+
+        public static CertificateService CurrentCAServiceGM
+        {
+            get
+            {
+                if (_CertificateServiceGM == null)
+                {
+                    _CertificateServiceGM = new CertificateService();
+                    _CertificateServiceGM.CookieContainer = _CookieContainer;
+                }
+                return _CertificateServiceGM;
+            }
+        }
+
+        public static BusinessService.BusinessService CurrentBSService
+        {
+            get
+            {
+                if (_BusinessService == null)
+                {
+                    _BusinessService = new BusinessService.BusinessService();
+                    _BusinessService.CookieContainer = _CookieContainer;
+                }
+                return _BusinessService;
+            }
+        }
+
+        public static BusinessService CurrentBSServiceGM
+        {
+            get
+            {
+                if (_BusinessServiceGM == null)
+                {
+                    _BusinessServiceGM = new BusinessService();
+                    _BusinessServiceGM.CookieContainer = _CookieContainer;
+                }
+                return _BusinessServiceGM;
+            }
+        }
+
+        private static string GetLSCUrl(string bCode)
+        {
+            string GetLSCUrl;
+            CertificateService b2bCA = new CertificateService();
+            string url = localSet.Read("ServicePortal", "Url", "");
+            if (url == string.Empty)
+            {
+                b2bCA.Url = "http://www.cargob2b.com/cargob2b/ws/CertificateService.asmx";
+            }
+            else
+            {
+                b2bCA.Url = url + "/ws/CertificateService.asmx";
+                if (bCode.ToUpper().Equals("GM"))
+                {
+                    CurrentCAServiceGM.Url = url + "/ws/CertificateService.asmx";
+                    CurrentBSServiceGM.Url = url + "/ws/BusinessService.asmx";
+                    return url;
+                }
+            }
+            try
+            {
+                GetLSCUrl = b2bCA.GetServicePortalURL(bCode);
+            }
+            catch (System.Web.Services.Protocols.SoapException ex)
+            {
+                return string.Empty;
+            }
+            return GetLSCUrl;
+        }
+
+        public static string getExtensionCustomUrl()
+        {
+            return _m_ExtensionCustomWSUrl;
+        }
+
+        public static string Encrypt3DES(string a_strString)
+        {
+            string a_strKey = CurrentBSService.GetQueryStringKey();
+            Encoding encoding = Encoding.Unicode;
+            TripleDESCryptoServiceProvider provider1 = new TripleDESCryptoServiceProvider();
+            provider1.Key = new MD5CryptoServiceProvider().ComputeHash(encoding.GetBytes(a_strKey));
+            provider1.Mode = CipherMode.ECB;
+            ICryptoTransform transform1 = provider1.CreateEncryptor();
+            byte[] buffer1 = encoding.GetBytes(a_strString);
+            return Convert.ToBase64String(transform1.TransformFinalBlock(buffer1, 0, buffer1.Length));
+        }
+
+        #endregion
+
+        #region 得到检索数据条数
+
+        public string GetRecordCountByDataSet(DataTable dt)
+        {
+            if (dt == null)
+            {
+                return string.Empty;
+            }
+            string str = string.Empty;
+            if (Language == LanguageType.Chinese)
+            {
+                str = "共检索到数据 " + Convert.ToString(dt.Rows.Count) + " 条";
+            }
+            else
+            {
+                str = "Search Data " + Convert.ToString(dt.Rows.Count) + " rows";
+            }
+            return str;
+        }
+
+        #endregion
+
+        #region getRowNum
+
+        public string GetInitRowNum(RadTextBox ctr, bool isSearch)
+        {
+            if (ctr == null)
+            {
+                return localSet.Read("RowNum", "R" + m_CurrentCommandCode, "500");
+            }
+            if (isSearch)
+            {
+                if (ctr.Text == string.Empty)
+                {
+                    ctr.Text = localSet.Read("RowNum", "R" + m_CurrentCommandCode, "500");
+                    return ctr.Text;
+                }
+
+                if (IsNum(ctr.Text))
+                {
+                    ctr.Text = localSet.Read("RowNum", "R" + m_CurrentCommandCode, "500");
+                }
+                return ctr.Text;
+            }
+            ctr.Text = localSet.Read("RowNum", "R" + m_CurrentCommandCode, "500");
+            return ctr.Text;
+        }
+
+        /// <summary>
+        /// 新增代替VB中IsNumeric方法     
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public static bool IsNum(String str)
+        {
+            for (int i = 0; i < str.Length; i++)
+            {
+                if (!Char.IsNumber(str, i))
+                    return false;
+            }
+            return true;
+        }
+
+        #endregion
+
+        #region eFile
+
+        //private static FileService _eFileService;
+
+        //private static string m_eFileUrl = "";
+
+        //public static FileService CurrentEFileService
+        //{
+        //    get
+        //    {
+        //        if (_eFileService == null)
+        //        {
+        //            _eFileService = new FileService();
+        //            _eFileService.Url = m_eFileUrl + "/FileService.asmx";
+        //            _eFileService.CookieContainer = _CookieContainer;
+        //        }
+        //        return _eFileService;
+        //    }
+        //}
+
+
+        //public static void SetEFileParams()
+        //{
+        //    m_eFileUrl = localSet.Read("eFile", "Url", "");
+        //}
+
+        //public static DataSet GetEFileType()
+        //{
+        //    return CurrentEFileService.GetAllFileType();
+        //}
+
+        //public static DataSet GetEFileAttribute(string typeId)
+        //{
+        //    return CurrentEFileService.GetAttributeByFileType(typeId);
+        //}
+
+        //public static bool UploadEFile(E_FILE_HEADEntity eFileEntity)
+        //{
+        //    bool UploadEFile;
+        //    try
+        //    {
+        //        string a = StringUtil.ObjectToString(eFileEntity);
+        //        CurrentEFileService.UploadFile(a);
+        //        UploadEFile = true;
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return false;
+        //    }
+        //}
+
+        #endregion
 
         #region  [CAC]
 
