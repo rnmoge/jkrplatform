@@ -751,17 +751,18 @@ namespace JKR.GUI.LogixConnector
 
         private DataSet GetDataSet(string sDllName, string sClassName, string sFuncName, object[] args)
         {
-            DataSet GetDataSet;
+          
             try
             {
-                GetDataSet = Compression.DecompressionDataSet(this.m_wsConnector.GetDataSetFunction(sDllName, sClassName, sFuncName, args));
+                return GetDataSet = Compression.DecompressionDataSet(this.m_wsConnector.GetDataSetFunction(sDllName, sClassName, sFuncName, args));
             }
             catch (Exception ex)
             {
                 throw ex;
+                return null;
 
             }
-            return GetDataSet;
+         
         }
 
         #endregion
@@ -929,21 +930,6 @@ namespace JKR.GUI.LogixConnector
             {
                 this.m_StatusBar.BackColor = Color.Yellow;
                 this.m_StaticItemHint.Tag = msg;
-                //Interaction.Beep();
-            }
-        }
-
-        /// <summary>
-        /// 显示警告信息,并且发出警告声
-        /// </summary>
-        /// <param name="hmt"></param>
-        public void ShowErrorMsg(HintMessageType hmt)
-        {
-            ResourceManager Resource = new ResourceManager("JKR.GUI.LogixConnector.Message", Assembly.GetExecutingAssembly());
-            if (!((this.m_StatusBar == null) | (this.m_StaticItemHint == null)))
-            {
-                this.m_StatusBar.BackColor = Color.Red;
-                this.m_StaticItemHint.Tag = Resource.GetString(hmt.ToString());
                 //Interaction.Beep();
             }
         }

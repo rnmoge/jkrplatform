@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using JKR.GUI.LogixConnector;
 using System.Data;
+using Telerik.WinControls.UI;
 
 namespace JKRPlatform
 {
@@ -48,7 +49,23 @@ namespace JKRPlatform
             return proxy.GetDataSetFunction(functionCode, arg);
         }
 
- 
+        public static DataRow GetSelectedDataRow(RadGridView grd)
+        {
+            try
+            {
+                GridViewDataRowInfo dataRowInfo = grd.CurrentRow as GridViewDataRowInfo;
+                if (dataRowInfo != null)
+                {
+                    int index = dataRowInfo.Index;
+                    DataRow dr = grd.CurrentRow[index];
+                }
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+
+        }
 
  
 
