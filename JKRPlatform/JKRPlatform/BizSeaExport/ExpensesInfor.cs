@@ -10,13 +10,16 @@ using JKR.GUI.LogixConnector;
 using JKR.Cargo.Common;
 using JKR.Cargo.PubFunction;
 using JKR.GUI.BaseForm;
+using Telerik.WinControls.UI;
+using JKR.Cargo.Common.SelectForm;
+using JKR.Cargo.Sales;
 
 namespace JKRPlatform.BizSeaExport
 {
     public partial class ExpensesInfor :Form //BasePopupEditForm
     {
         private DataSet m_ds;
-        private UIProxy m_Uip;
+        private UIProxy m_Uip = UIProxy.GetInstance();
 
         public ExpensesInfor()
         {
@@ -68,7 +71,7 @@ namespace JKRPlatform.BizSeaExport
             try
             {
                 //xtz 09.03.12 更新人 更新时间
-                m_ds.Tables["IFM_FREIGHT_SCHEDULE"].Rows[0]["UPDATE_BY"] = m_Uip.m_CurrentUserInformation.UserCode;
+                m_ds.Tables["IFM_FREIGHT_SCHEDULE"].Rows[0]["UPDATE_BY"] = UIProxy.m_CurrentUserInformation.UserCode;
                 m_ds.Tables["IFM_FREIGHT_SCHEDULE"].Rows[0]["UPDATE_DATE"] = DateTime.Now;
                 m_Uip.ExecFunctionByName("SLS_FREIGHTSCHEDULE_GETLIST", "SaveData", new object[] { m_ds });
 
@@ -179,6 +182,63 @@ namespace JKRPlatform.BizSeaExport
 
         #endregion
 
+        private void edtCUSTOMER_CODE_Click(object sender, EventArgs e)
+        {
+            string s;
+            if(this.edtCUSTOMER_CODE.RootElement.ToolTipText=="")
+            {
+                s="1=1";
+            }       
+            else
+            {
+                s = this.edtCUSTOMER_CODE.RootElement.ToolTipText;
+                //s = ((ButtonEdit)sender).ToolTip;
+            }
+
+            SelectCustomerForm frm = new SelectCustomerForm(s, "");
+           
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                this.edtCUSTOMER_CODE.Text = frm.Customer_Code;
+                //((ButtonEdit)sender).Text = frm.Customer_Code;
+            }
+            frm.Dispose();
+
+        }
+
+        private void btnAdd_Click(object sender, EventArgs e)
+        {
+            this.BindingContext[this.m_ds.Tables["IFM_FREIGHT_ITEM"]].EndCurrentEdit();
+            DataRow Row = this.m_ds.Tables["IFM_FREIGHT_ITEM"].NewRow();
+            Row["FREIGHT_SCHEDULE_ID"] =this.m_ds.Tables["IFM_FREIGHT_SCHEDULE"].Rows[0]["FREIGHT_SCHEDULE_ID"];
+            Row["FREIGHT_ITEM_ID"] = this.m_Uip.GetMasterSeqId();
+            Row["CREATE_BY"] = UIProxy.m_CurrentUserInformation.UserCode;
+            Row["CREATE_DATE"] = UIProxy.m_CurrDateTime;
+            Row["ACCOUNTS_TYPE"] = "CU";
+            Row["UNIT_TYPE"] = "JOB";
+            Row["PRICE"] = 0;
+            Row["CURRENCY_CODE"] = UIProxy.m_CurrentUserInformation.LocalCurrency;
+            Row["PP_CC"] = "C";
+            this.m_ds.Tables["IFM_FREIGHT_ITEM"].Rows.Add(Row);
+
+        }
+
+        private void btnRemove_Click(object sender, EventArgs e)
+        {
+            Common.GetSelectedDataRow(this.grdItems).Delete();           
+        }
+
+        private void RepositoryItemButtonEditAccountsCode_ButtonClick(object sender, GridViewCollectionChangingEventArgs e)
+        {
+            SelectCustomerForm frm = new SelectCustomerForm("1=1", "");
+            frm.Customer_Code =((RadMultiColumnComboBox)sender).Text.Trim();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                ((RadMultiColumnComboBox)sender).Text = frm.Customer_Code;
+            }
+        }
+
+
         private void FREIGHTITEMCellChange(object sender, DataColumnChangeEventArgs e)
         {
             if (e.Column.ColumnName.ToUpper() == "AR_AP")
@@ -210,8 +270,49 @@ namespace JKRPlatform.BizSeaExport
             }
         }
 
+        private void edtJOB_TYPE_SelectedValueChanged(object sender, EventArgs e)
+        {
+            if ((this.edtJOB_TYPE.SelectedValue.ToString().Trim() != "") & (this.edtJOB_TYPE.SelectedValue.ToString().Trim().Trim() != "(All)"))
+            {
+                this.LoadChargeTypes(this.edtJOB_TYPE.SelectedValue.ToString().Trim());
+            }
 
+        }
 
+        private void edtJOB_TYPE_EditValueChanged1(object sender, EventArgs e)
+        {
+            if (this.edtJOB_TYPE.SelectedValue.ToString().Trim() != string.Empty)
+            {
+                //LookupData.SetContainerComboboxOrUnitType(this.RadMultiColumnComboBox, this.m_Uip, this.edtJOB_TYPE.SelectedValue.ToString().Trim());
+            }
+        }
+
+        private void edtPort_Click(object sender, EventArgs e)
+        {
+            SelectPortForm frm = new SelectPortForm();
+            frm.KeyWord = this.edtPort.Text.Trim();
+            if (frm.ShowDialog() == DialogResult.OK)
+            {
+                this.edtPort.Text = frm.PortCode.ToString(); ;
+            }
+
+        }
+
+        private void RepositoryItemButtonEditCALC_REMARK_ButtonClick(object sender, GridViewCollectionChangingEventArgs e)
+        {
+            string jobType = this.m_ds.Tables["IFM_FREIGHT_SCHEDULE"].Rows[0]["JOB_TYPE"].ToString();
+            CaleRemarkForm frm = new CaleRemarkForm();
+            frm.GetCale_Remark = ((RadMultiColumnComboBox)sender).Text.Trim();
+            if (frm.ShowDialog() == DialogResult.Yes)
+            {
+                ((RadMultiColumnComboBox)sender).Text = frm.GetCale_Remark;
+            }
+        }
+
+        private void edtCarrier_SelectedValueChanged(object sender, EventArgs e)
+        {
+            //LookupData.SetAccCodeLookUp(edtCarrier, m_Uip, "B_CARRIER='1'", "B_SEA_EXPORT='1'");
+        }
 
     }
 }

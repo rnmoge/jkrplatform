@@ -28,19 +28,19 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn14 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn15 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn16 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn17 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn18 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn19 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn20 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn21 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn22 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn23 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn24 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn25 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
-            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn26 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn1 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn1 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn2 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn2 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn3 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn4 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn5 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewMultiComboBoxColumn gridViewMultiComboBoxColumn3 = new Telerik.WinControls.UI.GridViewMultiComboBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn6 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn7 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn8 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn9 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
+            Telerik.WinControls.UI.GridViewTextBoxColumn gridViewTextBoxColumn10 = new Telerik.WinControls.UI.GridViewTextBoxColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.edtShipLine = new Telerik.WinControls.UI.RadMultiColumnComboBox();
             this.edtCUSTOMER_CODE = new Telerik.WinControls.UI.RadMultiColumnComboBox();
@@ -230,6 +230,8 @@
             this.edtCUSTOMER_CODE.Size = new System.Drawing.Size(110, 20);
             this.edtCUSTOMER_CODE.TabIndex = 5;
             this.edtCUSTOMER_CODE.TabStop = false;
+            this.edtCUSTOMER_CODE.Tag = "IFM_FREIGHT_SCHEDULE.CUSTOMER_CODE";
+            this.edtCUSTOMER_CODE.Click += new System.EventHandler(this.edtCUSTOMER_CODE_Click);
             // 
             // edtAgent_Code
             // 
@@ -268,6 +270,7 @@
             this.edtAgent_Code.TabIndex = 6;
             this.edtAgent_Code.TabStop = false;
             this.edtAgent_Code.Tag = "IFM_FREIGHT_SCHEDULE.AGENT_CODE";
+            this.edtAgent_Code.Click += new System.EventHandler(this.edtCUSTOMER_CODE_Click);
             // 
             // edtConsignee
             // 
@@ -306,6 +309,7 @@
             this.edtConsignee.TabIndex = 9;
             this.edtConsignee.TabStop = false;
             this.edtConsignee.Tag = "IFM_FREIGHT_SCHEDULE.CONSIGNEE_CODE";
+            this.edtConsignee.Click += new System.EventHandler(this.edtCUSTOMER_CODE_Click);
             // 
             // edtShipper
             // 
@@ -344,6 +348,7 @@
             this.edtShipper.TabIndex = 8;
             this.edtShipper.TabStop = false;
             this.edtShipper.Tag = "IFM_FREIGHT_SCHEDULE.SHIPPER_CODE";
+            this.edtShipper.Click += new System.EventHandler(this.edtCUSTOMER_CODE_Click);
             // 
             // edtPort
             // 
@@ -382,6 +387,7 @@
             this.edtPort.TabIndex = 7;
             this.edtPort.TabStop = false;
             this.edtPort.Tag = "IFM_FREIGHT_SCHEDULE.PORT_CODE";
+            this.edtPort.Click += new System.EventHandler(this.edtPort_Click);
             // 
             // edtOFFICE_CODE
             // 
@@ -491,6 +497,7 @@
             this.btnRemove.Size = new System.Drawing.Size(80, 25);
             this.btnRemove.TabIndex = 17;
             this.btnRemove.Text = "删除";
+            this.btnRemove.Click += new System.EventHandler(this.btnRemove_Click);
             // 
             // btnAdd
             // 
@@ -499,6 +506,7 @@
             this.btnAdd.Size = new System.Drawing.Size(80, 25);
             this.btnAdd.TabIndex = 16;
             this.btnAdd.Text = "新增";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
             // grdItems
             // 
@@ -508,60 +516,66 @@
             // 
             // grdItems
             // 
-            this.grdItems.MasterTemplate.AutoSizeColumnsMode = Telerik.WinControls.UI.GridViewAutoSizeColumnsMode.Fill;
-            gridViewTextBoxColumn14.HeaderText = "收付";
-            gridViewTextBoxColumn14.Name = "column1";
-            gridViewTextBoxColumn14.Width = 44;
-            gridViewTextBoxColumn15.HeaderText = "费用代码";
-            gridViewTextBoxColumn15.Name = "column2";
-            gridViewTextBoxColumn15.Width = 44;
-            gridViewTextBoxColumn16.HeaderText = "结算单位类型";
-            gridViewTextBoxColumn16.Name = "column3";
-            gridViewTextBoxColumn16.Width = 44;
-            gridViewTextBoxColumn17.HeaderText = "固定结算单位";
-            gridViewTextBoxColumn17.Name = "column4";
-            gridViewTextBoxColumn17.Width = 44;
-            gridViewTextBoxColumn18.HeaderText = "币种";
-            gridViewTextBoxColumn18.Name = "column5";
-            gridViewTextBoxColumn18.Width = 44;
-            gridViewTextBoxColumn19.HeaderText = "计费单位";
-            gridViewTextBoxColumn19.Name = "column6";
-            gridViewTextBoxColumn19.Width = 44;
-            gridViewTextBoxColumn20.HeaderText = "单价";
-            gridViewTextBoxColumn20.Name = "column7";
-            gridViewTextBoxColumn20.Width = 44;
-            gridViewTextBoxColumn21.HeaderText = "计算公式";
-            gridViewTextBoxColumn21.Name = "column8";
-            gridViewTextBoxColumn21.Width = 44;
-            gridViewTextBoxColumn22.HeaderText = "基价";
-            gridViewTextBoxColumn22.Name = "column9";
-            gridViewTextBoxColumn22.Width = 44;
-            gridViewTextBoxColumn23.HeaderText = "最低金额";
-            gridViewTextBoxColumn23.Name = "column10";
-            gridViewTextBoxColumn23.Width = 44;
-            gridViewTextBoxColumn24.HeaderText = "备注";
-            gridViewTextBoxColumn24.Name = "column11";
-            gridViewTextBoxColumn24.Width = 44;
-            gridViewTextBoxColumn25.HeaderText = "外地货";
-            gridViewTextBoxColumn25.Name = "column12";
-            gridViewTextBoxColumn25.Width = 44;
-            gridViewTextBoxColumn26.HeaderText = "货物属性";
-            gridViewTextBoxColumn26.Name = "column13";
-            gridViewTextBoxColumn26.Width = 49;
+            gridViewTextBoxColumn1.HeaderText = "收付";
+            gridViewTextBoxColumn1.Name = "GridColumnAR_AP";
+            gridViewTextBoxColumn1.Width = 44;
+            gridViewMultiComboBoxColumn1.DisplayMember = null;
+            gridViewMultiComboBoxColumn1.FieldName = "CHARGE_CODE";
+            gridViewMultiComboBoxColumn1.HeaderText = "费用代码";
+            gridViewMultiComboBoxColumn1.Name = "GridColumnCHARGE_CODE";
+            gridViewMultiComboBoxColumn1.ValueMember = null;
+            gridViewMultiComboBoxColumn1.Width = 80;
+            gridViewTextBoxColumn2.HeaderText = "结算单位类型";
+            gridViewTextBoxColumn2.Name = "GridColumnACCOUNTS_TYPE";
+            gridViewTextBoxColumn2.Width = 44;
+            gridViewMultiComboBoxColumn2.DisplayMember = null;
+            gridViewMultiComboBoxColumn2.HeaderText = "固定结算单位";
+            gridViewMultiComboBoxColumn2.Name = "GridColumnFIX_ACCOUNTS_CODE";
+            gridViewMultiComboBoxColumn2.ValueMember = null;
+            gridViewMultiComboBoxColumn2.Width = 44;
+            gridViewTextBoxColumn3.HeaderText = "币种";
+            gridViewTextBoxColumn3.Name = "GridColumnCurrency";
+            gridViewTextBoxColumn3.Width = 44;
+            gridViewTextBoxColumn4.HeaderText = "计费单位";
+            gridViewTextBoxColumn4.Name = "GridColumnUnitType";
+            gridViewTextBoxColumn4.Width = 44;
+            gridViewTextBoxColumn5.HeaderText = "单价";
+            gridViewTextBoxColumn5.Name = "GridColumnPRICE";
+            gridViewTextBoxColumn5.Width = 44;
+            gridViewMultiComboBoxColumn3.DisplayMember = null;
+            gridViewMultiComboBoxColumn3.HeaderText = "计算公式";
+            gridViewMultiComboBoxColumn3.Name = "GridColumnCALC_REMARK";
+            gridViewMultiComboBoxColumn3.ValueMember = null;
+            gridViewMultiComboBoxColumn3.Width = 44;
+            gridViewTextBoxColumn6.HeaderText = "基价";
+            gridViewTextBoxColumn6.Name = "GridColumnBASE_AMOUNT";
+            gridViewTextBoxColumn6.Width = 44;
+            gridViewTextBoxColumn7.HeaderText = "最低金额";
+            gridViewTextBoxColumn7.Name = "GridColumnMIN_AMOUNT";
+            gridViewTextBoxColumn7.Width = 44;
+            gridViewTextBoxColumn8.HeaderText = "备注";
+            gridViewTextBoxColumn8.Name = "GridColumnREMARK";
+            gridViewTextBoxColumn8.Width = 44;
+            gridViewTextBoxColumn9.HeaderText = "外地货";
+            gridViewTextBoxColumn9.Name = "GridColumnCARGO_PROPERTY";
+            gridViewTextBoxColumn9.Width = 44;
+            gridViewTextBoxColumn10.HeaderText = "货物属性";
+            gridViewTextBoxColumn10.Name = "GridColumnPP_CC";
+            gridViewTextBoxColumn10.Width = 49;
             this.grdItems.MasterTemplate.Columns.AddRange(new Telerik.WinControls.UI.GridViewDataColumn[] {
-            gridViewTextBoxColumn14,
-            gridViewTextBoxColumn15,
-            gridViewTextBoxColumn16,
-            gridViewTextBoxColumn17,
-            gridViewTextBoxColumn18,
-            gridViewTextBoxColumn19,
-            gridViewTextBoxColumn20,
-            gridViewTextBoxColumn21,
-            gridViewTextBoxColumn22,
-            gridViewTextBoxColumn23,
-            gridViewTextBoxColumn24,
-            gridViewTextBoxColumn25,
-            gridViewTextBoxColumn26});
+            gridViewTextBoxColumn1,
+            gridViewMultiComboBoxColumn1,
+            gridViewTextBoxColumn2,
+            gridViewMultiComboBoxColumn2,
+            gridViewTextBoxColumn3,
+            gridViewTextBoxColumn4,
+            gridViewTextBoxColumn5,
+            gridViewMultiComboBoxColumn3,
+            gridViewTextBoxColumn6,
+            gridViewTextBoxColumn7,
+            gridViewTextBoxColumn8,
+            gridViewTextBoxColumn9,
+            gridViewTextBoxColumn10});
             this.grdItems.Name = "grdItems";
             this.grdItems.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             // 
@@ -570,7 +584,6 @@
             this.grdItems.RootElement.Padding = new System.Windows.Forms.Padding(0, 0, 0, 1);
             this.grdItems.Size = new System.Drawing.Size(587, 200);
             this.grdItems.TabIndex = 20;
-            this.grdItems.Text = "radGridView1";
             // 
             // edtB_ACTIVE
             // 
@@ -592,6 +605,7 @@
             this.edtCarrier.TabIndex = 12;
             this.edtCarrier.Tag = "IFM_FREIGHT_SCHEDULE.CARRIER_CODE";
             this.edtCarrier.Text = "radDropDownList5";
+            this.edtCarrier.SelectedValueChanged += new System.EventHandler(this.edtCarrier_SelectedValueChanged);
             // 
             // edtJOB_TYPE
             // 
@@ -602,6 +616,7 @@
             this.edtJOB_TYPE.TabIndex = 4;
             this.edtJOB_TYPE.Tag = "IFM_FREIGHT_SCHEDULE.JOB_TYPE";
             this.edtJOB_TYPE.Text = "radDropDownList1";
+            this.edtJOB_TYPE.SelectedValueChanged += new System.EventHandler(this.edtJOB_TYPE_SelectedValueChanged);
             // 
             // edtDESCRIPTION
             // 

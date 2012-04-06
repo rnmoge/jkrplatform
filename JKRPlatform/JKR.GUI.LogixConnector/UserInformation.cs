@@ -135,13 +135,6 @@ namespace JKR.GUI.LogixConnector
         }
 
 
- 
-
- 
-
-        // Methods
-        public UserInformation();
-
 
     }
 }
