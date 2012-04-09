@@ -192,7 +192,7 @@ namespace JKRPlatform.BizSeaExport
             else
             {
                 s = this.edtCUSTOMER_CODE.RootElement.ToolTipText;
-                //s = ((ButtonEdit)sender).ToolTip;
+                s = ((RadMultiColumnComboBox)sender).Tag.ToString();//tToolTip;
             }
 
             SelectCustomerForm frm = new SelectCustomerForm(s, "");
@@ -200,7 +200,7 @@ namespace JKRPlatform.BizSeaExport
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 this.edtCUSTOMER_CODE.Text = frm.Customer_Code;
-                //((ButtonEdit)sender).Text = frm.Customer_Code;
+                ((RadMultiColumnComboBox)sender).Text = frm.Customer_Code;
             }
             frm.Dispose();
 
