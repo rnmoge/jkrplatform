@@ -19,5 +19,21 @@ namespace JKR.Cargo.Common
         {
             return proxy.GetDataSetByFunctionName(functionCode, functionName, args);
         }
+
+        public static bool ConvertToBool(object obj)
+        {
+            if (obj == DBNull.Value)
+            {
+                return false;
+            }
+            try
+            {
+                return Convert.ToBoolean(obj);
+            }
+            catch(Exception ex)
+            {
+                return false;
+            }
+        }
     }
 }

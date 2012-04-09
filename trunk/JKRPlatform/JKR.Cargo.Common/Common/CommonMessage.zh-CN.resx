@@ -1,0 +1,414 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=2.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="ADDING_ERROR" xml:space="preserve">
+    <value>新增错误!</value>
+  </data>
+  <data name="ADDING_SUCCESS" xml:space="preserve">
+    <value>新增成功!</value>
+  </data>
+  <data name="ALREADY_RATIFY" xml:space="preserve">
+    <value>该费用单已经核销!</value>
+  </data>
+  <data name="APPLY_FAILURE" xml:space="preserve">
+    <value>提交失败</value>
+  </data>
+  <data name="APPLY_SUCCESS" xml:space="preserve">
+    <value>提交成功</value>
+  </data>
+  <data name="APPROVE_ERROR" xml:space="preserve">
+    <value>审核错误!</value>
+  </data>
+  <data name="APPROVE_SUCCESS" xml:space="preserve">
+    <value>审核成功!</value>
+  </data>
+  <data name="ASSIGNED_ERROR" xml:space="preserve">
+    <value>配货错误!</value>
+  </data>
+  <data name="ASSIGNED_FINISHED" xml:space="preserve">
+    <value>配货完成!</value>
+  </data>
+  <data name="ASSIGNED_SUCCESS" xml:space="preserve">
+    <value>配货成功!</value>
+  </data>
+  <data name="ASSIGN_CANCEL" xml:space="preserve">
+    <value>取消配货!</value>
+  </data>
+  <data name="ASSIGN_CHARGE_WAREHOUSE_STATUSIN" xml:space="preserve">
+    <value>总单已出库，需要将此分单也置为“出库”吗？</value>
+  </data>
+  <data name="ASSIGN_TEXT" xml:space="preserve">
+    <value>确定要配货吗 ?</value>
+  </data>
+  <data name="AUTO_MATCH_ERROR" xml:space="preserve">
+    <value>自动匹配错误!</value>
+  </data>
+  <data name="AUTO_MATCH_SUCCESS" xml:space="preserve">
+    <value>自动匹配成功!</value>
+  </data>
+  <data name="CANCEL_SELECTED_ERROR" xml:space="preserve">
+    <value>取消选择错误!</value>
+  </data>
+  <data name="CANCEL_SELECTED_SUCCESS" xml:space="preserve">
+    <value>取消选择成功!</value>
+  </data>
+  <data name="CANCEL_SUCCESS" xml:space="preserve">
+    <value>取消成功!</value>
+  </data>
+  <data name="COMMON_ERROR" xml:space="preserve">
+    <value>错误!</value>
+  </data>
+  <data name="CONCEL_TEXT" xml:space="preserve">
+    <value>确定要取消吗?</value>
+  </data>
+  <data name="CONVERT_BOOKING_ERROR" xml:space="preserve">
+    <value>转成工作号错误!</value>
+  </data>
+  <data name="CONVERT_BOOKING_SUCCESS" xml:space="preserve">
+    <value>转成工作号成功!</value>
+  </data>
+  <data name="CONVERT_TEXT" xml:space="preserve">
+    <value>确定要转换吗?</value>
+  </data>
+  <data name="CONVERT_TO_BOOKING_CANCELED" xml:space="preserve">
+    <value>取消转成委托操作!</value>
+  </data>
+  <data name="DELETE_CANCELED" xml:space="preserve">
+    <value>确定要取消吗?</value>
+  </data>
+  <data name="DELETE_SUCCESS" xml:space="preserve">
+    <value>删除成功!</value>
+  </data>
+  <data name="DELETE_TEXT" xml:space="preserve">
+    <value>确定要删除吗?</value>
+  </data>
+  <data name="DELETING_ERROR" xml:space="preserve">
+    <value>删除错误!</value>
+  </data>
+  <data name="EDIT_ERROR" xml:space="preserve">
+    <value>编辑错误!</value>
+  </data>
+  <data name="EDIT_SUCCESS" xml:space="preserve">
+    <value>编辑成功!</value>
+  </data>
+  <data name="ETD_MUST_NO_MORE_THAN_EXPIRED_DATE" xml:space="preserve">
+    <value>开航日期必须早于过期日期!</value>
+  </data>
+  <data name="GET_CUSTOMER_CODE_ERROR" xml:space="preserve">
+    <value>获取客户代码错误!</value>
+  </data>
+  <data name="GET_JOB_NO_ERROR" xml:space="preserve">
+    <value>获取工作号错误!</value>
+  </data>
+  <data name="GET_NOTICE_COMPANY_ERROR" xml:space="preserve">
+    <value>获取通知单位错误!</value>
+  </data>
+  <data name="GET_PORT_ERROR" xml:space="preserve">
+    <value>获取港口错误!</value>
+  </data>
+  <data name="HAVE_BEEN_ASSIGN" xml:space="preserve">
+    <value>已经配货!</value>
+  </data>
+  <data name="HAVE_NOT_BEEN_CHANGED" xml:space="preserve">
+    <value>数据没有更改!</value>
+  </data>
+  <data name="HAVE_NOT_BEEN_MODIFIED" xml:space="preserve">
+    <value>数据没有改变!</value>
+  </data>
+  <data name="HAVE_NOT_BEEN_MODIFIED_SAVE" xml:space="preserve">
+    <value>数据已改变,要保存吗?</value>
+  </data>
+  <data name="HAVE_NOT_BEEN_SAVED" xml:space="preserve">
+    <value>已经保存了!</value>
+  </data>
+  <data name="HAWB_NO_NOT_EXIST" xml:space="preserve">
+    <value>分单不存在!</value>
+  </data>
+  <data name="ITEM_MUST_INPUT" xml:space="preserve">
+    <value>{0}不能为空！</value>
+  </data>
+  <data name="JOB_NO_IS_NOT_AVAILABLE" xml:space="preserve">
+    <value>无效的工作号!</value>
+  </data>
+  <data name="JOB_TYPE_ISNULL" xml:space="preserve">
+    <value>业务类型不能为空</value>
+  </data>
+  <data name="LABEL_ERROR" xml:space="preserve">
+    <value>贴签错误!</value>
+  </data>
+  <data name="LABEL_SUCCESS" xml:space="preserve">
+    <value>贴签成功!</value>
+  </data>
+  <data name="LOAD_CONTROL_ERROR" xml:space="preserve">
+    <value>装载控件错误!</value>
+  </data>
+  <data name="LOAD_CONTROL_SUCCESS" xml:space="preserve">
+    <value>装载控件成功!</value>
+  </data>
+  <data name="LOAD_DATA_ERROR" xml:space="preserve">
+    <value>装载数据错误!</value>
+  </data>
+  <data name="LOAD_DATA_SUCCESS" xml:space="preserve">
+    <value>装载数据成功!</value>
+  </data>
+  <data name="LOCK_BILL_ERROR" xml:space="preserve">
+    <value>锁定运单错误!</value>
+  </data>
+  <data name="LOCK_BILL_SUCCESS" xml:space="preserve">
+    <value>锁定运单成功!</value>
+  </data>
+  <data name="LOCK_TEXT" xml:space="preserve">
+    <value>确定要锁定吗?</value>
+  </data>
+  <data name="MAWB_NO_CAN_NOT_BE_EMPTY" xml:space="preserve">
+    <value>主单号不能为空!</value>
+  </data>
+  <data name="MAWB_NO_NOT_EXIST" xml:space="preserve">
+    <value>主单不存在!</value>
+  </data>
+  <data name="NOTAMOUNTEMPTY" xml:space="preserve">
+    <value>费用单中的金额不能为0!</value>
+  </data>
+  <data name="NOTDELETECHARGE" xml:space="preserve">
+    <value>原费用单不能删除!</value>
+  </data>
+  <data name="NO_DATA_BE_SELECTED" xml:space="preserve">
+    <value>没有记录被选中!</value>
+  </data>
+  <data name="NO_RECORD_HAVE_BEEN_FOUND" xml:space="preserve">
+    <value>没有到找数据!</value>
+  </data>
+  <data name="OPERATE_CANCELED" xml:space="preserve">
+    <value>操作取消!</value>
+  </data>
+  <data name="PRE_BOOKING_CANCEL_ERROR" xml:space="preserve">
+    <value>取消预委托错误!</value>
+  </data>
+  <data name="PRE_BOOKING_CANCEL_SUCCESS" xml:space="preserve">
+    <value>取消预委托成功!</value>
+  </data>
+  <data name="PRE_BOOKING_NO_IS_NOT_AVAILABLE" xml:space="preserve">
+    <value>无效的预委托编号!</value>
+  </data>
+  <data name="PRINT_ERROR" xml:space="preserve">
+    <value>打印错误!</value>
+  </data>
+  <data name="RECORD_EXIST" xml:space="preserve">
+    <value>记录已经存在!</value>
+  </data>
+  <data name="RELEASE_ERROR" xml:space="preserve">
+    <value>释放错误!</value>
+  </data>
+  <data name="RELEASE_SUCCESS" xml:space="preserve">
+    <value>释放成功!</value>
+  </data>
+  <data name="REMOVE_ERROR" xml:space="preserve">
+    <value>移除错误!</value>
+  </data>
+  <data name="REMOVE_SUCCESS" xml:space="preserve">
+    <value>移除成功!</value>
+  </data>
+  <data name="RESET_WAREHOUSE_IN_ERROR" xml:space="preserve">
+    <value>重新入库错误!</value>
+  </data>
+  <data name="RESET_WAREHOUSE_IN_SUCCESS" xml:space="preserve">
+    <value>重新入库成功!</value>
+  </data>
+  <data name="REVERSE_SELECT_ERROR" xml:space="preserve">
+    <value>反转选择错误!</value>
+  </data>
+  <data name="REVERSE_SELECT_SUCCESS" xml:space="preserve">
+    <value>反转选择成功!</value>
+  </data>
+  <data name="RE_CHARGES_SHARED_TEXT" xml:space="preserve">
+    <value>请重新做费用分摊!</value>
+  </data>
+  <data name="SAVE_HISTORY_ERROR" xml:space="preserve">
+    <value>保存历史错误!</value>
+  </data>
+  <data name="SAVE_HISTORY_SUCCESS" xml:space="preserve">
+    <value>保存历史成功!</value>
+  </data>
+  <data name="SAVE_SUCCESS" xml:space="preserve">
+    <value>保存成功!</value>
+  </data>
+  <data name="SAVING_ERROR" xml:space="preserve">
+    <value>保存错误!</value>
+  </data>
+  <data name="SELECT_ALL_ERROR" xml:space="preserve">
+    <value>全选错误!</value>
+  </data>
+  <data name="SELECT_ALL_SUCCESS" xml:space="preserve">
+    <value>全选成功!</value>
+  </data>
+  <data name="SET_CONDITION_ERROR" xml:space="preserve">
+    <value>设置条件错误!</value>
+  </data>
+  <data name="SET_CONDITION_SUCCESS" xml:space="preserve">
+    <value>设置条件成功!</value>
+  </data>
+  <data name="SET_FORM_ERROR" xml:space="preserve">
+    <value>设置窗体错误!</value>
+  </data>
+  <data name="SET_FORM_SUCCESS" xml:space="preserve">
+    <value>设置窗体成功!</value>
+  </data>
+  <data name="SET_GOODS_READY_TEXT" xml:space="preserve">
+    <value>确定要置货到吗?</value>
+  </data>
+  <data name="SET_PLANNED_OUT_ERROR" xml:space="preserve">
+    <value>计划出库错误!</value>
+  </data>
+  <data name="SET_PLANNED_OUT_SUCCESS" xml:space="preserve">
+    <value>计划出库成功!</value>
+  </data>
+  <data name="SET_TOTAL_ERROR" xml:space="preserve">
+    <value>设置总计错误!</value>
+  </data>
+  <data name="SET_TOTAL_SUCCESS" xml:space="preserve">
+    <value>设置总计成功!</value>
+  </data>
+  <data name="SUPPLIERINVOICECANNOTREVOKE" xml:space="preserve">
+    <value>由供应商发票开出的账单不允许作废！</value>
+  </data>
+  <data name="TAX_INVOICE_AMOUT" xml:space="preserve">
+    <value>发票总金额超过该结算单位可开发票额度！剩余可开发票额度是{0}！</value>
+  </data>
+  <data name="TAX_INVOICE_AMOUT_ISNULL" xml:space="preserve">
+    <value>该结算单位没有足够费用！剩余可开发票额度是{0}！</value>
+  </data>
+  <data name="TEXT_BUTTON_CLICK_ERROR" xml:space="preserve">
+    <value>单击按钮错误!</value>
+  </data>
+  <data name="WAREHOUSE_CODE_IS_NOT_AVAILABLE" xml:space="preserve">
+    <value>仓库代码不能为空</value>
+  </data>
+  <data name="WAREHOUSE_IN_NO_IS_NOT_AVAILABLE" xml:space="preserve">
+    <value>无效的入库编号!</value>
+  </data>
+  <data name="WAREHOUSE_NO_IS_NOT_AVAILABLE" xml:space="preserve">
+    <value>无效的入库编号!</value>
+  </data>
+  <data name="WAREHOUSE_OUT_ERROR" xml:space="preserve">
+    <value>出库错误!</value>
+  </data>
+  <data name="WAREHOUSE_OUT_SUCCESS" xml:space="preserve">
+    <value>出库成功!</value>
+  </data>
+</root>
