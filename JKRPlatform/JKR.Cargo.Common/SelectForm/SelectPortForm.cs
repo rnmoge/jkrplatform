@@ -202,14 +202,14 @@ namespace JKR.Cargo.Common.SelectForm
         private void SelectPortForm_Load(object sender, EventArgs e)
         {
             //this.rgSelect.Properties.Items.Clear();
-            //if (UIProxy.Language == UIProxy.LanguageType.Chinese)
-            //{
-            //    this.rgSelect.Properties.Items.AddRange(new RadioGroupItem[] { new RadioGroupItem("SEA", "海港"), new RadioGroupItem("AIR", "空港") });
-            //}
-            //else
-            //{
-            //    this.rgSelect.Properties.Items.AddRange(new RadioGroupItem[] { new RadioGroupItem("SEA", "Sea Port"), new RadioGroupItem("AIR", "Air Port") });
-            //}
+            if (UIProxy.Language == UIProxy.LanguageType.Chinese)
+            {
+                //this.rgSelect.Properties.Items.AddRange(new RadioGroupItem[] { new RadioGroupItem("SEA", "海港"), new RadioGroupItem("AIR", "空港") });
+            }
+            else
+            {
+                //this.rgSelect.Properties.Items.AddRange(new RadioGroupItem[] { new RadioGroupItem("SEA", "Sea Port"), new RadioGroupItem("AIR", "Air Port") });
+            }
 
         }
 
