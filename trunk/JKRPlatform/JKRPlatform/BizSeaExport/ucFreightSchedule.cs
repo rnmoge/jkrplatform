@@ -248,8 +248,8 @@ namespace JKRPlatform.BizSeaExport
             {
                 s = ((RadMultiColumnComboBox)sender).RootElement.ToolTipText;
             }
-            //AccountsListForm frm = new AccountsListForm(s);
-            AccountsListForm frm = new AccountsListForm();
+            SelectCustomerForm frm = new SelectCustomerForm(s,"");
+            //AccountsListForm frm = new AccountsListForm();
             if (frm.ShowDialog() == DialogResult.OK)
             {
                 ((RadMultiColumnComboBox)sender).Text = frm.Customer_Code;
