@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+  <CollectorInfo>
+    <device_code>8888-8888</device_code>
+    <device_type>1</device_type>
+    <region_code>411202</region_code>
+    <substation_code>123456</substation_code>
+    <substation_name>向阳警务室</substation_name>
+    <username>052209</username>
+    <realname>慕守文</realname>
+    <time_collected>2012-04-10:08:30:25</time_collected>
+  </CollectorInfo>
+  <residential_housing type="1" code="私产" createtime="">
+    <streetAddress></streetAddress>
+    <street></street>
+    <address></address>
+    <address_id></address_id>
+    <house_code></house_code>
+    <house_name></house_name>
+    <nothouse_code></nothouse_code>
+    <nothouse_name></nothouse_name>
+    <residence_remark></residence_remark>
+    <gps_longitude>
+    </gps_longitude>
+    <gps_latitude>
+    </gps_latitude>
+    <gps_altitude>
+    </gps_altitude>
+    <gps_number_satellite>
+    </gps_number_satellite>
+    <gps_precision>
+    </gps_precision>
+    <owner type="1" code="私产">
+      <name></name>
+      <gender_code></gender_code>
+      <gender_name></gender_name>
+      <date_of_birth></date_of_birth>
+      <identification_id></identification_id>
+      <nationality_code></nationality_code>
+      <nationality_name></nationality_name>
+      <address_code></address_code>
+      <address_name></address_name>
+      <address></address>
+      <contact></contact>
+      <phone_number></phone_number>
+      <remark></remark>
+      <rent></rent>
+      <HouseType></HouseType>
+    </owner>
+    <images>
+      <image_folder>8888-8888</image_folder>
+      <image type="1" name="室外">
+        <title>大门</title>
+        <remark>
+        </remark>
+        <photo>
+        </photo>
+      </image>
+      <image type="2" name="室内">
+        <title>阳台门</title>
+        <remark>
+        </remark>
+        <photo>
+        </photo>
+      </image>
+      <image type="3" name="户型图">
+        <title>房本户型图</title>
+        <remark>
+        </remark>
+        <photo>
+        </photo>
+      </image>
+    </images>
+  </residential_housing>
+</Data>

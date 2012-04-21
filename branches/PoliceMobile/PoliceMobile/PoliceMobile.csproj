@@ -1,0 +1,390 @@
+﻿<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="3.5">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>9.0.21022</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{8F9D2CEF-B8F8-417F-B6F0-BF84C4D4C4F1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>PoliceMobile</RootNamespace>
+    <AssemblyName>PoliceMobile</AssemblyName>
+    <ProjectTypeGuids>{4D628B5B-2FBC-4AA6-8C16-197242AEB884};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <PlatformFamilyName>PocketPC</PlatformFamilyName>
+    <PlatformID>b2c48bd2-963d-4549-9169-1fa021dce484</PlatformID>
+    <OSVersion>5.2</OSVersion>
+    <DeployDirSuffix>PoliceMobile</DeployDirSuffix>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <NativePlatformName>Windows Mobile 6 Professional SDK</NativePlatformName>
+    <FormFactorID>
+    </FormFactorID>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;$(PlatformFamilyName)</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <FileAlignment>512</FileAlignment>
+    <WarningLevel>4</WarningLevel>
+    <GenerateSerializationAssemblies>Off</GenerateSerializationAssemblies>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bouwa.ClassLib, Version=1.0.4280.19972, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="ICSharpCode.SharpZipLib, Version=0.86.0.518, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.WindowsCE.Forms" />
+    <Reference Include="Microsoft.WindowsMobile.Forms, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="mscorlib" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.SQLite, Version=1.0.65.0, Culture=neutral, PublicKeyToken=1fdb50b1b62b4c84, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="XTransMobile, Version=2.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>E:\快盘\警务通\MobileTransparent\XTransMobile.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CLS\DEVICECLASS.cs" />
+    <Compile Include="CLS\ToolsHelper.cs" />
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIB\ClsSqliteExecute.cs" />
+    <Compile Include="LIB\FrmManager.cs" />
+    <Compile Include="LIB\Helper.cs" />
+    <Compile Include="LIB\IHaveImage.cs" />
+    <Compile Include="LIB\ImagePanel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LIB\SharpZipHelper.cs" />
+    <Compile Include="LIB\TransparentImageButton.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="LIB\ucControlManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LIB\ucControlManager.Designer.cs">
+      <DependentUpon>ucControlManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="LIB\ucControlRsidentManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="LIB\ucControlRsidentManager.Designer.cs">
+      <DependentUpon>ucControlRsidentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIB\ucControlManager.resx">
+      <DependentUpon>ucControlManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="LIB\ucControlRsidentManager.resx">
+      <DependentUpon>ucControlRsidentManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\frmCameraForHouseByOutdoor.resx">
+      <DependentUpon>frmCameraForHouseByOutdoor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\FrmDesktop.resx">
+      <DependentUpon>FrmDesktop.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\frmHourseManager.resx">
+      <DependentUpon>frmHourseManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\frmInfoForHousePeopleByPublic.resx">
+      <DependentUpon>frmInfoForHousePeopleByPublic.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\frmInfoForHousePeopleByPrivate.resx">
+      <DependentUpon>frmInfoForHousePeopleByPrivate.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\frmCameraForHouseByIndoor.resx">
+      <DependentUpon>frmCameraForHouseByIndoor.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\HouseCollection\frmInfoForStreet.resx">
+      <DependentUpon>frmInfoForStreet.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmBaseInfoForPeople.resx">
+      <DependentUpon>frmBaseInfoForPeople.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmCameraForPeople.resx">
+      <DependentUpon>frmCameraForPeople.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmInfoForPeople.resx">
+      <DependentUpon>frmInfoForPeople.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmPermanentResident.resx">
+      <DependentUpon>frmPermanentResident.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmResidentManager.resx">
+      <DependentUpon>frmResidentManager.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmSpecialResident.resx">
+      <DependentUpon>frmSpecialResident.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmTempResident.resx">
+      <DependentUpon>frmTempResident.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\SearchPeople\frmSearchPeople.resx">
+      <DependentUpon>frmSearchPeople.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmCameraForHouseByOutdoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmCameraForHouseByOutdoor.Designer.cs">
+      <DependentUpon>frmCameraForHouseByOutdoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\FrmDesktop.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\FrmDesktop.Designer.cs">
+      <DependentUpon>FrmDesktop.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmHourseManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmHourseManager.Designer.cs">
+      <DependentUpon>frmHourseManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmInfoForHousePeopleByPublic.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmInfoForHousePeopleByPublic.Designer.cs">
+      <DependentUpon>frmInfoForHousePeopleByPublic.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmInfoForHousePeopleByPrivate.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmInfoForHousePeopleByPrivate.Designer.cs">
+      <DependentUpon>frmInfoForHousePeopleByPrivate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmCameraForHouseByIndoor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmCameraForHouseByIndoor.Designer.cs">
+      <DependentUpon>frmCameraForHouseByIndoor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmInfoForStreet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\HouseCollection\frmInfoForStreet.Designer.cs">
+      <DependentUpon>frmInfoForStreet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmBaseInfoForPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmBaseInfoForPeople.Designer.cs">
+      <DependentUpon>frmBaseInfoForPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmCameraForPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmCameraForPeople.Designer.cs">
+      <DependentUpon>frmCameraForPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmInfoForPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmInfoForPeople.Designer.cs">
+      <DependentUpon>frmInfoForPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmPermanentResident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmPermanentResident.Designer.cs">
+      <DependentUpon>frmPermanentResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmResidentManager.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmResidentManager.Designer.cs">
+      <DependentUpon>frmResidentManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmSpecialResident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmSpecialResident.Designer.cs">
+      <DependentUpon>frmSpecialResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmTempResident.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmTempResident.Designer.cs">
+      <DependentUpon>frmTempResident.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\SearchPeople\frmSearchPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\SearchPeople\frmSearchPeople.Designer.cs">
+      <DependentUpon>frmSearchPeople.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="config.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="img\bg1.jpg" />
+    <Content Include="img\gps.jpg" />
+    <Content Include="img\login.jpg" />
+    <Content Include="img\main.jpg" />
+    <Content Include="LIB\Bouwa.ClassLib.dll" />
+    <Content Include="LIB\XTransMobile.dll" />
+    <Content Include="PeopleData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="SystemData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="img\module\m1.gif" />
+    <Content Include="img\module\m10.gif" />
+    <Content Include="img\module\m11.gif" />
+    <Content Include="img\module\m12.gif" />
+    <Content Include="img\module\m2.gif" />
+    <Content Include="img\module\m3.gif" />
+    <Content Include="img\module\m4.gif" />
+    <Content Include="img\module\m5.gif" />
+    <Content Include="img\module\m6.gif" />
+    <Content Include="img\module\m7.gif" />
+    <Content Include="img\module\m8.gif" />
+    <Content Include="img\module\m9.gif" />
+    <Content Include="img\pic\allUpload.gif" />
+    <Content Include="img\pic\buttom.jpg" />
+    <Content Include="img\pic\b_Upload.jpg" />
+    <Content Include="img\pic\deleteCamera.jpg" />
+    <Content Include="img\pic\idCard.gif" />
+    <Content Include="img\pic\in.jpg" />
+    <Content Include="img\pic\line.gif" />
+    <Content Include="img\pic\main.jpg" />
+    <Content Include="img\pic\OpenCamera.jpg" />
+    <Content Include="img\pic\pic.gif" />
+    <Content Include="img\pic\pNext.jpg" />
+    <Content Include="img\pic\pPicture.jpg" />
+    <Content Include="img\pic\private.jpg" />
+    <Content Include="img\pic\private_1.jpg" />
+    <Content Include="img\pic\public.jpg" />
+    <Content Include="img\pic\public_1.jpg" />
+    <Content Include="img\pic\ScanIdCar.jpg" />
+    <Content Include="img\pic\temp1.jpg" />
+    <Content Include="img\pic\temp2.jpg" />
+    <Content Include="img\pic\temp3.jpg" />
+    <Content Include="img\pic\title.gif" />
+    <Content Include="img\pic\ts.gif" />
+    <Content Include="img\pic\upload.jpg" />
+    <Content Include="img\pic\未命名-5.gif" />
+    <Content Include="LIB\ICSharpCode.SharpZipLib.dll" />
+    <Content Include="LIB\System.Data.SQLite.DLL" />
+    <Content Include="Test\1.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test\2.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Test\3.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\FunctionalBuildingData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\ResidentialHousingData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\ResidentPermanentData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\ResidentSpecialData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\ResidentTempData.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="DB\Address.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\House.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Template\PublicHouse.xml">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CompactFramework.CSharp.targets" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}">
+        <HostingProcess disable="1" />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
