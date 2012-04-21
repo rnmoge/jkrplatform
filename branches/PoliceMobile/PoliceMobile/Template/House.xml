@@ -49,21 +49,21 @@
     </owner>
     <images>
       <image_folder>8888-8888</image_folder>
-      <image type="1" name="室外">
+      <image type="1" name="室外" GUID ="" >
         <title>大门</title>
         <remark>
         </remark>
         <photo>
         </photo>
       </image>
-      <image type="2" name="室内">
+      <image type="2" name="室内" GUID ="">
         <title>阳台门</title>
         <remark>
         </remark>
         <photo>
         </photo>
       </image>
-      <image type="3" name="户型图">
+      <image type="3" name="户型图" GUID ="">
         <title>房本户型图</title>
         <remark>
         </remark>

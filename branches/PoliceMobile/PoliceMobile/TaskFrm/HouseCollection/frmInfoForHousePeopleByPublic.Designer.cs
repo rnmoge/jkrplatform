@@ -48,15 +48,8 @@
             this.pbReSet = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.txtDetailAddressId = new System.Windows.Forms.TextBox();
-            this.txtDetailAddress = new System.Windows.Forms.TextBox();
-            this.cbStreet = new System.Windows.Forms.ComboBox();
-            this.pbPrivate = new System.Windows.Forms.PictureBox();
-            this.pbPublic = new System.Windows.Forms.PictureBox();
-            this.checkBox1 = new System.Windows.Forms.CheckBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
             this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
@@ -65,7 +58,7 @@
             // 
             this.txtName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtName.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtName.Location = new System.Drawing.Point(146, 273);
+            this.txtName.Location = new System.Drawing.Point(145, 138);
             this.txtName.Multiline = true;
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(311, 31);
@@ -76,7 +69,7 @@
             // 
             this.label7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label7.Location = new System.Drawing.Point(20, 279);
+            this.label7.Location = new System.Drawing.Point(19, 144);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(120, 18);
             this.label7.Text = "房主单位名称";
@@ -85,7 +78,7 @@
             // 
             this.label8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label8.Location = new System.Drawing.Point(20, 319);
+            this.label8.Location = new System.Drawing.Point(19, 184);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(118, 17);
             this.label8.Text = "房主单位地址";
@@ -94,7 +87,7 @@
             // 
             this.txtMasterAddress.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtMasterAddress.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtMasterAddress.Location = new System.Drawing.Point(146, 312);
+            this.txtMasterAddress.Location = new System.Drawing.Point(145, 177);
             this.txtMasterAddress.Multiline = true;
             this.txtMasterAddress.Name = "txtMasterAddress";
             this.txtMasterAddress.Size = new System.Drawing.Size(311, 31);
@@ -105,7 +98,7 @@
             // 
             this.label9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.label9.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label9.Location = new System.Drawing.Point(20, 395);
+            this.label9.Location = new System.Drawing.Point(19, 260);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(118, 20);
             this.label9.Text = "房主联系方式";
@@ -114,7 +107,7 @@
             // 
             this.txtLinkMethod.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLinkMethod.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtLinkMethod.Location = new System.Drawing.Point(146, 390);
+            this.txtLinkMethod.Location = new System.Drawing.Point(145, 255);
             this.txtLinkMethod.Multiline = true;
             this.txtLinkMethod.Name = "txtLinkMethod";
             this.txtLinkMethod.Size = new System.Drawing.Size(311, 31);
@@ -125,7 +118,7 @@
             // 
             this.label10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label10.Location = new System.Drawing.Point(20, 436);
+            this.label10.Location = new System.Drawing.Point(19, 301);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(118, 24);
             this.label10.Text = "　备　　注　";
@@ -134,7 +127,7 @@
             // 
             this.txtComment.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtComment.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtComment.Location = new System.Drawing.Point(146, 429);
+            this.txtComment.Location = new System.Drawing.Point(145, 294);
             this.txtComment.Multiline = true;
             this.txtComment.Name = "txtComment";
             this.txtComment.Size = new System.Drawing.Size(311, 115);
@@ -145,7 +138,7 @@
             // 
             this.label1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label1.Location = new System.Drawing.Point(20, 356);
+            this.label1.Location = new System.Drawing.Point(19, 221);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(118, 20);
             this.label1.Text = "联系人　姓名";
@@ -154,7 +147,7 @@
             // 
             this.txtLinkName.BackColor = System.Drawing.Color.WhiteSmoke;
             this.txtLinkName.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtLinkName.Location = new System.Drawing.Point(146, 351);
+            this.txtLinkName.Location = new System.Drawing.Point(145, 216);
             this.txtLinkName.Multiline = true;
             this.txtLinkName.Name = "txtLinkName";
             this.txtLinkName.Size = new System.Drawing.Size(311, 31);
@@ -209,63 +202,12 @@
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
-            // txtDetailAddressId
-            // 
-            this.txtDetailAddressId.Location = new System.Drawing.Point(364, 108);
-            this.txtDetailAddressId.Name = "txtDetailAddressId";
-            this.txtDetailAddressId.Size = new System.Drawing.Size(68, 41);
-            this.txtDetailAddressId.TabIndex = 82;
-            this.txtDetailAddressId.Tag = ".//residential_housing/owner/address_code";
-            this.txtDetailAddressId.Visible = false;
-            // 
-            // txtDetailAddress
-            // 
-            this.txtDetailAddress.Location = new System.Drawing.Point(20, 141);
-            this.txtDetailAddress.Multiline = true;
-            this.txtDetailAddress.Name = "txtDetailAddress";
-            this.txtDetailAddress.Size = new System.Drawing.Size(432, 35);
-            this.txtDetailAddress.TabIndex = 81;
-            this.txtDetailAddress.Tag = ".//residential_housing/owner/address_name";
-            // 
-            // cbStreet
-            // 
-            this.cbStreet.Location = new System.Drawing.Point(20, 141);
-            this.cbStreet.Name = "cbStreet";
-            this.cbStreet.Size = new System.Drawing.Size(432, 41);
-            this.cbStreet.TabIndex = 80;
-            this.cbStreet.Tag = "";
-            // 
-            // pbPrivate
-            // 
-            this.pbPrivate.Image = ((System.Drawing.Image)(resources.GetObject("pbPrivate.Image")));
-            this.pbPrivate.Location = new System.Drawing.Point(159, 188);
-            this.pbPrivate.Name = "pbPrivate";
-            this.pbPrivate.Size = new System.Drawing.Size(128, 57);
-            this.pbPrivate.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            this.pbPrivate.Click += new System.EventHandler(this.pbPrivate_Click);
-            // 
-            // pbPublic
-            // 
-            this.pbPublic.Image = ((System.Drawing.Image)(resources.GetObject("pbPublic.Image")));
-            this.pbPublic.Location = new System.Drawing.Point(20, 188);
-            this.pbPublic.Name = "pbPublic";
-            this.pbPublic.Size = new System.Drawing.Size(128, 57);
-            this.pbPublic.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
-            // 
-            // checkBox1
-            // 
-            this.checkBox1.Location = new System.Drawing.Point(349, 197);
-            this.checkBox1.Name = "checkBox1";
-            this.checkBox1.Size = new System.Drawing.Size(110, 40);
-            this.checkBox1.TabIndex = 79;
-            this.checkBox1.Text = "出租";
-            // 
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(0, 248);
+            this.pictureBox3.Location = new System.Drawing.Point(0, 108);
             this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.Size = new System.Drawing.Size(481, 5);
+            this.pictureBox3.Size = new System.Drawing.Size(481, 10);
             // 
             // lblAddress
             // 
@@ -276,15 +218,6 @@
             this.lblAddress.Size = new System.Drawing.Size(436, 24);
             this.lblAddress.Text = "选择ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd" +
                 "ddddd详细地址";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(192)))), ((int)(((byte)(255)))));
-            this.label6.Location = new System.Drawing.Point(20, 116);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 28);
-            this.label6.Text = "选择详细地址";
             // 
             // ucControlManager1
             // 
@@ -299,15 +232,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(480, 588);
-            this.Controls.Add(this.txtDetailAddressId);
-            this.Controls.Add(this.txtDetailAddress);
-            this.Controls.Add(this.cbStreet);
-            this.Controls.Add(this.pbPrivate);
-            this.Controls.Add(this.pbPublic);
-            this.Controls.Add(this.checkBox1);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.lblAddress);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.pictureBox2);
@@ -352,15 +278,8 @@
         private System.Windows.Forms.PictureBox pbReSet;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox txtDetailAddressId;
-        private System.Windows.Forms.TextBox txtDetailAddress;
-        private System.Windows.Forms.ComboBox cbStreet;
-        private System.Windows.Forms.PictureBox pbPrivate;
-        private System.Windows.Forms.PictureBox pbPublic;
-        private System.Windows.Forms.CheckBox checkBox1;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Label label6;
 
 
     }

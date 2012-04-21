@@ -38,17 +38,17 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string sPicName = Convert.ToString(pbShow.Tag);
-            ToolsHelper.DelHouseImage( ToolsHelper.sHouseGuid,pbShow, "Camera_In");
+            ToolsHelper.DelHouseImage( ToolsHelper.sHouseGuid,pbShow);
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            ToolsHelper.PreHouseImage(ToolsHelper.sHouseGuid, pbShow, "Camera_In");
+            ToolsHelper.PreHouseImage(ToolsHelper.sHouseGuid, pbShow);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            ToolsHelper.NextHouseImage(ToolsHelper.sHouseGuid, pbShow, "Camera_In");
+            ToolsHelper.NextHouseImage(ToolsHelper.sHouseGuid, pbShow);
         }
     }
 }

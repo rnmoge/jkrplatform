@@ -554,7 +554,7 @@ namespace PoliceMobile.CLS
         /// </summary>
         /// <param name="sGuid"></param>
         /// <param name="sTag"></param>
-        public static void SaveHouseImage(string sGuid, PictureBox pb, string sTag,string title)
+        public static void SaveHouseImage(string sGuid, PictureBox pb, string sTag,string title,string imgGuid,string type,string name)
         {
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(sPath + "//house//" + sGuid + "//House.xml");
@@ -571,14 +571,17 @@ namespace PoliceMobile.CLS
       //  </photo>
       //</image>
             XmlAttribute xATime = xDoc.CreateAttribute("type");
-            xATime.Value = "1";
+            xATime.Value = type;
 
             XmlAttribute xATimeIn = xDoc.CreateAttribute("name");
-            xATimeIn.Value = "室外";
+            xATimeIn.Value = name;
+            XmlAttribute xATimeInGuid = xDoc.CreateAttribute("Guid");
+            xATimeInGuid.Value = imgGuid;
 
             XmlNode xnNewPic = xDoc.CreateElement("Image");
             xnNewPic.Attributes.Append(xATime);
             xnNewPic.Attributes.Append(xATimeIn);
+            xnNewPic.Attributes.Append(xATimeInGuid);
 
             XmlNode xnTitle = xDoc.CreateElement("title");
             xnTitle.InnerText = title;
@@ -646,40 +649,41 @@ namespace PoliceMobile.CLS
         /// </summary>
         /// <param name="sGuid"></param>
         /// <param name="sTag"></param>
-        public static void DelHouseImage(string sGuid, PictureBox pb, string sTag)
+        public static void DelHouseImage(string sGuid, PictureBox pb)
         {
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(sPath + "/SystemData.xml");
+            xDoc.Load(sPath + "/house/"+sGuid+"/House.xml");
 
             string sPicName = Convert.ToString(pb.Tag);
 
-            XmlNode xnPicBox = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag);
+            //XmlNode xnPicBox = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag);
+            //XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[@GUID='"+sTag+"']");
 
-            XmlNode xnPic = xnPicBox.SelectSingleNode("PicName[text()='" + sPicName + "']");
-            if (xnPic == null)
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[photo[text()=" + sPicName + "]]");
+            if (xnPicBox == null)
             {
                 MessageBox.Show("删除失败");
                 return;
             }
-            File.Delete(ToolsHelper.sPath + @"\" + ToolsHelper.sHouseGuid + @"\" + sPicName);
-            xnPicBox.RemoveChild(xnPic);
+            File.Delete(ToolsHelper.sPath + @"\house\" + ToolsHelper.sHouseGuid + @"\pic\" + sPicName);
+            xDoc.RemoveChild(xnPicBox);
             pb.Image = null;
-            xDoc.Save(sPath + "/SystemData.xml");
+            xDoc.Save(sPath + "/house/" + sGuid + "/House.xml");
 
-            XmlNode xnPicNext = xnPic.NextSibling;
+            XmlNode xnPicNext = xnPicBox.NextSibling;
             if (xnPicNext != null)
             {
                 string sTempPicName = xnPicNext.InnerText;
-                string sPicFullName = ToolsHelper.sPath + @"\" + ToolsHelper.sHouseGuid + @"\" + sTempPicName;
+                string sPicFullName = ToolsHelper.sPath + @"\house\" + ToolsHelper.sHouseGuid + @"\pic\" + sTempPicName;
                 BindPic(pb, sPicFullName);
                 return;
             }
 
-            XmlNode xnPicPre = xnPic.PreviousSibling;
+            XmlNode xnPicPre = xnPicBox.PreviousSibling;
             if (xnPicPre != null)
             {
                 string sTempPicName = xnPicPre.InnerText;
-                string sPicFullName = ToolsHelper.sPath + @"\" + ToolsHelper.sHouseGuid + @"\" + sTempPicName;
+                string sPicFullName = ToolsHelper.sPath + @"\house\" + ToolsHelper.sHouseGuid + @"\pic\" + sTempPicName;
                 BindPic(pb, sPicFullName);
                 return;
             }
@@ -705,25 +709,25 @@ namespace PoliceMobile.CLS
         /// <param name="sGuid"></param>
         /// <param name="pb"></param>
         /// <param name="sTag"></param>
-        public static void PreHouseImage(string sGuid, PictureBox pb, string sTag)
+        public static void PreHouseImage(string sGuid, PictureBox pb)
         {
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(sPath+"//house//private//" + sGuid + "//House.xml");
+            xDoc.Load(sPath+"//house//" + sGuid + "//House.xml");
 
             string sPictureName = Convert.ToString(pb.Tag);
 
 
 
-            XmlNode xnPicBox = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag + "/PicName[text()='" + sPictureName + "']");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[photo[text()=" + sPictureName + "]]");
 
             XmlNode xnNewPicBox;
 
             if (xnPicBox == null)
             {
-                XmlNodeList xnl = xDoc.SelectNodes("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag);
+                XmlNodeList xnl = xDoc.SelectNodes(".//residential_housing/images/image");
                 if (xnl.Count == 0)
                 {
-                    MessageBox.Show("没有图片");
+                    MessageBox.Show("已经到顶部了。");
                     return;
                 }
                 xnNewPicBox = xnl[0];
@@ -741,7 +745,7 @@ namespace PoliceMobile.CLS
             }
 
             string sPicName = xnNewPicBox.InnerText;
-            string ImageForderPath = sPath + @"\" + sGuid;
+            string ImageForderPath = sPath + @"\house\" + sGuid;
 
             BindPic(pb, ImageForderPath + @"\" + sPicName);
         }
@@ -752,20 +756,20 @@ namespace PoliceMobile.CLS
         /// <param name="sGuid"></param>
         /// <param name="pb"></param>
         /// <param name="sTag"></param>
-        public static void NextHouseImage(string sGuid, PictureBox pb, string sTag)
+        public static void NextHouseImage(string sGuid, PictureBox pb)
         {
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(sPath + "/SystemData.xml");
+            xDoc.Load(sPath + "//house//" + sGuid + "//House.xml");
 
             string sPictureName = Convert.ToString(pb.Tag);
 
-            XmlNode xnPicBox = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag + "/PicName[text()='" + sPictureName + "']");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[photo[text()=" + sPictureName + "]]");
 
             XmlNode xnNewPicBox;
 
             if (xnPicBox == null)
             {
-                XmlNodeList xnl = xDoc.SelectNodes("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag);
+                XmlNodeList xnl = xDoc.SelectNodes(".//residential_housing/images/image");
                 if (xnl.Count == 0)
                 {
                     MessageBox.Show("没有图片");
@@ -785,7 +789,7 @@ namespace PoliceMobile.CLS
             }
 
             string sPicName = xnNewPicBox.InnerText;
-            string ImageForderPath = sPath + @"\" + sGuid;
+            string ImageForderPath = sPath + @"\house\" + sGuid;
 
             BindPic(pb, ImageForderPath + @"\" + sPicName);
         }
