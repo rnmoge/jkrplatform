@@ -21,7 +21,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void btnCamera_Click(object sender, EventArgs e)
         {
-            string sPictureName = Guid.NewGuid() + ".jpg";
+
+            string imgGuid = Guid.NewGuid().ToString();
+            string sPictureName = imgGuid + ".jpg";
             string ImageForderPath = ToolsHelper.sPath + @"\tempImage";
             if (!Directory.Exists(ImageForderPath))
             {
@@ -35,7 +37,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                 ToolsHelper.BindPic(pbShow, ToolsHelper.sPath + @"\House\" + ToolsHelper.sHouseGuid + @"\pic\" + sPictureName);
             }
             this.WindowState = FormWindowState.Maximized;
-            ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid,pbShow, "Images",this.txtCardId.Text);
+            ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid, pbShow, "Images", this.txtCardId.Text, imgGuid,"2"," “Õ‚");
 
 
             //¡¨–¯≈ƒ’’  3  guid  string[] =3
@@ -47,17 +49,17 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string sPicName = Convert.ToString(pbShow.Tag);
-            ToolsHelper.DelHouseImage( ToolsHelper.sHouseGuid,pbShow, "Camera_Out");
+            ToolsHelper.DelHouseImage( ToolsHelper.sHouseGuid,pbShow);
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            ToolsHelper.PreHouseImage(ToolsHelper.sHouseGuid, pbShow, "Camera_Out");
+            ToolsHelper.PreHouseImage(ToolsHelper.sHouseGuid, pbShow);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            ToolsHelper.NextHouseImage(ToolsHelper.sHouseGuid, pbShow, "Camera_Out");
+            ToolsHelper.NextHouseImage(ToolsHelper.sHouseGuid, pbShow);
         }
 
         private void btnSave_Click(object sender, EventArgs e)
