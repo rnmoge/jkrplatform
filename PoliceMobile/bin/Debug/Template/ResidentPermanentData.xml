@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Data>
+	<device_code>8888-8888</device_code>
+	<device_type>1</device_type>
+	<region_code>411202</region_code>
+	<substation_code>123456</substation_code>
+	<substation_name>向阳警务室</substation_name>
+	<username>052209</username>
+	<realname>慕守文</realname>
+	<time_collected>2012-04-10:08:30:25</time_collected>
+	<Resident Type="1" Discripiton="Resident Type 1:常驻,2:暂住,3:高危">
+		<BaseInfo>
+			<name/>
+			<gender/>
+			<date_of_birth/>
+			<nationality_name/>
+			<registered_residence_address/>
+			<identification_id/>
+			<registration_date/>
+		</BaseInfo>
+		<ExtendedInfo>
+			<education_code/>
+			<education_name/>
+			<marital_status_code/>
+			<marital_status_name/>
+			<militaryservice_code/>
+			<militaryservice_name/>
+			<profession_name/>
+			<blood_type_code/>
+			<blood_type_name/>
+			<height/>
+			<phone_number/>
+			<current_address/>
+			<address_id/>
+			<email1/>
+			<email2/>
+			<workplace/>
+			<workplace_contact/>
+			<workplace_phone/>
+			<workplace_address/>
+			<other_local_address/>
+			<birth_address/>
+			<birth_area></birth_area>
+			<remark/>
+			<spouse>
+				<name/>
+				<idenfication_id/>
+				<address/>
+				<phone_number/>
+			</spouse>
+			<images>
+				<image type="10"/>
+			</images>
+			<family>
+				<family_member id="1">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="2">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="3">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="4">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="5">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="6">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="7">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="8">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="9">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+				<family_member id="10">
+					<relation/>
+					<name/>
+					<idenfication_id/>
+					<address/>
+					<phone_number/>
+				</family_member>
+			</family>
+		</ExtendedInfo>
+	</Resident>
+</Data>

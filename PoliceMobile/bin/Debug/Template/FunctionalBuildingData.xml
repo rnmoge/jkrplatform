@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Data>
+  <device_code>8888-8888</device_code>
+  <region_code>411202</region_code>
+  <substation_code>123456</substation_code>
+  <substation_name>向阳警务室</substation_name>
+  <username>052209</username>
+  <realname>慕守文</realname>
+  <time_collected>2012-04-10:08:30:25</time_collected>
+	<functional_building type="03" code="政府单位">
+		<building_name>财政大楼</building_name>
+		<address>向阳村208号</address>
+		<address_id>210008</address_id>
+		<residence_remark>此房屋建于1990年9月。</residence_remark>
+		<gps_longitude>  </gps_longitude>
+		<gps_latitude></gps_latitude>
+		<gps_altitude></gps_altitude>
+		<gps_number_satellite></gps_number_satellite>
+		<gps_precision></gps_precision>
+		<rent>1</rent>
+		<owner type="2" code="单位">
+			<name>三门峡市政府</name>
+			<gender/>
+			<date_of_birth/>
+			<identification_id/>
+			<nationality_name/>
+			<address>崤山路100号</address>
+			<contact>雷锋</contact>
+			<phone_number>13901090000</phone_number>
+			<remark></remark>
+		</owner>
+		<images>
+			<image type="1" name="室外">  
+				<title>大门</title>
+				<remark></remark>
+				<photo> </photo>
+			</image>
+			<image type="2" name="室内">  
+				<title>阳台门</title>
+				<remark></remark>
+				<photo> </photo>
+			</image>
+			<image type="3" name="户型图">  
+				<title>房本户型图</title>
+				<remark></remark>
+				<photo> </photo>
+			</image>
+					
+		</images>
+	</functional_building>
+</Data>

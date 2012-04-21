@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Config>
+  <Dev>
+    <device_code></device_code>
+    <region_code></region_code>
+    <substation_code></substation_code>
+  </Dev>
+	<Users>
+		<User id="1" name="052209" password="1" code="1111">慕守文</User>
+		<User id="2" name="150562" password="1" code="2222">齐顺良</User>
+	</Users>
+	<System>
+		<TypeData>
+      <HouseTypeBase>
+        <Type ti="0" id="01">居住房</Type>
+        <Type ti="0" id="02">非居住房</Type>
+      </HouseTypeBase>
+			<HouseType>
+				<Type ti="0" id="01">学校</Type>
+				<Type ti="0" id="02">医院</Type>
+				<Type ti="0" id="03">政府单位</Type>
+				<Type ti="0" id="04">企业单位</Type>
+				<Type ti="0" id="05">事业单位</Type>
+				<Type ti="0" id="06">购物中心</Type>
+				<Type ti="0" id="07">写字楼</Type>
+				<Type ti="0" id="08">商铺</Type>
+				<Type ti="0" id="09">娱乐场所</Type>
+				<Type ti="0" id="10">餐饮</Type>
+				<Type ti="0" id="99">其他</Type>
+			</HouseType>
+			<BloodType>
+				<Type ti="1" id="0">不明</Type>
+				<Type ti="0" id="1">A型</Type>
+				<Type ti="0" id="2">B型</Type>
+				<Type ti="0" id="3">O型</Type>
+				<Type ti="0" id="4">AB型</Type>
+				<Type ti="0" id="5">其他</Type>
+			</BloodType>
+			<EducationType>
+				<Type ti="0" id="10">研究生</Type>
+				<Type ti="0" id="20">本科</Type>
+				<Type ti="0" id="30">专科</Type>
+				<Type ti="0" id="40">职校</Type>
+				<Type ti="0" id="50">高中</Type>
+				<Type ti="0" id="60">初中</Type>
+				<Type ti="0" id="70">小学</Type>
+				<Type ti="0" id="80">其他</Type>
+			</EducationType>
+			<ImmediatefamilyType>
+				<Type ti="0" id="1.1">祖父</Type>
+				<Type ti="0" id="1.2">祖母</Type>
+				<Type ti="0" id="2.1">外祖父</Type>
+				<Type ti="0" id="2.1">外祖母</Type>
+				<Type ti="0" id="3.1">父亲</Type>
+				<Type ti="0" id="3.1">母亲</Type>
+				<Type ti="0" id="4.1">岳父</Type>
+				<Type ti="0" id="4.1">岳母</Type>
+				<Type ti="0" id="6.1">岳母</Type>
+				<Type ti="0" id="6.1">儿子</Type>
+				<Type ti="0" id="7.1">女儿</Type>
+				<Type ti="0" id="7.1">兄弟</Type>
+				<Type ti="0" id="8.1">姊妹</Type>
+				<Type ti="0" id="8.1">外孙子</Type>
+			</ImmediatefamilyType>
+			<LandlordrelationType>
+				<Type ti="0" id="1">亲戚</Type>
+				<Type ti="0" id="2">朋友</Type>
+				<Type ti="0" id="3">租用</Type>
+				<Type ti="0" id="4">借用</Type>
+				<Type ti="0" id="9">其他</Type>
+			</LandlordrelationType>
+			<MarriagestatusType>
+				<Type ti="0" id="10">未婚</Type>
+				<Type ti="0" id="20">已婚</Type>
+				<Type ti="0" id="30">丧偶</Type>
+				<Type ti="0" id="40">离婚</Type>
+				<Type ti="0" id="90">未说明</Type>
+			</MarriagestatusType>
+			<MilitaryserviceType>
+				<Type ti="1" id="0">未服兵役</Type>
+				<Type ti="0" id="1">退出现役</Type>
+				<Type ti="0" id="2">士兵预备役	</Type>
+				<Type ti="0" id="3">军官预备役</Type>
+				<Type ti="0" id="4">服现役</Type>
+				<Type ti="0" id="9">其他</Type>
+			</MilitaryserviceType>
+			<ReasonstayType>
+				<Type ti="0" id="1">务工</Type>
+				<Type ti="0" id="2">务农</Type>
+				<Type ti="0" id="3">经商</Type>
+				<Type ti="0" id="4">服务</Type>
+				<Type ti="0" id="5">因公出差</Type>
+				<Type ti="0" id="6">借读培训</Type>
+				<Type ti="0" id="7">治疗养病</Type>
+				<Type ti="0" id="8">保姆</Type>
+				<Type ti="0" id="9">投靠亲友</Type>
+				<Type ti="0" id="10">探亲访友</Type>
+				<Type ti="0" id="11">旅游观光</Type>
+				<Type ti="0" id="19">其他</Type>
+			</ReasonstayType>
+			<ReligionfaithType>
+				<Type ti="1" id="00">无宗教信仰</Type>
+				<Type ti="0" id="10">佛教</Type>
+				<Type ti="0" id="20">喇嘛教</Type>
+				<Type ti="0" id="30">道教</Type>
+				<Type ti="0" id="40">天主教</Type>
+				<Type ti="0" id="50">基督教</Type>
+				<Type ti="0" id="60">东正教</Type>
+				<Type ti="0" id="70">伊斯兰教</Type>
+				<Type ti="0" id="99">其他</Type>
+			</ReligionfaithType>
+			<RoomaterelationType>
+				<Type ti="1" id="1">家人</Type>
+				<Type ti="0" id="2">朋友</Type>
+				<Type ti="0" id="3">亲戚</Type>
+				<Type ti="0" id="4">同乡</Type>
+				<Type ti="0" id="5">独居</Type>
+				<Type ti="0" id="9">其他</Type>
+			</RoomaterelationType>
+      <PeopleType>
+        <Type ti="1" id="0">常住人员</Type>
+        <Type ti="0" id="1">暂住人员</Type>
+        <Type ti="0" id="2">重点人员</Type>
+      </PeopleType>
+      <GenderType>
+        <Type ti="0" id="0">未知</Type>
+        <Type ti="0" id="1">男性</Type>
+        <Type ti="0" id="2">女性</Type>
+        <Type ti="0" id="9">未说明</Type>
+      </GenderType>
+      <NationType>
+        <Type ti="1" id="01">汉族</Type>
+        <Type ti="0" id="02">蒙古族</Type>
+        <Type ti="0" id="03">回族 </Type>
+        <Type ti="0" id="04">藏族</Type>
+        <Type ti="0" id="05">维吾尔族</Type>
+        <Type ti="0" id="06">苗族</Type>
+        <Type ti="0" id="07">彝族</Type>
+        <Type ti="0" id="08">壮族</Type>
+        <Type ti="0" id="09">布依族</Type>
+        <Type ti="0" id="10">朝鲜族</Type>
+        <Type ti="0" id="11">满族</Type>
+        <Type ti="0" id="12">侗族</Type>
+        <Type ti="0" id="13">瑶族</Type>
+        <Type ti="0" id="14">白族</Type>
+        <Type ti="0" id="15">土家族</Type>
+        <Type ti="0" id="16">哈尼族</Type>
+        <Type ti="0" id="17">哈萨克族</Type>
+        <Type ti="0" id="18">傣族</Type>
+        <Type ti="0" id="19">黎族</Type>
+        <Type ti="0" id="20">傈僳族</Type>
+        <Type ti="0" id="21">佤族</Type>
+        <Type ti="0" id="22">畲族</Type>
+        <Type ti="0" id="23">高山族</Type>
+        <Type ti="0" id="24">拉祜族</Type>
+        <Type ti="0" id="25">水族</Type>
+        <Type ti="0" id="26">东乡族</Type>
+        <Type ti="0" id="27">纳西族</Type>
+        <Type ti="0" id="28">景颇族</Type>
+        <Type ti="0" id="29">柯尔克孜族</Type>
+        <Type ti="0" id="30">土族</Type>
+        <Type ti="0" id="31">达斡尔族</Type>
+        <Type ti="0" id="32">仫佬族</Type>
+        <Type ti="0" id="33">羌族</Type>
+        <Type ti="0" id="34">布朗族</Type>
+        <Type ti="0" id="35">撒拉族</Type>
+        <Type ti="0" id="36">毛南族</Type>
+        <Type ti="0" id="37">仡佬族</Type>
+        <Type ti="0" id="38">锡伯族</Type>
+        <Type ti="0" id="39">阿昌族</Type>
+        <Type ti="0" id="40">普米族</Type>
+        <Type ti="0" id="41">塔吉克族</Type>
+        <Type ti="0" id="42">怒族</Type>
+        <Type ti="0" id="43">乌兹别克族</Type>
+        <Type ti="0" id="44">俄罗斯族</Type>
+        <Type ti="0" id="45">鄂温克族</Type>
+        <Type ti="0" id="46">德昂族</Type>
+        <Type ti="0" id="47">保安族</Type>
+        <Type ti="0" id="48">裕固族</Type>
+        <Type ti="0" id="49">京族</Type>
+        <Type ti="0" id="50">塔塔尔族</Type>
+        <Type ti="0" id="51">独龙族</Type>
+        <Type ti="0" id="52">鄂伦春族</Type>
+        <Type ti="0" id="53">赫哲族</Type>
+        <Type ti="0" id="54">门巴族</Type>
+        <Type ti="0" id="55">珞巴族</Type>
+        <Type ti="0" id="56">基诺族</Type>
+      </NationType>
+    </TypeData>
+	</System>
+</Config>
