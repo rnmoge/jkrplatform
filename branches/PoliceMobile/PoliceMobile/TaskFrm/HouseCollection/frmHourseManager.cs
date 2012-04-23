@@ -30,52 +30,57 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             //ControlCollection cc = bgPanel.Controls;
 
             Control[] sP = new Control[] { pBack1, pBack2, pBack3, pBack4, pBack5, pBack6, pBack7};
-
-            for (int i = 0; i < dt.Rows.Count; i++)
+            try
             {
-                Control cl = sP[i];
-                cl.Visible = true;
-
-                  ControlCollection ccd = cl.Controls;
-
-                for (int j = 0; j < ccd.Count; j++)
+                for (int i = 0; i < dt.Rows.Count; i++)
                 {
-                    Control cli = ccd[j];
-                    if (cli.Name.IndexOf("lblSteet") > -1)
-                    {
-                        cli.Text = dt.Rows[i]["steetaddress"].ToString();
-                        continue;
-                    }
+                    Control cl = sP[i];
+                    cl.Visible = true;
 
-                    if (cli.Name.IndexOf("lblCreate") > -1)
-                    {
-                        cli.Text = dt.Rows[i]["time"].ToString();
-                        continue;
-                    }
-                    if (cli.Name.IndexOf("lblName") > -1)
-                    {
-                        cli.Text = dt.Rows[i]["name"].ToString();
-                        continue;
-                    }
-                 
+                    ControlCollection ccd = cl.Controls;
 
-                    if (cli.Name.IndexOf("pIn") > -1)
+                    for (int j = 0; j < ccd.Count; j++)
                     {
-                        cli.Tag = dt.Rows[i]["Guid"].ToString();
-                        continue;
-                    }
+                        Control cli = ccd[j];
+                        if (cli.Name.IndexOf("lblSteet") > -1)
+                        {
+                            cli.Text = dt.Rows[i]["steetaddress"].ToString();
+                            continue;
+                        }
 
-                    if (cli.Name.IndexOf("pUpload") > -1)
-                    {
-                        cli.Tag = dt.Rows[i]["Guid"].ToString();
-                        continue;
-                    }
-                    if (cli.Name.IndexOf("pDel") > -1)
-                    {
-                        cli.Tag = dt.Rows[i]["Guid"].ToString();
-                        continue;
+                        if (cli.Name.IndexOf("lblCreate") > -1)
+                        {
+                            cli.Text = dt.Rows[i]["time"].ToString();
+                            continue;
+                        }
+                        if (cli.Name.IndexOf("lblName") > -1)
+                        {
+                            cli.Text = dt.Rows[i]["name"].ToString();
+                            continue;
+                        }
+
+
+                        if (cli.Name.IndexOf("pIn") > -1)
+                        {
+                            cli.Tag = dt.Rows[i]["Guid"].ToString();
+                            continue;
+                        }
+
+                        if (cli.Name.IndexOf("pUpLoad") > -1)
+                        {
+                            cli.Tag = dt.Rows[i]["Guid"].ToString();
+                            continue;
+                        }
+                        if (cli.Name.IndexOf("pDel") > -1)
+                        {
+                            cli.Tag = dt.Rows[i]["Guid"].ToString();
+                            continue;
+                        }
                     }
                 }
+            }
+            catch
+            {
             }
         }
 
@@ -99,8 +104,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             Control c = (Control)sender;
             string sGuid = Convert.ToString(c.Tag);
             ToolsHelper.sHouseGuid = sGuid;
-
-            FrmManager.showWindowFor_frmInfoForStreet(this);
+            
+            FrmManager.showWindowFor_frmInfoForStreet(this,true);
         }
 
         private void pbDel_Click(object sender, EventArgs e)
@@ -121,7 +126,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             string sGuid = Convert.ToString(c.Tag);
             ToolsHelper.sHouseGuid = sGuid;
 
-            string spath = ToolsHelper.sPath + "//Upload" + sGuid + ".zip";
+            string spath = ToolsHelper.sPath + "//Upload//" + sGuid + ".zip";
             string serverPaht= sGuid + ".zip";
             //打包
             string p = ToolsHelper.sPath + "/house/" +sGuid;
@@ -129,18 +134,18 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             SharpZipHelper.GetFileInfo(p, p, list);
             SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath + "/Upload/" + sGuid+ ".zip", 8, null, null);
             //上传
-            ToolsHelper.Upload_Request("http://localhost:16434/UploadData.aspx", spath, serverPaht);
+            ToolsHelper.Upload_Request("http://60.28.24.210:8081/FileUpload/UpFiles.jsp", spath, serverPaht, "1");
         }
 
         private void btnNew_Click(object sender, EventArgs e)
         {
             ToolsHelper.sHouseGuid = Guid.NewGuid().ToString();
-            FrmManager.showWindowFor_frmInfoForStreet(this);
+            FrmManager.showWindowFor_frmInfoForStreet(this, false);
         }
 
         private void pBUploadAll_Click(object sender, EventArgs e)
         {
-            string sUrl = "http://localhost:1924/WebSite1/Default.aspx";
+            string sUrl = "http://60.28.24.210:8081/FileUpload/UpFiles.jsp";
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(ToolsHelper.sPath + "/SystemData.xml");
 
@@ -154,14 +159,14 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                 for (int j = 0; j < xnlPic_In.Count; j++)
                 {
                     string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" +  xnlPic_In[j].InnerText;
-                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText);
+                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText,"1");
                 }
 
                 XmlNodeList xnlPic_Out = xnl[i].SelectNodes("Camera/Camera_Out/PicName");
                 for (int j = 0; j < xnlPic_Out.Count; j++)
                 {
                     string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" + xnlPic_In[j].InnerText;
-                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText);
+                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText, "1");
                 }
                 
                 XmlNode xnDoc = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid ='" + sGuid + "']").CloneNode(true);

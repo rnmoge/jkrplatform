@@ -320,7 +320,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblAddress.Location = new System.Drawing.Point(105, 89);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(219, 20);
-            this.lblAddress.Tag = "Resident/BaseInfo/identification_id";
+            this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
             // lblBirth
             // 
@@ -601,7 +601,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txt_navtive.Name = "txt_navtive";
             this.txt_navtive.Size = new System.Drawing.Size(196, 31);
             this.txt_navtive.TabIndex = 211;
-            this.txt_navtive.Tag = "Resident/ExtendedInfo/other_local_address";
+            this.txt_navtive.Tag = "Resident/ExtendedInfo/nativeplace";
             // 
             // lblNativePlace
             // 
@@ -622,7 +622,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txt_birth_area.Name = "txt_birth_area";
             this.txt_birth_area.Size = new System.Drawing.Size(86, 30);
             this.txt_birth_area.TabIndex = 210;
-            this.txt_birth_area.Tag = "/Data/Resident/ExtendedInfo/birth_area";
+            this.txt_birth_area.Tag = "Resident/ExtendedInfo/birth_area";
             // 
             // lblBirthplace
             // 
@@ -652,7 +652,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Location = new System.Drawing.Point(0, 0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(472, 483);
+            this.tabPage2.Size = new System.Drawing.Size(480, 477);
             this.tabPage2.Text = "人员信息";
             // 
             // pictureBox8

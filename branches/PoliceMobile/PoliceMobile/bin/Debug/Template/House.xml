@@ -10,15 +10,15 @@
     <realname>慕守文</realname>
     <time_collected>2012-04-10:08:30:25</time_collected>
   </CollectorInfo>
-  <residential_housing type="1" code="私产" createtime="">
-    <streetAddress></streetAddress>
+  <Residential_housing type="1" code="私产" createtime="">
+    <streetaddress></streetaddress>
     <street></street>
     <address></address>
     <address_id></address_id>
     <house_code></house_code>
     <house_name></house_name>
-    <nothouse_code></nothouse_code>
-    <nothouse_name></nothouse_name>
+    <functional_building_code></functional_building_code>
+      <functional_building_name></functional_building_name>
     <residence_remark></residence_remark>
     <gps_longitude>
     </gps_longitude>
@@ -45,7 +45,7 @@
       <phone_number>123123123</phone_number>
       <remark></remark>
       <rent></rent>
-      <HouseType></HouseType>
+      <houseType></houseType>
     </owner>
     <images>
       <image_folder>8888-8888</image_folder>
@@ -71,5 +71,5 @@
         </photo>
       </image>
     </images>
-  </residential_housing>
+  </Residential_housing>
 </Data>

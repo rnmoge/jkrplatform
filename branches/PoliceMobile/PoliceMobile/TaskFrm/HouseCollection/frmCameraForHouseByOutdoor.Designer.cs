@@ -138,7 +138,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtCardId.Name = "txtCardId";
             this.txtCardId.Size = new System.Drawing.Size(326, 31);
             this.txtCardId.TabIndex = 57;
-            this.txtCardId.Tag = ".//residential_housing/Images/image/title";
+            this.txtCardId.Tag = ".//Residential_housing/Images/image/title";
             // 
             // label18
             // 

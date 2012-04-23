@@ -70,7 +70,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(152, 31);
             this.txtName.TabIndex = 21;
-            this.txtName.Tag = ".//residential_housing/owner/name";
+            this.txtName.Tag = ".//Residential_housing/owner/name";
             // 
             // label7
             // 
@@ -99,7 +99,7 @@
             this.txtBirth.Name = "txtBirth";
             this.txtBirth.Size = new System.Drawing.Size(152, 31);
             this.txtBirth.TabIndex = 21;
-            this.txtBirth.Tag = ".//residential_housing/owner/date_of_birth";
+            this.txtBirth.Tag = ".//Residential_housing/owner/date_of_birth";
             // 
             // label9
             // 
@@ -119,7 +119,7 @@
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(341, 31);
             this.txtLink.TabIndex = 21;
-            this.txtLink.Tag = ".//residential_housing/owner/phone_number";
+            this.txtLink.Tag = ".//Residential_housing/owner/phone_number";
             // 
             // txtInfo
             // 
@@ -139,7 +139,7 @@
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(341, 120);
             this.textBox5.TabIndex = 21;
-            this.textBox5.Tag = ".//residential_housing/owner/remark";
+            this.textBox5.Tag = ".//Residential_housing/owner/remark";
             // 
             // pictureBox3
             // 
@@ -184,7 +184,7 @@
             this.txtCardId.Name = "txtCardId";
             this.txtCardId.Size = new System.Drawing.Size(341, 31);
             this.txtCardId.TabIndex = 21;
-            this.txtCardId.Tag = ".//residential_housing/owner/identification_id";
+            this.txtCardId.Tag = ".//Residential_housing/owner/identification_id";
             // 
             // btnScanIDCard
             // 
@@ -250,7 +250,7 @@
             this.lblAddress.Location = new System.Drawing.Point(20, 81);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(436, 19);
-            this.lblAddress.Tag = ".//residential_housing/streetAddress";
+            this.lblAddress.Tag = ".//Residential_housing/streetaddress";
             this.lblAddress.Text = "选择ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd" +
                 "ddddd详细地址";
             // 
@@ -261,7 +261,7 @@
             this.cbGender.Name = "cbGender";
             this.cbGender.Size = new System.Drawing.Size(105, 32);
             this.cbGender.TabIndex = 136;
-            this.cbGender.Tag = ".//residential_housing/owner/gender";
+            this.cbGender.Tag = ".//Residential_housing/owner/gender";
             // 
             // cbNation
             // 
@@ -270,7 +270,7 @@
             this.cbNation.Name = "cbNation";
             this.cbNation.Size = new System.Drawing.Size(105, 32);
             this.cbNation.TabIndex = 154;
-            this.cbNation.Tag = ".//residential_housing/owner/nationality";
+            this.cbNation.Tag = ".//Residential_housing/owner/nationality";
             // 
             // label1
             // 
@@ -290,7 +290,7 @@
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(341, 31);
             this.txtAddress.TabIndex = 21;
-            this.txtAddress.Tag = ".//residential_housing/owner/address";
+            this.txtAddress.Tag = ".//Residential_housing/owner/address";
             // 
             // ucControlManager1
             // 

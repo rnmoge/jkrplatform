@@ -25,7 +25,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         public frmPermanentResident()
         {
             InitializeComponent();
-            ucControlRsidentManager1.pID.BackColor = Color.White;
+            ucControlRsidentManager1.pExtendedInfo.BackColor = Color.White;
         }
 
         private void init(){

@@ -63,7 +63,7 @@
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(311, 31);
             this.txtName.TabIndex = 21;
-            this.txtName.Tag = ".//residential_housing/owner/company_name";
+            this.txtName.Tag = ".//Residential_housing/owner/company_name";
             // 
             // label7
             // 
@@ -92,7 +92,7 @@
             this.txtMasterAddress.Name = "txtMasterAddress";
             this.txtMasterAddress.Size = new System.Drawing.Size(311, 31);
             this.txtMasterAddress.TabIndex = 21;
-            this.txtMasterAddress.Tag = ".//residential_housing/owner/company_address";
+            this.txtMasterAddress.Tag = ".//Residential_housing/owner/company_address";
             // 
             // label9
             // 
@@ -112,7 +112,7 @@
             this.txtLinkMethod.Name = "txtLinkMethod";
             this.txtLinkMethod.Size = new System.Drawing.Size(311, 31);
             this.txtLinkMethod.TabIndex = 21;
-            this.txtLinkMethod.Tag = ".//residential_housing/owner/company_phone";
+            this.txtLinkMethod.Tag = ".//Residential_housing/owner/company_phone";
             // 
             // label10
             // 
@@ -132,7 +132,7 @@
             this.txtComment.Name = "txtComment";
             this.txtComment.Size = new System.Drawing.Size(311, 115);
             this.txtComment.TabIndex = 21;
-            this.txtComment.Tag = ".//residential_housing/owner/company_remark";
+            this.txtComment.Tag = ".//Residential_housing/owner/company_remark";
             // 
             // label1
             // 
@@ -152,7 +152,7 @@
             this.txtLinkName.Name = "txtLinkName";
             this.txtLinkName.Size = new System.Drawing.Size(311, 31);
             this.txtLinkName.TabIndex = 21;
-            this.txtLinkName.Tag = ".//residential_housing/owner/company_link";
+            this.txtLinkName.Tag = ".//Residential_housing/owner/company_link";
             // 
             // panel1
             // 
@@ -186,6 +186,7 @@
             this.pbReSet.Location = new System.Drawing.Point(236, 5);
             this.pbReSet.Name = "pbReSet";
             this.pbReSet.Size = new System.Drawing.Size(242, 54);
+            this.pbReSet.Click += new System.EventHandler(this.pbReSet_Click);
             // 
             // panel2
             // 

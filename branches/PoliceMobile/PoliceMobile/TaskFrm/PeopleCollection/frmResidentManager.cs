@@ -96,7 +96,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             string sGuid = Convert.ToString(c.Tag);
             ToolsHelper.sHouseGuid = sGuid;
 
-            FrmManager.showWindowFor_frmInfoForStreet(this);
+            FrmManager.showWindowFor_frmInfoForStreet(this,false);
         }
 
         private void pbUpload_Click(object sender, EventArgs e)
@@ -107,7 +107,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private void btnNew_Click(object sender, EventArgs e)
         {
             ToolsHelper.sHouseGuid = Guid.NewGuid().ToString();
-            FrmManager.showWindowFor_frmInfoForStreet(this);
+            FrmManager.showWindowFor_frmInfoForStreet(this,false);
         }
 
         private void pBUploadAll_Click(object sender, EventArgs e)
@@ -126,14 +126,14 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
                 for (int j = 0; j < xnlPic_In.Count; j++)
                 {
                     string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" +  xnlPic_In[j].InnerText;
-                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText);
+                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText,"");
                 }
 
                 XmlNodeList xnlPic_Out = xnl[i].SelectNodes("Camera/Camera_Out/PicName");
                 for (int j = 0; j < xnlPic_Out.Count; j++)
                 {
                     string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" + xnlPic_In[j].InnerText;
-                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText);
+                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText,"");
                 }
                 
                 XmlNode xnDoc = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid ='" + sGuid + "']").CloneNode(true);

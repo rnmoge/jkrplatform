@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using PoliceMobile.LIB;
 using PoliceMobile.CLS;
 using System.Runtime.InteropServices;
+using System.IO;
 
 namespace PoliceMobile.TaskFrm.HouseCollection
 {
@@ -42,6 +43,11 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
             if(ToolsHelper.sCardId != ""){
                 ToolsHelper.AutoLoadConfigForPeople(this, ToolsHelper.sCardId);
+
+                if (File.Exists(ToolsHelper.sPath + "/Peoples/" + ToolsHelper.sCardId + "/zp.bmp"))
+                {
+                    pbPic.Image = new Bitmap(ToolsHelper.sPath + "/Peoples/" + ToolsHelper.sCardId + "/zp.bmp");
+                }
             }
         }
 
@@ -58,6 +64,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         {
 
             ToolsHelper.CreatePeople(lblCardId.Text, Convert.ToString(cbxPerson.SelectedValue));
+            ToolsHelper.SetConfigXmlbyPeople(ToolsHelper.iPeopleFlag.ToString(), ToolsHelper.sCardId);
+
 
             string sGuid = ToolsHelper.sHouseGuid;
             if (sGuid == "")
@@ -138,13 +146,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                     lbl_STARTDATE.Text = STARTDATE;
                     lbl_ENDDATE.Text = ENDDATE;
 
-                    lblName_2.Text = Name;
-                    lblSex_2.Text = Sex_Code;
-                    lblNation_2.Text = NATION_Code;
-                    lblBirth_2.Text = BIRTH;
-                    lblCardId_2.Text = IDC;
-                    lblAddress_2.Text = ADDRESS;
-
 
                     pbSpecial.Visible = false;
                     if (lblCardId_2.Text != "120104198311055557")
@@ -152,7 +153,15 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                         pbSpecial.Visible = true;
                     }
 
+
+
                     pbPic.Image = new Bitmap("\\zp.bmp");
+                    if (!Directory.Exists( ToolsHelper.sPath + "/Peoples/" + IDC))
+                    {
+                        Directory.CreateDirectory( ToolsHelper.sPath + "/Peoples/" + IDC);
+                    }
+                    File.Copy("zp.bmp", ToolsHelper.sPath + "/Peoples/" + IDC + "/zp.bmp", true);
+
                 }
                 else if (m == 2)
                 {
@@ -178,6 +187,41 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private void btnDesktop_Click(object sender, EventArgs e)
         {
             FrmManager.showWindowFor_FrmDesktop(this);
+        }
+
+        private void lblName_TextChanged(object sender, EventArgs e)
+        {
+            lblName_2.Text = lblName.Text;
+
+        }
+
+        private void lblSex_TextChanged(object sender, EventArgs e)
+        {
+            lblSex_2.Text = lblSex.Text;
+
+        }
+
+        private void lblNation_TextChanged(object sender, EventArgs e)
+        {
+            lblNation_2.Text = lblNation.Text;
+
+        }
+
+        private void lblBirth_TextChanged(object sender, EventArgs e)
+        {
+            lblBirth_2.Text = lblBirth.Text;
+
+        }
+
+        private void lblCardId_TextChanged(object sender, EventArgs e)
+        {
+            lblCardId_2.Text = lblCardId.Text;
+
+        }
+
+        private void lblAddress_TextChanged(object sender, EventArgs e)
+        {
+            lblAddress_2.Text = lblAddress.Text;
         }
     }
 }

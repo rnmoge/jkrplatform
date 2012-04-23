@@ -22,7 +22,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void pbHouse_Click(object sender, EventArgs e)
         {
-            FrmManager.showWindowFor_frmInfoForStreet(this);
+            FrmManager.showWindowFor_frmInfoForStreet(this, false);
         }
 
         private void pbSearch_Click(object sender, EventArgs e)
