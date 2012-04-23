@@ -267,7 +267,6 @@ E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.exe
 E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.pdb
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\config.xml
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\PeopleData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Test\1.xml
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Test\2.xml
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Test\3.xml

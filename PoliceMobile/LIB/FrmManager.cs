@@ -54,9 +54,9 @@ namespace PoliceMobile.LIB
         //    frmExpand.Show();
         //}
 
-        public static void showWindowFor_frmInfoForStreet(Form theForm)
+        public static void showWindowFor_frmInfoForStreet(Form theForm,bool isEidt)
         {
-            frmInfoForStreet fifs = new frmInfoForStreet();
+            frmInfoForStreet fifs = new frmInfoForStreet(isEidt);
             fifs.Show();
             theForm.Close();
             theForm.Dispose();

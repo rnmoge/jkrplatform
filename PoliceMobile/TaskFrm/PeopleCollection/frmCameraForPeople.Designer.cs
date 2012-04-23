@@ -40,8 +40,6 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.btnCamera = new System.Windows.Forms.PictureBox();
             this.btnDelete = new System.Windows.Forms.PictureBox();
             this.pbShow = new System.Windows.Forms.PictureBox();
-            this.checkBox3 = new System.Windows.Forms.CheckBox();
-            this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
             this.pbSpecial = new System.Windows.Forms.PictureBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
@@ -57,6 +55,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.label1 = new System.Windows.Forms.Label();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.ucControlRsidentManager1 = new PoliceMobile.LIB.ucControlRsidentManager();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -126,26 +125,6 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pbShow.Size = new System.Drawing.Size(446, 209);
             this.pbShow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             // 
-            // checkBox3
-            // 
-            this.checkBox3.Checked = true;
-            this.checkBox3.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.checkBox3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.checkBox3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.checkBox3.Location = new System.Drawing.Point(361, 568);
-            this.checkBox3.Name = "checkBox3";
-            this.checkBox3.Size = new System.Drawing.Size(112, 40);
-            this.checkBox3.TabIndex = 37;
-            this.checkBox3.Text = "户型图";
-            // 
-            // ucControlManager1
-            // 
-            this.ucControlManager1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucControlManager1.Location = new System.Drawing.Point(0, 0);
-            this.ucControlManager1.Name = "ucControlManager1";
-            this.ucControlManager1.Size = new System.Drawing.Size(480, 67);
-            this.ucControlManager1.TabIndex = 48;
-            // 
             // pbSpecial
             // 
             this.pbSpecial.Image = ((System.Drawing.Image)(resources.GetObject("pbSpecial.Image")));
@@ -206,6 +185,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblAddress.Location = new System.Drawing.Point(200, 162);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(265, 20);
+            this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
             // lblBirth
             // 
@@ -214,6 +194,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblBirth.Location = new System.Drawing.Point(275, 111);
             this.lblBirth.Name = "lblBirth";
             this.lblBirth.Size = new System.Drawing.Size(142, 20);
+            this.lblBirth.Tag = "Resident/BaseInfo/date_of_birth";
             // 
             // lblSex
             // 
@@ -222,6 +203,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblSex.Location = new System.Drawing.Point(275, 82);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(49, 20);
+            this.lblSex.Tag = "Resident/BaseInfo/gender";
             // 
             // lblCardId
             // 
@@ -230,6 +212,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblCardId.Location = new System.Drawing.Point(127, 135);
             this.lblCardId.Name = "lblCardId";
             this.lblCardId.Size = new System.Drawing.Size(338, 20);
+            this.lblCardId.Tag = "Resident/BaseInfo/identification_id";
             // 
             // lblNation
             // 
@@ -238,6 +221,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblNation.Location = new System.Drawing.Point(72, 109);
             this.lblNation.Name = "lblNation";
             this.lblNation.Size = new System.Drawing.Size(49, 20);
+            this.lblNation.Tag = "Resident/BaseInfo/nationality_name";
             // 
             // lblName
             // 
@@ -246,6 +230,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblName.Location = new System.Drawing.Point(72, 82);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(142, 20);
+            this.lblName.Tag = "Resident/BaseInfo/name";
             // 
             // label1
             // 
@@ -270,11 +255,20 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pictureBox7.Name = "pictureBox7";
             this.pictureBox7.Size = new System.Drawing.Size(481, 5);
             // 
+            // ucControlRsidentManager1
+            // 
+            this.ucControlRsidentManager1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ucControlRsidentManager1.Location = new System.Drawing.Point(0, 0);
+            this.ucControlRsidentManager1.Name = "ucControlRsidentManager1";
+            this.ucControlRsidentManager1.Size = new System.Drawing.Size(480, 57);
+            this.ucControlRsidentManager1.TabIndex = 230;
+            // 
             // frmCameraForPeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(480, 588);
+            this.Controls.Add(this.ucControlRsidentManager1);
             this.Controls.Add(this.pictureBox7);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.pbSpecial);
@@ -290,8 +284,6 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.Controls.Add(this.lblNation);
             this.Controls.Add(this.lblName);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.ucControlManager1);
-            this.Controls.Add(this.checkBox3);
             this.Controls.Add(this.pbShow);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnCamera);
@@ -318,8 +310,6 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.PictureBox btnCamera;
         private System.Windows.Forms.PictureBox btnDelete;
         private System.Windows.Forms.PictureBox pbShow;
-        private System.Windows.Forms.CheckBox checkBox3;
-        private PoliceMobile.LIB.ucControlManager ucControlManager1;
         private System.Windows.Forms.PictureBox pbSpecial;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;
@@ -335,6 +325,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.PictureBox pictureBox7;
+        private PoliceMobile.LIB.ucControlRsidentManager ucControlRsidentManager1;
 
 
     }

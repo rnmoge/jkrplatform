@@ -17,14 +17,18 @@
 			<registered_residence_address/>
 			<identification_id/>
 			<registration_date/>
-		</BaseInfo>
-		<ExtendedInfo>
+      <regorg></regorg>
+      <startdate></startdate>
+      <enddate></enddate>
+      <peopletype_code>1</peopletype_code>
+      <peopletype_name>1</peopletype_name>
+      
       <othername discripiton="曾用名"></othername>
-      			<household></household>
-      			<religion></religion>
+			<household></household>
+			<religion></religion>
 			<education_code discription="学历编号"/>
-			<education_name discripiton="学历名"/>
-			<marital_status_code/>
+			<education_name discripiton="学历名"/>militaryservice
+      <marital_status_code/>
 			<marital_status_name/>
 			<militaryservice_code/>
 			<militaryservice_name/>
@@ -35,22 +39,30 @@
 			<phone_number/>
 			<current_address/>
 			<address_id/>
+      <Belief_name></Belief_name>
+      <Belief_code></Belief_code>
+      <spouse>
+				<name/>
+				<idenfication_id/>
+				<address/>
+				<phone_number/>
+			</spouse>
+		</BaseInfo>			
+		<ExtendedInfo>
+
+      <nativeplace></nativeplace>
+      <current_address></current_address>
+      <other_local_address></other_local_address>
 			<email1/>
 			<email2/>
 			<workplace/>
 			<workplace_contact/>
 			<workplace_phone/>
 			<workplace_address/>
-			<other_local_address/>
 			<birth_address/>
 			<birth_area></birth_area>
 			<remark/>
-			<spouse>
-				<name/>
-				<idenfication_id/>
-				<address/>
-				<phone_number/>
-			</spouse>
+
 			<images>
 				<image type="10"/>
 			</images>

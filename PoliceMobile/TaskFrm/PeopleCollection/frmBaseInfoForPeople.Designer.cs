@@ -51,7 +51,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblAddress = new System.Windows.Forms.Label();
             this.pbSpecial = new System.Windows.Forms.PictureBox();
             this.txtLink = new System.Windows.Forms.TextBox();
-            this.txtBirth = new System.Windows.Forms.TextBox();
+            this.txtAddress = new System.Windows.Forms.TextBox();
             this.txtName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
@@ -71,7 +71,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbx_marital_status = new System.Windows.Forms.ComboBox();
             this.cbx_Belief = new System.Windows.Forms.ComboBox();
             this.cbxBlood = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnAddress = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox6 = new System.Windows.Forms.PictureBox();
             this.lblConsort = new System.Windows.Forms.Label();
@@ -120,7 +120,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 557);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 702);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
@@ -230,7 +230,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblAddress.Location = new System.Drawing.Point(102, 151);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(242, 20);
-            this.lblAddress.Tag = "Resident/BaseInfo/identification_id";
+            this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
             // pbSpecial
             // 
@@ -249,18 +249,18 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(358, 31);
             this.txtLink.TabIndex = 44;
-            this.txtLink.Tag = "/Data/ExtendedInfo/phone_number";
+            this.txtLink.Tag = "Resident/BaseInfo/phone_number";
             // 
-            // txtBirth
+            // txtAddress
             // 
-            this.txtBirth.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtBirth.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtBirth.Location = new System.Drawing.Point(100, 289);
-            this.txtBirth.Multiline = true;
-            this.txtBirth.Name = "txtBirth";
-            this.txtBirth.Size = new System.Drawing.Size(267, 31);
-            this.txtBirth.TabIndex = 38;
-            this.txtBirth.Tag = "/Data/ExtendedInfo/household";
+            this.txtAddress.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtAddress.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtAddress.Location = new System.Drawing.Point(100, 289);
+            this.txtAddress.Multiline = true;
+            this.txtAddress.Name = "txtAddress";
+            this.txtAddress.Size = new System.Drawing.Size(267, 31);
+            this.txtAddress.TabIndex = 38;
+            this.txtAddress.Tag = "Resident/BaseInfo/household";
             // 
             // txtName
             // 
@@ -271,7 +271,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(120, 31);
             this.txtName.TabIndex = 40;
-            this.txtName.Tag = "/Data/ExtendedInfo/otherName";
+            this.txtName.Tag = "Resident/BaseInfo/othername";
             // 
             // label9
             // 
@@ -352,7 +352,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtProfession.Name = "txtProfession";
             this.txtProfession.Size = new System.Drawing.Size(109, 31);
             this.txtProfession.TabIndex = 107;
-            this.txtProfession.Tag = "/Data/ExtendedInfo/profession_name";
+            this.txtProfession.Tag = "Resident/BaseInfo/profession_name";
             // 
             // label17
             // 
@@ -383,7 +383,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(120, 31);
             this.txtHeight.TabIndex = 111;
-            this.txtHeight.Tag = "/Data/ExtendedInfo/height";
+            this.txtHeight.Tag = "Resident/BaseInfo/height";
             // 
             // label19
             // 
@@ -412,7 +412,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbx_education.Name = "cbx_education";
             this.cbx_education.Size = new System.Drawing.Size(120, 32);
             this.cbx_education.TabIndex = 120;
-            this.cbx_education.Tag = "/Data/ExtendedInfo/education";
+            this.cbx_education.Tag = "Resident/BaseInfo/education";
             // 
             // cbx_militaryservice
             // 
@@ -422,7 +422,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbx_militaryservice.Name = "cbx_militaryservice";
             this.cbx_militaryservice.Size = new System.Drawing.Size(109, 32);
             this.cbx_militaryservice.TabIndex = 121;
-            this.cbx_militaryservice.Tag = "/Data/ExtendedInfo/militaryservice";
+            this.cbx_militaryservice.Tag = "Resident/BaseInfo/militaryservice";
             // 
             // cbx_marital_status
             // 
@@ -432,7 +432,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbx_marital_status.Name = "cbx_marital_status";
             this.cbx_marital_status.Size = new System.Drawing.Size(109, 32);
             this.cbx_marital_status.TabIndex = 122;
-            this.cbx_marital_status.Tag = "/Data/ExtendedInfo/marital_status";
+            this.cbx_marital_status.Tag = "Resident/BaseInfo/marital_status";
             this.cbx_marital_status.SelectedIndexChanged += new System.EventHandler(this.cbxMarriage_SelectedIndexChanged);
             // 
             // cbx_Belief
@@ -443,7 +443,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbx_Belief.Name = "cbx_Belief";
             this.cbx_Belief.Size = new System.Drawing.Size(120, 32);
             this.cbx_Belief.TabIndex = 123;
-            this.cbx_Belief.Tag = "/Data/ExtendedInfo/Belief";
+            this.cbx_Belief.Tag = "Resident/BaseInfo/Belief";
             // 
             // cbxBlood
             // 
@@ -453,16 +453,17 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbxBlood.Name = "cbxBlood";
             this.cbxBlood.Size = new System.Drawing.Size(109, 32);
             this.cbxBlood.TabIndex = 124;
-            this.cbxBlood.Tag = "/Data/ExtendedInfo/blood_type";
+            this.cbxBlood.Tag = "Resident/BaseInfo/blood_type";
             // 
-            // button1
+            // btnAddress
             // 
-            this.button1.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Bold);
-            this.button1.Location = new System.Drawing.Point(375, 289);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(83, 30);
-            this.button1.TabIndex = 186;
-            this.button1.Text = "同身份证";
+            this.btnAddress.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Bold);
+            this.btnAddress.Location = new System.Drawing.Point(375, 289);
+            this.btnAddress.Name = "btnAddress";
+            this.btnAddress.Size = new System.Drawing.Size(83, 30);
+            this.btnAddress.TabIndex = 186;
+            this.btnAddress.Text = "同身份证";
+            this.btnAddress.Click += new System.EventHandler(this.btnAddress_Click);
             // 
             // pictureBox3
             // 
@@ -507,7 +508,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtConsort.Name = "txtConsort";
             this.txtConsort.Size = new System.Drawing.Size(151, 31);
             this.txtConsort.TabIndex = 195;
-            this.txtConsort.Tag = "/Data/ExtendedInfo/spouse/name";
+            this.txtConsort.Tag = "Resident/BaseInfo/spouse/name";
             // 
             // txtConsortPhone
             // 
@@ -518,7 +519,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtConsortPhone.Name = "txtConsortPhone";
             this.txtConsortPhone.Size = new System.Drawing.Size(108, 31);
             this.txtConsortPhone.TabIndex = 196;
-            this.txtConsortPhone.Tag = "/Data/ExtendedInfo/spouse/phone_number";
+            this.txtConsortPhone.Tag = "Resident/BaseInfo/spouse/phone_number";
             // 
             // lblConsortID
             // 
@@ -539,7 +540,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtConsortID.Name = "txtConsortID";
             this.txtConsortID.Size = new System.Drawing.Size(357, 31);
             this.txtConsortID.TabIndex = 197;
-            this.txtConsortID.Tag = "/Data/ExtendedInfo/idenfication_id";
+            this.txtConsortID.Tag = "Resident/BaseInfo/spouse/idenfication_id";
             // 
             // ucControlRsidentManager1
             // 
@@ -553,7 +554,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(480, 617);
+            this.ClientSize = new System.Drawing.Size(480, 762);
             this.Controls.Add(this.ucControlRsidentManager1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.txtConsortID);
@@ -564,7 +565,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.Controls.Add(this.lblConsort);
             this.Controls.Add(this.pictureBox3);
             this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnAddress);
             this.Controls.Add(this.cbxBlood);
             this.Controls.Add(this.cbx_Belief);
             this.Controls.Add(this.cbx_marital_status);
@@ -580,7 +581,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.Controls.Add(this.label14);
             this.Controls.Add(this.label13);
             this.Controls.Add(this.txtLink);
-            this.Controls.Add(this.txtBirth);
+            this.Controls.Add(this.txtAddress);
             this.Controls.Add(this.txtName);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label8);
@@ -605,6 +606,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.Name = "frmBaseInfoForPeople";
             this.Text = "frmBaseInfoForPeople";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmBaseInfoForPeople_Load);
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
@@ -632,7 +634,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.Label lblAddress;
         private System.Windows.Forms.PictureBox pbSpecial;
         private System.Windows.Forms.TextBox txtLink;
-        private System.Windows.Forms.TextBox txtBirth;
+        private System.Windows.Forms.TextBox txtAddress;
         private System.Windows.Forms.TextBox txtName;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Label label8;
@@ -652,7 +654,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.ComboBox cbx_marital_status;
         private System.Windows.Forms.ComboBox cbx_Belief;
         private System.Windows.Forms.ComboBox cbxBlood;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnAddress;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox6;
         private System.Windows.Forms.Label lblConsort;

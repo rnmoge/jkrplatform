@@ -230,7 +230,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel7.Location = new System.Drawing.Point(386, 5);
             this.pDel7.Name = "pDel7";
             this.pDel7.Size = new System.Drawing.Size(52, 31);
-            this.pDel7.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel7.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn7
             // 
@@ -300,7 +300,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel6.Location = new System.Drawing.Point(386, 5);
             this.pDel6.Name = "pDel6";
             this.pDel6.Size = new System.Drawing.Size(52, 31);
-            this.pDel6.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel6.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn6
             // 
@@ -370,7 +370,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel5.Location = new System.Drawing.Point(386, 6);
             this.pDel5.Name = "pDel5";
             this.pDel5.Size = new System.Drawing.Size(52, 31);
-            this.pDel5.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel5.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn5
             // 
@@ -440,7 +440,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel4.Location = new System.Drawing.Point(386, 5);
             this.pDel4.Name = "pDel4";
             this.pDel4.Size = new System.Drawing.Size(52, 31);
-            this.pDel4.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel4.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn4
             // 
@@ -510,7 +510,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel3.Location = new System.Drawing.Point(386, 6);
             this.pDel3.Name = "pDel3";
             this.pDel3.Size = new System.Drawing.Size(52, 31);
-            this.pDel3.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel3.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn3
             // 
@@ -589,7 +589,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel2.Location = new System.Drawing.Point(386, 5);
             this.pDel2.Name = "pDel2";
             this.pDel2.Size = new System.Drawing.Size(52, 31);
-            this.pDel2.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel2.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn2
             // 
@@ -651,7 +651,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pDel1.Location = new System.Drawing.Point(386, 5);
             this.pDel1.Name = "pDel1";
             this.pDel1.Size = new System.Drawing.Size(52, 31);
-            this.pDel1.Click += new System.EventHandler(this.pbIn_Click);
+            this.pDel1.Click += new System.EventHandler(this.pbDel_Click);
             // 
             // pIn1
             // 

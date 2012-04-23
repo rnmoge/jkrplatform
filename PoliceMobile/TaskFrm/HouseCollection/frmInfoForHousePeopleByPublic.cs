@@ -47,5 +47,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         {
 
         }
+
+        private void pbReSet_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

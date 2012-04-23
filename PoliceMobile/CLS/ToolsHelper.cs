@@ -19,6 +19,7 @@ namespace PoliceMobile.CLS
     {
         public static int iHouseType = 1;
         public static int iPeopleType = 1;
+        public static int iPeopleFlag = 0;
         public static int iFlag = 0;
         public static string sHouseGuid = "";
         public static string sPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
@@ -263,6 +264,29 @@ namespace PoliceMobile.CLS
                         ((Label)theControl).Text = xnNode.SelectSingleNode(thePath).InnerText; ;
                     }
                 }
+                //if (theControl.GetType().Name == "rbPrivate")
+                //{
+                //    if (theControl.Enabled == true)
+                //    {
+                //        if (xnNode.SelectSingleNode(thePath).InnerText == "1")
+                //        {
+                //            //私产
+                //            if (((RadioButton)theControl).Name == "rbPrivate")
+                //            {
+                //                ((RadioButton)theControl).Checked = true;
+                //            }
+                //        }
+                //        else
+                //        {
+                //            //公产
+                //            if (((RadioButton)theControl).Name == "rbPublic")
+                //            {
+                //                ((RadioButton)theControl).Checked = true;
+                //            }
+
+                //        }
+                //    }
+                //}
             }
             return true;
         }
@@ -551,9 +575,9 @@ namespace PoliceMobile.CLS
             string sPicName = Convert.ToString(pb.Tag);
 
             //XmlNode xnPicBox = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid='" + sGuid + "']/Camera/" + sTag);
-            //XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[@GUID='"+sTag+"']");
+            //XmlNode xnPicBox = xDoc.SelectSingleNode(".//Residential_housing/images/image[@GUID='"+sTag+"']");
 
-            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[photo[text()=" + sPicName + "]]");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//Residential_housing/images/image[photo[text()=" + sPicName + "]]");
             if (xnPicBox == null)
             {
                 MessageBox.Show("删除失败");
@@ -621,17 +645,17 @@ namespace PoliceMobile.CLS
             Directory.CreateDirectory(sPath + "/Peoples/" + sIdCode + "/");
 
             string sResident = "ResidentPermanentData.xml";
-            if (sType == "0")
+            if (sType == "1")
             {
                 sResident = "ResidentPermanentData.xml";
             }
 
-            if (sType == "1")
+            if (sType == "2")
             {
                 sResident = "ResidentTempData.xml";
             }
 
-            if (sType == "2")
+            if (sType == "3")
             {
                 sResident = "ResidentSpecialData.xml";
             }
@@ -640,6 +664,38 @@ namespace PoliceMobile.CLS
             xDoc.Load(sPath + "/Template/" + sResident);
 
             xDoc.Save(sPath + "/Peoples/" + sIdCode + "/" + "People.xml");
+        }
+
+
+        /// <summary>
+        /// 插入管理文件
+        /// </summary>
+        /// <param name="type"></param>
+        /// <param name="CardID"></param>
+        /// <param name="steetaddress"></param>
+        /// <param name="name"></param>
+        public static void SetConfigXmlbyPeople(string type, string CardID)
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(sPath + "/SystemData.xml");
+
+            // XmlNode xnlHouseDatas = xDoc.SelectSingleNode(".//System/HouseDatas");
+            XmlNode root = xDoc.SelectSingleNode(".//System/PeopleDatas");
+
+
+            //<House Type="0" Guid="Template" IsUpdate="" CreateTime="" ="未采集" name ="未采集" datetime="" ></House>
+            XmlNode xnlHouse = xDoc.SelectSingleNode(".//System/PeopleDatas/People[@CardID='Template']");
+            XmlNode xnlNew = xnlHouse.CloneNode(true);
+            xnlNew.Attributes["Type"].Value = type;
+            xnlNew.Attributes["CardID"].Value = CardID;
+            xnlNew.Attributes["IsUpdate"].Value = "0";
+            xnlNew.Attributes["CreateTime"].Value = System.DateTime.Now.ToString();
+            //xnlNew.Attributes["streetAddress"].Value = steetaddress;
+            //xnlNew.Attributes["name"].Value = name;
+            xnlNew.Attributes["datetime"].Value = System.DateTime.Now.ToString("MM-dd hh:ss:mm");
+
+            root.AppendChild(xnlNew);
+            xDoc.Save(sPath + "/SystemData.xml");
         }
 
         /// <summary>
@@ -672,7 +728,7 @@ namespace PoliceMobile.CLS
                     {
                         sValue = Convert.ToString(((ComboBox)theControl).SelectedValue);
 
-                        string sValue1 = Convert.ToString(((ComboBox)theControl).SelectedText);
+                        string sValue1 = Convert.ToString(((ComboBox)theControl).Text);
                         string sValue2 = Convert.ToString(((ComboBox)theControl).SelectedValue);
 
                         XmlNode xnData_Name = xnNode.SelectSingleNode(thePath + "_name");
@@ -722,6 +778,8 @@ namespace PoliceMobile.CLS
         {
             System.Windows.Forms.Control.ControlCollection cc = frm.Controls;
 
+ 
+
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(sPath + "/Peoples/" + sCardId + "/" + "People.xml");
 
@@ -732,22 +790,32 @@ namespace PoliceMobile.CLS
                 Control theControl = cc[i];
 
                 string thePath = Convert.ToString(theControl.Tag);
+
+
                 if (thePath == "")
                 {
                     continue;
                 }
 
-                string sValue = xnNode.SelectSingleNode(thePath).InnerText;
+                string sValue = "";
 
                 if (theControl.GetType().Name == "ComboBox")
                 {
                     if (theControl.Enabled == true)
                     {
-                        ((ComboBox)theControl).SelectedText = xnNode.SelectSingleNode(thePath + "_name").InnerText;
+                        if (xnNode.SelectSingleNode(thePath + "_name").InnerText == "")
+                        {
+                            continue;
+                        }
+                        ((ComboBox)theControl).Text = xnNode.SelectSingleNode(thePath + "_name").InnerText;
                         ((ComboBox)theControl).SelectedValue = xnNode.SelectSingleNode(thePath + "_code").InnerText;
                     }
                     continue;
                 }
+
+
+               sValue = xnNode.SelectSingleNode(thePath).InnerText;
+
 
                 if (theControl.GetType().Name.ToString() == "TextBox")
                 {
@@ -781,7 +849,7 @@ namespace PoliceMobile.CLS
 
             string sPicName = Convert.ToString(pb.Tag);
 
-            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//Residential_housing/images");
 
             //      <image type="1" name="室外">
             //  <title>大门</title>
@@ -844,7 +912,7 @@ namespace PoliceMobile.CLS
 
             //string sPicName = Convert.ToString(pb.Tag);
 
-            //XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/Images/image");
+            //XmlNode xnPicBox = xDoc.SelectSingleNode(".//Residential_housing/Images/image");
 
             //XmlNode xnTitle = tilte;
             //xnPicBox.AppendChild(xnTitle);
@@ -895,13 +963,13 @@ namespace PoliceMobile.CLS
             string sPicName = "";
 
 
-            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[photo[text()='" + sPictureName + "']]");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//Residential_housing/images/image[photo[text()='" + sPictureName + "']]");
 
             XmlNode xnNewPicBox;
 
             if (xnPicBox == null)
             {
-                XmlNodeList xnl = xDoc.SelectNodes(".//residential_housing/images/image");
+                XmlNodeList xnl = xDoc.SelectNodes(".//Residential_housing/images/image");
                 if (xnl.Count == 0)
                 {
                     MessageBox.Show("已经到顶部了。");
@@ -948,13 +1016,13 @@ namespace PoliceMobile.CLS
             string sPictureName = Convert.ToString(pb.Tag);
 
             string sPicName = "";
-            XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images/image[photo[text()='" + sPictureName + "']]");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(".//Residential_housing/images/image[photo[text()='" + sPictureName + "']]");
 
             XmlNode xnNewPicBox;
 
             if (xnPicBox == null)
             {
-                XmlNodeList xnl = xDoc.SelectNodes(".//residential_housing/images/image");
+                XmlNodeList xnl = xDoc.SelectNodes(".//Residential_housing/images/image");
                 if (xnl.Count == 0)
                 {
                     MessageBox.Show("没有图片");
@@ -1021,9 +1089,11 @@ namespace PoliceMobile.CLS
         /// <param name="saveName">文件上传后的名称</param> 
         /// <param name="progressBar">上传进度条</param> 
         /// <returns>成功返回1，失败返回0</returns> 
-        public static int Upload_Request(string address, string fileNamePath, string saveName)
+        public static int Upload_Request(string address, string fileNamePath, string saveName,string type)
         {
+
             int returnValue = 0;
+            address += "?posttype=" + type;
             // 要上传的文件 
             FileStream fs = new FileStream(fileNamePath, FileMode.Open, FileAccess.Read);
             BinaryReader r = new BinaryReader(fs);

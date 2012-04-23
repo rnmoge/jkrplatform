@@ -22,7 +22,7 @@ namespace PoliceMobile.LIB
         {
 
            theFrm = ((Form)this.Parent);
-           FrmManager.showWindowFor_frmInfoForStreet(theFrm);
+           FrmManager.showWindowFor_frmInfoForStreet(theFrm,false);
         }
 
         private void pPeople_Click(object sender, EventArgs e)

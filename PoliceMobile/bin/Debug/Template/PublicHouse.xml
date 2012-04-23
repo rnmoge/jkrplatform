@@ -10,15 +10,15 @@
     <realname>慕守文</realname>
     <time_collected>2012-04-10:08:30:25</time_collected>
   </CollectorInfo>
-  <residential_housing type="0" code="公产" createtime="">
-    <streetAddress></streetAddress>
+  <Residential_housing type="0" code="公产" createtime="">
+    <streetaddress></streetaddress>
     <street></street>
     <address>向阳村205号</address>
     <address_id>210002</address_id>
     <house_code></house_code>
     <house_name></house_name>
-    <nothouse_code></nothouse_code>
-    <nothouse_name></nothouse_name>
+    <functional_building_code></functional_building_code>
+      <functional_building_name></functional_building_name>
     <residence_remark>此房屋建于1960年8月，曾经于2000年5月受到水淹，并被定位危房。2005年做过加固处理。</residence_remark>
     <gps_longitude>
     </gps_longitude>
@@ -39,7 +39,7 @@
       <address_code>100</address_code>
       <address_name>北京市朝阳区北三环中路100号</address_name>
       <rent></rent>
-      <HouseType></HouseType>
+      <houseType></houseType>
     </owner>
     <images>
       <image_folder>8888-8888</image_folder>
@@ -65,5 +65,5 @@
         </photo>
       </image>
     </images>
-  </residential_housing>
+  </Residential_housing>
 </Data>

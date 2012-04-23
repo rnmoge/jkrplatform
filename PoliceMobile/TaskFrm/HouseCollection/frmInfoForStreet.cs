@@ -16,11 +16,15 @@ namespace PoliceMobile.TaskFrm.HouseCollection
     public partial class frmInfoForStreet : Form
     {
         Boolean iFlag_Street = false;
-        public frmInfoForStreet()
+        //编辑标志 fales 默认新建   true 编辑模式
+        bool _isEdit = false;
+        public frmInfoForStreet(bool isEdit)
         {
             InitializeComponent();
+            _isEdit = isEdit;
             ucControlManager1.pStreet.BackColor = Color.White;
             init();
+            
         }
 
         private void init()
@@ -29,10 +33,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             ToolsHelper.BindDataForComboBox("HouseType", cbNotHouse, "0");
             ToolsHelper.BindDataForComboBox("HouseTypeBase", cbHouse, "0");
 
-            if (ToolsHelper.sHouseGuid != "")
+            if (ToolsHelper.sHouseGuid != "" && _isEdit )
             {
                 ToolsHelper.AutoLoadConfigForHouse(this, ToolsHelper.sHouseGuid);
-                if (txtHouseType.Text == "1")
+                if (txtHouseType.Text == "2")
                 {
                     rbPublic.Checked = true;
                 }
@@ -66,7 +70,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            if (cbStreet.SelectedIndex == -1)
+            if (cbStreet.SelectedIndex == -1 && !_isEdit)
             {
                 MessageBox.Show("请重新选择街道");
                 return;
@@ -83,20 +87,39 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             ToolsHelper.sHouseGuid = sGuid;
 
             ToolsHelper.iFlag = 1;
-
-            if (rbPrivate.Checked == true)
+            if (!_isEdit)
             {
-                ToolsHelper.iHouseType = 1;
-                ToolsHelper.AutoSaveConfigForHouse(this, sGuid,false);
-                ToolsHelper.SetConfigXmlbyHouse(ToolsHelper.iHouseType.ToString(), sGuid);
-                FrmManager.showWindowFor_frmInfoForHousePeopleByPrivate(this);
+                if (rbPrivate.Checked == true)
+                {
+                    ToolsHelper.iHouseType = 1;
+                    ToolsHelper.AutoSaveConfigForHouse(this, sGuid, false);
+                    ToolsHelper.SetConfigXmlbyHouse(ToolsHelper.iHouseType.ToString(), sGuid);
+                    FrmManager.showWindowFor_frmInfoForHousePeopleByPrivate(this);
+                }
+                else
+                {
+                    ToolsHelper.iHouseType = 2;
+                    ToolsHelper.AutoSaveConfigForPublicHouse(this, sGuid, false);
+                    ToolsHelper.SetConfigXmlbyHouse(ToolsHelper.iHouseType.ToString(), sGuid);
+                    FrmManager.showWindowFor_frmInfoForHousePeopleByPublic(this);
+                }
             }
             else
             {
-                ToolsHelper.iHouseType = 2;
-                ToolsHelper.AutoSaveConfigForPublicHouse(this, sGuid,false);
-                ToolsHelper.SetConfigXmlbyHouse(ToolsHelper.iHouseType.ToString(), sGuid);
-                FrmManager.showWindowFor_frmInfoForHousePeopleByPublic(this);
+                if (rbPrivate.Checked == true)
+                {
+                    ToolsHelper.iHouseType = 1;
+                    ToolsHelper.AutoSaveConfigForHouse(this, sGuid, true);
+                   
+                    FrmManager.showWindowFor_frmInfoForHousePeopleByPrivate(this);
+                }
+                else
+                {
+                    ToolsHelper.iHouseType = 2;
+                    ToolsHelper.AutoSaveConfigForPublicHouse(this, sGuid, true);
+                   
+                    FrmManager.showWindowFor_frmInfoForHousePeopleByPublic(this);
+                }
             }
         }
 
@@ -250,6 +273,14 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             else
             {
                 txtRent.Text = "0";
+            }
+        }
+
+        private void frmInfoForStreet_Load(object sender, EventArgs e)
+        {
+            if (_isEdit)
+            {
+                ToolsHelper.AutoLoadConfigForHouse(this, ToolsHelper.sHouseGuid);
             }
         }
     }

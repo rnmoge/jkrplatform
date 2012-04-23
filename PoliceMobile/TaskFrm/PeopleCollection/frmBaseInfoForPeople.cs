@@ -60,29 +60,23 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-            string sGuid = ToolsHelper.sHouseGuid;
-            if (sGuid == "")
-            {
-                sGuid = Guid.NewGuid().ToString();
-            }
-            ToolsHelper.AutoSaveConfigForHouse(this, sGuid,true);
-            ToolsHelper.sHouseGuid = sGuid;
+            ToolsHelper.AutoSaveConfigForPeople(this, ToolsHelper.sCardId);
 
-            ToolsHelper.iFlag = 1;
+            ToolsHelper.iPeopleFlag = 2; ;
 
-            if (ToolsHelper.iPeopleType == 0)
+            if (ToolsHelper.iPeopleType == 1)
             {
                 FrmManager.showWindowFor_frmPermanentResident();
                 return;
             }
 
-            if (ToolsHelper.iPeopleType == 1)
+            if (ToolsHelper.iPeopleType == 2)
             {
                 FrmManager.showWindowFor_frmTempResident();
                 return;
             }
 
-            if (ToolsHelper.iPeopleType == 2)
+            if (ToolsHelper.iPeopleType == 3)
             {
                 FrmManager.showWindowFor_frmSpecialResident();
                 return;
@@ -205,6 +199,16 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
                     }
 
             }
+        }
+
+        private void frmBaseInfoForPeople_Load(object sender, EventArgs e)
+        {
+            ToolsHelper.AutoLoadConfigForPeople(this, ToolsHelper.sCardId);
+        }
+
+        private void btnAddress_Click(object sender, EventArgs e)
+        {
+            txtAddress.Text = lblAddress.Text;
         }
     }
 }

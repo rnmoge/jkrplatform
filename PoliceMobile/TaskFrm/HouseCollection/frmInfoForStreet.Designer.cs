@@ -93,7 +93,7 @@
             this.txtInfo.Name = "txtInfo";
             this.txtInfo.Size = new System.Drawing.Size(429, 128);
             this.txtInfo.TabIndex = 21;
-            this.txtInfo.Tag = ".//residential_housing/residence_remark";
+            this.txtInfo.Tag = ".//Residential_housing/residence_remark";
             // 
             // pictureBox2
             // 
@@ -143,7 +143,7 @@
             this.cbHouse.Name = "cbHouse";
             this.cbHouse.Size = new System.Drawing.Size(157, 32);
             this.cbHouse.TabIndex = 34;
-            this.cbHouse.Tag = ".//residential_housing/house";
+            this.cbHouse.Tag = ".//Residential_housing/house";
             this.cbHouse.SelectedIndexChanged += new System.EventHandler(this.cbHouse_SelectedIndexChanged);
             // 
             // cbNotHouse
@@ -154,7 +154,7 @@
             this.cbNotHouse.Name = "cbNotHouse";
             this.cbNotHouse.Size = new System.Drawing.Size(294, 32);
             this.cbNotHouse.TabIndex = 34;
-            this.cbNotHouse.Tag = ".//residential_housing/nothouse";
+            this.cbNotHouse.Tag = ".//Residential_housing/functional_building";
             // 
             // txtGps
             // 
@@ -196,7 +196,7 @@
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Size = new System.Drawing.Size(428, 35);
             this.txtStreet.TabIndex = 70;
-            this.txtStreet.Tag = ".//residential_housing/street";
+            this.txtStreet.Tag = ".//Residential_housing/street";
             this.txtStreet.TextChanged += new System.EventHandler(this.txtStreet_TextChanged);
             // 
             // panel7
@@ -273,7 +273,7 @@
             this.txtDetailAddressId.Name = "txtDetailAddressId";
             this.txtDetailAddressId.Size = new System.Drawing.Size(68, 41);
             this.txtDetailAddressId.TabIndex = 83;
-            this.txtDetailAddressId.Tag = ".//residential_housing/owner/address_code";
+            this.txtDetailAddressId.Tag = ".//Residential_housing/owner/address_code";
             this.txtDetailAddressId.Visible = false;
             // 
             // txtDetailAddress
@@ -284,7 +284,7 @@
             this.txtDetailAddress.Name = "txtDetailAddress";
             this.txtDetailAddress.Size = new System.Drawing.Size(453, 35);
             this.txtDetailAddress.TabIndex = 82;
-            this.txtDetailAddress.Tag = ".//residential_housing/owner/address_name";
+            this.txtDetailAddress.Tag = ".//Residential_housing/owner/address_name";
             // 
             // cbAddressDetail
             // 
@@ -319,7 +319,7 @@
             this.txt_streetAddress.Location = new System.Drawing.Point(187, 128);
             this.txt_streetAddress.Name = "txt_streetAddress";
             this.txt_streetAddress.Size = new System.Drawing.Size(200, 40);
-            this.txt_streetAddress.Tag = ".//residential_housing/streetAddress";
+            this.txt_streetAddress.Tag = ".//Residential_housing/streetaddress";
             this.txt_streetAddress.Text = "streetAddress";
             this.txt_streetAddress.Visible = false;
             // 
@@ -329,7 +329,7 @@
             this.txtHouseType.Name = "txtHouseType";
             this.txtHouseType.Size = new System.Drawing.Size(27, 41);
             this.txtHouseType.TabIndex = 97;
-            this.txtHouseType.Tag = ".//residential_housing/owner/HouseType";
+            this.txtHouseType.Tag = ".//Residential_housing/owner/houseType";
             this.txtHouseType.Text = "1";
             this.txtHouseType.Visible = false;
             // 
@@ -339,7 +339,7 @@
             this.txtRent.Name = "txtRent";
             this.txtRent.Size = new System.Drawing.Size(21, 41);
             this.txtRent.TabIndex = 98;
-            this.txtRent.Tag = ".//residential_housing/owner/rent";
+            this.txtRent.Tag = ".//Residential_housing/owner/rent";
             this.txtRent.Text = "0";
             this.txtRent.Visible = false;
             // 
@@ -389,6 +389,7 @@
             this.Name = "frmInfoForStreet";
             this.Text = "frmInfoForStreet";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmInfoForStreet_Load);
             this.panel7.ResumeLayout(false);
             this.ResumeLayout(false);
 
