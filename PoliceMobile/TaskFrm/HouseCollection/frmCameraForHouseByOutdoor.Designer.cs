@@ -95,6 +95,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnPrevious.Name = "btnPrevious";
             this.btnPrevious.Size = new System.Drawing.Size(187, 44);
             this.btnPrevious.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnPrevious.Click += new System.EventHandler(this.btnPrevious_Click);
             // 
             // btnNext
             // 
@@ -103,6 +104,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnNext.Name = "btnNext";
             this.btnNext.Size = new System.Drawing.Size(187, 44);
             this.btnNext.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnNext.Click += new System.EventHandler(this.btnNext_Click);
             // 
             // panel1
             // 

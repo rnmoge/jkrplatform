@@ -152,13 +152,56 @@ namespace PoliceMobile.LIB
                 frmCameraForPeople fcfp = new frmCameraForPeople();
 
             fcfp.Show();
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
         }
 
-        public static void showWindowFor_frmInfoForPeople()
+        public static void showWindowFor_frmInfoForPeople(Form theForm)
         {
 
                 frmInfoForPeople fifp = new frmInfoForPeople();
+                fifp.Show();
+                theForm.Close();
+                theForm.Dispose();
+                theForm = null;
+        }
 
+        public static void showWindowFor_frmBaseInfoForPeople(Form theForm)
+        {
+            frmBaseInfoForPeople fbifp = new frmBaseInfoForPeople();
+            fbifp.Show();
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
+        }
+
+        public static void showWindowFor_frmPermanentResident(Form theForm)
+        {
+            frmPermanentResident fpr = new frmPermanentResident();
+            fpr.Show();
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
+        }
+
+        public static void showWindowFor_frmSpecialResident(Form theForm)
+        {
+            frmSpecialResident fsr = new frmSpecialResident();
+            fsr.Show();
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
+        }
+
+        public static void showWindowFor_frmTempResident(Form theForm)
+        {
+            frmTempResident fts = new frmTempResident();
+            fts.Show();
+
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
         }
     }
 }

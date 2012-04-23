@@ -25,7 +25,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         public frmSpecialResident()
         {
             InitializeComponent();
-            init();
+            ucControlRsidentManager1.pExtendedInfo.BackColor = Color.White;
+            //init();
             if (OpenDevice(0) != 1) MessageBox.Show("OpenDevice error");
         }
 

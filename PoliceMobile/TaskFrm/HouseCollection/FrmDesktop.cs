@@ -32,7 +32,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void pbCollectionPeople_Click(object sender, EventArgs e)
         {
-            FrmManager.showWindowFor_frmInfoForPeople();
+            FrmManager.showWindowFor_frmInfoForPeople(this);
         }
     }
 }

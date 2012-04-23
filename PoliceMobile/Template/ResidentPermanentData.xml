@@ -19,8 +19,11 @@
 			<registration_date/>
 		</BaseInfo>
 		<ExtendedInfo>
-			<education_code/>
-			<education_name/>
+      <othername discripiton="曾用名"></othername>
+      			<household></household>
+      			<religion></religion>
+			<education_code discription="学历编号"/>
+			<education_name discripiton="学历名"/>
 			<marital_status_code/>
 			<marital_status_name/>
 			<militaryservice_code/>

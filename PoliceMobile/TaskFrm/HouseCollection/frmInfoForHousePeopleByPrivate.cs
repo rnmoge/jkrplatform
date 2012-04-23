@@ -162,7 +162,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             txtBirth.Text = sBirth;
 
             ToolsHelper.iFlag = 2;
-            ToolsHelper.AutoSaveConfigForHouse(this, ToolsHelper.sHouseGuid);
+            ToolsHelper.AutoSaveConfigForHouse(this, ToolsHelper.sHouseGuid,true);
+            ToolsHelper.SetConfigXmlbyHouseInfor(ToolsHelper.sHouseGuid, this.txtAddress.Text, this.txtName.Text);
             FrmManager.showWindowFor_frmCameraForHouseByOutdoor(this);
         }
 
@@ -173,7 +174,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void frmInfoForHousePeopleByPrivate_Load(object sender, EventArgs e)
         {
-            ToolsHelper.AutoSaveConfigForHouse(this, ToolsHelper.sHouseGuid);
+            ToolsHelper.AutoSaveConfigForHouse(this, ToolsHelper.sHouseGuid, true);
         }
     }
 }

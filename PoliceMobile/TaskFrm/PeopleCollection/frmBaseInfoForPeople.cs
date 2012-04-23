@@ -25,6 +25,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         public frmBaseInfoForPeople()
         {
             InitializeComponent();
+            ucControlRsidentManager1.pBaseInfo.BackColor = Color.White;
             init();
             try
             {
@@ -45,13 +46,13 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private void init()
         {
             //文化程度            
-            ToolsHelper.BindDataForComboBox("EducationType", cbxDegreeOfeducation, "0");
+            ToolsHelper.BindDataForComboBox("EducationType", cbx_education, "0");
             //兵役情况
-            ToolsHelper.BindDataForComboBox("MilitaryserviceType", cbxNationalService, "0");
+            ToolsHelper.BindDataForComboBox("MilitaryserviceType", cbx_militaryservice, "0");
             //婚否
-            ToolsHelper.BindDataForComboBox("MarriagestatusType", cbxMarriage, "0");
+            ToolsHelper.BindDataForComboBox("MarriagestatusType", cbx_marital_status, "0");
             //信仰
-            ToolsHelper.BindDataForComboBox("ReligionfaithType", cbxBelief, "0");
+            ToolsHelper.BindDataForComboBox("ReligionfaithType", cbx_Belief, "0");
             //血型
             ToolsHelper.BindDataForComboBox("BloodType", cbxBlood, "0");
             //
@@ -64,12 +65,28 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             {
                 sGuid = Guid.NewGuid().ToString();
             }
-            ToolsHelper.AutoSaveConfigForHouse(this, sGuid);
+            ToolsHelper.AutoSaveConfigForHouse(this, sGuid,true);
             ToolsHelper.sHouseGuid = sGuid;
 
             ToolsHelper.iFlag = 1;
 
-            FrmManager.showWindowFor_frmInfoForHousePeopleByPublic(this);
+            if (ToolsHelper.iPeopleType == 0)
+            {
+                FrmManager.showWindowFor_frmPermanentResident();
+                return;
+            }
+
+            if (ToolsHelper.iPeopleType == 1)
+            {
+                FrmManager.showWindowFor_frmTempResident();
+                return;
+            }
+
+            if (ToolsHelper.iPeopleType == 2)
+            {
+                FrmManager.showWindowFor_frmSpecialResident();
+                return;
+            }
         }
 
         private void btnScanIDCard_Click(object sender, EventArgs e)
@@ -162,16 +179,11 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             }
         }
 
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
-
         private void cbxMarriage_SelectedIndexChanged(object sender, EventArgs e)
         {
-            switch (cbxMarriage.SelectedIndex)
+            switch (cbx_marital_status.SelectedIndex)
             {
-                case 1:
+                case 2:
                     {
                         lblConsort.Visible = true;
                         lblConsortID.Visible = true;

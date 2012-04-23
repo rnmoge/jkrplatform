@@ -49,7 +49,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             {
                 sGuid = Guid.NewGuid().ToString();
             }
-            ToolsHelper.AutoSaveConfigForHouse(this, sGuid);
+            ToolsHelper.AutoSaveConfigForHouse(this, sGuid,true);
             ToolsHelper.sHouseGuid = sGuid;
 
             ToolsHelper.iFlag = 1;

@@ -118,9 +118,9 @@
 				<Type ti="0" id="9">其他</Type>
 			</RoomaterelationType>
       <PeopleType>
-        <Type ti="1" id="0">常住人员</Type>
-        <Type ti="0" id="1">暂住人员</Type>
-        <Type ti="0" id="2">重点人员</Type>
+        <Type ti="1" id="1">常住人员</Type>
+        <Type ti="0" id="2">暂住人员</Type>
+        <Type ti="0" id="3">重点人员</Type>
       </PeopleType>
       <GenderType>
         <Type ti="0" id="0">未知</Type>

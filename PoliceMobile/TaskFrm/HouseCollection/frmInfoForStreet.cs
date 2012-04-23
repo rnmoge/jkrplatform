@@ -86,14 +86,16 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
             if (rbPrivate.Checked == true)
             {
-                ToolsHelper.iHouseType = 0;
-                ToolsHelper.AutoSaveConfigForHouse(this, sGuid);
+                ToolsHelper.iHouseType = 1;
+                ToolsHelper.AutoSaveConfigForHouse(this, sGuid,false);
+                ToolsHelper.SetConfigXmlbyHouse(ToolsHelper.iHouseType.ToString(), sGuid);
                 FrmManager.showWindowFor_frmInfoForHousePeopleByPrivate(this);
             }
             else
             {
-                ToolsHelper.iHouseType = 1;
-                ToolsHelper.AutoSaveConfigForPublicHouse(this, sGuid);
+                ToolsHelper.iHouseType = 2;
+                ToolsHelper.AutoSaveConfigForPublicHouse(this, sGuid,false);
+                ToolsHelper.SetConfigXmlbyHouse(ToolsHelper.iHouseType.ToString(), sGuid);
                 FrmManager.showWindowFor_frmInfoForHousePeopleByPublic(this);
             }
         }
@@ -114,15 +116,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             cbStreet.DataSource = dt;
         }
 
-        private void cbStreet_KeyUp(object sender, KeyEventArgs e)
-        {
-
-        }
-        private void pbSave_Click(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void pbReSet_Click(object sender, EventArgs e)
         {
             txtStreet.Text = "";
@@ -239,12 +233,12 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void rbPrivate_CheckedChanged(object sender, EventArgs e)
         {
-            txtHouseType.Text = "0";
+            txtHouseType.Text = "1";
         }
 
         private void rbPublic_CheckedChanged(object sender, EventArgs e)
         {
-            txtHouseType.Text = "1";
+            txtHouseType.Text = "2";
         }
 
         private void chb_rent_CheckStateChanged(object sender, EventArgs e)
