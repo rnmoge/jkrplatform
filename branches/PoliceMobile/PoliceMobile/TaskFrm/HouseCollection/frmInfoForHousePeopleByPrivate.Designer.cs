@@ -202,7 +202,7 @@
             this.panel7.Controls.Add(this.pbSave);
             this.panel7.Controls.Add(this.pbReSet);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 637);
+            this.panel7.Location = new System.Drawing.Point(0, 455);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(480, 63);
             // 
@@ -231,7 +231,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 700);
+            this.panel1.Location = new System.Drawing.Point(0, 518);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 10);
             // 
@@ -239,7 +239,7 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 710);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 528);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
@@ -304,7 +304,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(480, 770);
+            this.ClientSize = new System.Drawing.Size(480, 588);
             this.Controls.Add(this.cbNation);
             this.Controls.Add(this.cbGender);
             this.Controls.Add(this.textBox5);

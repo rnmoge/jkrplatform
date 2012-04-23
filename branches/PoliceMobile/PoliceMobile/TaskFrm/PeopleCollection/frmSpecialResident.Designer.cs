@@ -1167,7 +1167,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage8.Controls.Add(this.label18);
             this.tabPage8.Location = new System.Drawing.Point(0, 0);
             this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(472, 397);
+            this.tabPage8.Size = new System.Drawing.Size(480, 392);
             this.tabPage8.Text = "前科情况";
             // 
             // panel21
@@ -1511,7 +1511,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage6.Controls.Add(this.label44);
             this.tabPage6.Location = new System.Drawing.Point(0, 0);
             this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(472, 397);
+            this.tabPage6.Size = new System.Drawing.Size(480, 392);
             this.tabPage6.Text = "直系亲属";
             // 
             // panel11

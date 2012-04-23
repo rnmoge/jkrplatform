@@ -320,7 +320,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblAddress.Location = new System.Drawing.Point(105, 89);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(219, 20);
-            this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
+            this.lblAddress.Tag = "Resident/BaseInfo/identification_id";
             // 
             // lblBirth
             // 
@@ -652,7 +652,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Location = new System.Drawing.Point(0, 0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(480, 477);
+            this.tabPage2.Size = new System.Drawing.Size(472, 483);
             this.tabPage2.Text = "人员信息";
             // 
             // pictureBox8
@@ -685,7 +685,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.lblRelation1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.lblRelation1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblRelation1.Location = new System.Drawing.Point(282, 45);
+            this.lblRelation1.Location = new System.Drawing.Point(305, 45);
             this.lblRelation1.Name = "lblRelation1";
             this.lblRelation1.Size = new System.Drawing.Size(49, 20);
             this.lblRelation1.Text = "关系";
@@ -715,7 +715,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.lblLink1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.lblLink1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblLink1.Location = new System.Drawing.Point(279, 83);
+            this.lblLink1.Location = new System.Drawing.Point(305, 83);
             this.lblLink1.Name = "lblLink1";
             this.lblLink1.Size = new System.Drawing.Size(83, 20);
             this.lblLink1.Text = "联系电话";
@@ -727,7 +727,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtIDCard.Location = new System.Drawing.Point(100, 78);
             this.txtIDCard.Multiline = true;
             this.txtIDCard.Name = "txtIDCard";
-            this.txtIDCard.Size = new System.Drawing.Size(160, 31);
+            this.txtIDCard.Size = new System.Drawing.Size(199, 31);
             this.txtIDCard.TabIndex = 134;
             this.txtIDCard.Tag = "";
             // 
@@ -1049,7 +1049,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblDetailLink1.Name = "lblDetailLink1";
             this.lblDetailLink1.Size = new System.Drawing.Size(127, 20);
             this.lblDetailLink1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/phone_number";
-        
             // 
             // lblDetailRelation1
             // 
@@ -1058,7 +1057,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblDetailRelation1.Name = "lblDetailRelation1";
             this.lblDetailRelation1.Size = new System.Drawing.Size(67, 20);
             this.lblDetailRelation1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/relation";
- 
             // 
             // lblDetailId1
             // 

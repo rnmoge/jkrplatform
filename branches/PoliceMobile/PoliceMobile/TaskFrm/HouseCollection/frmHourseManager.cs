@@ -22,60 +22,62 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             //init();
         }
 
-        //private void init()
-        //{
-        //    XmlDocument xDoc = new XmlDocument();
-        //    xDoc.Load(ToolsHelper.sPath + "/SystemData.xml");
+        private void init()
+        {
+             
+            DataTable dt = ToolsHelper.GetConfigXmlbyHouse();
 
-        //    XmlNodeList xnl = xDoc.SelectNodes("Data/System/HouseDatas/House[@Guid != 'Template']");
+            //ControlCollection cc = bgPanel.Controls;
 
-        //    int iMaxCount = 10;
+            Control[] sP = new Control[] { pBack1, pBack2, pBack3, pBack4, pBack5, pBack6, pBack7};
 
-        //    if (xnl.Count < 10)
-        //    {
-        //        iMaxCount = xnl.Count;
-        //    }
+            for (int i = 0; i < dt.Rows.Count; i++)
+            {
+                Control cl = sP[i];
+                cl.Visible = true;
 
-        //    ControlCollection cc = bgPanel.Controls;
+                  ControlCollection ccd = cl.Controls;
 
-        //    Control[] sP = new Control[] { pBack1, pBack2, pBack3, pBack4, pBack5, pBack6, pBack7, pBack8, pBack9, pBack10 };
+                for (int j = 0; j < ccd.Count; j++)
+                {
+                    Control cli = ccd[j];
+                    if (cli.Name.IndexOf("lblSteet") > -1)
+                    {
+                        cli.Text = dt.Rows[i]["steetaddress"].ToString();
+                        continue;
+                    }
 
-        //    for (int i = 0; i < iMaxCount; i++)
-        //    {
-        //        Control cl = sP[i];
-        //        cl.Visible = true;
+                    if (cli.Name.IndexOf("lblCreate") > -1)
+                    {
+                        cli.Text = dt.Rows[i]["time"].ToString();
+                        continue;
+                    }
+                    if (cli.Name.IndexOf("lblName") > -1)
+                    {
+                        cli.Text = dt.Rows[i]["name"].ToString();
+                        continue;
+                    }
+                 
 
-        //        ControlCollection ccd = cl.Controls;
+                    if (cli.Name.IndexOf("pIn") > -1)
+                    {
+                        cli.Tag = dt.Rows[i]["Guid"].ToString();
+                        continue;
+                    }
 
-        //        for (int j = 0; j < ccd.Count; j++)
-        //        {
-        //            Control cli = ccd[j];
-        //            if (cli.Name.IndexOf("lblSteet") > -1)
-        //            {
-        //                cli.Text = xnl[i].SelectSingleNode("Info/Street").InnerText;
-        //                continue;
-        //            }
-
-        //            if (cli.Name.IndexOf("lblCreate") > -1)
-        //            {
-        //                cli.Text = xnl[i].Attributes["CreateTime"].Value;
-        //                continue;
-        //            }
-
-        //            if (cli.Name.IndexOf("pbIn") > -1)
-        //            {
-        //                cli.Tag = xnl[i].Attributes["Guid"].Value;
-        //                continue;
-        //            }
-
-        //            if (cli.Name.IndexOf("pbUpload") > -1)
-        //            {
-        //                cli.Tag = xnl[i].Attributes["Guid"].Value;
-        //                continue;
-        //            }
-        //        }
-        //    }
-        //}
+                    if (cli.Name.IndexOf("pUpload") > -1)
+                    {
+                        cli.Tag = dt.Rows[i]["Guid"].ToString();
+                        continue;
+                    }
+                    if (cli.Name.IndexOf("pDel") > -1)
+                    {
+                        cli.Tag = dt.Rows[i]["Guid"].ToString();
+                        continue;
+                    }
+                }
+            }
+        }
 
         private void p6_GotFocus(object sender, EventArgs e)
         {
@@ -89,7 +91,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void frmHouseManager_Activated(object sender, EventArgs e)
         {
-            //init();
+            init();
         }
 
         private void pbIn_Click(object sender, EventArgs e)
@@ -101,9 +103,33 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             FrmManager.showWindowFor_frmInfoForStreet(this);
         }
 
+        private void pbDel_Click(object sender, EventArgs e)
+        {
+            Control c = (Control)sender;
+            string sGuid = Convert.ToString(c.Tag);
+            ToolsHelper.sHouseGuid = sGuid;
+
+            ToolsHelper.DelHouseProject(sGuid);
+            ToolsHelper.DelDirectory(sGuid);
+            init();
+           // FrmManager.showWindowFor_frmInfoForStreet(this);
+        }
+
         private void pbUpload_Click(object sender, EventArgs e)
         {
+             Control c = (Control)sender;
+            string sGuid = Convert.ToString(c.Tag);
+            ToolsHelper.sHouseGuid = sGuid;
 
+            string spath = ToolsHelper.sPath + "//Upload" + sGuid + ".zip";
+            string serverPaht= sGuid + ".zip";
+            //打包
+            string p = ToolsHelper.sPath + "/house/" +sGuid;
+            IList<string> list = new List<string>();
+            SharpZipHelper.GetFileInfo(p, p, list);
+            SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath + "/Upload/" + sGuid+ ".zip", 8, null, null);
+            //上传
+            ToolsHelper.Upload_Request("http://localhost:16434/UploadData.aspx", spath, serverPaht);
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -154,6 +180,16 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         }
 
         private void pictureBox21_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            FrmManager.showWindowFor_FrmDesktop(this);
+        }
+
+        private void frmHourseManager_Load(object sender, EventArgs e)
         {
 
         }

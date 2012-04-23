@@ -28,7 +28,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private void btnSave_Click(object sender, EventArgs e)
         {
             ToolsHelper.iFlag = 2;
-            ToolsHelper.AutoSaveConfigForPublicHouse(this, ToolsHelper.sHouseGuid);
+            ToolsHelper.SetConfigXmlbyHouseInfor(ToolsHelper.sHouseGuid, this.txtMasterAddress.Text, this.txtName.Text);
+            ToolsHelper.AutoSaveConfigForPublicHouse(this, ToolsHelper.sHouseGuid,true);
             FrmManager.showWindowFor_frmCameraForHouseByOutdoor(this);
         }
 

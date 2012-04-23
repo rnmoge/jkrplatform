@@ -54,9 +54,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblSex = new System.Windows.Forms.Label();
             this.lblBirth = new System.Windows.Forms.Label();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.lblCompany = new System.Windows.Forms.Label();
-            this.lblDate = new System.Windows.Forms.Label();
-            this.lblEndCreateDate = new System.Windows.Forms.Label();
+            this.lbl_REGORG = new System.Windows.Forms.Label();
+            this.lbl_STARTDATE = new System.Windows.Forms.Label();
+            this.lbl_ENDDATE = new System.Windows.Forms.Label();
             this.pbSpecial = new System.Windows.Forms.PictureBox();
             this.pbPic = new System.Windows.Forms.PictureBox();
             this.lblAddress_2 = new System.Windows.Forms.Label();
@@ -111,7 +111,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 528);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 687);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
@@ -263,37 +263,34 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.lblAddress.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblAddress.Location = new System.Drawing.Point(105, 155);
+            this.lblAddress.Location = new System.Drawing.Point(108, 158);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(219, 20);
             this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
-            // lblCompany
+            // lbl_REGORG
             // 
-            this.lblCompany.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.lblCompany.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblCompany.Location = new System.Drawing.Point(119, 524);
-            this.lblCompany.Name = "lblCompany";
-            this.lblCompany.Size = new System.Drawing.Size(316, 20);
-            this.lblCompany.Text = "BBBBBBBBBBBBBBBB";
+            this.lbl_REGORG.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.lbl_REGORG.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lbl_REGORG.Location = new System.Drawing.Point(119, 524);
+            this.lbl_REGORG.Name = "lbl_REGORG";
+            this.lbl_REGORG.Size = new System.Drawing.Size(316, 20);
             // 
-            // lblDate
+            // lbl_STARTDATE
             // 
-            this.lblDate.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.lblDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblDate.Location = new System.Drawing.Point(119, 555);
-            this.lblDate.Name = "lblDate";
-            this.lblDate.Size = new System.Drawing.Size(316, 20);
-            this.lblDate.Text = "CCCCCCCCCC";
+            this.lbl_STARTDATE.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.lbl_STARTDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lbl_STARTDATE.Location = new System.Drawing.Point(119, 555);
+            this.lbl_STARTDATE.Name = "lbl_STARTDATE";
+            this.lbl_STARTDATE.Size = new System.Drawing.Size(316, 20);
             // 
-            // lblEndCreateDate
+            // lbl_ENDDATE
             // 
-            this.lblEndCreateDate.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.lblEndCreateDate.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblEndCreateDate.Location = new System.Drawing.Point(119, 584);
-            this.lblEndCreateDate.Name = "lblEndCreateDate";
-            this.lblEndCreateDate.Size = new System.Drawing.Size(316, 20);
-            this.lblEndCreateDate.Text = "DDDDDDDDD";
+            this.lbl_ENDDATE.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.lbl_ENDDATE.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.lbl_ENDDATE.Location = new System.Drawing.Point(119, 584);
+            this.lbl_ENDDATE.Name = "lbl_ENDDATE";
+            this.lbl_ENDDATE.Size = new System.Drawing.Size(316, 20);
             // 
             // pbSpecial
             // 
@@ -305,7 +302,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             // pbPic
             // 
-            this.pbPic.Location = new System.Drawing.Point(275, 279);
+            this.pbPic.Location = new System.Drawing.Point(292, 276);
             this.pbPic.Name = "pbPic";
             this.pbPic.Size = new System.Drawing.Size(128, 143);
             // 
@@ -321,9 +318,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.lblCardId_2.Font = new System.Drawing.Font("Tahoma", 4F, System.Drawing.FontStyle.Bold);
             this.lblCardId_2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.lblCardId_2.Location = new System.Drawing.Point(179, 444);
+            this.lblCardId_2.Location = new System.Drawing.Point(186, 445);
             this.lblCardId_2.Name = "lblCardId_2";
-            this.lblCardId_2.Size = new System.Drawing.Size(170, 13);
+            this.lblCardId_2.Size = new System.Drawing.Size(217, 15);
             // 
             // lblBirth_2
             // 
@@ -360,7 +357,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // pictureBox3
             // 
             this.pictureBox3.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox3.Image")));
-            this.pictureBox3.Location = new System.Drawing.Point(42, 251);
+            this.pictureBox3.Location = new System.Drawing.Point(57, 251);
             this.pictureBox3.Name = "pictureBox3";
             this.pictureBox3.Size = new System.Drawing.Size(393, 241);
             // 
@@ -369,7 +366,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnScanIDCard.Image = ((System.Drawing.Image)(resources.GetObject("btnScanIDCard.Image")));
             this.btnScanIDCard.Location = new System.Drawing.Point(151, 181);
             this.btnScanIDCard.Name = "btnScanIDCard";
-            this.btnScanIDCard.Size = new System.Drawing.Size(187, 54);
+            this.btnScanIDCard.Size = new System.Drawing.Size(187, 64);
             this.btnScanIDCard.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.btnScanIDCard.Click += new System.EventHandler(this.btnScanIDCard_Click);
             // 
@@ -408,7 +405,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(480, 588);
+            this.ClientSize = new System.Drawing.Size(480, 747);
             this.Controls.Add(this.btnDesktop);
             this.Controls.Add(this.cbxPerson);
             this.Controls.Add(this.ucControlRsidentManager1);
@@ -429,9 +426,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.lblEndCreateDate);
-            this.Controls.Add(this.lblDate);
-            this.Controls.Add(this.lblCompany);
+            this.Controls.Add(this.lbl_ENDDATE);
+            this.Controls.Add(this.lbl_STARTDATE);
+            this.Controls.Add(this.lbl_REGORG);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.lblBirth);
             this.Controls.Add(this.lblSex);
@@ -479,9 +476,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.Label lblBirth;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.Label lblCompany;
-        private System.Windows.Forms.Label lblDate;
-        private System.Windows.Forms.Label lblEndCreateDate;
+        private System.Windows.Forms.Label lbl_REGORG;
+        private System.Windows.Forms.Label lbl_STARTDATE;
+        private System.Windows.Forms.Label lbl_ENDDATE;
         private System.Windows.Forms.PictureBox pbSpecial;
         private System.Windows.Forms.PictureBox pbPic;
         private System.Windows.Forms.Label lblAddress_2;

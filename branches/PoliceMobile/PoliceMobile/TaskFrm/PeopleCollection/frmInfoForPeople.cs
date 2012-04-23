@@ -25,6 +25,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         public frmInfoForPeople()
         {
             InitializeComponent();
+            ucControlRsidentManager1.pID.BackColor = Color.White;
             init();
             try
             {
@@ -69,8 +70,11 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
             ToolsHelper.iFlag = 1;
 
-            ToolsHelper.sCardId = lblCardId.Text; 
-            FrmManager.showWindowFor_frmPermanentResident();
+            ToolsHelper.sCardId = lblCardId.Text;
+
+            ToolsHelper.iPeopleType = Convert.ToInt32(cbxPerson.SelectedValue);
+
+            FrmManager.showWindowFor_frmBaseInfoForPeople(this);
         }
 
         private void btnScanIDCard_Click(object sender, EventArgs e)
@@ -90,8 +94,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             string ADDRESS;     //住址
             string REGORG;      //签发机关
 
-            DateTime STARTDATE;     //身份证有效起始日期
-            DateTime ENDDATE;     //身份证有效截至日期
+            string STARTDATE;     //身份证有效起始日期
+            string ENDDATE;     //身份证有效截至日期
             int m;
 
             try
@@ -113,6 +117,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                     BIRTH = (strBird.Substring(0, 4) + "年" + strBird.Substring(4, 2) + "月" + strBird.Substring(6) + "日");
                     ADDRESS = System.Text.UnicodeEncoding.Unicode.GetString(baseMsg, 52 + offset, 70).Trim();
                     IDC = System.Text.UnicodeEncoding.Unicode.GetString(baseMsg, 122 + offset, 36).Trim();
+                    REGORG = System.Text.UnicodeEncoding.Unicode.GetString(baseMsg, 158 + offset, 30).Trim();
+                    STARTDATE = System.Text.UnicodeEncoding.Unicode.GetString(baseMsg, 188 + offset, 16).Trim();
+                    ENDDATE = System.Text.UnicodeEncoding.Unicode.GetString(baseMsg, 204 + offset, 16).Trim();
+
                     if (Sex_Code == "1") Sex_Code = "男";
                     else Sex_Code = "女";
                     if (NATION_Code == "01") NATION_Code = "汉";
@@ -126,6 +134,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                     lblBirth.Text = BIRTH;
                     lblCardId.Text = IDC;
                     lblAddress.Text = ADDRESS;
+                    lbl_REGORG.Text = REGORG;
+                    lbl_STARTDATE.Text = STARTDATE;
+                    lbl_ENDDATE.Text = ENDDATE;
 
                     lblName_2.Text = Name;
                     lblSex_2.Text = Sex_Code;
@@ -133,6 +144,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                     lblBirth_2.Text = BIRTH;
                     lblCardId_2.Text = IDC;
                     lblAddress_2.Text = ADDRESS;
+
 
                     pbSpecial.Visible = false;
                     if (lblCardId_2.Text != "120104198311055557")

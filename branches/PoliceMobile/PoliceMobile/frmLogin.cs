@@ -11,6 +11,7 @@ using System.Xml;
 using PoliceMobile.LIB;
 using PoliceMobile.CLS;
 using PoliceMobile.CLS.DeviceID;
+using System.IO;
 
 namespace PoliceMobile
 {
@@ -54,9 +55,17 @@ namespace PoliceMobile
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string sZipFile = "123.zip";
-            string[] sFileName = {"1.xml","2.xml","3.xml"};
-            ToolsHelper.ZipHelper(sFileName, ToolsHelper.sPath + "/Test/", sZipFile);
+            string sZipFile = "qqq.zip";
+
+            string p = ToolsHelper.sPath + "/Test";
+            IList<string> list = new List<string>();
+            SharpZipHelper.GetFileInfo(p, p, list);
+            SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath +  "/Upload/" + "testInfo1.zip", 8, null, null);
+
+            //string sZipFile = "123.zip";
+            //string[] sFileName = { "1.xml", "2.xml", "3.xml" };
+            //ToolsHelper.ZipHelper(sFileName, ToolsHelper.sPath + "/Test/", sZipFile);
         }
+
     }
 }

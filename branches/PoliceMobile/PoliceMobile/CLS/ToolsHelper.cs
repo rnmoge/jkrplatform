@@ -12,11 +12,13 @@ using System.Data;
 using System.Drawing;
 using System.Net;
 
+
 namespace PoliceMobile.CLS
 {
     public class ToolsHelper
     {
-        public static int iHouseType = 0;
+        public static int iHouseType = 1;
+        public static int iPeopleType = 1;
         public static int iFlag = 0;
         public static string sHouseGuid = "";
         public static string sPath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().GetName().CodeBase);
@@ -124,17 +126,25 @@ namespace PoliceMobile.CLS
 
 
         }
-        
+
         #region  //*** 私产House读写 ***//
         /// <summary>
         /// 自动存档模式
         /// </summary>
-        public static void AutoSaveConfigForHouse(Form frm, string sGuid)
+        public static void AutoSaveConfigForHouse(Form frm, string sGuid, bool edit)
         {
             System.Windows.Forms.Control.ControlCollection cc = frm.Controls;
 
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(sPath + "/Template/House.xml");
+            if (edit)
+            {
+                xDoc.Load(sPath + "/house/" + sGuid + "/" + "House.xml");
+            }
+            else
+            {
+                xDoc.Load(sPath + "/Template/House.xml");
+            }
+
 
             XmlNode xnNode = xDoc.SelectSingleNode("Data");
 
@@ -197,7 +207,7 @@ namespace PoliceMobile.CLS
             }
             //建议个GUID的文件夹
             System.IO.Directory.CreateDirectory(sPath + "//house//" + sGuid);
-            System.IO.Directory.CreateDirectory(sPath + "//house//" + sGuid+"//pic");
+            System.IO.Directory.CreateDirectory(sPath + "//house//" + sGuid + "//pic");
             xDoc.Save(sPath + "//house//" + sGuid + "//House.xml");
         }
 
@@ -223,7 +233,7 @@ namespace PoliceMobile.CLS
                     continue;
                 }
 
-               // string sValue = xnNode.SelectSingleNode(thePath).InnerText;
+                // string sValue = xnNode.SelectSingleNode(thePath).InnerText;
 
                 if (theControl.GetType().Name == "ComboBox")
                 {
@@ -263,12 +273,19 @@ namespace PoliceMobile.CLS
         /// <summary>
         /// 自动存档模式
         /// </summary>
-        public static void AutoSaveConfigForPublicHouse(Form frm, string sGuid)
+        public static void AutoSaveConfigForPublicHouse(Form frm, string sGuid, bool edit)
         {
             System.Windows.Forms.Control.ControlCollection cc = frm.Controls;
 
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(sPath + "/Template/PublicHouse.xml");
+            if (edit)
+            {
+                xDoc.Load(sPath + "/house/" + sGuid + "/" + "House.xml");
+            }
+            else
+            {
+                xDoc.Load(sPath + "/Template/PublicHouse.xml");
+            }
 
             XmlNode xnNode = xDoc.SelectSingleNode("Data");
 
@@ -399,27 +416,70 @@ namespace PoliceMobile.CLS
         /// <param name="sGuid"></param>
         /// <param name="steetaddress"></param>
         /// <param name="name"></param>
-        public static void SetConfigXmlbyHouse(string type,string sGuid,string steetaddress,string name)
+        public static void SetConfigXmlbyHouse(string type, string sGuid)
         {
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(sPath + "/SystemData.xml");
 
-           // XmlNode xnlHouseDatas = xDoc.SelectSingleNode(".//System/HouseDatas");
+            // XmlNode xnlHouseDatas = xDoc.SelectSingleNode(".//System/HouseDatas");
+            XmlNode root = xDoc.SelectSingleNode(".//System/HouseDatas");
+
 
             //<House Type="0" Guid="Template" IsUpdate="" CreateTime="" ="未采集" name ="未采集" datetime="" ></House>
             XmlNode xnlHouse = xDoc.SelectSingleNode(".//System/HouseDatas/House[@Guid='Template']");
             XmlNode xnlNew = xnlHouse.CloneNode(true);
-            xnlNew.Attributes["type"].Value = type;
+            xnlNew.Attributes["Type"].Value = type;
             xnlNew.Attributes["Guid"].Value = sGuid;
             xnlNew.Attributes["IsUpdate"].Value = "0";
             xnlNew.Attributes["CreateTime"].Value = System.DateTime.Now.ToString();
-            xnlNew.Attributes["steetaddress"].Value = steetaddress;
-            xnlNew.Attributes["name"].Value = name;
+            //xnlNew.Attributes["streetAddress"].Value = steetaddress;
+            //xnlNew.Attributes["name"].Value = name;
             xnlNew.Attributes["datetime"].Value = System.DateTime.Now.ToString("MM-dd hh:ss:mm");
 
-            xnlHouse.InsertAfter(xnlNew, xnlHouse);
+            root.AppendChild(xnlNew);
             xDoc.Save(sPath + "/SystemData.xml");
         }
+
+        /// <summary>
+        /// 更新配置文件
+        /// </summary>
+        /// <param name="sGuid"></param>
+        /// <param name="steetaddress"></param>
+        /// <param name="name"></param>
+        public static void SetConfigXmlbyHouseInfor(string sGuid, string steetaddress, string name)
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(sPath + "/SystemData.xml");
+
+            // XmlNode xnlHouseDatas = xDoc.SelectSingleNode(".//System/HouseDatas");
+            XmlNode xnlHouse = xDoc.SelectSingleNode("/Data/System/HouseDatas/House[@Guid='" + sGuid + "']");
+
+            xnlHouse.Attributes["streetAddress"].Value = steetaddress;
+            xnlHouse.Attributes["name"].Value = name;
+            xDoc.Save(sPath + "/SystemData.xml");
+
+        }
+        /// <summary>
+        /// 更新上传标志
+        /// </summary>
+        /// <param name="sGuid"></param>
+        /// <param name="steetaddress"></param>
+        /// <param name="name"></param>
+        public static void SetConfigXmlbyHouseUpload(string sGuid)
+        {
+            XmlDocument xDoc = new XmlDocument();
+            xDoc.Load(sPath + "/SystemData.xml");
+
+            // XmlNode xnlHouseDatas = xDoc.SelectSingleNode(".//System/HouseDatas");
+            XmlNode xnlHouse = xDoc.SelectSingleNode("/Data/System/HouseDatas/House[@Guid='" + sGuid + "']");
+
+
+            xnlHouse.Attributes["IsUpdate"].Value = "1";
+            xDoc.Save(sPath + "/SystemData.xml");
+
+        }
+
+
 
         /// <summary>
         /// 读取管理文件
@@ -428,7 +488,7 @@ namespace PoliceMobile.CLS
         /// <param name="sGuid"></param>
         /// <param name="steetaddress"></param>
         /// <param name="name"></param>
-        public static  DataTable  GetConfigXmlbyHouse()
+        public static DataTable GetConfigXmlbyHouse()
         {
             DataTable dt = new DataTable();
             dt.Columns.Add("Guid");
@@ -446,14 +506,14 @@ namespace PoliceMobile.CLS
             foreach (XmlNode xnlNew in xnlHouse)
             {
                 DataRow dr = dt.NewRow();
-             
-                dr["Guid"] = xnlNew.Attributes["Guid"].Value;
-                dr["steetaddress"] =  xnlNew.Attributes["steetaddress"].Value;
-                dr["name"] =  xnlNew.Attributes["name"].Value;
-                dr["time"] =  xnlNew.Attributes["datetime"].Value ;
 
+                dr["Guid"] = xnlNew.Attributes["Guid"].Value;
+                dr["steetaddress"] = xnlNew.Attributes["streetAddress"].Value;
+                dr["name"] = xnlNew.Attributes["name"].Value;
+                dr["time"] = xnlNew.Attributes["datetime"].Value;
+                dt.Rows.Add(dr);
             }
-                
+
             return dt;
         }
 
@@ -469,7 +529,7 @@ namespace PoliceMobile.CLS
         {
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(sPath + "/SystemData.xml");
-            XmlNode xnPicBox = xDoc.SelectSingleNode(@".//System/HouseDatas/House[@Guid ='"+sGuid+"']");
+            XmlNode xnPicBox = xDoc.SelectSingleNode(@".//System/HouseDatas/House[@Guid ='" + sGuid + "']");
             xnPicBox.RemoveAll();
             xDoc.Save(sPath + "/SystemData.xml");
 
@@ -531,24 +591,24 @@ namespace PoliceMobile.CLS
         /// <param name="directoryPath"></param> 
         public static void DelDirectory(string sGuid)
         {
-           string directoryPath = ToolsHelper.sPath + "/house/"+sGuid;
-       
-            foreach (string d in Directory.GetFileSystemEntries(directoryPath)) 
-            { 
-                if (File.Exists(d)) 
-                { 
-                    FileInfo fi = new FileInfo(d); 
-                    if (fi.Attributes.ToString().IndexOf("ReadOnly") != -1) 
-                        fi.Attributes = FileAttributes.Normal; 
+            string directoryPath = ToolsHelper.sPath + "/house/" + sGuid;
+
+            foreach (string d in Directory.GetFileSystemEntries(directoryPath))
+            {
+                if (File.Exists(d))
+                {
+                    FileInfo fi = new FileInfo(d);
+                    if (fi.Attributes.ToString().IndexOf("ReadOnly") != -1)
+                        fi.Attributes = FileAttributes.Normal;
                     File.Delete(d);     //删除文件    
-                } 
+                }
                 else
                     DelDirectory(d);    //删除文件夹 
-            } 
+            }
             Directory.Delete(directoryPath);    //删除空文件夹 
-        } 
+        }
 
-        
+
         #endregion
 
 
@@ -556,7 +616,7 @@ namespace PoliceMobile.CLS
         /// 创建一个用户
         /// </summary>
         /// <param name="sIdCode"></param>
-        public static void CreatePeople(string sIdCode,string sType)
+        public static void CreatePeople(string sIdCode, string sType)
         {
             Directory.CreateDirectory(sPath + "/Peoples/" + sIdCode + "/");
 
@@ -714,7 +774,7 @@ namespace PoliceMobile.CLS
         /// </summary>
         /// <param name="sGuid"></param>
         /// <param name="sTag"></param>
-        public static void SaveHouseImage(string sGuid, PictureBox pb, string sTag,string title,string imgGuid,string type,string name)
+        public static void SaveHouseImage(string sGuid, PictureBox pb, string sTag, string title, string imgGuid, string type, string name)
         {
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(sPath + "//house//" + sGuid + "//House.xml");
@@ -723,13 +783,13 @@ namespace PoliceMobile.CLS
 
             XmlNode xnPicBox = xDoc.SelectSingleNode(".//residential_housing/images");
 
-      //      <image type="1" name="室外">
-      //  <title>大门</title>
-      //  <remark>
-      //  </remark>
-      //  <photo>
-      //  </photo>
-      //</image>
+            //      <image type="1" name="室外">
+            //  <title>大门</title>
+            //  <remark>
+            //  </remark>
+            //  <photo>
+            //  </photo>
+            //</image>
             XmlAttribute xATime = xDoc.CreateAttribute("type");
             xATime.Value = type;
 
@@ -765,7 +825,7 @@ namespace PoliceMobile.CLS
             //xATime.Value = DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
             //xnNewPic.Attributes.Append(xATime);
 
-           
+
 
             xDoc.Save(sPath + "//house//" + sGuid + "//House.xml");
         }
@@ -804,7 +864,7 @@ namespace PoliceMobile.CLS
             //xDoc.Save(sPath + "//house//private//" + sGuid + "//House.xml");
         }
 
-      
+
 
         public static void BindPic(PictureBox pb, string sPicFullName)
         {
@@ -829,7 +889,7 @@ namespace PoliceMobile.CLS
         public static void PreHouseImage(string sGuid, PictureBox pb)
         {
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(sPath+"//house//" + sGuid + "//House.xml");
+            xDoc.Load(sPath + "//house//" + sGuid + "//House.xml");
 
             string sPictureName = Convert.ToString(pb.Tag);
             string sPicName = "";
@@ -866,9 +926,9 @@ namespace PoliceMobile.CLS
 
             }
 
-           
 
-           // string sPicName = xnNewPicBox.InnerText;
+
+            // string sPicName = xnNewPicBox.InnerText;
             string ImageForderPath = sPath + @"\house\" + sGuid + @"\pic";
 
             BindPic(pb, ImageForderPath + @"\" + sPicName);
@@ -917,10 +977,10 @@ namespace PoliceMobile.CLS
                 }
             }
 
-           
 
-           // string sPicName = xnNewPicBox.InnerText;
-            string ImageForderPath = sPath + @"\house\" + sGuid+@"\pic";
+
+            // string sPicName = xnNewPicBox.InnerText;
+            string ImageForderPath = sPath + @"\house\" + sGuid + @"\pic";
 
             BindPic(pb, ImageForderPath + @"\" + sPicName);
         }
@@ -1067,16 +1127,7 @@ namespace PoliceMobile.CLS
             return returnValue;
         }
 
-        public static void ZipHelper(string[] sFilePath,string sForder,string sZipFileName)
-        {
-            string sUploadPath = sPath + "/Upload/";
-            string sUploadZipFileName = sUploadPath + sZipFileName;
 
-            if(!Directory.Exists(sUploadPath)){
-                Directory.CreateDirectory(sUploadPath);
-
-            }
-            SharpZipHelper.ZipFile(sForder, sFilePath, sUploadZipFileName, 7, "", "");
-        }
     }
 }
+

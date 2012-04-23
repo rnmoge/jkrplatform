@@ -330,6 +330,8 @@
             this.txtHouseType.Size = new System.Drawing.Size(27, 41);
             this.txtHouseType.TabIndex = 97;
             this.txtHouseType.Tag = ".//residential_housing/owner/HouseType";
+            this.txtHouseType.Text = "1";
+            this.txtHouseType.Visible = false;
             // 
             // txtRent
             // 
@@ -338,6 +340,8 @@
             this.txtRent.Size = new System.Drawing.Size(21, 41);
             this.txtRent.TabIndex = 98;
             this.txtRent.Tag = ".//residential_housing/owner/rent";
+            this.txtRent.Text = "0";
+            this.txtRent.Visible = false;
             // 
             // ucControlManager1
             // 

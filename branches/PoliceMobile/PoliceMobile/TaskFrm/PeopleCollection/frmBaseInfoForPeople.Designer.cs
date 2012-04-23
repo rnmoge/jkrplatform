@@ -66,10 +66,10 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtHeight = new System.Windows.Forms.TextBox();
             this.label19 = new System.Windows.Forms.Label();
             this.label20 = new System.Windows.Forms.Label();
-            this.cbxDegreeOfeducation = new System.Windows.Forms.ComboBox();
-            this.cbxNationalService = new System.Windows.Forms.ComboBox();
-            this.cbxMarriage = new System.Windows.Forms.ComboBox();
-            this.cbxBelief = new System.Windows.Forms.ComboBox();
+            this.cbx_education = new System.Windows.Forms.ComboBox();
+            this.cbx_militaryservice = new System.Windows.Forms.ComboBox();
+            this.cbx_marital_status = new System.Windows.Forms.ComboBox();
+            this.cbx_Belief = new System.Windows.Forms.ComboBox();
             this.cbxBlood = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -120,7 +120,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 724);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 557);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
@@ -185,6 +185,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblName.Location = new System.Drawing.Point(64, 72);
             this.lblName.Name = "lblName";
             this.lblName.Size = new System.Drawing.Size(77, 20);
+            this.lblName.Tag = "Resident/BaseInfo/name";
             // 
             // lblNation
             // 
@@ -193,6 +194,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblNation.Location = new System.Drawing.Point(64, 99);
             this.lblNation.Name = "lblNation";
             this.lblNation.Size = new System.Drawing.Size(77, 20);
+            this.lblNation.Tag = "Resident/BaseInfo/nationality_name";
             // 
             // lblCardId
             // 
@@ -201,6 +203,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblCardId.Location = new System.Drawing.Point(119, 125);
             this.lblCardId.Name = "lblCardId";
             this.lblCardId.Size = new System.Drawing.Size(232, 20);
+            this.lblCardId.Tag = "Resident/BaseInfo/identification_id";
             // 
             // lblSex
             // 
@@ -209,6 +212,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblSex.Location = new System.Drawing.Point(202, 72);
             this.lblSex.Name = "lblSex";
             this.lblSex.Size = new System.Drawing.Size(49, 20);
+            this.lblSex.Tag = "Resident/BaseInfo/gender";
             // 
             // lblBirth
             // 
@@ -217,6 +221,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblBirth.Location = new System.Drawing.Point(235, 99);
             this.lblBirth.Name = "lblBirth";
             this.lblBirth.Size = new System.Drawing.Size(109, 20);
+            this.lblBirth.Tag = "Resident/BaseInfo/date_of_birth";
             // 
             // lblAddress
             // 
@@ -225,11 +230,12 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblAddress.Location = new System.Drawing.Point(102, 151);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(242, 20);
+            this.lblAddress.Tag = "Resident/BaseInfo/identification_id";
             // 
             // pbSpecial
             // 
             this.pbSpecial.Image = ((System.Drawing.Image)(resources.GetObject("pbSpecial.Image")));
-            this.pbSpecial.Location = new System.Drawing.Point(347, 144);
+            this.pbSpecial.Location = new System.Drawing.Point(350, 72);
             this.pbSpecial.Name = "pbSpecial";
             this.pbSpecial.Size = new System.Drawing.Size(110, 32);
             this.pbSpecial.Visible = false;
@@ -243,7 +249,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtLink.Name = "txtLink";
             this.txtLink.Size = new System.Drawing.Size(358, 31);
             this.txtLink.TabIndex = 44;
-            this.txtLink.Tag = "House_Private/Master/LinkMethod";
+            this.txtLink.Tag = "/Data/ExtendedInfo/phone_number";
             // 
             // txtBirth
             // 
@@ -254,7 +260,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtBirth.Name = "txtBirth";
             this.txtBirth.Size = new System.Drawing.Size(267, 31);
             this.txtBirth.TabIndex = 38;
-            this.txtBirth.Tag = "House_Private/Master/Birth";
+            this.txtBirth.Tag = "/Data/ExtendedInfo/household";
             // 
             // txtName
             // 
@@ -265,7 +271,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(120, 31);
             this.txtName.TabIndex = 40;
-            this.txtName.Tag = "House_Private/Master/Name";
+            this.txtName.Tag = "/Data/ExtendedInfo/otherName";
             // 
             // label9
             // 
@@ -346,7 +352,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtProfession.Name = "txtProfession";
             this.txtProfession.Size = new System.Drawing.Size(109, 31);
             this.txtProfession.TabIndex = 107;
-            this.txtProfession.Tag = "House_Private/Master/Birth";
+            this.txtProfession.Tag = "/Data/ExtendedInfo/profession_name";
             // 
             // label17
             // 
@@ -377,7 +383,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtHeight.Name = "txtHeight";
             this.txtHeight.Size = new System.Drawing.Size(120, 31);
             this.txtHeight.TabIndex = 111;
-            this.txtHeight.Tag = "House_Private/Master/LinkMethod";
+            this.txtHeight.Tag = "/Data/ExtendedInfo/height";
             // 
             // label19
             // 
@@ -398,42 +404,46 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.label20.Text = "血型";
             this.label20.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // cbxDegreeOfeducation
+            // cbx_education
             // 
-            this.cbxDegreeOfeducation.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cbxDegreeOfeducation.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.cbxDegreeOfeducation.Location = new System.Drawing.Point(100, 249);
-            this.cbxDegreeOfeducation.Name = "cbxDegreeOfeducation";
-            this.cbxDegreeOfeducation.Size = new System.Drawing.Size(120, 32);
-            this.cbxDegreeOfeducation.TabIndex = 120;
+            this.cbx_education.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbx_education.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.cbx_education.Location = new System.Drawing.Point(100, 249);
+            this.cbx_education.Name = "cbx_education";
+            this.cbx_education.Size = new System.Drawing.Size(120, 32);
+            this.cbx_education.TabIndex = 120;
+            this.cbx_education.Tag = "/Data/ExtendedInfo/education";
             // 
-            // cbxNationalService
+            // cbx_militaryservice
             // 
-            this.cbxNationalService.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cbxNationalService.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.cbxNationalService.Location = new System.Drawing.Point(348, 249);
-            this.cbxNationalService.Name = "cbxNationalService";
-            this.cbxNationalService.Size = new System.Drawing.Size(109, 32);
-            this.cbxNationalService.TabIndex = 121;
+            this.cbx_militaryservice.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbx_militaryservice.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.cbx_militaryservice.Location = new System.Drawing.Point(348, 249);
+            this.cbx_militaryservice.Name = "cbx_militaryservice";
+            this.cbx_militaryservice.Size = new System.Drawing.Size(109, 32);
+            this.cbx_militaryservice.TabIndex = 121;
+            this.cbx_militaryservice.Tag = "/Data/ExtendedInfo/militaryservice";
             // 
-            // cbxMarriage
+            // cbx_marital_status
             // 
-            this.cbxMarriage.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cbxMarriage.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.cbxMarriage.Location = new System.Drawing.Point(348, 210);
-            this.cbxMarriage.Name = "cbxMarriage";
-            this.cbxMarriage.Size = new System.Drawing.Size(109, 32);
-            this.cbxMarriage.TabIndex = 122;
-            this.cbxMarriage.SelectedIndexChanged += new System.EventHandler(this.cbxMarriage_SelectedIndexChanged);
+            this.cbx_marital_status.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbx_marital_status.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.cbx_marital_status.Location = new System.Drawing.Point(348, 210);
+            this.cbx_marital_status.Name = "cbx_marital_status";
+            this.cbx_marital_status.Size = new System.Drawing.Size(109, 32);
+            this.cbx_marital_status.TabIndex = 122;
+            this.cbx_marital_status.Tag = "/Data/ExtendedInfo/marital_status";
+            this.cbx_marital_status.SelectedIndexChanged += new System.EventHandler(this.cbxMarriage_SelectedIndexChanged);
             // 
-            // cbxBelief
+            // cbx_Belief
             // 
-            this.cbxBelief.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.cbxBelief.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.cbxBelief.Location = new System.Drawing.Point(100, 328);
-            this.cbxBelief.Name = "cbxBelief";
-            this.cbxBelief.Size = new System.Drawing.Size(120, 32);
-            this.cbxBelief.TabIndex = 123;
+            this.cbx_Belief.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.cbx_Belief.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.cbx_Belief.Location = new System.Drawing.Point(100, 328);
+            this.cbx_Belief.Name = "cbx_Belief";
+            this.cbx_Belief.Size = new System.Drawing.Size(120, 32);
+            this.cbx_Belief.TabIndex = 123;
+            this.cbx_Belief.Tag = "/Data/ExtendedInfo/Belief";
             // 
             // cbxBlood
             // 
@@ -443,6 +453,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.cbxBlood.Name = "cbxBlood";
             this.cbxBlood.Size = new System.Drawing.Size(109, 32);
             this.cbxBlood.TabIndex = 124;
+            this.cbxBlood.Tag = "/Data/ExtendedInfo/blood_type";
             // 
             // button1
             // 
@@ -496,7 +507,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtConsort.Name = "txtConsort";
             this.txtConsort.Size = new System.Drawing.Size(151, 31);
             this.txtConsort.TabIndex = 195;
-            this.txtConsort.Tag = "House_Private/Master/LinkMethod";
+            this.txtConsort.Tag = "/Data/ExtendedInfo/spouse/name";
             // 
             // txtConsortPhone
             // 
@@ -507,7 +518,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtConsortPhone.Name = "txtConsortPhone";
             this.txtConsortPhone.Size = new System.Drawing.Size(108, 31);
             this.txtConsortPhone.TabIndex = 196;
-            this.txtConsortPhone.Tag = "House_Private/Master/LinkMethod";
+            this.txtConsortPhone.Tag = "/Data/ExtendedInfo/spouse/phone_number";
             // 
             // lblConsortID
             // 
@@ -528,7 +539,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.txtConsortID.Name = "txtConsortID";
             this.txtConsortID.Size = new System.Drawing.Size(357, 31);
             this.txtConsortID.TabIndex = 197;
-            this.txtConsortID.Tag = "House_Private/Master/Birth";
+            this.txtConsortID.Tag = "/Data/ExtendedInfo/idenfication_id";
             // 
             // ucControlRsidentManager1
             // 
@@ -542,7 +553,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(480, 784);
+            this.ClientSize = new System.Drawing.Size(480, 617);
             this.Controls.Add(this.ucControlRsidentManager1);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.txtConsortID);
@@ -555,10 +566,10 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.Controls.Add(this.pictureBox6);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.cbxBlood);
-            this.Controls.Add(this.cbxBelief);
-            this.Controls.Add(this.cbxMarriage);
-            this.Controls.Add(this.cbxNationalService);
-            this.Controls.Add(this.cbxDegreeOfeducation);
+            this.Controls.Add(this.cbx_Belief);
+            this.Controls.Add(this.cbx_marital_status);
+            this.Controls.Add(this.cbx_militaryservice);
+            this.Controls.Add(this.cbx_education);
             this.Controls.Add(this.label20);
             this.Controls.Add(this.label19);
             this.Controls.Add(this.txtHeight);
@@ -636,10 +647,10 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.TextBox txtHeight;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Label label20;
-        private System.Windows.Forms.ComboBox cbxDegreeOfeducation;
-        private System.Windows.Forms.ComboBox cbxNationalService;
-        private System.Windows.Forms.ComboBox cbxMarriage;
-        private System.Windows.Forms.ComboBox cbxBelief;
+        private System.Windows.Forms.ComboBox cbx_education;
+        private System.Windows.Forms.ComboBox cbx_militaryservice;
+        private System.Windows.Forms.ComboBox cbx_marital_status;
+        private System.Windows.Forms.ComboBox cbx_Belief;
         private System.Windows.Forms.ComboBox cbxBlood;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.PictureBox pictureBox3;

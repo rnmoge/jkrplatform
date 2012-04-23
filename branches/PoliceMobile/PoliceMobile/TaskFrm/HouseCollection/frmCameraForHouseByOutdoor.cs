@@ -37,7 +37,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                 ToolsHelper.BindPic(pbShow, ToolsHelper.sPath + @"\House\" + ToolsHelper.sHouseGuid + @"\pic\" + sPictureName);
             }
             this.WindowState = FormWindowState.Maximized;
-            ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid, pbShow, "Images", this.txtCardId.Text, imgGuid,"2","室外");
+            ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid, pbShow, "Images", this.txtCardId.Text, imgGuid,"1","室外");
 
 
             //连续拍照  3  guid  string[] =3

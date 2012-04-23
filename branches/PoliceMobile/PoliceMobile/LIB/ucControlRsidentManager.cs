@@ -12,86 +12,62 @@ namespace PoliceMobile.LIB
 {
     public partial class ucControlRsidentManager : UserControl
     {
+        private Form theFrm = null;
         public ucControlRsidentManager()
         {
             InitializeComponent();
         }
 
-        private void pHorse_Click(object sender, EventArgs e)
+        private void pID_Click(object sender, EventArgs e)
         {
-            if (ToolsHelper.iFlag == 1)
-            {
-                //FrmManager.showWindowFor_frmInfoForStreet(this);
-                init();
-                pStreet.BackColor = Color.White;
-                
+                       theFrm = ((Form)this.Parent);
+            FrmManager.showWindowFor_frmInfoForPeople(theFrm);
+        }
 
-                this.Refresh();
+        private void pBaseInfo_Click(object sender, EventArgs e)
+        {
+            theFrm = ((Form)this.Parent);
+            FrmManager.showWindowFor_frmBaseInfoForPeople(theFrm);
+        }
+
+        private void pExtendedInfo_Click(object sender, EventArgs e)
+        {
+            theFrm = ((Form)this.Parent);
+            if (ToolsHelper.iPeopleType == 1)
+            {
+                FrmManager.showWindowFor_frmPermanentResident(theFrm);
+                return;
+            }
+
+            if (ToolsHelper.iPeopleType == 2)
+            {
+                FrmManager.showWindowFor_frmTempResident(theFrm);
+                return;
+            }
+
+            if (ToolsHelper.iPeopleType == 3)
+            {
+                FrmManager.showWindowFor_frmSpecialResident(theFrm);
+                return;
             }
         }
 
-        private void pPeople_Click(object sender, EventArgs e)
+        private void pCamera_Click(object sender, EventArgs e)
         {
-            if (ToolsHelper.iFlag == 1)
-            {
-                //FrmManager.showWindowFor_frmInfoForHousePeopleByPublic(this);
-                init();
-                pPeople.BackColor = Color.White;
-                this.Refresh();
-            }
-
+            theFrm = ((Form)this.Parent);
+            FrmManager.showWindowFor_frmInfoForPeople(theFrm);
         }
 
-        private void pIn_Click(object sender, EventArgs e)
+        private void pFingerprint_Click(object sender, EventArgs e)
         {
-            if (ToolsHelper.iFlag == 1)
-            {
-                //FrmManager.showWindowFor_frmCameraForHouseByIndoor(this);
-                init();
-                pIn.BackColor = Color.White;
-                
-
-                this.Refresh();
-            }
-
-        }
-
-        private void pOut_Click(object sender, EventArgs e)
-        {
-            if (ToolsHelper.iFlag == 1)
-            {
-                //FrmManager.showWindowFor_frmCameraForHouseByOutdoor(this);
-                init();
-                pOut.BackColor = Color.White;
-                
-
-                this.Refresh();
-            }
+            theFrm = ((Form)this.Parent);
+            FrmManager.showWindowFor_frmInfoForPeople(theFrm);
         }
 
         private void pControl_Click(object sender, EventArgs e)
         {
-            if (ToolsHelper.iFlag == 1)
-            {
-                //FrmManager.showWindowFor_frmHouseManager(this);
-                init();
-                pControl.BackColor = Color.White;
-                
-
-                this.Refresh();
-            }
-        }
-
-        /// <summary>
-        /// 
-        /// </summary>
-        private void init()
-        {
-            pStreet.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            pPeople.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            pOut.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            pIn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
-            pControl.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(224)))), ((int)(((byte)(255)))));
+            theFrm = ((Form)this.Parent);
+            FrmManager.showWindowFor_frmInfoForPeople(theFrm);
         }
     }
 }

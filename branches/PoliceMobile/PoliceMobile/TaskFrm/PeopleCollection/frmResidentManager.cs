@@ -18,7 +18,6 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         public frmResidentManager()
         {
             InitializeComponent();
-            init();
         }
 
         private void init()

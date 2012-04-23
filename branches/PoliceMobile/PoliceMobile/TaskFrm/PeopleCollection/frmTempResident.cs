@@ -25,7 +25,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         public frmTempResident()
         {
             InitializeComponent();
-            init();
+
+            ucControlRsidentManager1.pExtendedInfo.BackColor = Color.White;
+
+            
             try
             {
                 if (OpenDevice(0) != 1)MessageBox.Show("OpenDevice error");
@@ -54,7 +57,12 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void pbSave_Click(object sender, EventArgs e)
         {
-           // ToolsHelper.AutoSaveConfigForHouse(this,
+           //ToolsHelper.AutoSaveConfigForHouse(this,
+        }
+
+        private void frmTempResident_Load(object sender, EventArgs e)
+        {
+            init();
         }
     }
 }

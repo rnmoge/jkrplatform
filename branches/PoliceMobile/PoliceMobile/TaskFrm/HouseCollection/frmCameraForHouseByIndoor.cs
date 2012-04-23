@@ -31,10 +31,19 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             Boolean isCamera = ToolsHelper.sCapture(ImageForderPath + @"\" + sPictureName);
             if (isCamera == true)
             {
-                ToolsHelper.BindPic(pbShow, ImageForderPath  + @"\" + sPictureName);
+                System.IO.File.Move(ImageForderPath + @"\" + sPictureName, ToolsHelper.sPath + @"\House\" + ToolsHelper.sHouseGuid + @"\pic\" + sPictureName);
+
+                ToolsHelper.BindPic(pbShow, ToolsHelper.sPath + @"\House\" + ToolsHelper.sHouseGuid + @"\pic\" + sPictureName);
             }
             this.WindowState = FormWindowState.Maximized;
-            ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid, pbShow, "image", this.txtCardId.Text, imgGuid,"1","室内");
+            if (!this.checkBox3.Checked)
+            {
+                ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid, pbShow, "image", this.txtCardId.Text, imgGuid, "2", "室内");
+            }
+            else
+            {
+                ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid, pbShow, "image", this.txtCardId.Text, imgGuid, "3", "户型图");
+            }
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
