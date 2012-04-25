@@ -260,7 +260,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblBirth.Location = new System.Drawing.Point(275, 107);
             this.lblBirth.Name = "lblBirth";
-            this.lblBirth.Size = new System.Drawing.Size(74, 20);
+            this.lblBirth.Size = new System.Drawing.Size(116, 20);
             this.lblBirth.Tag = "Resident/BaseInfo/date_of_birth";
             this.lblBirth.TextChanged += new System.EventHandler(this.lblBirth_TextChanged);
             // 
@@ -270,7 +270,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblAddress.Location = new System.Drawing.Point(108, 158);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(219, 20);
+            this.lblAddress.Size = new System.Drawing.Size(357, 20);
             this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             this.lblAddress.TextChanged += new System.EventHandler(this.lblAddress_TextChanged);
             // 
@@ -387,9 +387,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.cbxPerson.Items.Add("常住人员");
             this.cbxPerson.Items.Add("暂住人员");
             this.cbxPerson.Items.Add("重点人员");
-            this.cbxPerson.Location = new System.Drawing.Point(333, 143);
+            this.cbxPerson.Location = new System.Drawing.Point(355, 143);
             this.cbxPerson.Name = "cbxPerson";
-            this.cbxPerson.Size = new System.Drawing.Size(132, 32);
+            this.cbxPerson.Size = new System.Drawing.Size(110, 32);
             this.cbxPerson.TabIndex = 156;
             this.cbxPerson.Tag = "Resident/BaseInfo/peopletype";
             // 

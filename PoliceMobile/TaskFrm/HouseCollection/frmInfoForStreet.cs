@@ -76,7 +76,16 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                 return;
             }
 
-            txt_streetAddress.Text = txtStreet.Text + " " + txtDetailAddress.Text;
+            string stst = "";
+            try
+            {
+                stst = txtStreet.Text.Split('|')[0];
+            }
+            catch
+            {
+            }
+
+            txt_streetAddress.Text = stst + " " + txtDetailAddress.Text;
 
             string sGuid = ToolsHelper.sHouseGuid;
             if (sGuid == "")

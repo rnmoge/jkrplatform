@@ -319,7 +319,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblAddress.Location = new System.Drawing.Point(105, 89);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(219, 20);
+            this.lblAddress.Size = new System.Drawing.Size(257, 20);
             this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
             // lblBirth
@@ -328,7 +328,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblBirth.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblBirth.Location = new System.Drawing.Point(275, 41);
             this.lblBirth.Name = "lblBirth";
-            this.lblBirth.Size = new System.Drawing.Size(74, 20);
+            this.lblBirth.Size = new System.Drawing.Size(103, 20);
             this.lblBirth.Tag = "Resident/BaseInfo/date_of_birth";
             // 
             // lblSex
@@ -652,7 +652,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Location = new System.Drawing.Point(0, 0);
             this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(480, 477);
+            this.tabPage2.Size = new System.Drawing.Size(472, 483);
             this.tabPage2.Text = "人员信息";
             // 
             // pictureBox8

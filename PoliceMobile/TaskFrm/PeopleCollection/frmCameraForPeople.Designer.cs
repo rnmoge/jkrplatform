@@ -98,9 +98,9 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 528);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 522);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(480, 60);
+            this.pictureBox2.Size = new System.Drawing.Size(480, 66);
             // 
             // btnCamera
             // 

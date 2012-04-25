@@ -229,7 +229,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblAddress.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.lblAddress.Location = new System.Drawing.Point(102, 151);
             this.lblAddress.Name = "lblAddress";
-            this.lblAddress.Size = new System.Drawing.Size(242, 20);
+            this.lblAddress.Size = new System.Drawing.Size(358, 20);
             this.lblAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
             // pbSpecial

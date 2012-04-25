@@ -34,7 +34,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             }
             catch (Exception ex)
             {
-                lblCardId.Text = "120104198311055559";
+                lblCardId.Text = "120103198003063236";
             }
         }
 
@@ -62,19 +62,11 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void btnSave_Click(object sender, EventArgs e)
         {
-
             ToolsHelper.CreatePeople(lblCardId.Text, Convert.ToString(cbxPerson.SelectedValue));
-            ToolsHelper.SetConfigXmlbyPeople(ToolsHelper.iPeopleFlag.ToString(), ToolsHelper.sCardId);
 
 
-            string sGuid = ToolsHelper.sHouseGuid;
-            if (sGuid == "")
-            {
-                sGuid = Guid.NewGuid().ToString();
-            }
 
             ToolsHelper.AutoSaveConfigForPeople(this, lblCardId.Text);
-            ToolsHelper.sHouseGuid = sGuid;
 
             ToolsHelper.iFlag = 1;
 
@@ -148,7 +140,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
 
                     pbSpecial.Visible = false;
-                    if (lblCardId_2.Text != "120104198311055557")
+                    if (lblCardId_2.Text != "120103198003063236")
                     {
                         pbSpecial.Visible = true;
                     }

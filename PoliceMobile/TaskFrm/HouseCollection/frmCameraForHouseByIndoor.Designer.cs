@@ -43,7 +43,7 @@
             this.checkBox3 = new System.Windows.Forms.CheckBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblAddress = new System.Windows.Forms.Label();
-            this.txtCardId = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
             this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
             this.panel7.SuspendLayout();
@@ -72,7 +72,7 @@
             this.panel7.Controls.Add(this.btnPrevious);
             this.panel7.Controls.Add(this.btnNext);
             this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel7.Location = new System.Drawing.Point(0, 623);
+            this.panel7.Location = new System.Drawing.Point(0, 463);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(480, 55);
             // 
@@ -89,14 +89,14 @@
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 688);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 528);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
             // btnCamera
             // 
             this.btnCamera.Image = ((System.Drawing.Image)(resources.GetObject("btnCamera.Image")));
-            this.btnCamera.Location = new System.Drawing.Point(17, 167);
+            this.btnCamera.Location = new System.Drawing.Point(17, 166);
             this.btnCamera.Name = "btnCamera";
             this.btnCamera.Size = new System.Drawing.Size(172, 56);
             this.btnCamera.Click += new System.EventHandler(this.btnCamera_Click);
@@ -104,7 +104,7 @@
             // btnDelete
             // 
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(295, 167);
+            this.btnDelete.Location = new System.Drawing.Point(296, 166);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(170, 53);
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
@@ -132,7 +132,7 @@
             // panel1
             // 
             this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.panel1.Location = new System.Drawing.Point(0, 678);
+            this.panel1.Location = new System.Drawing.Point(0, 518);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(480, 10);
             // 
@@ -143,18 +143,19 @@
             this.lblAddress.Location = new System.Drawing.Point(20, 81);
             this.lblAddress.Name = "lblAddress";
             this.lblAddress.Size = new System.Drawing.Size(417, 27);
+            this.lblAddress.Tag = ".//Residential_housing/streetaddress";
             this.lblAddress.Text = "选择dddd";
             // 
-            // txtCardId
+            // txtTitle
             // 
-            this.txtCardId.BackColor = System.Drawing.Color.White;
-            this.txtCardId.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.txtCardId.Location = new System.Drawing.Point(120, 116);
-            this.txtCardId.Multiline = true;
-            this.txtCardId.Name = "txtCardId";
-            this.txtCardId.Size = new System.Drawing.Size(326, 31);
-            this.txtCardId.TabIndex = 55;
-            this.txtCardId.Tag = "House_Private/Master/ID";
+            this.txtTitle.BackColor = System.Drawing.Color.White;
+            this.txtTitle.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.txtTitle.Location = new System.Drawing.Point(120, 116);
+            this.txtTitle.Multiline = true;
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(326, 31);
+            this.txtTitle.TabIndex = 55;
+            this.txtTitle.Tag = "";
             // 
             // label18
             // 
@@ -177,9 +178,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(480, 748);
+            this.ClientSize = new System.Drawing.Size(480, 588);
             this.Controls.Add(this.ucControlManager1);
-            this.Controls.Add(this.txtCardId);
+            this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.label18);
             this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.panel7);
@@ -214,7 +215,7 @@
         private PoliceMobile.LIB.ucControlManager ucControlManager1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblAddress;
-        private System.Windows.Forms.TextBox txtCardId;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label label18;
 
 

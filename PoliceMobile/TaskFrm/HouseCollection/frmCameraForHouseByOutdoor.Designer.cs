@@ -41,16 +41,17 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnNext = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
-            this.txtCardId = new System.Windows.Forms.TextBox();
+            this.txtTitle = new System.Windows.Forms.TextBox();
             this.label18 = new System.Windows.Forms.Label();
+            this.lblAddress = new System.Windows.Forms.Label();
+            this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
             // btnCamera
             // 
             this.btnCamera.Image = ((System.Drawing.Image)(resources.GetObject("btnCamera.Image")));
-            this.btnCamera.Location = new System.Drawing.Point(57, 135);
+            this.btnCamera.Location = new System.Drawing.Point(17, 166);
             this.btnCamera.Name = "btnCamera";
             this.btnCamera.Size = new System.Drawing.Size(172, 56);
             this.btnCamera.Click += new System.EventHandler(this.btnCamera_Click);
@@ -58,13 +59,14 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // btnDelete
             // 
             this.btnDelete.Image = ((System.Drawing.Image)(resources.GetObject("btnDelete.Image")));
-            this.btnDelete.Location = new System.Drawing.Point(260, 137);
+            this.btnDelete.Location = new System.Drawing.Point(296, 166);
             this.btnDelete.Name = "btnDelete";
             this.btnDelete.Size = new System.Drawing.Size(173, 53);
             this.btnDelete.Click += new System.EventHandler(this.btnDelete_Click);
             // 
             // pbShow
             // 
+            this.pbShow.BackColor = System.Drawing.Color.Lavender;
             this.pbShow.Location = new System.Drawing.Point(19, 239);
             this.pbShow.Name = "pbShow";
             this.pbShow.Size = new System.Drawing.Size(446, 323);
@@ -121,6 +123,36 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
+            // txtTitle
+            // 
+            this.txtTitle.BackColor = System.Drawing.Color.White;
+            this.txtTitle.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.txtTitle.Location = new System.Drawing.Point(120, 116);
+            this.txtTitle.Multiline = true;
+            this.txtTitle.Name = "txtTitle";
+            this.txtTitle.Size = new System.Drawing.Size(326, 31);
+            this.txtTitle.TabIndex = 57;
+            this.txtTitle.Tag = "";
+            // 
+            // label18
+            // 
+            this.label18.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label18.Location = new System.Drawing.Point(29, 122);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(85, 18);
+            this.label18.Text = "图片标题";
+            // 
+            // lblAddress
+            // 
+            this.lblAddress.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.lblAddress.ForeColor = System.Drawing.Color.Gray;
+            this.lblAddress.Location = new System.Drawing.Point(20, 81);
+            this.lblAddress.Name = "lblAddress";
+            this.lblAddress.Size = new System.Drawing.Size(417, 27);
+            this.lblAddress.Tag = ".//Residential_housing/streetaddress";
+            this.lblAddress.Text = "选择dddd";
+            // 
             // ucControlManager1
             // 
             this.ucControlManager1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -129,33 +161,14 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.ucControlManager1.Size = new System.Drawing.Size(480, 67);
             this.ucControlManager1.TabIndex = 48;
             // 
-            // txtCardId
-            // 
-            this.txtCardId.BackColor = System.Drawing.Color.White;
-            this.txtCardId.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.txtCardId.Location = new System.Drawing.Point(125, 80);
-            this.txtCardId.Multiline = true;
-            this.txtCardId.Name = "txtCardId";
-            this.txtCardId.Size = new System.Drawing.Size(326, 31);
-            this.txtCardId.TabIndex = 57;
-            this.txtCardId.Tag = ".//Residential_housing/Images/image/title";
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label18.Location = new System.Drawing.Point(19, 86);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(85, 18);
-            this.label18.Text = "图片标题";
-            // 
             // frmCameraForHouseByOutdoor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(480, 588);
+            this.Controls.Add(this.lblAddress);
             this.Controls.Add(this.label18);
-            this.Controls.Add(this.txtCardId);
+            this.Controls.Add(this.txtTitle);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.pictureBox2);
@@ -186,8 +199,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private System.Windows.Forms.PictureBox btnNext;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.TextBox txtCardId;
+        private System.Windows.Forms.TextBox txtTitle;
         private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label lblAddress;
 
 
     }

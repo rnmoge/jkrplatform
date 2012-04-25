@@ -206,9 +206,9 @@ namespace PoliceMobile.LIB
             // label8
             // 
             this.label8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label8.Location = new System.Drawing.Point(5, 10);
+            this.label8.Location = new System.Drawing.Point(-1, 11);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(81, 23);
+            this.label8.Size = new System.Drawing.Size(98, 23);
             this.label8.Text = "已采集列表";
             // 
             // label9

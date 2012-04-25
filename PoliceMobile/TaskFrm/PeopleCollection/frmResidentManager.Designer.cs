@@ -39,79 +39,79 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.bgPanel = new System.Windows.Forms.Panel();
             this.pBack10 = new System.Windows.Forms.Panel();
-            this.lblCreate10 = new System.Windows.Forms.Label();
-            this.lblSteet10 = new System.Windows.Forms.Label();
-            this.lblId10 = new System.Windows.Forms.Label();
+            this.pDel10 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime10 = new System.Windows.Forms.Label();
+            this.lblName10 = new System.Windows.Forms.Label();
+            this.label36 = new System.Windows.Forms.Label();
             this.pbUpload10 = new System.Windows.Forms.PictureBox();
             this.pbIn10 = new System.Windows.Forms.PictureBox();
             this.pBack9 = new System.Windows.Forms.Panel();
-            this.lblCreate9 = new System.Windows.Forms.Label();
-            this.lblSteet9 = new System.Windows.Forms.Label();
-            this.lblId9 = new System.Windows.Forms.Label();
-            this.pbUpload19 = new System.Windows.Forms.PictureBox();
+            this.pDel9 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime9 = new System.Windows.Forms.Label();
+            this.lblName9 = new System.Windows.Forms.Label();
+            this.label32 = new System.Windows.Forms.Label();
+            this.pbUpload9 = new System.Windows.Forms.PictureBox();
             this.pbIn9 = new System.Windows.Forms.PictureBox();
             this.pBack8 = new System.Windows.Forms.Panel();
-            this.lblCreate8 = new System.Windows.Forms.Label();
-            this.lblSteet8 = new System.Windows.Forms.Label();
-            this.lblId8 = new System.Windows.Forms.Label();
+            this.pDel8 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime8 = new System.Windows.Forms.Label();
+            this.lblName8 = new System.Windows.Forms.Label();
+            this.label28 = new System.Windows.Forms.Label();
             this.pbUpload8 = new System.Windows.Forms.PictureBox();
             this.pbIn8 = new System.Windows.Forms.PictureBox();
             this.pBack7 = new System.Windows.Forms.Panel();
-            this.lblCreate7 = new System.Windows.Forms.Label();
-            this.lblSteet7 = new System.Windows.Forms.Label();
-            this.lblId7 = new System.Windows.Forms.Label();
+            this.pDel7 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime7 = new System.Windows.Forms.Label();
+            this.lblName7 = new System.Windows.Forms.Label();
+            this.label24 = new System.Windows.Forms.Label();
             this.pbUpload7 = new System.Windows.Forms.PictureBox();
             this.pbIn7 = new System.Windows.Forms.PictureBox();
             this.pBack6 = new System.Windows.Forms.Panel();
-            this.lblCreate6 = new System.Windows.Forms.Label();
-            this.lblSteet6 = new System.Windows.Forms.Label();
-            this.lblId6 = new System.Windows.Forms.Label();
+            this.pDel6 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime6 = new System.Windows.Forms.Label();
+            this.lblName6 = new System.Windows.Forms.Label();
+            this.label20 = new System.Windows.Forms.Label();
             this.pbUpload6 = new System.Windows.Forms.PictureBox();
             this.pbIn6 = new System.Windows.Forms.PictureBox();
             this.pBack5 = new System.Windows.Forms.Panel();
-            this.lblCreate5 = new System.Windows.Forms.Label();
-            this.lblSteet5 = new System.Windows.Forms.Label();
-            this.lblId5 = new System.Windows.Forms.Label();
+            this.pDel5 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime5 = new System.Windows.Forms.Label();
+            this.lblName5 = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
             this.pbUpload5 = new System.Windows.Forms.PictureBox();
             this.pbIn5 = new System.Windows.Forms.PictureBox();
             this.pBack4 = new System.Windows.Forms.Panel();
-            this.lblCreate4 = new System.Windows.Forms.Label();
-            this.lblSteet4 = new System.Windows.Forms.Label();
-            this.lblId4 = new System.Windows.Forms.Label();
+            this.pDel4 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime4 = new System.Windows.Forms.Label();
+            this.lblName4 = new System.Windows.Forms.Label();
+            this.label12 = new System.Windows.Forms.Label();
             this.pbUpload4 = new System.Windows.Forms.PictureBox();
             this.pbIn4 = new System.Windows.Forms.PictureBox();
             this.pBack3 = new System.Windows.Forms.Panel();
-            this.lblCreate3 = new System.Windows.Forms.Label();
-            this.lblSteet3 = new System.Windows.Forms.Label();
-            this.lblId3 = new System.Windows.Forms.Label();
+            this.pDel3 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime3 = new System.Windows.Forms.Label();
+            this.lblName3 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.pbUpload3 = new System.Windows.Forms.PictureBox();
             this.pbIn3 = new System.Windows.Forms.PictureBox();
             this.pBack2 = new System.Windows.Forms.Panel();
-            this.lblCreate2 = new System.Windows.Forms.Label();
-            this.lblSteet2 = new System.Windows.Forms.Label();
-            this.lblId2 = new System.Windows.Forms.Label();
+            this.pDel2 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime2 = new System.Windows.Forms.Label();
+            this.lblName2 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.pbUpload2 = new System.Windows.Forms.PictureBox();
             this.pbIn2 = new System.Windows.Forms.PictureBox();
             this.pBack1 = new System.Windows.Forms.Panel();
-            this.lblCreate1 = new System.Windows.Forms.Label();
-            this.lblSteet1 = new System.Windows.Forms.Label();
+            this.pDel1 = new System.Windows.Forms.PictureBox();
+            this.lbldatetime1 = new System.Windows.Forms.Label();
+            this.lblName1 = new System.Windows.Forms.Label();
             this.lblId1 = new System.Windows.Forms.Label();
             this.pbUpload1 = new System.Windows.Forms.PictureBox();
             this.pbIn1 = new System.Windows.Forms.PictureBox();
             this.pBUploadAll = new System.Windows.Forms.PictureBox();
             this.btnReturn = new System.Windows.Forms.Button();
             this.btnNew = new System.Windows.Forms.Button();
-            this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label9 = new System.Windows.Forms.Label();
-            this.label10 = new System.Windows.Forms.Label();
+            this.ucControlRsidentManager1 = new PoliceMobile.LIB.ucControlRsidentManager();
             this.panel7.SuspendLayout();
             this.bgPanel.SuspendLayout();
             this.pBack10.SuspendLayout();
@@ -187,41 +187,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack10
             // 
-            this.pBack10.Controls.Add(this.lblCreate10);
-            this.pBack10.Controls.Add(this.label10);
-            this.pBack10.Controls.Add(this.lblSteet10);
-            this.pBack10.Controls.Add(this.lblId10);
+            this.pBack10.Controls.Add(this.pDel10);
+            this.pBack10.Controls.Add(this.lbldatetime10);
+            this.pBack10.Controls.Add(this.lblName10);
+            this.pBack10.Controls.Add(this.label36);
             this.pBack10.Controls.Add(this.pbUpload10);
             this.pBack10.Controls.Add(this.pbIn10);
             this.pBack10.Location = new System.Drawing.Point(4, 417);
             this.pBack10.Name = "pBack10";
-            this.pBack10.Size = new System.Drawing.Size(444, 40);
+            this.pBack10.Size = new System.Drawing.Size(444, 38);
             this.pBack10.Visible = false;
-            this.pBack10.GotFocus += new System.EventHandler(this.p10_GotFocus);
             // 
-            // lblCreate10
+            // pDel10
             // 
-            this.lblCreate10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate10.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate10.Name = "lblCreate10";
-            this.lblCreate10.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate10.Text = "2011-12-20 19:45";
+            this.pDel10.Image = ((System.Drawing.Image)(resources.GetObject("pDel10.Image")));
+            this.pDel10.Location = new System.Drawing.Point(281, 3);
+            this.pDel10.Name = "pDel10";
+            this.pDel10.Size = new System.Drawing.Size(52, 31);
+            this.pDel10.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet10
+            // lbldatetime10
             // 
-            this.lblSteet10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet10.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet10.Name = "lblSteet10";
-            this.lblSteet10.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet10.Text = "章子怡";
+            this.lbldatetime10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime10.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime10.Name = "lbldatetime10";
+            this.lbldatetime10.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime10.Text = "11-12-20 19:45";
             // 
-            // lblId10
+            // lblName10
             // 
-            this.lblId10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId10.Location = new System.Drawing.Point(4, 12);
-            this.lblId10.Name = "lblId10";
-            this.lblId10.Size = new System.Drawing.Size(39, 30);
-            this.lblId10.Text = "10";
+            this.lblName10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName10.Location = new System.Drawing.Point(40, 11);
+            this.lblName10.Name = "lblName10";
+            this.lblName10.Size = new System.Drawing.Size(61, 19);
+            this.lblName10.Text = "章子怡";
+            // 
+            // label36
+            // 
+            this.label36.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label36.Location = new System.Drawing.Point(10, 10);
+            this.label36.Name = "label36";
+            this.label36.Size = new System.Drawing.Size(39, 22);
+            this.label36.Text = "10";
             // 
             // pbUpload10
             // 
@@ -241,48 +248,56 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack9
             // 
-            this.pBack9.Controls.Add(this.lblCreate9);
-            this.pBack9.Controls.Add(this.label9);
-            this.pBack9.Controls.Add(this.lblSteet9);
-            this.pBack9.Controls.Add(this.lblId9);
-            this.pBack9.Controls.Add(this.pbUpload19);
+            this.pBack9.Controls.Add(this.pDel9);
+            this.pBack9.Controls.Add(this.lbldatetime9);
+            this.pBack9.Controls.Add(this.lblName9);
+            this.pBack9.Controls.Add(this.label32);
+            this.pBack9.Controls.Add(this.pbUpload9);
             this.pBack9.Controls.Add(this.pbIn9);
             this.pBack9.Location = new System.Drawing.Point(4, 371);
             this.pBack9.Name = "pBack9";
-            this.pBack9.Size = new System.Drawing.Size(444, 40);
+            this.pBack9.Size = new System.Drawing.Size(444, 38);
             this.pBack9.Visible = false;
             // 
-            // lblCreate9
+            // pDel9
             // 
-            this.lblCreate9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate9.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate9.Name = "lblCreate9";
-            this.lblCreate9.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate9.Text = "2011-12-20 19:45";
+            this.pDel9.Image = ((System.Drawing.Image)(resources.GetObject("pDel9.Image")));
+            this.pDel9.Location = new System.Drawing.Point(281, 3);
+            this.pDel9.Name = "pDel9";
+            this.pDel9.Size = new System.Drawing.Size(52, 31);
+            this.pDel9.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet9
+            // lbldatetime9
             // 
-            this.lblSteet9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet9.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet9.Name = "lblSteet9";
-            this.lblSteet9.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet9.Text = "章子怡";
+            this.lbldatetime9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime9.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime9.Name = "lbldatetime9";
+            this.lbldatetime9.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime9.Text = "11-12-20 19:45";
             // 
-            // lblId9
+            // lblName9
             // 
-            this.lblId9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId9.Location = new System.Drawing.Point(10, 12);
-            this.lblId9.Name = "lblId9";
-            this.lblId9.Size = new System.Drawing.Size(39, 30);
-            this.lblId9.Text = "9";
+            this.lblName9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName9.Location = new System.Drawing.Point(40, 11);
+            this.lblName9.Name = "lblName9";
+            this.lblName9.Size = new System.Drawing.Size(61, 19);
+            this.lblName9.Text = "章子怡";
             // 
-            // pbUpload19
+            // label32
             // 
-            this.pbUpload19.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload19.Image")));
-            this.pbUpload19.Location = new System.Drawing.Point(384, 3);
-            this.pbUpload19.Name = "pbUpload19";
-            this.pbUpload19.Size = new System.Drawing.Size(55, 31);
-            this.pbUpload19.Click += new System.EventHandler(this.pbUpload_Click);
+            this.label32.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label32.Location = new System.Drawing.Point(10, 10);
+            this.label32.Name = "label32";
+            this.label32.Size = new System.Drawing.Size(39, 22);
+            this.label32.Text = "9";
+            // 
+            // pbUpload9
+            // 
+            this.pbUpload9.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload9.Image")));
+            this.pbUpload9.Location = new System.Drawing.Point(384, 3);
+            this.pbUpload9.Name = "pbUpload9";
+            this.pbUpload9.Size = new System.Drawing.Size(55, 31);
+            this.pbUpload9.Click += new System.EventHandler(this.pbUpload_Click);
             // 
             // pbIn9
             // 
@@ -294,40 +309,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack8
             // 
-            this.pBack8.Controls.Add(this.lblCreate8);
-            this.pBack8.Controls.Add(this.label8);
-            this.pBack8.Controls.Add(this.lblSteet8);
-            this.pBack8.Controls.Add(this.lblId8);
+            this.pBack8.Controls.Add(this.pDel8);
+            this.pBack8.Controls.Add(this.lbldatetime8);
+            this.pBack8.Controls.Add(this.lblName8);
+            this.pBack8.Controls.Add(this.label28);
             this.pBack8.Controls.Add(this.pbUpload8);
             this.pBack8.Controls.Add(this.pbIn8);
             this.pBack8.Location = new System.Drawing.Point(4, 325);
             this.pBack8.Name = "pBack8";
-            this.pBack8.Size = new System.Drawing.Size(444, 40);
+            this.pBack8.Size = new System.Drawing.Size(444, 38);
             this.pBack8.Visible = false;
             // 
-            // lblCreate8
+            // pDel8
             // 
-            this.lblCreate8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate8.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate8.Name = "lblCreate8";
-            this.lblCreate8.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate8.Text = "2011-12-20 19:45";
+            this.pDel8.Image = ((System.Drawing.Image)(resources.GetObject("pDel8.Image")));
+            this.pDel8.Location = new System.Drawing.Point(281, 3);
+            this.pDel8.Name = "pDel8";
+            this.pDel8.Size = new System.Drawing.Size(52, 31);
+            this.pDel8.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet8
+            // lbldatetime8
             // 
-            this.lblSteet8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet8.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet8.Name = "lblSteet8";
-            this.lblSteet8.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet8.Text = "章子怡";
+            this.lbldatetime8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime8.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime8.Name = "lbldatetime8";
+            this.lbldatetime8.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime8.Text = "11-12-20 19:45";
             // 
-            // lblId8
+            // lblName8
             // 
-            this.lblId8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId8.Location = new System.Drawing.Point(10, 12);
-            this.lblId8.Name = "lblId8";
-            this.lblId8.Size = new System.Drawing.Size(39, 30);
-            this.lblId8.Text = "8";
+            this.lblName8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName8.Location = new System.Drawing.Point(40, 11);
+            this.lblName8.Name = "lblName8";
+            this.lblName8.Size = new System.Drawing.Size(61, 19);
+            this.lblName8.Text = "章子怡";
+            // 
+            // label28
+            // 
+            this.label28.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label28.Location = new System.Drawing.Point(10, 10);
+            this.label28.Name = "label28";
+            this.label28.Size = new System.Drawing.Size(39, 22);
+            this.label28.Text = "8";
             // 
             // pbUpload8
             // 
@@ -347,40 +370,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack7
             // 
-            this.pBack7.Controls.Add(this.lblCreate7);
-            this.pBack7.Controls.Add(this.label7);
-            this.pBack7.Controls.Add(this.lblSteet7);
-            this.pBack7.Controls.Add(this.lblId7);
+            this.pBack7.Controls.Add(this.pDel7);
+            this.pBack7.Controls.Add(this.lbldatetime7);
+            this.pBack7.Controls.Add(this.lblName7);
+            this.pBack7.Controls.Add(this.label24);
             this.pBack7.Controls.Add(this.pbUpload7);
             this.pBack7.Controls.Add(this.pbIn7);
             this.pBack7.Location = new System.Drawing.Point(4, 279);
             this.pBack7.Name = "pBack7";
-            this.pBack7.Size = new System.Drawing.Size(444, 40);
+            this.pBack7.Size = new System.Drawing.Size(444, 38);
             this.pBack7.Visible = false;
             // 
-            // lblCreate7
+            // pDel7
             // 
-            this.lblCreate7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate7.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate7.Name = "lblCreate7";
-            this.lblCreate7.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate7.Text = "2011-12-20 19:45";
+            this.pDel7.Image = ((System.Drawing.Image)(resources.GetObject("pDel7.Image")));
+            this.pDel7.Location = new System.Drawing.Point(281, 3);
+            this.pDel7.Name = "pDel7";
+            this.pDel7.Size = new System.Drawing.Size(52, 31);
+            this.pDel7.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet7
+            // lbldatetime7
             // 
-            this.lblSteet7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet7.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet7.Name = "lblSteet7";
-            this.lblSteet7.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet7.Text = "章子怡";
+            this.lbldatetime7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime7.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime7.Name = "lbldatetime7";
+            this.lbldatetime7.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime7.Text = "11-12-20 19:45";
             // 
-            // lblId7
+            // lblName7
             // 
-            this.lblId7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId7.Location = new System.Drawing.Point(10, 12);
-            this.lblId7.Name = "lblId7";
-            this.lblId7.Size = new System.Drawing.Size(39, 30);
-            this.lblId7.Text = "7";
+            this.lblName7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName7.Location = new System.Drawing.Point(40, 11);
+            this.lblName7.Name = "lblName7";
+            this.lblName7.Size = new System.Drawing.Size(61, 19);
+            this.lblName7.Text = "章子怡";
+            // 
+            // label24
+            // 
+            this.label24.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label24.Location = new System.Drawing.Point(10, 10);
+            this.label24.Name = "label24";
+            this.label24.Size = new System.Drawing.Size(39, 22);
+            this.label24.Text = "7";
             // 
             // pbUpload7
             // 
@@ -400,41 +431,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack6
             // 
-            this.pBack6.Controls.Add(this.lblCreate6);
-            this.pBack6.Controls.Add(this.label6);
-            this.pBack6.Controls.Add(this.lblSteet6);
-            this.pBack6.Controls.Add(this.lblId6);
+            this.pBack6.Controls.Add(this.pDel6);
+            this.pBack6.Controls.Add(this.lbldatetime6);
+            this.pBack6.Controls.Add(this.lblName6);
+            this.pBack6.Controls.Add(this.label20);
             this.pBack6.Controls.Add(this.pbUpload6);
             this.pBack6.Controls.Add(this.pbIn6);
             this.pBack6.Location = new System.Drawing.Point(4, 233);
             this.pBack6.Name = "pBack6";
-            this.pBack6.Size = new System.Drawing.Size(444, 40);
+            this.pBack6.Size = new System.Drawing.Size(444, 38);
             this.pBack6.Visible = false;
-            this.pBack6.GotFocus += new System.EventHandler(this.p6_GotFocus);
             // 
-            // lblCreate6
+            // pDel6
             // 
-            this.lblCreate6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate6.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate6.Name = "lblCreate6";
-            this.lblCreate6.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate6.Text = "2011-12-20 19:45";
+            this.pDel6.Image = ((System.Drawing.Image)(resources.GetObject("pDel6.Image")));
+            this.pDel6.Location = new System.Drawing.Point(281, 3);
+            this.pDel6.Name = "pDel6";
+            this.pDel6.Size = new System.Drawing.Size(52, 31);
+            this.pDel6.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet6
+            // lbldatetime6
             // 
-            this.lblSteet6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet6.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet6.Name = "lblSteet6";
-            this.lblSteet6.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet6.Text = "章子怡";
+            this.lbldatetime6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime6.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime6.Name = "lbldatetime6";
+            this.lbldatetime6.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime6.Text = "11-12-20 19:45";
             // 
-            // lblId6
+            // lblName6
             // 
-            this.lblId6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId6.Location = new System.Drawing.Point(10, 12);
-            this.lblId6.Name = "lblId6";
-            this.lblId6.Size = new System.Drawing.Size(39, 30);
-            this.lblId6.Text = "6";
+            this.lblName6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName6.Location = new System.Drawing.Point(40, 11);
+            this.lblName6.Name = "lblName6";
+            this.lblName6.Size = new System.Drawing.Size(61, 19);
+            this.lblName6.Text = "章子怡";
+            // 
+            // label20
+            // 
+            this.label20.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label20.Location = new System.Drawing.Point(10, 10);
+            this.label20.Name = "label20";
+            this.label20.Size = new System.Drawing.Size(39, 22);
+            this.label20.Text = "6";
             // 
             // pbUpload6
             // 
@@ -454,40 +492,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack5
             // 
-            this.pBack5.Controls.Add(this.lblCreate5);
-            this.pBack5.Controls.Add(this.label5);
-            this.pBack5.Controls.Add(this.lblSteet5);
-            this.pBack5.Controls.Add(this.lblId5);
+            this.pBack5.Controls.Add(this.pDel5);
+            this.pBack5.Controls.Add(this.lbldatetime5);
+            this.pBack5.Controls.Add(this.lblName5);
+            this.pBack5.Controls.Add(this.label16);
             this.pBack5.Controls.Add(this.pbUpload5);
             this.pBack5.Controls.Add(this.pbIn5);
-            this.pBack5.Location = new System.Drawing.Point(3, 187);
+            this.pBack5.Location = new System.Drawing.Point(4, 187);
             this.pBack5.Name = "pBack5";
-            this.pBack5.Size = new System.Drawing.Size(444, 40);
+            this.pBack5.Size = new System.Drawing.Size(444, 38);
             this.pBack5.Visible = false;
             // 
-            // lblCreate5
+            // pDel5
             // 
-            this.lblCreate5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate5.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate5.Name = "lblCreate5";
-            this.lblCreate5.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate5.Text = "2011-12-20 19:45";
+            this.pDel5.Image = ((System.Drawing.Image)(resources.GetObject("pDel5.Image")));
+            this.pDel5.Location = new System.Drawing.Point(281, 3);
+            this.pDel5.Name = "pDel5";
+            this.pDel5.Size = new System.Drawing.Size(52, 31);
+            this.pDel5.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet5
+            // lbldatetime5
             // 
-            this.lblSteet5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet5.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet5.Name = "lblSteet5";
-            this.lblSteet5.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet5.Text = "章子怡";
+            this.lbldatetime5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime5.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime5.Name = "lbldatetime5";
+            this.lbldatetime5.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime5.Text = "11-12-20 19:45";
             // 
-            // lblId5
+            // lblName5
             // 
-            this.lblId5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId5.Location = new System.Drawing.Point(10, 12);
-            this.lblId5.Name = "lblId5";
-            this.lblId5.Size = new System.Drawing.Size(39, 30);
-            this.lblId5.Text = "5";
+            this.lblName5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName5.Location = new System.Drawing.Point(40, 11);
+            this.lblName5.Name = "lblName5";
+            this.lblName5.Size = new System.Drawing.Size(61, 19);
+            this.lblName5.Text = "章子怡";
+            // 
+            // label16
+            // 
+            this.label16.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label16.Location = new System.Drawing.Point(10, 10);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(39, 22);
+            this.label16.Text = "5";
             // 
             // pbUpload5
             // 
@@ -507,40 +553,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack4
             // 
-            this.pBack4.Controls.Add(this.lblCreate4);
-            this.pBack4.Controls.Add(this.label4);
-            this.pBack4.Controls.Add(this.lblSteet4);
-            this.pBack4.Controls.Add(this.lblId4);
+            this.pBack4.Controls.Add(this.pDel4);
+            this.pBack4.Controls.Add(this.lbldatetime4);
+            this.pBack4.Controls.Add(this.lblName4);
+            this.pBack4.Controls.Add(this.label12);
             this.pBack4.Controls.Add(this.pbUpload4);
             this.pBack4.Controls.Add(this.pbIn4);
-            this.pBack4.Location = new System.Drawing.Point(3, 141);
+            this.pBack4.Location = new System.Drawing.Point(4, 141);
             this.pBack4.Name = "pBack4";
-            this.pBack4.Size = new System.Drawing.Size(444, 40);
+            this.pBack4.Size = new System.Drawing.Size(444, 38);
             this.pBack4.Visible = false;
             // 
-            // lblCreate4
+            // pDel4
             // 
-            this.lblCreate4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate4.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate4.Name = "lblCreate4";
-            this.lblCreate4.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate4.Text = "2011-12-20 19:45";
+            this.pDel4.Image = ((System.Drawing.Image)(resources.GetObject("pDel4.Image")));
+            this.pDel4.Location = new System.Drawing.Point(281, 3);
+            this.pDel4.Name = "pDel4";
+            this.pDel4.Size = new System.Drawing.Size(52, 31);
+            this.pDel4.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet4
+            // lbldatetime4
             // 
-            this.lblSteet4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet4.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet4.Name = "lblSteet4";
-            this.lblSteet4.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet4.Text = "章子怡";
+            this.lbldatetime4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime4.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime4.Name = "lbldatetime4";
+            this.lbldatetime4.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime4.Text = "11-12-20 19:45";
             // 
-            // lblId4
+            // lblName4
             // 
-            this.lblId4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId4.Location = new System.Drawing.Point(10, 12);
-            this.lblId4.Name = "lblId4";
-            this.lblId4.Size = new System.Drawing.Size(39, 30);
-            this.lblId4.Text = "4";
+            this.lblName4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName4.Location = new System.Drawing.Point(40, 11);
+            this.lblName4.Name = "lblName4";
+            this.lblName4.Size = new System.Drawing.Size(61, 19);
+            this.lblName4.Text = "章子怡";
+            // 
+            // label12
+            // 
+            this.label12.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label12.Location = new System.Drawing.Point(10, 10);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(39, 22);
+            this.label12.Text = "4";
             // 
             // pbUpload4
             // 
@@ -560,40 +614,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack3
             // 
-            this.pBack3.Controls.Add(this.lblCreate3);
-            this.pBack3.Controls.Add(this.label3);
-            this.pBack3.Controls.Add(this.lblSteet3);
-            this.pBack3.Controls.Add(this.lblId3);
+            this.pBack3.Controls.Add(this.pDel3);
+            this.pBack3.Controls.Add(this.lbldatetime3);
+            this.pBack3.Controls.Add(this.lblName3);
+            this.pBack3.Controls.Add(this.label8);
             this.pBack3.Controls.Add(this.pbUpload3);
             this.pBack3.Controls.Add(this.pbIn3);
             this.pBack3.Location = new System.Drawing.Point(4, 95);
             this.pBack3.Name = "pBack3";
-            this.pBack3.Size = new System.Drawing.Size(444, 40);
+            this.pBack3.Size = new System.Drawing.Size(444, 38);
             this.pBack3.Visible = false;
             // 
-            // lblCreate3
+            // pDel3
             // 
-            this.lblCreate3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate3.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate3.Name = "lblCreate3";
-            this.lblCreate3.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate3.Text = "2011-12-20 19:45";
+            this.pDel3.Image = ((System.Drawing.Image)(resources.GetObject("pDel3.Image")));
+            this.pDel3.Location = new System.Drawing.Point(281, 3);
+            this.pDel3.Name = "pDel3";
+            this.pDel3.Size = new System.Drawing.Size(52, 31);
+            this.pDel3.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet3
+            // lbldatetime3
             // 
-            this.lblSteet3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet3.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet3.Name = "lblSteet3";
-            this.lblSteet3.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet3.Text = "章子怡";
+            this.lbldatetime3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime3.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime3.Name = "lbldatetime3";
+            this.lbldatetime3.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime3.Text = "11-12-20 19:45";
             // 
-            // lblId3
+            // lblName3
             // 
-            this.lblId3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId3.Location = new System.Drawing.Point(10, 12);
-            this.lblId3.Name = "lblId3";
-            this.lblId3.Size = new System.Drawing.Size(39, 30);
-            this.lblId3.Text = "3";
+            this.lblName3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName3.Location = new System.Drawing.Point(40, 11);
+            this.lblName3.Name = "lblName3";
+            this.lblName3.Size = new System.Drawing.Size(61, 19);
+            this.lblName3.Text = "章子怡";
+            // 
+            // label8
+            // 
+            this.label8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label8.Location = new System.Drawing.Point(10, 10);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(39, 22);
+            this.label8.Text = "3";
             // 
             // pbUpload3
             // 
@@ -613,40 +675,48 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack2
             // 
-            this.pBack2.Controls.Add(this.lblCreate2);
-            this.pBack2.Controls.Add(this.label2);
-            this.pBack2.Controls.Add(this.lblSteet2);
-            this.pBack2.Controls.Add(this.lblId2);
+            this.pBack2.Controls.Add(this.pDel2);
+            this.pBack2.Controls.Add(this.lbldatetime2);
+            this.pBack2.Controls.Add(this.lblName2);
+            this.pBack2.Controls.Add(this.label4);
             this.pBack2.Controls.Add(this.pbUpload2);
             this.pBack2.Controls.Add(this.pbIn2);
             this.pBack2.Location = new System.Drawing.Point(4, 49);
             this.pBack2.Name = "pBack2";
-            this.pBack2.Size = new System.Drawing.Size(444, 40);
+            this.pBack2.Size = new System.Drawing.Size(444, 38);
             this.pBack2.Visible = false;
             // 
-            // lblCreate2
+            // pDel2
             // 
-            this.lblCreate2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate2.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate2.Name = "lblCreate2";
-            this.lblCreate2.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate2.Text = "2011-12-20 19:45";
+            this.pDel2.Image = ((System.Drawing.Image)(resources.GetObject("pDel2.Image")));
+            this.pDel2.Location = new System.Drawing.Point(281, 4);
+            this.pDel2.Name = "pDel2";
+            this.pDel2.Size = new System.Drawing.Size(52, 31);
+            this.pDel2.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet2
+            // lbldatetime2
             // 
-            this.lblSteet2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet2.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet2.Name = "lblSteet2";
-            this.lblSteet2.Size = new System.Drawing.Size(157, 19);
-            this.lblSteet2.Text = "章子怡";
+            this.lbldatetime2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime2.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime2.Name = "lbldatetime2";
+            this.lbldatetime2.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime2.Text = "11-12-20 19:45";
             // 
-            // lblId2
+            // lblName2
             // 
-            this.lblId2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId2.Location = new System.Drawing.Point(10, 12);
-            this.lblId2.Name = "lblId2";
-            this.lblId2.Size = new System.Drawing.Size(39, 30);
-            this.lblId2.Text = "2";
+            this.lblName2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName2.Location = new System.Drawing.Point(40, 11);
+            this.lblName2.Name = "lblName2";
+            this.lblName2.Size = new System.Drawing.Size(61, 19);
+            this.lblName2.Text = "章子怡";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.label4.Location = new System.Drawing.Point(10, 10);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(39, 22);
+            this.label4.Text = "2";
             // 
             // pbUpload2
             // 
@@ -666,39 +736,47 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             // 
             // pBack1
             // 
-            this.pBack1.Controls.Add(this.lblCreate1);
-            this.pBack1.Controls.Add(this.label1);
-            this.pBack1.Controls.Add(this.lblSteet1);
+            this.pBack1.Controls.Add(this.pDel1);
+            this.pBack1.Controls.Add(this.lbldatetime1);
+            this.pBack1.Controls.Add(this.lblName1);
             this.pBack1.Controls.Add(this.lblId1);
             this.pBack1.Controls.Add(this.pbUpload1);
             this.pBack1.Controls.Add(this.pbIn1);
-            this.pBack1.Location = new System.Drawing.Point(3, 3);
+            this.pBack1.Location = new System.Drawing.Point(4, 3);
             this.pBack1.Name = "pBack1";
-            this.pBack1.Size = new System.Drawing.Size(444, 40);
+            this.pBack1.Size = new System.Drawing.Size(444, 38);
             this.pBack1.Visible = false;
             // 
-            // lblCreate1
+            // pDel1
             // 
-            this.lblCreate1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblCreate1.Location = new System.Drawing.Point(188, 10);
-            this.lblCreate1.Name = "lblCreate1";
-            this.lblCreate1.Size = new System.Drawing.Size(138, 20);
-            this.lblCreate1.Text = "2011-12-20 19:45";
+            this.pDel1.Image = ((System.Drawing.Image)(resources.GetObject("pDel1.Image")));
+            this.pDel1.Location = new System.Drawing.Point(281, 3);
+            this.pDel1.Name = "pDel1";
+            this.pDel1.Size = new System.Drawing.Size(52, 31);
+            this.pDel1.Click += new System.EventHandler(this.pbDel_Click);
             // 
-            // lblSteet1
+            // lbldatetime1
             // 
-            this.lblSteet1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblSteet1.Location = new System.Drawing.Point(27, 11);
-            this.lblSteet1.Name = "lblSteet1";
-            this.lblSteet1.Size = new System.Drawing.Size(82, 19);
-            this.lblSteet1.Text = "章子怡";
+            this.lbldatetime1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbldatetime1.Location = new System.Drawing.Point(119, 10);
+            this.lbldatetime1.Name = "lbldatetime1";
+            this.lbldatetime1.Size = new System.Drawing.Size(120, 20);
+            this.lbldatetime1.Text = "11-12-20 19:45";
+            // 
+            // lblName1
+            // 
+            this.lblName1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lblName1.Location = new System.Drawing.Point(40, 11);
+            this.lblName1.Name = "lblName1";
+            this.lblName1.Size = new System.Drawing.Size(61, 19);
+            this.lblName1.Text = "章子怡";
             // 
             // lblId1
             // 
             this.lblId1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblId1.Location = new System.Drawing.Point(10, 12);
+            this.lblId1.Location = new System.Drawing.Point(10, 10);
             this.lblId1.Name = "lblId1";
-            this.lblId1.Size = new System.Drawing.Size(39, 30);
+            this.lblId1.Size = new System.Drawing.Size(39, 22);
             this.lblId1.Text = "1";
             // 
             // pbUpload1
@@ -744,109 +822,29 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.btnNew.Text = "新信息";
             this.btnNew.Click += new System.EventHandler(this.btnNew_Click);
             // 
-            // ucControlManager1
+            // ucControlRsidentManager1
             // 
-            this.ucControlManager1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.ucControlManager1.Location = new System.Drawing.Point(0, 0);
-            this.ucControlManager1.Name = "ucControlManager1";
-            this.ucControlManager1.Size = new System.Drawing.Size(480, 67);
-            this.ucControlManager1.TabIndex = 25;
+            this.ucControlRsidentManager1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.ucControlRsidentManager1.Location = new System.Drawing.Point(0, 0);
+            this.ucControlRsidentManager1.Name = "ucControlRsidentManager1";
+            this.ucControlRsidentManager1.Size = new System.Drawing.Size(480, 66);
+            this.ucControlRsidentManager1.TabIndex = 87;
             // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label1.Location = new System.Drawing.Point(108, 11);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 19);
-            this.label1.Text = "街道地址";
-            // 
-            // label2
-            // 
-            this.label2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label2.Location = new System.Drawing.Point(107, 10);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(82, 19);
-            this.label2.Text = "街道地址";
-            // 
-            // label3
-            // 
-            this.label3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label3.Location = new System.Drawing.Point(107, 10);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(82, 19);
-            this.label3.Text = "街道地址";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label4.Location = new System.Drawing.Point(108, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 19);
-            this.label4.Text = "街道地址";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label5.Location = new System.Drawing.Point(108, 10);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(82, 19);
-            this.label5.Text = "街道地址";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label6.Location = new System.Drawing.Point(107, 10);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(82, 19);
-            this.label6.Text = "街道地址";
-            // 
-            // label7
-            // 
-            this.label7.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label7.Location = new System.Drawing.Point(107, 10);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(82, 19);
-            this.label7.Text = "街道地址";
-            // 
-            // label8
-            // 
-            this.label8.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label8.Location = new System.Drawing.Point(107, 11);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(82, 19);
-            this.label8.Text = "街道地址";
-            // 
-            // label9
-            // 
-            this.label9.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label9.Location = new System.Drawing.Point(107, 10);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(82, 19);
-            this.label9.Text = "街道地址";
-            // 
-            // label10
-            // 
-            this.label10.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label10.Location = new System.Drawing.Point(107, 11);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(82, 19);
-            this.label10.Text = "街道地址";
-            // 
-            // frmPeopleManager
+            // frmResidentManager
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(480, 588);
+            this.Controls.Add(this.ucControlRsidentManager1);
             this.Controls.Add(this.btnNew);
             this.Controls.Add(this.btnReturn);
             this.Controls.Add(this.pBUploadAll);
             this.Controls.Add(this.bgPanel);
-            this.Controls.Add(this.ucControlManager1);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.panel7);
             this.Location = new System.Drawing.Point(0, 0);
             this.Menu = this.mainMenu1;
-            this.Name = "frmPeopleManager";
+            this.Name = "frmResidentManager";
             this.Text = "frmPeopleManager";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Activated += new System.EventHandler(this.frmPeopleManager_Activated);
@@ -874,81 +872,81 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox btnSave;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private PoliceMobile.LIB.ucControlManager ucControlManager1;
         private System.Windows.Forms.Panel bgPanel;
         private System.Windows.Forms.Panel pBack1;
         private System.Windows.Forms.PictureBox pbUpload1;
         private System.Windows.Forms.PictureBox pbIn1;
-        private System.Windows.Forms.Label lblCreate1;
-        private System.Windows.Forms.Label lblSteet1;
+        private System.Windows.Forms.Label lbldatetime1;
+        private System.Windows.Forms.Label lblName1;
         private System.Windows.Forms.Label lblId1;
+        private System.Windows.Forms.PictureBox pBUploadAll;
+        private System.Windows.Forms.Button btnReturn;
+        private System.Windows.Forms.Button btnNew;
+        private System.Windows.Forms.Panel pBack10;
+        private System.Windows.Forms.Label lbldatetime10;
+        private System.Windows.Forms.Label lblName10;
+        private System.Windows.Forms.Label label36;
+        private System.Windows.Forms.PictureBox pbUpload10;
+        private System.Windows.Forms.PictureBox pbIn10;
         private System.Windows.Forms.Panel pBack9;
-        private System.Windows.Forms.Label lblCreate9;
-        private System.Windows.Forms.Label lblSteet9;
-        private System.Windows.Forms.Label lblId9;
-        private System.Windows.Forms.PictureBox pbUpload19;
+        private System.Windows.Forms.Label lbldatetime9;
+        private System.Windows.Forms.Label lblName9;
+        private System.Windows.Forms.Label label32;
+        private System.Windows.Forms.PictureBox pbUpload9;
         private System.Windows.Forms.PictureBox pbIn9;
         private System.Windows.Forms.Panel pBack8;
-        private System.Windows.Forms.Label lblCreate8;
-        private System.Windows.Forms.Label lblSteet8;
-        private System.Windows.Forms.Label lblId8;
+        private System.Windows.Forms.Label lbldatetime8;
+        private System.Windows.Forms.Label lblName8;
+        private System.Windows.Forms.Label label28;
         private System.Windows.Forms.PictureBox pbUpload8;
         private System.Windows.Forms.PictureBox pbIn8;
         private System.Windows.Forms.Panel pBack7;
-        private System.Windows.Forms.Label lblCreate7;
-        private System.Windows.Forms.Label lblSteet7;
-        private System.Windows.Forms.Label lblId7;
+        private System.Windows.Forms.Label lbldatetime7;
+        private System.Windows.Forms.Label lblName7;
+        private System.Windows.Forms.Label label24;
         private System.Windows.Forms.PictureBox pbUpload7;
         private System.Windows.Forms.PictureBox pbIn7;
         private System.Windows.Forms.Panel pBack6;
-        private System.Windows.Forms.Label lblCreate6;
-        private System.Windows.Forms.Label lblSteet6;
-        private System.Windows.Forms.Label lblId6;
+        private System.Windows.Forms.Label lbldatetime6;
+        private System.Windows.Forms.Label lblName6;
+        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.PictureBox pbUpload6;
         private System.Windows.Forms.PictureBox pbIn6;
         private System.Windows.Forms.Panel pBack5;
-        private System.Windows.Forms.Label lblCreate5;
-        private System.Windows.Forms.Label lblSteet5;
-        private System.Windows.Forms.Label lblId5;
+        private System.Windows.Forms.Label lbldatetime5;
+        private System.Windows.Forms.Label lblName5;
+        private System.Windows.Forms.Label label16;
         private System.Windows.Forms.PictureBox pbUpload5;
         private System.Windows.Forms.PictureBox pbIn5;
         private System.Windows.Forms.Panel pBack4;
-        private System.Windows.Forms.Label lblCreate4;
-        private System.Windows.Forms.Label lblSteet4;
-        private System.Windows.Forms.Label lblId4;
+        private System.Windows.Forms.Label lbldatetime4;
+        private System.Windows.Forms.Label lblName4;
+        private System.Windows.Forms.Label label12;
         private System.Windows.Forms.PictureBox pbUpload4;
         private System.Windows.Forms.PictureBox pbIn4;
         private System.Windows.Forms.Panel pBack3;
-        private System.Windows.Forms.Label lblCreate3;
-        private System.Windows.Forms.Label lblSteet3;
-        private System.Windows.Forms.Label lblId3;
+        private System.Windows.Forms.Label lbldatetime3;
+        private System.Windows.Forms.Label lblName3;
+        private System.Windows.Forms.Label label8;
         private System.Windows.Forms.PictureBox pbUpload3;
         private System.Windows.Forms.PictureBox pbIn3;
         private System.Windows.Forms.Panel pBack2;
-        private System.Windows.Forms.Label lblCreate2;
-        private System.Windows.Forms.Label lblSteet2;
-        private System.Windows.Forms.Label lblId2;
+        private System.Windows.Forms.Label lbldatetime2;
+        private System.Windows.Forms.Label lblName2;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pbUpload2;
         private System.Windows.Forms.PictureBox pbIn2;
-        private System.Windows.Forms.PictureBox pBUploadAll;
-        private System.Windows.Forms.Panel pBack10;
-        private System.Windows.Forms.Label lblCreate10;
-        private System.Windows.Forms.Label lblSteet10;
-        private System.Windows.Forms.Label lblId10;
-        private System.Windows.Forms.PictureBox pbUpload10;
-        private System.Windows.Forms.PictureBox pbIn10;
-        private System.Windows.Forms.Button btnReturn;
-        private System.Windows.Forms.Button btnNew;
-        private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.PictureBox pDel10;
+        private System.Windows.Forms.PictureBox pDel9;
+        private System.Windows.Forms.PictureBox pDel8;
+        private System.Windows.Forms.PictureBox pDel7;
+        private System.Windows.Forms.PictureBox pDel6;
+        private System.Windows.Forms.PictureBox pDel5;
+        private System.Windows.Forms.PictureBox pDel4;
+        private System.Windows.Forms.PictureBox pDel3;
+        private System.Windows.Forms.PictureBox pDel2;
+        private System.Windows.Forms.PictureBox pDel1;
+        private PoliceMobile.LIB.ucControlRsidentManager ucControlRsidentManager1;
 
 
     }

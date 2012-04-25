@@ -30,7 +30,7 @@ namespace PoliceMobile.LIB
             if (ToolsHelper.iFlag >0)
             {
                 theFrm = ((Form)this.Parent);
-                if (ToolsHelper.iHouseType == 0)
+                if (ToolsHelper.iHouseType == 1)
                 {
                     FrmManager.showWindowFor_frmInfoForHousePeopleByPrivate(theFrm);
                 }
