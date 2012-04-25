@@ -203,5 +203,15 @@ namespace PoliceMobile.LIB
             theForm.Dispose();
             theForm = null;
         }
+
+        public static void showWindowFor_frmResidentManager(Form theForm)
+        {
+            frmResidentManager frm = new frmResidentManager();
+            frm.Show();
+
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
+        }
     }
 }

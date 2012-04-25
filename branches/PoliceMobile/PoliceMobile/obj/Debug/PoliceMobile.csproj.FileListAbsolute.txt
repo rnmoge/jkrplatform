@@ -314,3 +314,4 @@ F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\Pol
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.exe
 F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.pdb
+F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml

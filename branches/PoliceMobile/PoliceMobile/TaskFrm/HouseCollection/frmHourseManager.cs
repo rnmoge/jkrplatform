@@ -132,9 +132,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             string p = ToolsHelper.sPath + "/house/" +sGuid;
             IList<string> list = new List<string>();
             SharpZipHelper.GetFileInfo(p, p, list);
-            SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath + "/Upload/" + sGuid+ ".zip", 8, null, null);
+           // SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath + "/Upload/" + sGuid+ ".zip", 8, null, null);
+            SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath + "/Upload/" + sGuid + ".zip", 8, null, null);
             //ÉÏ´«
-            ToolsHelper.Upload_Request("http://60.28.24.210:8081/FileUpload/UpFiles.jsp", spath, serverPaht, "1");
+            ToolsHelper.Upload_Request("http://218.28.80.155:8080/FileUpload/UpFiles.jsp", spath, serverPaht, "1");
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -145,7 +146,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
 
         private void pBUploadAll_Click(object sender, EventArgs e)
         {
-            string sUrl = "http://60.28.24.210:8081/FileUpload/UpFiles.jsp";
+            string sUrl = "http://218.28.80.155:8080/FileUpload/UpFiles.jsp";
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(ToolsHelper.sPath + "/SystemData.xml");
 

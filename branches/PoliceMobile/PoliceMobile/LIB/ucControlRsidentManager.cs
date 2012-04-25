@@ -67,7 +67,7 @@ namespace PoliceMobile.LIB
         private void pControl_Click(object sender, EventArgs e)
         {
             theFrm = ((Form)this.Parent);
-            FrmManager.showWindowFor_frmInfoForPeople(theFrm);
+            FrmManager.showWindowFor_frmResidentManager(theFrm);
         }
     }
 }

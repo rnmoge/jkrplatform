@@ -16,12 +16,15 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         public frmCameraForPeople()
         {
             InitializeComponent();
+            ucControlRsidentManager1.pCamera.BackColor = Color.White;
+            ToolsHelper.AutoLoadConfigForPeople(this, ToolsHelper.sCardId);
         }
 
         private void btnCamera_Click(object sender, EventArgs e)
         {
-            string sPictureName = Guid.NewGuid() + ".jpg";
-            string ImageForderPath = ToolsHelper.sPath + @"\" + ToolsHelper.sHouseGuid;
+            string imgGuid = Guid.NewGuid().ToString();
+            string sPictureName = imgGuid + ".jpg";
+            string ImageForderPath = ToolsHelper.sPath + @"\temp\";
             if (!Directory.Exists(ImageForderPath))
             {
                 Directory.CreateDirectory(ImageForderPath);
@@ -29,26 +32,28 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             Boolean isCamera = ToolsHelper.sCapture(ImageForderPath + @"\" + sPictureName);
             if (isCamera == true)
             {
-                ToolsHelper.BindPic(pbShow, ImageForderPath  + @"\" + sPictureName);
+                System.IO.File.Move(ImageForderPath + @"\" + sPictureName, ToolsHelper.sPath + @"\Peoples\" + ToolsHelper.sCardId + @"\pic\" + sPictureName);
+
+                ToolsHelper.BindPic(pbShow, ToolsHelper.sPath + @"\Peoples\" + ToolsHelper.sCardId + @"\pic\" + sPictureName);
             }
-            this.WindowState = FormWindowState.Maximized;
-            ToolsHelper.SaveHouseImage(ToolsHelper.sHouseGuid,pbShow, "Camera_In");
+
+            ToolsHelper.SavePeopleImage(ToolsHelper.sCardId, pbShow, "image", ToolsHelper.sCardId, imgGuid, " ", " ");
         }
 
         private void btnDelete_Click(object sender, EventArgs e)
         {
             string sPicName = Convert.ToString(pbShow.Tag);
-            ToolsHelper.DelHouseImage( ToolsHelper.sHouseGuid,pbShow);
+            ToolsHelper.DelPeopleImage(ToolsHelper.sHouseGuid,pbShow);
         }
 
         private void btnPrevious_Click(object sender, EventArgs e)
         {
-            ToolsHelper.PreHouseImage(ToolsHelper.sHouseGuid, pbShow);
+            ToolsHelper.PrePeopleImage(ToolsHelper.sCardId, pbShow);
         }
 
         private void btnNext_Click(object sender, EventArgs e)
         {
-            ToolsHelper.NextHouseImage(ToolsHelper.sHouseGuid, pbShow);
+            ToolsHelper.NextPeopleImage(ToolsHelper.sCardId, pbShow);
         }
     }
 }
