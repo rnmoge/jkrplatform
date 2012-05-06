@@ -11,16 +11,49 @@
 
 		<Resident Type="3" Discripiton="Resident Type 1:常驻,2:暂住,3:高危">
 			<BaseInfo>
-				<name>章子怡</name>
-				<gender>女</gender>
-				<date_of_birth>1980-02-12</date_of_birth>
-				<nationality_name>汉</nationality_name>
-				<registered_residence_address>北京市朝阳区北三环中路100号</registered_residence_address>
-				<identification_id>123456789012345678</identification_id>
-				<registration_date>1980-02-12</registration_date>
+        <name/>
+        <gender/>
+        <date_of_birth/>
+        <nationality_name/>
+        <registered_residence_address/>
+        <identification_id/>
+        <registration_date/>
+        <regorg></regorg>
+        <startdate></startdate>
+        <enddate></enddate>
+        <peopletype_code>2</peopletype_code>
+        <peopletype_name>临时人员</peopletype_name>
+        <othername discripiton="曾用名"></othername>
+        <household></household>
+        <religion></religion>
+        <education_code discription="学历编号"/>
+        <education_name discripiton="学历名"/>
+        <marital_status_code/>
+        <marital_status_name/>
+        <militaryservice_code/>
+        <militaryservice_name/>
+        <profession_name/>
+        <blood_type_code/>
+        <blood_type_name/>
+        <height/>
+        <phone_number/>
+        <current_address/>
+        <address_id/>
+        <Belief_name></Belief_name>
+        <Belief_code></Belief_code>
+        <spouse>
+          <name/>
+          <idenfication_id/>
+          <address/>
+          <phone_number/>
+        </spouse>
 			</BaseInfo>
 			<ExtendedInfo Type="3">
+        <remark/>
 				<othername/>
+        <reason></reason>
+        <data_Start></data_Start>
+        <nativeplace></nativeplace>
 				<education_code>20</education_code>
 				<education_name>本科</education_name>
 				<marital_status_code>10</marital_status_code>
@@ -40,65 +73,210 @@
 				<workplace_contact>张艺谋</workplace_contact>
 				<workplace_phone>13900000000</workplace_phone>
 				<workplace_address>三门峡市崤山路101号</workplace_address>
-				<spouse>
-					<name>张艺谋</name>
-					<idenfication_id>123456789087654321</idenfication_id>
-					<address>北京市朝阳区北三环中路102号</address>
-					<phone_number>010-51168888</phone_number>
-				</spouse>
 				
 				<images>
-					<image type="10" name="人员头像照片">2012040800001.jpg</image>
-					<image type="11" name="人员普通照片">2012040800002.jpg</image>
-					<image type="11" name="人员普通照片">2012040800003.jpg</image>
-					<image type="21" name="左手大拇指指纹">2012040800004.jpg</image>
-					<image type="22" name="左手食指指纹">2012040800005.jpg</image>
-					<image type="23" name="左手中指指纹">2012040800006.jpg</image>
-					<image type="24" name="左手无名指指纹">2012040800007.jpg</image>
-					<image type="25" name="左手小拇指指纹">2012040800008.jpg</image>
+          <image></image>
 				</images>
-				<family>
-					<family_member>
-						<relation_code>75</relation_code>
-						<relation_name>姐姐</relation_name>
-						<name>巩俐</name>
-						<idenfication_id>123456789087654321</idenfication_id>
-						<address>北京市东城区东直门内大街102号</address>
-						<phone_number>010-51168888</phone_number>						
-					</family_member>
-					<family_member>
-						<relation_code>73</relation_code>
-						<relation_name>弟弟</relation_name>
-						<name>周润发</name>
-						<idenfication_id>123456789087754321</idenfication_id>
-						<address>北京市朝阳区慧新西街1102号</address>
-						<phone_number>010-51168889</phone_number>						
-					</family_member>
-				</family>
+
+        <family>
+          <family_member id="1">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="2">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="3">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="4">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="5">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="6">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="7">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="8">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="9">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+          <family_member id="10">
+            <relation/>
+            <name/>
+            <idenfication_id/>
+            <address/>
+            <phone_number/>
+          </family_member>
+        </family>
+        
 				<criminal_records>
-					<record>
-						<description>1999年因为抢劫罪被判处3年有期徒刑</description>
-						<prison_name>河南省第五监狱</prison_name>
-						<date_released>2002-02-26</date_released>
-						<accomplices>
-							<accomplice type="1" Discripiton="1:主犯,2:共犯,3:从犯,9:其他">
-								<name>张三</name>
-								<idenfication_id>123456789087654321</idenfication_id>
-								<address>北京市朝阳区北三环中路102号</address>
-								<phone_number>010-51168888</phone_number>
-							</accomplice>
-							<accomplice type="2" Discripiton="1:主犯,2:共犯,3:从犯,9:其他">
-								<name>李四</name>
-								<idenfication_id>123456789087674321</idenfication_id>
-								<address>北京市朝阳区北三环中路103号</address>
-								<phone_number>010-51168888</phone_number>
-							</accomplice>
-						</accomplices>
-
+					<record id="1">
+						<description></description>
+						<prison_name></prison_name>
+						<date_released></date_released>
 					</record>
-
+          <record id="2">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="3">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="4">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="5">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="6">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="7">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="8">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="9">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
+          <record id="10">
+            <description></description>
+            <prison_name></prison_name>
+            <date_released></date_released>
+          </record>
 				</criminal_records>
-
+        
+        <accomplices>
+          <accomplice id="1">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="2">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="3">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="4">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="5">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="6">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="7">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="8">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="9">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+          <accomplice  id="10">
+            <relation/>
+            <name></name>
+            <idenfication_id></idenfication_id>
+            <address></address>
+            <phone_number></phone_number>
+          </accomplice>
+        </accomplices>
+        
 			</ExtendedInfo>
 		</Resident>
 </Data>

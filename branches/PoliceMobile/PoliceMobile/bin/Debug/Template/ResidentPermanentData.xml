@@ -13,7 +13,7 @@
 			<name/>
 			<gender/>
 			<date_of_birth/>
-			<nationality_name/>
+      <nationality_name/>
 			<registered_residence_address/>
 			<identification_id/>
 			<registration_date/>
@@ -27,7 +27,7 @@
 			<household></household>
 			<religion></religion>
 			<education_code discription="学历编号"/>
-			<education_name discripiton="学历名"/>militaryservice
+			<education_name discripiton="学历名"/>
       <marital_status_code/>
 			<marital_status_name/>
 			<militaryservice_code/>
@@ -64,8 +64,20 @@
 			<remark/>
 
 			<images>
-				<image type="10"/>
+				<image/>
 			</images>
+      <fingerprints>
+        <finger id="1"></finger>
+        <finger id="2"></finger>
+        <finger id="3"></finger>
+        <finger id="4"></finger>
+        <finger id="5"></finger>
+        <finger id="6"></finger>
+        <finger id="7"></finger>
+        <finger id="8"></finger>
+        <finger id="9"></finger>
+        <finger id="10"></finger>
+      </fingerprints>
 			<family>
 				<family_member id="1">
 					<relation/>

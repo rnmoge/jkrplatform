@@ -155,6 +155,10 @@
       <DependentUpon>frmCameraForPeople.cs</DependentUpon>
       <SubType>Designer</SubType>
     </EmbeddedResource>
+    <EmbeddedResource Include="TaskFrm\PeopleCollection\frmFingerPrintForPeople.resx">
+      <DependentUpon>frmFingerPrintForPeople.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <EmbeddedResource Include="TaskFrm\PeopleCollection\frmInfoForPeople.resx">
       <DependentUpon>frmInfoForPeople.cs</DependentUpon>
       <SubType>Designer</SubType>
@@ -242,6 +246,12 @@
     </Compile>
     <Compile Include="TaskFrm\PeopleCollection\frmCameraForPeople.Designer.cs">
       <DependentUpon>frmCameraForPeople.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmFingerPrintForPeople.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TaskFrm\PeopleCollection\frmFingerPrintForPeople.Designer.cs">
+      <DependentUpon>frmFingerPrintForPeople.cs</DependentUpon>
     </Compile>
     <Compile Include="TaskFrm\PeopleCollection\frmInfoForPeople.cs">
       <SubType>Form</SubType>
