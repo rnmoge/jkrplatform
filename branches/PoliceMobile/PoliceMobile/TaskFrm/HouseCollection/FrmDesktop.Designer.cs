@@ -36,6 +36,7 @@
             this.pbCollectionPeople = new System.Windows.Forms.PictureBox();
             this.pbSearch = new System.Windows.Forms.PictureBox();
             this.lblLoginNickName = new System.Windows.Forms.Label();
+            this.pQuit = new System.Windows.Forms.PictureBox();
             this.SuspendLayout();
             // 
             // pictureBox1
@@ -80,12 +81,21 @@
             this.lblLoginNickName.Size = new System.Drawing.Size(133, 21);
             this.lblLoginNickName.Text = "警务室";
             // 
+            // pQuit
+            // 
+            this.pQuit.Image = ((System.Drawing.Image)(resources.GetObject("pQuit.Image")));
+            this.pQuit.Location = new System.Drawing.Point(333, 455);
+            this.pQuit.Name = "pQuit";
+            this.pQuit.Size = new System.Drawing.Size(93, 100);
+            this.pQuit.Click += new System.EventHandler(this.pQuit_Click);
+            // 
             // FrmDesktop
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.AutoScroll = true;
             this.ClientSize = new System.Drawing.Size(480, 588);
+            this.Controls.Add(this.pQuit);
             this.Controls.Add(this.lblLoginNickName);
             this.Controls.Add(this.pbSearch);
             this.Controls.Add(this.pbCollectionPeople);
@@ -107,5 +117,6 @@
         private System.Windows.Forms.PictureBox pbCollectionPeople;
         private System.Windows.Forms.PictureBox pbSearch;
         private System.Windows.Forms.Label lblLoginNickName;
+        private System.Windows.Forms.PictureBox pQuit;
     }
 }

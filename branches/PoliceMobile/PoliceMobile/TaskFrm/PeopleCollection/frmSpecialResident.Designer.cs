@@ -37,25 +37,158 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnSave = new System.Windows.Forms.PictureBox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pSave = new System.Windows.Forms.PictureBox();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
             this.pictureBox8 = new System.Windows.Forms.PictureBox();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage5 = new System.Windows.Forms.TabPage();
+            this.pBBack5 = new System.Windows.Forms.Panel();
+            this.lbl2_Relation5 = new System.Windows.Forms.Label();
+            this.lbl2_Link5 = new System.Windows.Forms.Label();
+            this.lbl2_CardID5 = new System.Windows.Forms.Label();
+            this.btnDDDel5 = new System.Windows.Forms.Button();
+            this.lbl2_Address5 = new System.Windows.Forms.Label();
+            this.lbl2_Name5 = new System.Windows.Forms.Label();
+            this.pBBack4 = new System.Windows.Forms.Panel();
+            this.lbl2_Relation4 = new System.Windows.Forms.Label();
+            this.lbl2_Link4 = new System.Windows.Forms.Label();
+            this.lbl2_CardID4 = new System.Windows.Forms.Label();
+            this.btnDDDel4 = new System.Windows.Forms.Button();
+            this.lbl2_Address4 = new System.Windows.Forms.Label();
+            this.lbl2_Name4 = new System.Windows.Forms.Label();
+            this.pBBack3 = new System.Windows.Forms.Panel();
+            this.lbl2_Relation3 = new System.Windows.Forms.Label();
+            this.lbl2_Link3 = new System.Windows.Forms.Label();
+            this.lbl2_CardID3 = new System.Windows.Forms.Label();
+            this.btnDDDel3 = new System.Windows.Forms.Button();
+            this.lbl2_Address3 = new System.Windows.Forms.Label();
+            this.lbl2_Name3 = new System.Windows.Forms.Label();
+            this.pBBack2 = new System.Windows.Forms.Panel();
+            this.lbl2_Relation2 = new System.Windows.Forms.Label();
+            this.lbl2_Link2 = new System.Windows.Forms.Label();
+            this.lbl2_CardID2 = new System.Windows.Forms.Label();
+            this.btnDDDel2 = new System.Windows.Forms.Button();
+            this.lbl2_Address2 = new System.Windows.Forms.Label();
+            this.lbl2_Name2 = new System.Windows.Forms.Label();
+            this.pBBack1 = new System.Windows.Forms.Panel();
+            this.lbl2_Relation1 = new System.Windows.Forms.Label();
+            this.lbl2_Link1 = new System.Windows.Forms.Label();
+            this.lbl2_CardID1 = new System.Windows.Forms.Label();
+            this.btnDDDel1 = new System.Windows.Forms.Button();
+            this.lbl2_Address1 = new System.Windows.Forms.Label();
+            this.lbl2_Name1 = new System.Windows.Forms.Label();
+            this.cbx2_Relation = new System.Windows.Forms.ComboBox();
+            this.txt2_Address = new System.Windows.Forms.TextBox();
+            this.txt2_Link = new System.Windows.Forms.TextBox();
+            this.txt2_CardID = new System.Windows.Forms.TextBox();
+            this.txt2_Name = new System.Windows.Forms.TextBox();
+            this.label107 = new System.Windows.Forms.Label();
+            this.label108 = new System.Windows.Forms.Label();
+            this.label109 = new System.Windows.Forms.Label();
+            this.label110 = new System.Windows.Forms.Label();
+            this.label111 = new System.Windows.Forms.Label();
+            this.btnAdd2 = new System.Windows.Forms.Button();
+            this.label112 = new System.Windows.Forms.Label();
+            this.tabPage4 = new System.Windows.Forms.TabPage();
+            this.pBBBack5 = new System.Windows.Forms.Panel();
+            this.lbl3_Address5 = new System.Windows.Forms.Label();
+            this.btnDDel5 = new System.Windows.Forms.Button();
+            this.lbl3_Remark5 = new System.Windows.Forms.Label();
+            this.lbl3_FreeData5 = new System.Windows.Forms.Label();
+            this.pBBBack4 = new System.Windows.Forms.Panel();
+            this.lbl3_Address4 = new System.Windows.Forms.Label();
+            this.btnDDel4 = new System.Windows.Forms.Button();
+            this.lbl3_Remark4 = new System.Windows.Forms.Label();
+            this.lbl3_FreeData4 = new System.Windows.Forms.Label();
+            this.pBBBack3 = new System.Windows.Forms.Panel();
+            this.lbl3_Address3 = new System.Windows.Forms.Label();
+            this.btnDDel3 = new System.Windows.Forms.Button();
+            this.lbl3_Remark3 = new System.Windows.Forms.Label();
+            this.lbl3_FreeData3 = new System.Windows.Forms.Label();
+            this.pBBBack2 = new System.Windows.Forms.Panel();
+            this.lbl3_Address2 = new System.Windows.Forms.Label();
+            this.btnDDel2 = new System.Windows.Forms.Button();
+            this.lbl3_Remark2 = new System.Windows.Forms.Label();
+            this.lbl3_FreeData2 = new System.Windows.Forms.Label();
+            this.pBBBack1 = new System.Windows.Forms.Panel();
+            this.lbl3_Address1 = new System.Windows.Forms.Label();
+            this.btnDDel1 = new System.Windows.Forms.Button();
+            this.lbl3_Remark1 = new System.Windows.Forms.Label();
+            this.lbl3_FreeData1 = new System.Windows.Forms.Label();
+            this.txt3_Remark = new System.Windows.Forms.TextBox();
+            this.txt3_Address = new System.Windows.Forms.TextBox();
+            this.txt3_FreeData = new System.Windows.Forms.TextBox();
+            this.label78 = new System.Windows.Forms.Label();
+            this.label79 = new System.Windows.Forms.Label();
+            this.label80 = new System.Windows.Forms.Label();
+            this.btnAdd3 = new System.Windows.Forms.Button();
+            this.label81 = new System.Windows.Forms.Label();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.pBack5 = new System.Windows.Forms.Panel();
+            this.lbl1_Relation5 = new System.Windows.Forms.Label();
+            this.lbl1_Link5 = new System.Windows.Forms.Label();
+            this.lbl1_CardId5 = new System.Windows.Forms.Label();
+            this.btnDel5 = new System.Windows.Forms.Button();
+            this.lbl1_Address5 = new System.Windows.Forms.Label();
+            this.lbl1_Name5 = new System.Windows.Forms.Label();
+            this.pBack4 = new System.Windows.Forms.Panel();
+            this.lbl1_Relation4 = new System.Windows.Forms.Label();
+            this.lbl1_Link4 = new System.Windows.Forms.Label();
+            this.lbl1_CardId4 = new System.Windows.Forms.Label();
+            this.btnDel4 = new System.Windows.Forms.Button();
+            this.lbl1_Address4 = new System.Windows.Forms.Label();
+            this.lbl1_Name4 = new System.Windows.Forms.Label();
+            this.pBack3 = new System.Windows.Forms.Panel();
+            this.lbl1_Relation3 = new System.Windows.Forms.Label();
+            this.lbl1_Link3 = new System.Windows.Forms.Label();
+            this.lbl1_CardId3 = new System.Windows.Forms.Label();
+            this.btnDel3 = new System.Windows.Forms.Button();
+            this.lbl1_Address3 = new System.Windows.Forms.Label();
+            this.lbl1_Name3 = new System.Windows.Forms.Label();
+            this.pBack2 = new System.Windows.Forms.Panel();
+            this.lbl1_Relation2 = new System.Windows.Forms.Label();
+            this.lbl1_Link2 = new System.Windows.Forms.Label();
+            this.lbl1_CardId2 = new System.Windows.Forms.Label();
+            this.btnDel2 = new System.Windows.Forms.Button();
+            this.lbl1_Address2 = new System.Windows.Forms.Label();
+            this.lbl1_Name2 = new System.Windows.Forms.Label();
+            this.pBack1 = new System.Windows.Forms.Panel();
+            this.lbl1_Relation1 = new System.Windows.Forms.Label();
+            this.lbl1_Link1 = new System.Windows.Forms.Label();
+            this.lbl1_CardId1 = new System.Windows.Forms.Label();
+            this.btnDel1 = new System.Windows.Forms.Button();
+            this.lbl1_Address1 = new System.Windows.Forms.Label();
+            this.lbl1_Name1 = new System.Windows.Forms.Label();
+            this.cbx1_Relation = new System.Windows.Forms.ComboBox();
+            this.txt1_Address = new System.Windows.Forms.TextBox();
+            this.txt1_Link = new System.Windows.Forms.TextBox();
+            this.txt1_CardId = new System.Windows.Forms.TextBox();
+            this.txt1_Name = new System.Windows.Forms.TextBox();
+            this.label53 = new System.Windows.Forms.Label();
+            this.label54 = new System.Windows.Forms.Label();
+            this.label55 = new System.Windows.Forms.Label();
+            this.label56 = new System.Windows.Forms.Label();
+            this.label57 = new System.Windows.Forms.Label();
+            this.btnAdd = new System.Windows.Forms.Button();
+            this.label58 = new System.Windows.Forms.Label();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.txtIDName = new System.Windows.Forms.Label();
             this.txtIDSex = new System.Windows.Forms.Label();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.txtEmail = new System.Windows.Forms.TextBox();
             this.txtServiceMaster = new System.Windows.Forms.TextBox();
             this.txtPhone = new System.Windows.Forms.TextBox();
             this.txtQQ = new System.Windows.Forms.TextBox();
+            this.txtServiceAddr = new System.Windows.Forms.TextBox();
+            this.txtServiceArea = new System.Windows.Forms.TextBox();
+            this.txtParticulars = new System.Windows.Forms.TextBox();
+            this.txtTAddress = new System.Windows.Forms.TextBox();
+            this.txtData = new System.Windows.Forms.TextBox();
+            this.txtNativeplace = new System.Windows.Forms.TextBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.lblQQ = new System.Windows.Forms.Label();
             this.lblEmail = new System.Windows.Forms.Label();
-            this.txtServiceAddr = new System.Windows.Forms.TextBox();
             this.lblWorkAddr = new System.Windows.Forms.Label();
-            this.txtServiceArea = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
             this.lblWorkType = new System.Windows.Forms.Label();
             this.pictureBox7 = new System.Windows.Forms.PictureBox();
@@ -71,173 +204,33 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtIDInation = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
             this.label33 = new System.Windows.Forms.Label();
-            this.txtParticulars = new System.Windows.Forms.TextBox();
-            this.txtTAddress = new System.Windows.Forms.TextBox();
             this.label34 = new System.Windows.Forms.Label();
-            this.txtData = new System.Windows.Forms.TextBox();
             this.label37 = new System.Windows.Forms.Label();
-            this.txtNativeplace = new System.Windows.Forms.TextBox();
             this.label38 = new System.Windows.Forms.Label();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.tabControl3 = new System.Windows.Forms.TabControl();
-            this.tabPage7 = new System.Windows.Forms.TabPage();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.lblRelation325 = new System.Windows.Forms.Label();
-            this.lblDetailLink325 = new System.Windows.Forms.Label();
-            this.lblDetailId325 = new System.Windows.Forms.Label();
-            this.btnDelete325 = new System.Windows.Forms.Button();
-            this.lblDetailAddr325 = new System.Windows.Forms.Label();
-            this.lblDatailName325 = new System.Windows.Forms.Label();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.lblRelation324 = new System.Windows.Forms.Label();
-            this.lblDetailLink324 = new System.Windows.Forms.Label();
-            this.lblDetailId324 = new System.Windows.Forms.Label();
-            this.btnDelete324 = new System.Windows.Forms.Button();
-            this.lblDetailAddr324 = new System.Windows.Forms.Label();
-            this.lblDatailName324 = new System.Windows.Forms.Label();
-            this.panel18 = new System.Windows.Forms.Panel();
-            this.lblRelation323 = new System.Windows.Forms.Label();
-            this.lblDetailLink323 = new System.Windows.Forms.Label();
-            this.lblDetailId323 = new System.Windows.Forms.Label();
-            this.btnDelete323 = new System.Windows.Forms.Button();
-            this.lblDetailAddr323 = new System.Windows.Forms.Label();
-            this.lblDatailName323 = new System.Windows.Forms.Label();
-            this.panel19 = new System.Windows.Forms.Panel();
-            this.lblRelation322 = new System.Windows.Forms.Label();
-            this.lblDetailLink322 = new System.Windows.Forms.Label();
-            this.lblDetailId322 = new System.Windows.Forms.Label();
-            this.btnDelete322 = new System.Windows.Forms.Button();
-            this.lblDetailAddr322 = new System.Windows.Forms.Label();
-            this.lblDatailName322 = new System.Windows.Forms.Label();
-            this.panel20 = new System.Windows.Forms.Panel();
-            this.lblRelation321 = new System.Windows.Forms.Label();
-            this.lblDetailLink321 = new System.Windows.Forms.Label();
-            this.lblDetailId321 = new System.Windows.Forms.Label();
-            this.btnDelete321 = new System.Windows.Forms.Button();
-            this.lblDetailAddr321 = new System.Windows.Forms.Label();
-            this.lblDatailName321 = new System.Windows.Forms.Label();
-            this.cbxRelation32 = new System.Windows.Forms.ComboBox();
-            this.label76 = new System.Windows.Forms.Label();
-            this.txtAddress32 = new System.Windows.Forms.TextBox();
-            this.label77 = new System.Windows.Forms.Label();
-            this.txtLink32 = new System.Windows.Forms.TextBox();
-            this.label78 = new System.Windows.Forms.Label();
-            this.txtLisence32 = new System.Windows.Forms.TextBox();
-            this.label79 = new System.Windows.Forms.Label();
-            this.txtName32 = new System.Windows.Forms.TextBox();
-            this.label80 = new System.Windows.Forms.Label();
-            this.btnAdd32 = new System.Windows.Forms.Button();
-            this.label81 = new System.Windows.Forms.Label();
-            this.tabPage8 = new System.Windows.Forms.TabPage();
-            this.panel21 = new System.Windows.Forms.Panel();
-            this.label19 = new System.Windows.Forms.Label();
-            this.lblPlace5 = new System.Windows.Forms.Label();
-            this.btnDelete335 = new System.Windows.Forms.Button();
-            this.lblDetail5 = new System.Windows.Forms.Label();
-            this.lblDate5 = new System.Windows.Forms.Label();
-            this.panel22 = new System.Windows.Forms.Panel();
-            this.label24 = new System.Windows.Forms.Label();
-            this.lblPlace4 = new System.Windows.Forms.Label();
-            this.btnDelete334 = new System.Windows.Forms.Button();
-            this.lblDetail4 = new System.Windows.Forms.Label();
-            this.lblDate4 = new System.Windows.Forms.Label();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.label29 = new System.Windows.Forms.Label();
-            this.lblPlace3 = new System.Windows.Forms.Label();
-            this.btnDelete333 = new System.Windows.Forms.Button();
-            this.lblDetail3 = new System.Windows.Forms.Label();
-            this.lblDate3 = new System.Windows.Forms.Label();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblPlace2 = new System.Windows.Forms.Label();
-            this.btnDelete332 = new System.Windows.Forms.Button();
-            this.lblDetail2 = new System.Windows.Forms.Label();
-            this.lblDate2 = new System.Windows.Forms.Label();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.lblPlace1 = new System.Windows.Forms.Label();
-            this.btnDelete331 = new System.Windows.Forms.Button();
-            this.lblDetail1 = new System.Windows.Forms.Label();
-            this.lblDate1 = new System.Windows.Forms.Label();
-            this.txtDetail = new System.Windows.Forms.TextBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.txtPlace = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.txtFreeDate = new System.Windows.Forms.TextBox();
-            this.label17 = new System.Windows.Forms.Label();
-            this.btnAdd33 = new System.Windows.Forms.Button();
-            this.label18 = new System.Windows.Forms.Label();
-            this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.panel11 = new System.Windows.Forms.Panel();
-            this.lblRelation315 = new System.Windows.Forms.Label();
-            this.lblDetailLink315 = new System.Windows.Forms.Label();
-            this.lblDetailId315 = new System.Windows.Forms.Label();
-            this.btnDelete315 = new System.Windows.Forms.Button();
-            this.lblDetailAddr315 = new System.Windows.Forms.Label();
-            this.lblDatailName315 = new System.Windows.Forms.Label();
-            this.panel12 = new System.Windows.Forms.Panel();
-            this.lblRelation314 = new System.Windows.Forms.Label();
-            this.lblDetailLink314 = new System.Windows.Forms.Label();
-            this.lblDetailId314 = new System.Windows.Forms.Label();
-            this.btnDelete314 = new System.Windows.Forms.Button();
-            this.lblDetailAddr314 = new System.Windows.Forms.Label();
-            this.lblDatailName314 = new System.Windows.Forms.Label();
-            this.panel13 = new System.Windows.Forms.Panel();
-            this.lblRelation313 = new System.Windows.Forms.Label();
-            this.lblDetailLink313 = new System.Windows.Forms.Label();
-            this.lblDetailId313 = new System.Windows.Forms.Label();
-            this.btnDelete313 = new System.Windows.Forms.Button();
-            this.lblDetailAddr313 = new System.Windows.Forms.Label();
-            this.lblDatailName313 = new System.Windows.Forms.Label();
-            this.panel14 = new System.Windows.Forms.Panel();
-            this.lblRelation312 = new System.Windows.Forms.Label();
-            this.lblDetailLink312 = new System.Windows.Forms.Label();
-            this.lblDetailId312 = new System.Windows.Forms.Label();
-            this.btnDelete312 = new System.Windows.Forms.Button();
-            this.lblDetailAddr312 = new System.Windows.Forms.Label();
-            this.lblDatailName312 = new System.Windows.Forms.Label();
-            this.panel15 = new System.Windows.Forms.Panel();
-            this.lblRelation311 = new System.Windows.Forms.Label();
-            this.lblDetailLink311 = new System.Windows.Forms.Label();
-            this.lblDetailId311 = new System.Windows.Forms.Label();
-            this.btnDelete311 = new System.Windows.Forms.Button();
-            this.lblDetailAddr311 = new System.Windows.Forms.Label();
-            this.lblDatailName311 = new System.Windows.Forms.Label();
-            this.cbxRelation31 = new System.Windows.Forms.ComboBox();
-            this.label39 = new System.Windows.Forms.Label();
-            this.txtAddress31 = new System.Windows.Forms.TextBox();
-            this.label40 = new System.Windows.Forms.Label();
-            this.txtLink31 = new System.Windows.Forms.TextBox();
-            this.label41 = new System.Windows.Forms.Label();
-            this.txtLisence31 = new System.Windows.Forms.TextBox();
-            this.label42 = new System.Windows.Forms.Label();
-            this.txtName31 = new System.Windows.Forms.TextBox();
-            this.label43 = new System.Windows.Forms.Label();
-            this.btnAdd31 = new System.Windows.Forms.Button();
-            this.label44 = new System.Windows.Forms.Label();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.ucControlRsidentManager1 = new PoliceMobile.LIB.ucControlRsidentManager();
             this.panel7.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabPage5.SuspendLayout();
+            this.pBBack5.SuspendLayout();
+            this.pBBack4.SuspendLayout();
+            this.pBBack3.SuspendLayout();
+            this.pBBack2.SuspendLayout();
+            this.pBBack1.SuspendLayout();
+            this.tabPage4.SuspendLayout();
+            this.pBBBack5.SuspendLayout();
+            this.pBBBack4.SuspendLayout();
+            this.pBBBack3.SuspendLayout();
+            this.pBBBack2.SuspendLayout();
+            this.pBBBack1.SuspendLayout();
+            this.tabPage3.SuspendLayout();
+            this.pBack5.SuspendLayout();
+            this.pBack4.SuspendLayout();
+            this.pBack3.SuspendLayout();
+            this.pBack2.SuspendLayout();
+            this.pBack1.SuspendLayout();
             this.tabPage1.SuspendLayout();
-            this.tabPage2.SuspendLayout();
-            this.tabControl3.SuspendLayout();
-            this.tabPage7.SuspendLayout();
-            this.panel16.SuspendLayout();
-            this.panel17.SuspendLayout();
-            this.panel18.SuspendLayout();
-            this.panel19.SuspendLayout();
-            this.panel20.SuspendLayout();
-            this.tabPage8.SuspendLayout();
-            this.panel21.SuspendLayout();
-            this.panel22.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel31.SuspendLayout();
-            this.tabPage6.SuspendLayout();
-            this.panel11.SuspendLayout();
-            this.panel12.SuspendLayout();
-            this.panel13.SuspendLayout();
-            this.panel14.SuspendLayout();
-            this.panel15.SuspendLayout();
+            this.tabControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // pictureBox4
@@ -265,11 +258,12 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(148)))), ((int)(((byte)(156)))));
             this.panel7.Controls.Add(this.pictureBox1);
-            this.panel7.Controls.Add(this.pictureBox2);
+            this.panel7.Controls.Add(this.pSave);
             this.panel7.Controls.Add(this.pictureBox3);
-            this.panel7.Location = new System.Drawing.Point(-1, 621);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel7.Location = new System.Drawing.Point(0, 455);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(483, 63);
+            this.panel7.Size = new System.Drawing.Size(480, 63);
             // 
             // pictureBox1
             // 
@@ -278,12 +272,13 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(326, 70);
             // 
-            // pictureBox2
+            // pSave
             // 
-            this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(6, 6);
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(231, 51);
+            this.pSave.Image = ((System.Drawing.Image)(resources.GetObject("pSave.Image")));
+            this.pSave.Location = new System.Drawing.Point(6, 6);
+            this.pSave.Name = "pSave";
+            this.pSave.Size = new System.Drawing.Size(231, 51);
+            this.pSave.Click += new System.EventHandler(this.pSave_Click);
             // 
             // pictureBox3
             // 
@@ -300,33 +295,1276 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.pictureBox8.Name = "pictureBox8";
             this.pictureBox8.Size = new System.Drawing.Size(480, 60);
             // 
-            // tabControl1
+            // tabPage5
             // 
-            this.tabControl1.Controls.Add(this.tabPage1);
-            this.tabControl1.Controls.Add(this.tabPage2);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl1.Location = new System.Drawing.Point(0, 61);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(480, 467);
-            this.tabControl1.TabIndex = 231;
+            this.tabPage5.Controls.Add(this.pBBack5);
+            this.tabPage5.Controls.Add(this.pBBack4);
+            this.tabPage5.Controls.Add(this.pBBack3);
+            this.tabPage5.Controls.Add(this.pBBack2);
+            this.tabPage5.Controls.Add(this.pBBack1);
+            this.tabPage5.Controls.Add(this.cbx2_Relation);
+            this.tabPage5.Controls.Add(this.txt2_Address);
+            this.tabPage5.Controls.Add(this.txt2_Link);
+            this.tabPage5.Controls.Add(this.txt2_CardID);
+            this.tabPage5.Controls.Add(this.txt2_Name);
+            this.tabPage5.Controls.Add(this.label107);
+            this.tabPage5.Controls.Add(this.label108);
+            this.tabPage5.Controls.Add(this.label109);
+            this.tabPage5.Controls.Add(this.label110);
+            this.tabPage5.Controls.Add(this.label111);
+            this.tabPage5.Controls.Add(this.btnAdd2);
+            this.tabPage5.Controls.Add(this.label112);
+            this.tabPage5.Location = new System.Drawing.Point(0, 0);
+            this.tabPage5.Name = "tabPage5";
+            this.tabPage5.Size = new System.Drawing.Size(480, 350);
+            this.tabPage5.Text = "直系亲属";
+            // 
+            // pBBack5
+            // 
+            this.pBBack5.Controls.Add(this.lbl2_Relation5);
+            this.pBBack5.Controls.Add(this.lbl2_Link5);
+            this.pBBack5.Controls.Add(this.lbl2_CardID5);
+            this.pBBack5.Controls.Add(this.btnDDDel5);
+            this.pBBack5.Controls.Add(this.lbl2_Address5);
+            this.pBBack5.Controls.Add(this.lbl2_Name5);
+            this.pBBack5.Location = new System.Drawing.Point(8, 323);
+            this.pBBack5.Name = "pBBack5";
+            this.pBBack5.Size = new System.Drawing.Size(459, 48);
+            this.pBBack5.Visible = false;
+            // 
+            // lbl2_Relation5
+            // 
+            this.lbl2_Relation5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Relation5.Location = new System.Drawing.Point(338, 22);
+            this.lbl2_Relation5.Name = "lbl2_Relation5";
+            this.lbl2_Relation5.Size = new System.Drawing.Size(58, 20);
+            this.lbl2_Relation5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/relation";
+            // 
+            // lbl2_Link5
+            // 
+            this.lbl2_Link5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Link5.Location = new System.Drawing.Point(317, 2);
+            this.lbl2_Link5.Name = "lbl2_Link5";
+            this.lbl2_Link5.Size = new System.Drawing.Size(136, 20);
+            this.lbl2_Link5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/phone_number";
+            // 
+            // lbl2_CardID5
+            // 
+            this.lbl2_CardID5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_CardID5.Location = new System.Drawing.Point(97, 2);
+            this.lbl2_CardID5.Name = "lbl2_CardID5";
+            this.lbl2_CardID5.Size = new System.Drawing.Size(204, 20);
+            this.lbl2_CardID5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/idenfication_id";
+            // 
+            // btnDDDel5
+            // 
+            this.btnDDDel5.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDDel5.Location = new System.Drawing.Point(404, 22);
+            this.btnDDDel5.Name = "btnDDDel5";
+            this.btnDDDel5.Size = new System.Drawing.Size(49, 23);
+            this.btnDDDel5.TabIndex = 68;
+            this.btnDDDel5.Tag = "";
+            this.btnDDDel5.Text = "删除";
+            this.btnDDDel5.Click += new System.EventHandler(this.btnDel2_Click);
+            // 
+            // lbl2_Address5
+            // 
+            this.lbl2_Address5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Address5.Location = new System.Drawing.Point(2, 24);
+            this.lbl2_Address5.Name = "lbl2_Address5";
+            this.lbl2_Address5.Size = new System.Drawing.Size(319, 20);
+            this.lbl2_Address5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/address";
+            // 
+            // lbl2_Name5
+            // 
+            this.lbl2_Name5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Name5.Location = new System.Drawing.Point(2, 2);
+            this.lbl2_Name5.Name = "lbl2_Name5";
+            this.lbl2_Name5.Size = new System.Drawing.Size(82, 20);
+            this.lbl2_Name5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/name";
+            // 
+            // pBBack4
+            // 
+            this.pBBack4.Controls.Add(this.lbl2_Relation4);
+            this.pBBack4.Controls.Add(this.lbl2_Link4);
+            this.pBBack4.Controls.Add(this.lbl2_CardID4);
+            this.pBBack4.Controls.Add(this.btnDDDel4);
+            this.pBBack4.Controls.Add(this.lbl2_Address4);
+            this.pBBack4.Controls.Add(this.lbl2_Name4);
+            this.pBBack4.Location = new System.Drawing.Point(8, 276);
+            this.pBBack4.Name = "pBBack4";
+            this.pBBack4.Size = new System.Drawing.Size(459, 48);
+            this.pBBack4.Visible = false;
+            // 
+            // lbl2_Relation4
+            // 
+            this.lbl2_Relation4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Relation4.Location = new System.Drawing.Point(338, 22);
+            this.lbl2_Relation4.Name = "lbl2_Relation4";
+            this.lbl2_Relation4.Size = new System.Drawing.Size(58, 20);
+            this.lbl2_Relation4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/relation";
+            // 
+            // lbl2_Link4
+            // 
+            this.lbl2_Link4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Link4.Location = new System.Drawing.Point(317, 2);
+            this.lbl2_Link4.Name = "lbl2_Link4";
+            this.lbl2_Link4.Size = new System.Drawing.Size(136, 20);
+            this.lbl2_Link4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/phone_number";
+            // 
+            // lbl2_CardID4
+            // 
+            this.lbl2_CardID4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_CardID4.Location = new System.Drawing.Point(97, 2);
+            this.lbl2_CardID4.Name = "lbl2_CardID4";
+            this.lbl2_CardID4.Size = new System.Drawing.Size(204, 20);
+            this.lbl2_CardID4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/idenfication_id";
+            // 
+            // btnDDDel4
+            // 
+            this.btnDDDel4.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDDel4.Location = new System.Drawing.Point(404, 22);
+            this.btnDDDel4.Name = "btnDDDel4";
+            this.btnDDDel4.Size = new System.Drawing.Size(49, 23);
+            this.btnDDDel4.TabIndex = 68;
+            this.btnDDDel4.Tag = "";
+            this.btnDDDel4.Text = "删除";
+            this.btnDDDel4.Click += new System.EventHandler(this.btnDel2_Click);
+            // 
+            // lbl2_Address4
+            // 
+            this.lbl2_Address4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Address4.Location = new System.Drawing.Point(2, 24);
+            this.lbl2_Address4.Name = "lbl2_Address4";
+            this.lbl2_Address4.Size = new System.Drawing.Size(319, 20);
+            this.lbl2_Address4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/address";
+            // 
+            // lbl2_Name4
+            // 
+            this.lbl2_Name4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Name4.Location = new System.Drawing.Point(2, 2);
+            this.lbl2_Name4.Name = "lbl2_Name4";
+            this.lbl2_Name4.Size = new System.Drawing.Size(82, 20);
+            this.lbl2_Name4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/name";
+            // 
+            // pBBack3
+            // 
+            this.pBBack3.Controls.Add(this.lbl2_Relation3);
+            this.pBBack3.Controls.Add(this.lbl2_Link3);
+            this.pBBack3.Controls.Add(this.lbl2_CardID3);
+            this.pBBack3.Controls.Add(this.btnDDDel3);
+            this.pBBack3.Controls.Add(this.lbl2_Address3);
+            this.pBBack3.Controls.Add(this.lbl2_Name3);
+            this.pBBack3.Location = new System.Drawing.Point(8, 229);
+            this.pBBack3.Name = "pBBack3";
+            this.pBBack3.Size = new System.Drawing.Size(459, 48);
+            this.pBBack3.Visible = false;
+            // 
+            // lbl2_Relation3
+            // 
+            this.lbl2_Relation3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Relation3.Location = new System.Drawing.Point(338, 22);
+            this.lbl2_Relation3.Name = "lbl2_Relation3";
+            this.lbl2_Relation3.Size = new System.Drawing.Size(58, 20);
+            this.lbl2_Relation3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/relation";
+            // 
+            // lbl2_Link3
+            // 
+            this.lbl2_Link3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Link3.Location = new System.Drawing.Point(317, 2);
+            this.lbl2_Link3.Name = "lbl2_Link3";
+            this.lbl2_Link3.Size = new System.Drawing.Size(136, 20);
+            this.lbl2_Link3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/phone_number";
+            // 
+            // lbl2_CardID3
+            // 
+            this.lbl2_CardID3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_CardID3.Location = new System.Drawing.Point(97, 2);
+            this.lbl2_CardID3.Name = "lbl2_CardID3";
+            this.lbl2_CardID3.Size = new System.Drawing.Size(204, 20);
+            this.lbl2_CardID3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/idenfication_id";
+            // 
+            // btnDDDel3
+            // 
+            this.btnDDDel3.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDDel3.Location = new System.Drawing.Point(404, 22);
+            this.btnDDDel3.Name = "btnDDDel3";
+            this.btnDDDel3.Size = new System.Drawing.Size(49, 23);
+            this.btnDDDel3.TabIndex = 68;
+            this.btnDDDel3.Tag = "";
+            this.btnDDDel3.Text = "删除";
+            this.btnDDDel3.Click += new System.EventHandler(this.btnDel2_Click);
+            // 
+            // lbl2_Address3
+            // 
+            this.lbl2_Address3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Address3.Location = new System.Drawing.Point(2, 24);
+            this.lbl2_Address3.Name = "lbl2_Address3";
+            this.lbl2_Address3.Size = new System.Drawing.Size(319, 20);
+            this.lbl2_Address3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/address";
+            // 
+            // lbl2_Name3
+            // 
+            this.lbl2_Name3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Name3.Location = new System.Drawing.Point(2, 2);
+            this.lbl2_Name3.Name = "lbl2_Name3";
+            this.lbl2_Name3.Size = new System.Drawing.Size(82, 20);
+            this.lbl2_Name3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/name";
+            // 
+            // pBBack2
+            // 
+            this.pBBack2.Controls.Add(this.lbl2_Relation2);
+            this.pBBack2.Controls.Add(this.lbl2_Link2);
+            this.pBBack2.Controls.Add(this.lbl2_CardID2);
+            this.pBBack2.Controls.Add(this.btnDDDel2);
+            this.pBBack2.Controls.Add(this.lbl2_Address2);
+            this.pBBack2.Controls.Add(this.lbl2_Name2);
+            this.pBBack2.Location = new System.Drawing.Point(8, 182);
+            this.pBBack2.Name = "pBBack2";
+            this.pBBack2.Size = new System.Drawing.Size(459, 48);
+            this.pBBack2.Visible = false;
+            // 
+            // lbl2_Relation2
+            // 
+            this.lbl2_Relation2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Relation2.Location = new System.Drawing.Point(338, 22);
+            this.lbl2_Relation2.Name = "lbl2_Relation2";
+            this.lbl2_Relation2.Size = new System.Drawing.Size(58, 20);
+            this.lbl2_Relation2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/relation";
+            // 
+            // lbl2_Link2
+            // 
+            this.lbl2_Link2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Link2.Location = new System.Drawing.Point(317, 2);
+            this.lbl2_Link2.Name = "lbl2_Link2";
+            this.lbl2_Link2.Size = new System.Drawing.Size(136, 20);
+            this.lbl2_Link2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/phone_number";
+            // 
+            // lbl2_CardID2
+            // 
+            this.lbl2_CardID2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_CardID2.Location = new System.Drawing.Point(97, 2);
+            this.lbl2_CardID2.Name = "lbl2_CardID2";
+            this.lbl2_CardID2.Size = new System.Drawing.Size(204, 20);
+            this.lbl2_CardID2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/idenfication_id";
+            // 
+            // btnDDDel2
+            // 
+            this.btnDDDel2.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDDel2.Location = new System.Drawing.Point(404, 22);
+            this.btnDDDel2.Name = "btnDDDel2";
+            this.btnDDDel2.Size = new System.Drawing.Size(49, 23);
+            this.btnDDDel2.TabIndex = 68;
+            this.btnDDDel2.Tag = "";
+            this.btnDDDel2.Text = "删除";
+            this.btnDDDel2.Click += new System.EventHandler(this.btnDel2_Click);
+            // 
+            // lbl2_Address2
+            // 
+            this.lbl2_Address2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Address2.Location = new System.Drawing.Point(2, 24);
+            this.lbl2_Address2.Name = "lbl2_Address2";
+            this.lbl2_Address2.Size = new System.Drawing.Size(319, 20);
+            this.lbl2_Address2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/address";
+            // 
+            // lbl2_Name2
+            // 
+            this.lbl2_Name2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Name2.Location = new System.Drawing.Point(2, 2);
+            this.lbl2_Name2.Name = "lbl2_Name2";
+            this.lbl2_Name2.Size = new System.Drawing.Size(82, 20);
+            this.lbl2_Name2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/name";
+            // 
+            // pBBack1
+            // 
+            this.pBBack1.Controls.Add(this.lbl2_Relation1);
+            this.pBBack1.Controls.Add(this.lbl2_Link1);
+            this.pBBack1.Controls.Add(this.lbl2_CardID1);
+            this.pBBack1.Controls.Add(this.btnDDDel1);
+            this.pBBack1.Controls.Add(this.lbl2_Address1);
+            this.pBBack1.Controls.Add(this.lbl2_Name1);
+            this.pBBack1.Location = new System.Drawing.Point(8, 135);
+            this.pBBack1.Name = "pBBack1";
+            this.pBBack1.Size = new System.Drawing.Size(459, 48);
+            this.pBBack1.Visible = false;
+            // 
+            // lbl2_Relation1
+            // 
+            this.lbl2_Relation1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Relation1.Location = new System.Drawing.Point(338, 22);
+            this.lbl2_Relation1.Name = "lbl2_Relation1";
+            this.lbl2_Relation1.Size = new System.Drawing.Size(58, 20);
+            this.lbl2_Relation1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/relation";
+            // 
+            // lbl2_Link1
+            // 
+            this.lbl2_Link1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Link1.Location = new System.Drawing.Point(317, 2);
+            this.lbl2_Link1.Name = "lbl2_Link1";
+            this.lbl2_Link1.Size = new System.Drawing.Size(136, 20);
+            this.lbl2_Link1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/phone_number";
+            // 
+            // lbl2_CardID1
+            // 
+            this.lbl2_CardID1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_CardID1.Location = new System.Drawing.Point(97, 2);
+            this.lbl2_CardID1.Name = "lbl2_CardID1";
+            this.lbl2_CardID1.Size = new System.Drawing.Size(204, 20);
+            this.lbl2_CardID1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/idenfication_id";
+            // 
+            // btnDDDel1
+            // 
+            this.btnDDDel1.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDDel1.Location = new System.Drawing.Point(404, 22);
+            this.btnDDDel1.Name = "btnDDDel1";
+            this.btnDDDel1.Size = new System.Drawing.Size(49, 23);
+            this.btnDDDel1.TabIndex = 68;
+            this.btnDDDel1.Tag = "";
+            this.btnDDDel1.Text = "删除";
+            this.btnDDDel1.Click += new System.EventHandler(this.btnDel2_Click);
+            // 
+            // lbl2_Address1
+            // 
+            this.lbl2_Address1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Address1.Location = new System.Drawing.Point(2, 24);
+            this.lbl2_Address1.Name = "lbl2_Address1";
+            this.lbl2_Address1.Size = new System.Drawing.Size(319, 20);
+            this.lbl2_Address1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/address";
+            // 
+            // lbl2_Name1
+            // 
+            this.lbl2_Name1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl2_Name1.Location = new System.Drawing.Point(2, 2);
+            this.lbl2_Name1.Name = "lbl2_Name1";
+            this.lbl2_Name1.Size = new System.Drawing.Size(82, 20);
+            this.lbl2_Name1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/name";
+            // 
+            // cbx2_Relation
+            // 
+            this.cbx2_Relation.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.cbx2_Relation.Location = new System.Drawing.Point(327, 72);
+            this.cbx2_Relation.Name = "cbx2_Relation";
+            this.cbx2_Relation.Size = new System.Drawing.Size(142, 32);
+            this.cbx2_Relation.TabIndex = 169;
+            // 
+            // txt2_Address
+            // 
+            this.txt2_Address.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt2_Address.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt2_Address.Location = new System.Drawing.Point(54, 103);
+            this.txt2_Address.Multiline = true;
+            this.txt2_Address.Name = "txt2_Address";
+            this.txt2_Address.Size = new System.Drawing.Size(415, 31);
+            this.txt2_Address.TabIndex = 168;
+            this.txt2_Address.Tag = "";
+            // 
+            // txt2_Link
+            // 
+            this.txt2_Link.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt2_Link.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt2_Link.Location = new System.Drawing.Point(91, 71);
+            this.txt2_Link.Multiline = true;
+            this.txt2_Link.Name = "txt2_Link";
+            this.txt2_Link.Size = new System.Drawing.Size(166, 31);
+            this.txt2_Link.TabIndex = 167;
+            this.txt2_Link.Tag = "";
+            // 
+            // txt2_CardID
+            // 
+            this.txt2_CardID.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt2_CardID.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt2_CardID.Location = new System.Drawing.Point(254, 38);
+            this.txt2_CardID.Multiline = true;
+            this.txt2_CardID.Name = "txt2_CardID";
+            this.txt2_CardID.Size = new System.Drawing.Size(215, 31);
+            this.txt2_CardID.TabIndex = 166;
+            this.txt2_CardID.Tag = "";
+            // 
+            // txt2_Name
+            // 
+            this.txt2_Name.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt2_Name.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt2_Name.Location = new System.Drawing.Point(53, 38);
+            this.txt2_Name.Multiline = true;
+            this.txt2_Name.Name = "txt2_Name";
+            this.txt2_Name.Size = new System.Drawing.Size(121, 31);
+            this.txt2_Name.TabIndex = 165;
+            this.txt2_Name.Tag = "";
+            // 
+            // label107
+            // 
+            this.label107.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label107.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label107.Location = new System.Drawing.Point(266, 76);
+            this.label107.Name = "label107";
+            this.label107.Size = new System.Drawing.Size(49, 20);
+            this.label107.Text = "关系";
+            // 
+            // label108
+            // 
+            this.label108.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label108.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label108.Location = new System.Drawing.Point(7, 110);
+            this.label108.Name = "label108";
+            this.label108.Size = new System.Drawing.Size(49, 20);
+            this.label108.Text = "地址";
+            // 
+            // label109
+            // 
+            this.label109.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label109.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label109.Location = new System.Drawing.Point(7, 77);
+            this.label109.Name = "label109";
+            this.label109.Size = new System.Drawing.Size(83, 20);
+            this.label109.Text = "联系电话";
+            // 
+            // label110
+            // 
+            this.label110.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label110.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label110.Location = new System.Drawing.Point(174, 44);
+            this.label110.Name = "label110";
+            this.label110.Size = new System.Drawing.Size(80, 20);
+            this.label110.Text = "身份证号";
+            // 
+            // label111
+            // 
+            this.label111.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label111.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label111.Location = new System.Drawing.Point(7, 44);
+            this.label111.Name = "label111";
+            this.label111.Size = new System.Drawing.Size(49, 20);
+            this.label111.Text = "姓名";
+            // 
+            // btnAdd2
+            // 
+            this.btnAdd2.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnAdd2.Location = new System.Drawing.Point(420, 10);
+            this.btnAdd2.Name = "btnAdd2";
+            this.btnAdd2.Size = new System.Drawing.Size(49, 26);
+            this.btnAdd2.TabIndex = 164;
+            this.btnAdd2.Text = "增加";
+            this.btnAdd2.Click += new System.EventHandler(this.btnAdd2_Click);
+            // 
+            // label112
+            // 
+            this.label112.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label112.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label112.Location = new System.Drawing.Point(7, 13);
+            this.label112.Name = "label112";
+            this.label112.Size = new System.Drawing.Size(120, 19);
+            this.label112.Text = "直系亲属";
+            // 
+            // tabPage4
+            // 
+            this.tabPage4.Controls.Add(this.pBBBack5);
+            this.tabPage4.Controls.Add(this.pBBBack4);
+            this.tabPage4.Controls.Add(this.pBBBack3);
+            this.tabPage4.Controls.Add(this.pBBBack2);
+            this.tabPage4.Controls.Add(this.pBBBack1);
+            this.tabPage4.Controls.Add(this.txt3_Remark);
+            this.tabPage4.Controls.Add(this.txt3_Address);
+            this.tabPage4.Controls.Add(this.txt3_FreeData);
+            this.tabPage4.Controls.Add(this.label78);
+            this.tabPage4.Controls.Add(this.label79);
+            this.tabPage4.Controls.Add(this.label80);
+            this.tabPage4.Controls.Add(this.btnAdd3);
+            this.tabPage4.Controls.Add(this.label81);
+            this.tabPage4.Location = new System.Drawing.Point(0, 0);
+            this.tabPage4.Name = "tabPage4";
+            this.tabPage4.Size = new System.Drawing.Size(480, 350);
+            this.tabPage4.Text = "前科情况";
+            // 
+            // pBBBack5
+            // 
+            this.pBBBack5.Controls.Add(this.lbl3_Address5);
+            this.pBBBack5.Controls.Add(this.btnDDel5);
+            this.pBBBack5.Controls.Add(this.lbl3_Remark5);
+            this.pBBBack5.Controls.Add(this.lbl3_FreeData5);
+            this.pBBBack5.Location = new System.Drawing.Point(9, 299);
+            this.pBBBack5.Name = "pBBBack5";
+            this.pBBBack5.Size = new System.Drawing.Size(459, 48);
+            this.pBBBack5.Visible = false;
+            // 
+            // lbl3_Address5
+            // 
+            this.lbl3_Address5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Address5.Location = new System.Drawing.Point(102, 2);
+            this.lbl3_Address5.Name = "lbl3_Address5";
+            this.lbl3_Address5.Size = new System.Drawing.Size(350, 20);
+            this.lbl3_Address5.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=5]/prison_name";
+            // 
+            // btnDDel5
+            // 
+            this.btnDDel5.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDel5.Location = new System.Drawing.Point(404, 22);
+            this.btnDDel5.Name = "btnDDel5";
+            this.btnDDel5.Size = new System.Drawing.Size(49, 23);
+            this.btnDDel5.TabIndex = 68;
+            this.btnDDel5.Tag = "";
+            this.btnDDel5.Text = "删除";
+            this.btnDDel5.Click += new System.EventHandler(this.btnDel3_Click);
+            // 
+            // lbl3_Remark5
+            // 
+            this.lbl3_Remark5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Remark5.Location = new System.Drawing.Point(2, 24);
+            this.lbl3_Remark5.Name = "lbl3_Remark5";
+            this.lbl3_Remark5.Size = new System.Drawing.Size(396, 20);
+            this.lbl3_Remark5.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=5]/description";
+            // 
+            // lbl3_FreeData5
+            // 
+            this.lbl3_FreeData5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_FreeData5.Location = new System.Drawing.Point(2, 2);
+            this.lbl3_FreeData5.Name = "lbl3_FreeData5";
+            this.lbl3_FreeData5.Size = new System.Drawing.Size(92, 20);
+            this.lbl3_FreeData5.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=5]/date_released";
+            // 
+            // pBBBack4
+            // 
+            this.pBBBack4.Controls.Add(this.lbl3_Address4);
+            this.pBBBack4.Controls.Add(this.btnDDel4);
+            this.pBBBack4.Controls.Add(this.lbl3_Remark4);
+            this.pBBBack4.Controls.Add(this.lbl3_FreeData4);
+            this.pBBBack4.Location = new System.Drawing.Point(9, 252);
+            this.pBBBack4.Name = "pBBBack4";
+            this.pBBBack4.Size = new System.Drawing.Size(459, 48);
+            this.pBBBack4.Visible = false;
+            // 
+            // lbl3_Address4
+            // 
+            this.lbl3_Address4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Address4.Location = new System.Drawing.Point(102, 2);
+            this.lbl3_Address4.Name = "lbl3_Address4";
+            this.lbl3_Address4.Size = new System.Drawing.Size(350, 20);
+            this.lbl3_Address4.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=4]/prison_name";
+            // 
+            // btnDDel4
+            // 
+            this.btnDDel4.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDel4.Location = new System.Drawing.Point(404, 22);
+            this.btnDDel4.Name = "btnDDel4";
+            this.btnDDel4.Size = new System.Drawing.Size(49, 23);
+            this.btnDDel4.TabIndex = 68;
+            this.btnDDel4.Tag = "";
+            this.btnDDel4.Text = "删除";
+            this.btnDDel4.Click += new System.EventHandler(this.btnDel3_Click);
+            // 
+            // lbl3_Remark4
+            // 
+            this.lbl3_Remark4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Remark4.Location = new System.Drawing.Point(2, 24);
+            this.lbl3_Remark4.Name = "lbl3_Remark4";
+            this.lbl3_Remark4.Size = new System.Drawing.Size(396, 20);
+            this.lbl3_Remark4.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=4]/description";
+            // 
+            // lbl3_FreeData4
+            // 
+            this.lbl3_FreeData4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_FreeData4.Location = new System.Drawing.Point(2, 2);
+            this.lbl3_FreeData4.Name = "lbl3_FreeData4";
+            this.lbl3_FreeData4.Size = new System.Drawing.Size(92, 20);
+            this.lbl3_FreeData4.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=4]/date_released";
+            // 
+            // pBBBack3
+            // 
+            this.pBBBack3.Controls.Add(this.lbl3_Address3);
+            this.pBBBack3.Controls.Add(this.btnDDel3);
+            this.pBBBack3.Controls.Add(this.lbl3_Remark3);
+            this.pBBBack3.Controls.Add(this.lbl3_FreeData3);
+            this.pBBBack3.Location = new System.Drawing.Point(9, 205);
+            this.pBBBack3.Name = "pBBBack3";
+            this.pBBBack3.Size = new System.Drawing.Size(459, 48);
+            this.pBBBack3.Visible = false;
+            // 
+            // lbl3_Address3
+            // 
+            this.lbl3_Address3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Address3.Location = new System.Drawing.Point(102, 2);
+            this.lbl3_Address3.Name = "lbl3_Address3";
+            this.lbl3_Address3.Size = new System.Drawing.Size(350, 20);
+            this.lbl3_Address3.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=3]/prison_name";
+            // 
+            // btnDDel3
+            // 
+            this.btnDDel3.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDel3.Location = new System.Drawing.Point(404, 22);
+            this.btnDDel3.Name = "btnDDel3";
+            this.btnDDel3.Size = new System.Drawing.Size(49, 23);
+            this.btnDDel3.TabIndex = 68;
+            this.btnDDel3.Tag = "";
+            this.btnDDel3.Text = "删除";
+            this.btnDDel3.Click += new System.EventHandler(this.btnDel3_Click);
+            // 
+            // lbl3_Remark3
+            // 
+            this.lbl3_Remark3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Remark3.Location = new System.Drawing.Point(2, 24);
+            this.lbl3_Remark3.Name = "lbl3_Remark3";
+            this.lbl3_Remark3.Size = new System.Drawing.Size(396, 20);
+            this.lbl3_Remark3.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=3]/description";
+            // 
+            // lbl3_FreeData3
+            // 
+            this.lbl3_FreeData3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_FreeData3.Location = new System.Drawing.Point(2, 2);
+            this.lbl3_FreeData3.Name = "lbl3_FreeData3";
+            this.lbl3_FreeData3.Size = new System.Drawing.Size(92, 20);
+            this.lbl3_FreeData3.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=3]/date_released";
+            // 
+            // pBBBack2
+            // 
+            this.pBBBack2.Controls.Add(this.lbl3_Address2);
+            this.pBBBack2.Controls.Add(this.btnDDel2);
+            this.pBBBack2.Controls.Add(this.lbl3_Remark2);
+            this.pBBBack2.Controls.Add(this.lbl3_FreeData2);
+            this.pBBBack2.Location = new System.Drawing.Point(9, 158);
+            this.pBBBack2.Name = "pBBBack2";
+            this.pBBBack2.Size = new System.Drawing.Size(459, 48);
+            this.pBBBack2.Visible = false;
+            // 
+            // lbl3_Address2
+            // 
+            this.lbl3_Address2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Address2.Location = new System.Drawing.Point(102, 2);
+            this.lbl3_Address2.Name = "lbl3_Address2";
+            this.lbl3_Address2.Size = new System.Drawing.Size(350, 20);
+            this.lbl3_Address2.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=2]/prison_name";
+            // 
+            // btnDDel2
+            // 
+            this.btnDDel2.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDel2.Location = new System.Drawing.Point(404, 22);
+            this.btnDDel2.Name = "btnDDel2";
+            this.btnDDel2.Size = new System.Drawing.Size(49, 23);
+            this.btnDDel2.TabIndex = 68;
+            this.btnDDel2.Tag = "";
+            this.btnDDel2.Text = "删除";
+            this.btnDDel2.Click += new System.EventHandler(this.btnDel3_Click);
+            // 
+            // lbl3_Remark2
+            // 
+            this.lbl3_Remark2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Remark2.Location = new System.Drawing.Point(2, 24);
+            this.lbl3_Remark2.Name = "lbl3_Remark2";
+            this.lbl3_Remark2.Size = new System.Drawing.Size(396, 20);
+            this.lbl3_Remark2.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=2]/description";
+            // 
+            // lbl3_FreeData2
+            // 
+            this.lbl3_FreeData2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_FreeData2.Location = new System.Drawing.Point(2, 2);
+            this.lbl3_FreeData2.Name = "lbl3_FreeData2";
+            this.lbl3_FreeData2.Size = new System.Drawing.Size(92, 20);
+            this.lbl3_FreeData2.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=2]/date_released";
+            // 
+            // pBBBack1
+            // 
+            this.pBBBack1.Controls.Add(this.lbl3_Address1);
+            this.pBBBack1.Controls.Add(this.btnDDel1);
+            this.pBBBack1.Controls.Add(this.lbl3_Remark1);
+            this.pBBBack1.Controls.Add(this.lbl3_FreeData1);
+            this.pBBBack1.Location = new System.Drawing.Point(9, 111);
+            this.pBBBack1.Name = "pBBBack1";
+            this.pBBBack1.Size = new System.Drawing.Size(459, 48);
+            this.pBBBack1.Visible = false;
+            // 
+            // lbl3_Address1
+            // 
+            this.lbl3_Address1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Address1.Location = new System.Drawing.Point(102, 2);
+            this.lbl3_Address1.Name = "lbl3_Address1";
+            this.lbl3_Address1.Size = new System.Drawing.Size(350, 20);
+            this.lbl3_Address1.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=1]/prison_name";
+            // 
+            // btnDDel1
+            // 
+            this.btnDDel1.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDDel1.Location = new System.Drawing.Point(404, 22);
+            this.btnDDel1.Name = "btnDDel1";
+            this.btnDDel1.Size = new System.Drawing.Size(49, 23);
+            this.btnDDel1.TabIndex = 68;
+            this.btnDDel1.Tag = "";
+            this.btnDDel1.Text = "删除";
+            this.btnDDel1.Click += new System.EventHandler(this.btnDel3_Click);
+            // 
+            // lbl3_Remark1
+            // 
+            this.lbl3_Remark1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_Remark1.Location = new System.Drawing.Point(2, 24);
+            this.lbl3_Remark1.Name = "lbl3_Remark1";
+            this.lbl3_Remark1.Size = new System.Drawing.Size(396, 20);
+            this.lbl3_Remark1.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=1]/description";
+            // 
+            // lbl3_FreeData1
+            // 
+            this.lbl3_FreeData1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl3_FreeData1.Location = new System.Drawing.Point(2, 2);
+            this.lbl3_FreeData1.Name = "lbl3_FreeData1";
+            this.lbl3_FreeData1.Size = new System.Drawing.Size(92, 20);
+            this.lbl3_FreeData1.Tag = "Resident/ExtendedInfo/criminal_records/record[@id=1]/date_released";
+            // 
+            // txt3_Remark
+            // 
+            this.txt3_Remark.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt3_Remark.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt3_Remark.Location = new System.Drawing.Point(91, 75);
+            this.txt3_Remark.Multiline = true;
+            this.txt3_Remark.Name = "txt3_Remark";
+            this.txt3_Remark.Size = new System.Drawing.Size(382, 31);
+            this.txt3_Remark.TabIndex = 188;
+            this.txt3_Remark.Tag = "";
+            // 
+            // txt3_Address
+            // 
+            this.txt3_Address.AcceptsReturn = true;
+            this.txt3_Address.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt3_Address.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt3_Address.Location = new System.Drawing.Point(312, 42);
+            this.txt3_Address.Multiline = true;
+            this.txt3_Address.Name = "txt3_Address";
+            this.txt3_Address.Size = new System.Drawing.Size(161, 31);
+            this.txt3_Address.TabIndex = 187;
+            this.txt3_Address.Tag = "";
+            // 
+            // txt3_FreeData
+            // 
+            this.txt3_FreeData.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt3_FreeData.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt3_FreeData.Location = new System.Drawing.Point(91, 42);
+            this.txt3_FreeData.Multiline = true;
+            this.txt3_FreeData.Name = "txt3_FreeData";
+            this.txt3_FreeData.Size = new System.Drawing.Size(139, 31);
+            this.txt3_FreeData.TabIndex = 186;
+            this.txt3_FreeData.Tag = "";
+            // 
+            // label78
+            // 
+            this.label78.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label78.Location = new System.Drawing.Point(7, 81);
+            this.label78.Name = "label78";
+            this.label78.Size = new System.Drawing.Size(83, 20);
+            this.label78.Text = "前科说明";
+            // 
+            // label79
+            // 
+            this.label79.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label79.Location = new System.Drawing.Point(231, 49);
+            this.label79.Name = "label79";
+            this.label79.Size = new System.Drawing.Size(80, 20);
+            this.label79.Text = "服刑地点";
+            // 
+            // label80
+            // 
+            this.label80.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label80.Location = new System.Drawing.Point(7, 48);
+            this.label80.Name = "label80";
+            this.label80.Size = new System.Drawing.Size(78, 20);
+            this.label80.Text = "释放日期";
+            // 
+            // btnAdd3
+            // 
+            this.btnAdd3.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnAdd3.Location = new System.Drawing.Point(420, 13);
+            this.btnAdd3.Name = "btnAdd3";
+            this.btnAdd3.Size = new System.Drawing.Size(49, 26);
+            this.btnAdd3.TabIndex = 185;
+            this.btnAdd3.Text = "增加";
+            this.btnAdd3.Click += new System.EventHandler(this.btnAdd3_Click);
+            // 
+            // label81
+            // 
+            this.label81.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label81.Location = new System.Drawing.Point(7, 14);
+            this.label81.Name = "label81";
+            this.label81.Size = new System.Drawing.Size(120, 19);
+            this.label81.Text = "前科情况";
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.pBack5);
+            this.tabPage3.Controls.Add(this.pBack4);
+            this.tabPage3.Controls.Add(this.pBack3);
+            this.tabPage3.Controls.Add(this.pBack2);
+            this.tabPage3.Controls.Add(this.pBack1);
+            this.tabPage3.Controls.Add(this.cbx1_Relation);
+            this.tabPage3.Controls.Add(this.txt1_Address);
+            this.tabPage3.Controls.Add(this.txt1_Link);
+            this.tabPage3.Controls.Add(this.txt1_CardId);
+            this.tabPage3.Controls.Add(this.txt1_Name);
+            this.tabPage3.Controls.Add(this.label53);
+            this.tabPage3.Controls.Add(this.label54);
+            this.tabPage3.Controls.Add(this.label55);
+            this.tabPage3.Controls.Add(this.label56);
+            this.tabPage3.Controls.Add(this.label57);
+            this.tabPage3.Controls.Add(this.btnAdd);
+            this.tabPage3.Controls.Add(this.label58);
+            this.tabPage3.Location = new System.Drawing.Point(0, 0);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(480, 350);
+            this.tabPage3.Text = "同案或通行人员";
+            // 
+            // pBack5
+            // 
+            this.pBack5.Controls.Add(this.lbl1_Relation5);
+            this.pBack5.Controls.Add(this.lbl1_Link5);
+            this.pBack5.Controls.Add(this.lbl1_CardId5);
+            this.pBack5.Controls.Add(this.btnDel5);
+            this.pBack5.Controls.Add(this.lbl1_Address5);
+            this.pBack5.Controls.Add(this.lbl1_Name5);
+            this.pBack5.Location = new System.Drawing.Point(8, 328);
+            this.pBack5.Name = "pBack5";
+            this.pBack5.Size = new System.Drawing.Size(459, 48);
+            this.pBack5.Visible = false;
+            // 
+            // lbl1_Relation5
+            // 
+            this.lbl1_Relation5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Relation5.Location = new System.Drawing.Point(338, 22);
+            this.lbl1_Relation5.Name = "lbl1_Relation5";
+            this.lbl1_Relation5.Size = new System.Drawing.Size(58, 20);
+            this.lbl1_Relation5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/relation";
+            // 
+            // lbl1_Link5
+            // 
+            this.lbl1_Link5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Link5.Location = new System.Drawing.Point(317, 2);
+            this.lbl1_Link5.Name = "lbl1_Link5";
+            this.lbl1_Link5.Size = new System.Drawing.Size(136, 20);
+            this.lbl1_Link5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/phone_number";
+            // 
+            // lbl1_CardId5
+            // 
+            this.lbl1_CardId5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_CardId5.Location = new System.Drawing.Point(97, 2);
+            this.lbl1_CardId5.Name = "lbl1_CardId5";
+            this.lbl1_CardId5.Size = new System.Drawing.Size(204, 20);
+            this.lbl1_CardId5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/idenfication_id";
+            // 
+            // btnDel5
+            // 
+            this.btnDel5.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDel5.Location = new System.Drawing.Point(404, 22);
+            this.btnDel5.Name = "btnDel5";
+            this.btnDel5.Size = new System.Drawing.Size(49, 23);
+            this.btnDel5.TabIndex = 68;
+            this.btnDel5.Tag = "";
+            this.btnDel5.Text = "删除";
+            this.btnDel5.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // lbl1_Address5
+            // 
+            this.lbl1_Address5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Address5.Location = new System.Drawing.Point(2, 24);
+            this.lbl1_Address5.Name = "lbl1_Address5";
+            this.lbl1_Address5.Size = new System.Drawing.Size(319, 20);
+            this.lbl1_Address5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/address";
+            // 
+            // lbl1_Name5
+            // 
+            this.lbl1_Name5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Name5.Location = new System.Drawing.Point(2, 2);
+            this.lbl1_Name5.Name = "lbl1_Name5";
+            this.lbl1_Name5.Size = new System.Drawing.Size(82, 20);
+            this.lbl1_Name5.Tag = "Resident/ExtendedInfo/family/family_member[@id=5]/name";
+            // 
+            // pBack4
+            // 
+            this.pBack4.Controls.Add(this.lbl1_Relation4);
+            this.pBack4.Controls.Add(this.lbl1_Link4);
+            this.pBack4.Controls.Add(this.lbl1_CardId4);
+            this.pBack4.Controls.Add(this.btnDel4);
+            this.pBack4.Controls.Add(this.lbl1_Address4);
+            this.pBack4.Controls.Add(this.lbl1_Name4);
+            this.pBack4.Location = new System.Drawing.Point(8, 281);
+            this.pBack4.Name = "pBack4";
+            this.pBack4.Size = new System.Drawing.Size(459, 48);
+            this.pBack4.Visible = false;
+            // 
+            // lbl1_Relation4
+            // 
+            this.lbl1_Relation4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Relation4.Location = new System.Drawing.Point(338, 22);
+            this.lbl1_Relation4.Name = "lbl1_Relation4";
+            this.lbl1_Relation4.Size = new System.Drawing.Size(58, 20);
+            this.lbl1_Relation4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/relation";
+            // 
+            // lbl1_Link4
+            // 
+            this.lbl1_Link4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Link4.Location = new System.Drawing.Point(317, 2);
+            this.lbl1_Link4.Name = "lbl1_Link4";
+            this.lbl1_Link4.Size = new System.Drawing.Size(136, 20);
+            this.lbl1_Link4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/phone_number";
+            // 
+            // lbl1_CardId4
+            // 
+            this.lbl1_CardId4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_CardId4.Location = new System.Drawing.Point(97, 2);
+            this.lbl1_CardId4.Name = "lbl1_CardId4";
+            this.lbl1_CardId4.Size = new System.Drawing.Size(204, 20);
+            this.lbl1_CardId4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/idenfication_id";
+            // 
+            // btnDel4
+            // 
+            this.btnDel4.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDel4.Location = new System.Drawing.Point(404, 22);
+            this.btnDel4.Name = "btnDel4";
+            this.btnDel4.Size = new System.Drawing.Size(49, 23);
+            this.btnDel4.TabIndex = 68;
+            this.btnDel4.Tag = "";
+            this.btnDel4.Text = "删除";
+            this.btnDel4.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // lbl1_Address4
+            // 
+            this.lbl1_Address4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Address4.Location = new System.Drawing.Point(2, 24);
+            this.lbl1_Address4.Name = "lbl1_Address4";
+            this.lbl1_Address4.Size = new System.Drawing.Size(319, 20);
+            this.lbl1_Address4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/address";
+            // 
+            // lbl1_Name4
+            // 
+            this.lbl1_Name4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Name4.Location = new System.Drawing.Point(2, 2);
+            this.lbl1_Name4.Name = "lbl1_Name4";
+            this.lbl1_Name4.Size = new System.Drawing.Size(82, 20);
+            this.lbl1_Name4.Tag = "Resident/ExtendedInfo/family/family_member[@id=4]/name";
+            // 
+            // pBack3
+            // 
+            this.pBack3.Controls.Add(this.lbl1_Relation3);
+            this.pBack3.Controls.Add(this.lbl1_Link3);
+            this.pBack3.Controls.Add(this.lbl1_CardId3);
+            this.pBack3.Controls.Add(this.btnDel3);
+            this.pBack3.Controls.Add(this.lbl1_Address3);
+            this.pBack3.Controls.Add(this.lbl1_Name3);
+            this.pBack3.Location = new System.Drawing.Point(8, 234);
+            this.pBack3.Name = "pBack3";
+            this.pBack3.Size = new System.Drawing.Size(459, 48);
+            this.pBack3.Visible = false;
+            // 
+            // lbl1_Relation3
+            // 
+            this.lbl1_Relation3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Relation3.Location = new System.Drawing.Point(338, 22);
+            this.lbl1_Relation3.Name = "lbl1_Relation3";
+            this.lbl1_Relation3.Size = new System.Drawing.Size(58, 20);
+            this.lbl1_Relation3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/relation";
+            // 
+            // lbl1_Link3
+            // 
+            this.lbl1_Link3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Link3.Location = new System.Drawing.Point(317, 2);
+            this.lbl1_Link3.Name = "lbl1_Link3";
+            this.lbl1_Link3.Size = new System.Drawing.Size(136, 20);
+            this.lbl1_Link3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/phone_number";
+            // 
+            // lbl1_CardId3
+            // 
+            this.lbl1_CardId3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_CardId3.Location = new System.Drawing.Point(97, 2);
+            this.lbl1_CardId3.Name = "lbl1_CardId3";
+            this.lbl1_CardId3.Size = new System.Drawing.Size(204, 20);
+            this.lbl1_CardId3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/idenfication_id";
+            // 
+            // btnDel3
+            // 
+            this.btnDel3.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDel3.Location = new System.Drawing.Point(404, 22);
+            this.btnDel3.Name = "btnDel3";
+            this.btnDel3.Size = new System.Drawing.Size(49, 23);
+            this.btnDel3.TabIndex = 68;
+            this.btnDel3.Tag = "";
+            this.btnDel3.Text = "删除";
+            this.btnDel3.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // lbl1_Address3
+            // 
+            this.lbl1_Address3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Address3.Location = new System.Drawing.Point(2, 24);
+            this.lbl1_Address3.Name = "lbl1_Address3";
+            this.lbl1_Address3.Size = new System.Drawing.Size(319, 20);
+            this.lbl1_Address3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/address";
+            // 
+            // lbl1_Name3
+            // 
+            this.lbl1_Name3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Name3.Location = new System.Drawing.Point(2, 2);
+            this.lbl1_Name3.Name = "lbl1_Name3";
+            this.lbl1_Name3.Size = new System.Drawing.Size(82, 20);
+            this.lbl1_Name3.Tag = "Resident/ExtendedInfo/family/family_member[@id=3]/name";
+            // 
+            // pBack2
+            // 
+            this.pBack2.Controls.Add(this.lbl1_Relation2);
+            this.pBack2.Controls.Add(this.lbl1_Link2);
+            this.pBack2.Controls.Add(this.lbl1_CardId2);
+            this.pBack2.Controls.Add(this.btnDel2);
+            this.pBack2.Controls.Add(this.lbl1_Address2);
+            this.pBack2.Controls.Add(this.lbl1_Name2);
+            this.pBack2.Location = new System.Drawing.Point(8, 187);
+            this.pBack2.Name = "pBack2";
+            this.pBack2.Size = new System.Drawing.Size(459, 48);
+            this.pBack2.Visible = false;
+            // 
+            // lbl1_Relation2
+            // 
+            this.lbl1_Relation2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Relation2.Location = new System.Drawing.Point(338, 22);
+            this.lbl1_Relation2.Name = "lbl1_Relation2";
+            this.lbl1_Relation2.Size = new System.Drawing.Size(58, 20);
+            this.lbl1_Relation2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/relation";
+            // 
+            // lbl1_Link2
+            // 
+            this.lbl1_Link2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Link2.Location = new System.Drawing.Point(317, 2);
+            this.lbl1_Link2.Name = "lbl1_Link2";
+            this.lbl1_Link2.Size = new System.Drawing.Size(136, 20);
+            this.lbl1_Link2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/phone_number";
+            // 
+            // lbl1_CardId2
+            // 
+            this.lbl1_CardId2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_CardId2.Location = new System.Drawing.Point(97, 2);
+            this.lbl1_CardId2.Name = "lbl1_CardId2";
+            this.lbl1_CardId2.Size = new System.Drawing.Size(204, 20);
+            this.lbl1_CardId2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/idenfication_id";
+            // 
+            // btnDel2
+            // 
+            this.btnDel2.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDel2.Location = new System.Drawing.Point(404, 22);
+            this.btnDel2.Name = "btnDel2";
+            this.btnDel2.Size = new System.Drawing.Size(49, 23);
+            this.btnDel2.TabIndex = 68;
+            this.btnDel2.Tag = "";
+            this.btnDel2.Text = "删除";
+            this.btnDel2.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // lbl1_Address2
+            // 
+            this.lbl1_Address2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Address2.Location = new System.Drawing.Point(2, 24);
+            this.lbl1_Address2.Name = "lbl1_Address2";
+            this.lbl1_Address2.Size = new System.Drawing.Size(319, 20);
+            this.lbl1_Address2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/address";
+            // 
+            // lbl1_Name2
+            // 
+            this.lbl1_Name2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Name2.Location = new System.Drawing.Point(2, 2);
+            this.lbl1_Name2.Name = "lbl1_Name2";
+            this.lbl1_Name2.Size = new System.Drawing.Size(82, 20);
+            this.lbl1_Name2.Tag = "Resident/ExtendedInfo/family/family_member[@id=2]/name";
+            // 
+            // pBack1
+            // 
+            this.pBack1.Controls.Add(this.lbl1_Relation1);
+            this.pBack1.Controls.Add(this.lbl1_Link1);
+            this.pBack1.Controls.Add(this.lbl1_CardId1);
+            this.pBack1.Controls.Add(this.btnDel1);
+            this.pBack1.Controls.Add(this.lbl1_Address1);
+            this.pBack1.Controls.Add(this.lbl1_Name1);
+            this.pBack1.Location = new System.Drawing.Point(8, 140);
+            this.pBack1.Name = "pBack1";
+            this.pBack1.Size = new System.Drawing.Size(459, 48);
+            this.pBack1.Visible = false;
+            // 
+            // lbl1_Relation1
+            // 
+            this.lbl1_Relation1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Relation1.Location = new System.Drawing.Point(338, 22);
+            this.lbl1_Relation1.Name = "lbl1_Relation1";
+            this.lbl1_Relation1.Size = new System.Drawing.Size(58, 20);
+            this.lbl1_Relation1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/relation";
+            // 
+            // lbl1_Link1
+            // 
+            this.lbl1_Link1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Link1.Location = new System.Drawing.Point(317, 2);
+            this.lbl1_Link1.Name = "lbl1_Link1";
+            this.lbl1_Link1.Size = new System.Drawing.Size(136, 20);
+            this.lbl1_Link1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/phone_number";
+            // 
+            // lbl1_CardId1
+            // 
+            this.lbl1_CardId1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_CardId1.Location = new System.Drawing.Point(97, 2);
+            this.lbl1_CardId1.Name = "lbl1_CardId1";
+            this.lbl1_CardId1.Size = new System.Drawing.Size(204, 20);
+            this.lbl1_CardId1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/idenfication_id";
+            // 
+            // btnDel1
+            // 
+            this.btnDel1.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnDel1.Location = new System.Drawing.Point(404, 22);
+            this.btnDel1.Name = "btnDel1";
+            this.btnDel1.Size = new System.Drawing.Size(49, 23);
+            this.btnDel1.TabIndex = 68;
+            this.btnDel1.Tag = "";
+            this.btnDel1.Text = "删除";
+            this.btnDel1.Click += new System.EventHandler(this.btnDel_Click);
+            // 
+            // lbl1_Address1
+            // 
+            this.lbl1_Address1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Address1.Location = new System.Drawing.Point(2, 24);
+            this.lbl1_Address1.Name = "lbl1_Address1";
+            this.lbl1_Address1.Size = new System.Drawing.Size(319, 20);
+            this.lbl1_Address1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/address";
+            // 
+            // lbl1_Name1
+            // 
+            this.lbl1_Name1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.lbl1_Name1.Location = new System.Drawing.Point(2, 2);
+            this.lbl1_Name1.Name = "lbl1_Name1";
+            this.lbl1_Name1.Size = new System.Drawing.Size(82, 20);
+            this.lbl1_Name1.Tag = "Resident/ExtendedInfo/family/family_member[@id=1]/name";
+            // 
+            // cbx1_Relation
+            // 
+            this.cbx1_Relation.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
+            this.cbx1_Relation.Location = new System.Drawing.Point(327, 77);
+            this.cbx1_Relation.Name = "cbx1_Relation";
+            this.cbx1_Relation.Size = new System.Drawing.Size(142, 32);
+            this.cbx1_Relation.TabIndex = 186;
+            // 
+            // txt1_Address
+            // 
+            this.txt1_Address.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt1_Address.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt1_Address.Location = new System.Drawing.Point(54, 108);
+            this.txt1_Address.Multiline = true;
+            this.txt1_Address.Name = "txt1_Address";
+            this.txt1_Address.Size = new System.Drawing.Size(415, 31);
+            this.txt1_Address.TabIndex = 185;
+            this.txt1_Address.Tag = "";
+            // 
+            // txt1_Link
+            // 
+            this.txt1_Link.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt1_Link.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt1_Link.Location = new System.Drawing.Point(91, 76);
+            this.txt1_Link.Multiline = true;
+            this.txt1_Link.Name = "txt1_Link";
+            this.txt1_Link.Size = new System.Drawing.Size(166, 31);
+            this.txt1_Link.TabIndex = 184;
+            this.txt1_Link.Tag = "";
+            // 
+            // txt1_CardId
+            // 
+            this.txt1_CardId.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt1_CardId.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt1_CardId.Location = new System.Drawing.Point(254, 43);
+            this.txt1_CardId.Multiline = true;
+            this.txt1_CardId.Name = "txt1_CardId";
+            this.txt1_CardId.Size = new System.Drawing.Size(215, 31);
+            this.txt1_CardId.TabIndex = 183;
+            this.txt1_CardId.Tag = "";
+            // 
+            // txt1_Name
+            // 
+            this.txt1_Name.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txt1_Name.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txt1_Name.Location = new System.Drawing.Point(53, 43);
+            this.txt1_Name.Multiline = true;
+            this.txt1_Name.Name = "txt1_Name";
+            this.txt1_Name.Size = new System.Drawing.Size(121, 31);
+            this.txt1_Name.TabIndex = 182;
+            this.txt1_Name.Tag = "";
+            // 
+            // label53
+            // 
+            this.label53.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label53.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label53.Location = new System.Drawing.Point(266, 81);
+            this.label53.Name = "label53";
+            this.label53.Size = new System.Drawing.Size(49, 20);
+            this.label53.Text = "关系";
+            // 
+            // label54
+            // 
+            this.label54.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label54.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label54.Location = new System.Drawing.Point(7, 114);
+            this.label54.Name = "label54";
+            this.label54.Size = new System.Drawing.Size(49, 20);
+            this.label54.Text = "地址";
+            // 
+            // label55
+            // 
+            this.label55.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label55.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label55.Location = new System.Drawing.Point(7, 82);
+            this.label55.Name = "label55";
+            this.label55.Size = new System.Drawing.Size(83, 20);
+            this.label55.Text = "联系电话";
+            // 
+            // label56
+            // 
+            this.label56.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label56.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label56.Location = new System.Drawing.Point(174, 49);
+            this.label56.Name = "label56";
+            this.label56.Size = new System.Drawing.Size(80, 20);
+            this.label56.Text = "身份证号";
+            // 
+            // label57
+            // 
+            this.label57.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label57.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label57.Location = new System.Drawing.Point(7, 49);
+            this.label57.Name = "label57";
+            this.label57.Size = new System.Drawing.Size(49, 20);
+            this.label57.Text = "姓名";
+            // 
+            // btnAdd
+            // 
+            this.btnAdd.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
+            this.btnAdd.Location = new System.Drawing.Point(420, 15);
+            this.btnAdd.Name = "btnAdd";
+            this.btnAdd.Size = new System.Drawing.Size(49, 26);
+            this.btnAdd.TabIndex = 181;
+            this.btnAdd.Text = "增加";
+            this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
+            // 
+            // label58
+            // 
+            this.label58.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label58.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label58.Location = new System.Drawing.Point(7, 18);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(120, 19);
+            this.label58.Text = "同案或同行人员";
             // 
             // tabPage1
             // 
             this.tabPage1.Controls.Add(this.txtIDName);
             this.tabPage1.Controls.Add(this.txtIDSex);
             this.tabPage1.Controls.Add(this.textBox4);
-            this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.txtEmail);
             this.tabPage1.Controls.Add(this.txtServiceMaster);
             this.tabPage1.Controls.Add(this.txtPhone);
             this.tabPage1.Controls.Add(this.txtQQ);
+            this.tabPage1.Controls.Add(this.txtServiceAddr);
+            this.tabPage1.Controls.Add(this.txtServiceArea);
+            this.tabPage1.Controls.Add(this.txtParticulars);
+            this.tabPage1.Controls.Add(this.txtTAddress);
+            this.tabPage1.Controls.Add(this.txtData);
+            this.tabPage1.Controls.Add(this.txtNativeplace);
+            this.tabPage1.Controls.Add(this.label4);
             this.tabPage1.Controls.Add(this.label2);
             this.tabPage1.Controls.Add(this.lblQQ);
             this.tabPage1.Controls.Add(this.lblEmail);
-            this.tabPage1.Controls.Add(this.txtServiceAddr);
             this.tabPage1.Controls.Add(this.lblWorkAddr);
-            this.tabPage1.Controls.Add(this.txtServiceArea);
             this.tabPage1.Controls.Add(this.label3);
             this.tabPage1.Controls.Add(this.lblWorkType);
             this.tabPage1.Controls.Add(this.pictureBox7);
@@ -342,16 +1580,12 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage1.Controls.Add(this.txtIDInation);
             this.tabPage1.Controls.Add(this.label16);
             this.tabPage1.Controls.Add(this.label33);
-            this.tabPage1.Controls.Add(this.txtParticulars);
-            this.tabPage1.Controls.Add(this.txtTAddress);
             this.tabPage1.Controls.Add(this.label34);
-            this.tabPage1.Controls.Add(this.txtData);
             this.tabPage1.Controls.Add(this.label37);
-            this.tabPage1.Controls.Add(this.txtNativeplace);
             this.tabPage1.Controls.Add(this.label38);
             this.tabPage1.Location = new System.Drawing.Point(0, 0);
             this.tabPage1.Name = "tabPage1";
-            this.tabPage1.Size = new System.Drawing.Size(480, 423);
+            this.tabPage1.Size = new System.Drawing.Size(480, 350);
             this.tabPage1.Text = "扩展信息";
             // 
             // txtIDName
@@ -361,6 +1595,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtIDName.Location = new System.Drawing.Point(61, 7);
             this.txtIDName.Name = "txtIDName";
             this.txtIDName.Size = new System.Drawing.Size(77, 20);
+            this.txtIDName.Tag = "Resident/BaseInfo/name";
             // 
             // txtIDSex
             // 
@@ -369,6 +1604,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtIDSex.Location = new System.Drawing.Point(199, 7);
             this.txtIDSex.Name = "txtIDSex";
             this.txtIDSex.Size = new System.Drawing.Size(77, 20);
+            this.txtIDSex.Tag = "Resident/BaseInfo/gender";
             // 
             // textBox4
             // 
@@ -379,17 +1615,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(359, 160);
             this.textBox4.TabIndex = 255;
-            this.textBox4.Tag = "House_Private/Master/Name";
-            // 
-            // label4
-            // 
-            this.label4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label4.Location = new System.Drawing.Point(1, 374);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(82, 18);
-            this.label4.Text = "备注";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.textBox4.Tag = "Resident/ExtendedInfo/remark";
             // 
             // txtEmail
             // 
@@ -400,7 +1626,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtEmail.Name = "txtEmail";
             this.txtEmail.Size = new System.Drawing.Size(166, 31);
             this.txtEmail.TabIndex = 251;
-            this.txtEmail.Tag = "House_Private/Master/Name";
+            this.txtEmail.Tag = "Resident/ExtendedInfo/email2";
             // 
             // txtServiceMaster
             // 
@@ -411,7 +1637,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtServiceMaster.Name = "txtServiceMaster";
             this.txtServiceMaster.Size = new System.Drawing.Size(104, 30);
             this.txtServiceMaster.TabIndex = 252;
-            this.txtServiceMaster.Tag = "House_Private/Master/Name";
+            this.txtServiceMaster.Tag = "Resident/ExtendedInfo/workplace_contact";
             // 
             // txtPhone
             // 
@@ -422,7 +1648,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(104, 30);
             this.txtPhone.TabIndex = 253;
-            this.txtPhone.Tag = "House_Private/Master/Name";
+            this.txtPhone.Tag = "Resident/ExtendedInfo/workplace_phone";
             // 
             // txtQQ
             // 
@@ -433,7 +1659,83 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtQQ.Name = "txtQQ";
             this.txtQQ.Size = new System.Drawing.Size(104, 30);
             this.txtQQ.TabIndex = 254;
-            this.txtQQ.Tag = "House_Private/Master/Name";
+            this.txtQQ.Tag = "Resident/ExtendedInfo/email1";
+            // 
+            // txtServiceAddr
+            // 
+            this.txtServiceAddr.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtServiceAddr.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtServiceAddr.Location = new System.Drawing.Point(95, 288);
+            this.txtServiceAddr.Multiline = true;
+            this.txtServiceAddr.Name = "txtServiceAddr";
+            this.txtServiceAddr.Size = new System.Drawing.Size(166, 31);
+            this.txtServiceAddr.TabIndex = 250;
+            this.txtServiceAddr.Tag = "Resident/ExtendedInfo/workplace_address";
+            // 
+            // txtServiceArea
+            // 
+            this.txtServiceArea.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtServiceArea.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtServiceArea.Location = new System.Drawing.Point(95, 249);
+            this.txtServiceArea.Multiline = true;
+            this.txtServiceArea.Name = "txtServiceArea";
+            this.txtServiceArea.Size = new System.Drawing.Size(166, 31);
+            this.txtServiceArea.TabIndex = 249;
+            this.txtServiceArea.Tag = "Resident/ExtendedInfo/workplace";
+            // 
+            // txtParticulars
+            // 
+            this.txtParticulars.BackColor = System.Drawing.Color.Gray;
+            this.txtParticulars.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtParticulars.Location = new System.Drawing.Point(95, 210);
+            this.txtParticulars.Multiline = true;
+            this.txtParticulars.Name = "txtParticulars";
+            this.txtParticulars.Size = new System.Drawing.Size(359, 31);
+            this.txtParticulars.TabIndex = 247;
+            this.txtParticulars.Tag = "Resident/ExtendedInfo/reason";
+            // 
+            // txtTAddress
+            // 
+            this.txtTAddress.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtTAddress.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtTAddress.Location = new System.Drawing.Point(95, 170);
+            this.txtTAddress.Multiline = true;
+            this.txtTAddress.Name = "txtTAddress";
+            this.txtTAddress.Size = new System.Drawing.Size(359, 31);
+            this.txtTAddress.TabIndex = 248;
+            this.txtTAddress.Tag = "Resident/ExtendedInfo/current_address";
+            // 
+            // txtData
+            // 
+            this.txtData.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtData.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtData.Location = new System.Drawing.Point(366, 131);
+            this.txtData.Multiline = true;
+            this.txtData.Name = "txtData";
+            this.txtData.Size = new System.Drawing.Size(88, 31);
+            this.txtData.TabIndex = 246;
+            this.txtData.Tag = "Resident/ExtendedInfo/data_Start";
+            // 
+            // txtNativeplace
+            // 
+            this.txtNativeplace.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.txtNativeplace.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.txtNativeplace.Location = new System.Drawing.Point(95, 131);
+            this.txtNativeplace.Multiline = true;
+            this.txtNativeplace.Name = "txtNativeplace";
+            this.txtNativeplace.Size = new System.Drawing.Size(110, 31);
+            this.txtNativeplace.TabIndex = 245;
+            this.txtNativeplace.Tag = "Resident/ExtendedInfo/nativeplace";
+            // 
+            // label4
+            // 
+            this.label4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
+            this.label4.Location = new System.Drawing.Point(1, 374);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(82, 18);
+            this.label4.Text = "备注";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
             // label2
             // 
@@ -465,17 +1767,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblEmail.Text = "电子邮箱";
             this.lblEmail.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // txtServiceAddr
-            // 
-            this.txtServiceAddr.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtServiceAddr.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtServiceAddr.Location = new System.Drawing.Point(95, 288);
-            this.txtServiceAddr.Multiline = true;
-            this.txtServiceAddr.Name = "txtServiceAddr";
-            this.txtServiceAddr.Size = new System.Drawing.Size(166, 31);
-            this.txtServiceAddr.TabIndex = 250;
-            this.txtServiceAddr.Tag = "House_Private/Master/Name";
-            // 
             // lblWorkAddr
             // 
             this.lblWorkAddr.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
@@ -485,17 +1776,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblWorkAddr.Size = new System.Drawing.Size(81, 18);
             this.lblWorkAddr.Text = "场所地址";
             this.lblWorkAddr.TextAlign = System.Drawing.ContentAlignment.TopRight;
-            // 
-            // txtServiceArea
-            // 
-            this.txtServiceArea.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtServiceArea.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtServiceArea.Location = new System.Drawing.Point(95, 249);
-            this.txtServiceArea.Multiline = true;
-            this.txtServiceArea.Name = "txtServiceArea";
-            this.txtServiceArea.Size = new System.Drawing.Size(166, 31);
-            this.txtServiceArea.TabIndex = 249;
-            this.txtServiceArea.Tag = "House_Private/Master/Name";
             // 
             // label3
             // 
@@ -549,6 +1829,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtBirth.Location = new System.Drawing.Point(237, 36);
             this.txtBirth.Name = "txtBirth";
             this.txtBirth.Size = new System.Drawing.Size(142, 20);
+            this.txtBirth.Tag = "Resident/BaseInfo/date_of_birth";
             // 
             // pictureBox6
             // 
@@ -591,6 +1872,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtAddress.Location = new System.Drawing.Point(95, 86);
             this.txtAddress.Name = "txtAddress";
             this.txtAddress.Size = new System.Drawing.Size(262, 20);
+            this.txtAddress.Tag = "Resident/BaseInfo/registered_residence_address";
             // 
             // txtID
             // 
@@ -599,6 +1881,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtID.Location = new System.Drawing.Point(116, 60);
             this.txtID.Name = "txtID";
             this.txtID.Size = new System.Drawing.Size(338, 20);
+            this.txtID.Tag = "Resident/BaseInfo/identification_id";
             // 
             // txtIDInation
             // 
@@ -607,6 +1890,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.txtIDInation.Location = new System.Drawing.Point(61, 34);
             this.txtIDInation.Name = "txtIDInation";
             this.txtIDInation.Size = new System.Drawing.Size(77, 20);
+            this.txtIDInation.Tag = "Resident/BaseInfo/nationality_name";
             // 
             // label16
             // 
@@ -627,28 +1911,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.label33.Text = "事由";
             this.label33.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // txtParticulars
-            // 
-            this.txtParticulars.BackColor = System.Drawing.Color.Gray;
-            this.txtParticulars.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtParticulars.Location = new System.Drawing.Point(95, 210);
-            this.txtParticulars.Multiline = true;
-            this.txtParticulars.Name = "txtParticulars";
-            this.txtParticulars.Size = new System.Drawing.Size(359, 31);
-            this.txtParticulars.TabIndex = 247;
-            this.txtParticulars.Tag = "House_Private/Master/Name";
-            // 
-            // txtTAddress
-            // 
-            this.txtTAddress.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtTAddress.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtTAddress.Location = new System.Drawing.Point(95, 170);
-            this.txtTAddress.Multiline = true;
-            this.txtTAddress.Name = "txtTAddress";
-            this.txtTAddress.Size = new System.Drawing.Size(359, 31);
-            this.txtTAddress.TabIndex = 248;
-            this.txtTAddress.Tag = "House_Private/Master/Name";
-            // 
             // label34
             // 
             this.label34.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
@@ -659,17 +1921,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.label34.Text = "暂住地址";
             this.label34.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // txtData
-            // 
-            this.txtData.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtData.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtData.Location = new System.Drawing.Point(366, 131);
-            this.txtData.Multiline = true;
-            this.txtData.Name = "txtData";
-            this.txtData.Size = new System.Drawing.Size(88, 31);
-            this.txtData.TabIndex = 246;
-            this.txtData.Tag = "House_Private/Master/LinkMethod";
-            // 
             // label37
             // 
             this.label37.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
@@ -678,17 +1929,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.label37.Name = "label37";
             this.label37.Size = new System.Drawing.Size(105, 20);
             this.label37.Text = "来本地日期";
-            // 
-            // txtNativeplace
-            // 
-            this.txtNativeplace.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtNativeplace.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtNativeplace.Location = new System.Drawing.Point(95, 131);
-            this.txtNativeplace.Multiline = true;
-            this.txtNativeplace.Name = "txtNativeplace";
-            this.txtNativeplace.Size = new System.Drawing.Size(110, 31);
-            this.txtNativeplace.TabIndex = 245;
-            this.txtNativeplace.Tag = "House_Private/Master/LinkMethod";
             // 
             // label38
             // 
@@ -700,1224 +1940,25 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.label38.Text = "籍贯";
             this.label38.TextAlign = System.Drawing.ContentAlignment.TopRight;
             // 
-            // tabPage2
-            // 
-            this.tabPage2.Controls.Add(this.tabControl3);
-            this.tabPage2.Location = new System.Drawing.Point(0, 0);
-            this.tabPage2.Name = "tabPage2";
-            this.tabPage2.Size = new System.Drawing.Size(480, 423);
-            this.tabPage2.Text = "人员信息";
-            // 
-            // tabControl3
-            // 
-            this.tabControl3.Controls.Add(this.tabPage7);
-            this.tabControl3.Controls.Add(this.tabPage8);
-            this.tabControl3.Controls.Add(this.tabPage6);
-            this.tabControl3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.tabControl3.Font = new System.Drawing.Font("Tahoma", 4F, System.Drawing.FontStyle.Regular);
-            this.tabControl3.Location = new System.Drawing.Point(0, 0);
-            this.tabControl3.Name = "tabControl3";
-            this.tabControl3.SelectedIndex = 0;
-            this.tabControl3.Size = new System.Drawing.Size(480, 423);
-            this.tabControl3.TabIndex = 144;
-            // 
-            // tabPage7
-            // 
-            this.tabPage7.Controls.Add(this.panel16);
-            this.tabPage7.Controls.Add(this.panel17);
-            this.tabPage7.Controls.Add(this.panel18);
-            this.tabPage7.Controls.Add(this.panel19);
-            this.tabPage7.Controls.Add(this.panel20);
-            this.tabPage7.Controls.Add(this.cbxRelation32);
-            this.tabPage7.Controls.Add(this.label76);
-            this.tabPage7.Controls.Add(this.txtAddress32);
-            this.tabPage7.Controls.Add(this.label77);
-            this.tabPage7.Controls.Add(this.txtLink32);
-            this.tabPage7.Controls.Add(this.label78);
-            this.tabPage7.Controls.Add(this.txtLisence32);
-            this.tabPage7.Controls.Add(this.label79);
-            this.tabPage7.Controls.Add(this.txtName32);
-            this.tabPage7.Controls.Add(this.label80);
-            this.tabPage7.Controls.Add(this.btnAdd32);
-            this.tabPage7.Controls.Add(this.label81);
-            this.tabPage7.Location = new System.Drawing.Point(0, 0);
-            this.tabPage7.Name = "tabPage7";
-            this.tabPage7.Size = new System.Drawing.Size(480, 392);
-            this.tabPage7.Text = "同案或同行人员";
-            // 
-            // panel16
-            // 
-            this.panel16.Controls.Add(this.lblRelation325);
-            this.panel16.Controls.Add(this.lblDetailLink325);
-            this.panel16.Controls.Add(this.lblDetailId325);
-            this.panel16.Controls.Add(this.btnDelete325);
-            this.panel16.Controls.Add(this.lblDetailAddr325);
-            this.panel16.Controls.Add(this.lblDatailName325);
-            this.panel16.Location = new System.Drawing.Point(11, 315);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation325
-            // 
-            this.lblRelation325.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation325.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation325.Name = "lblRelation325";
-            this.lblRelation325.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink325
-            // 
-            this.lblDetailLink325.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink325.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink325.Name = "lblDetailLink325";
-            this.lblDetailLink325.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId325
-            // 
-            this.lblDetailId325.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId325.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId325.Name = "lblDetailId325";
-            this.lblDetailId325.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete325
-            // 
-            this.btnDelete325.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete325.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete325.Name = "btnDelete325";
-            this.btnDelete325.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete325.TabIndex = 68;
-            this.btnDelete325.Tag = "4";
-            this.btnDelete325.Text = "删除";
-            this.btnDelete325.Visible = false;
-            // 
-            // lblDetailAddr325
-            // 
-            this.lblDetailAddr325.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr325.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr325.Name = "lblDetailAddr325";
-            this.lblDetailAddr325.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName325
-            // 
-            this.lblDatailName325.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName325.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName325.Name = "lblDatailName325";
-            this.lblDatailName325.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel17
-            // 
-            this.panel17.Controls.Add(this.lblRelation324);
-            this.panel17.Controls.Add(this.lblDetailLink324);
-            this.panel17.Controls.Add(this.lblDetailId324);
-            this.panel17.Controls.Add(this.btnDelete324);
-            this.panel17.Controls.Add(this.lblDetailAddr324);
-            this.panel17.Controls.Add(this.lblDatailName324);
-            this.panel17.Location = new System.Drawing.Point(11, 268);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation324
-            // 
-            this.lblRelation324.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation324.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation324.Name = "lblRelation324";
-            this.lblRelation324.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink324
-            // 
-            this.lblDetailLink324.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink324.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink324.Name = "lblDetailLink324";
-            this.lblDetailLink324.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId324
-            // 
-            this.lblDetailId324.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId324.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId324.Name = "lblDetailId324";
-            this.lblDetailId324.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete324
-            // 
-            this.btnDelete324.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete324.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete324.Name = "btnDelete324";
-            this.btnDelete324.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete324.TabIndex = 68;
-            this.btnDelete324.Tag = "3";
-            this.btnDelete324.Text = "删除";
-            this.btnDelete324.Visible = false;
-            // 
-            // lblDetailAddr324
-            // 
-            this.lblDetailAddr324.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr324.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr324.Name = "lblDetailAddr324";
-            this.lblDetailAddr324.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName324
-            // 
-            this.lblDatailName324.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName324.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName324.Name = "lblDatailName324";
-            this.lblDatailName324.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel18
-            // 
-            this.panel18.Controls.Add(this.lblRelation323);
-            this.panel18.Controls.Add(this.lblDetailLink323);
-            this.panel18.Controls.Add(this.lblDetailId323);
-            this.panel18.Controls.Add(this.btnDelete323);
-            this.panel18.Controls.Add(this.lblDetailAddr323);
-            this.panel18.Controls.Add(this.lblDatailName323);
-            this.panel18.Location = new System.Drawing.Point(11, 221);
-            this.panel18.Name = "panel18";
-            this.panel18.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation323
-            // 
-            this.lblRelation323.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation323.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation323.Name = "lblRelation323";
-            this.lblRelation323.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink323
-            // 
-            this.lblDetailLink323.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink323.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink323.Name = "lblDetailLink323";
-            this.lblDetailLink323.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId323
-            // 
-            this.lblDetailId323.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId323.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId323.Name = "lblDetailId323";
-            this.lblDetailId323.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete323
-            // 
-            this.btnDelete323.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete323.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete323.Name = "btnDelete323";
-            this.btnDelete323.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete323.TabIndex = 68;
-            this.btnDelete323.Tag = "2";
-            this.btnDelete323.Text = "删除";
-            this.btnDelete323.Visible = false;
-            // 
-            // lblDetailAddr323
-            // 
-            this.lblDetailAddr323.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr323.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr323.Name = "lblDetailAddr323";
-            this.lblDetailAddr323.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName323
-            // 
-            this.lblDatailName323.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName323.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName323.Name = "lblDatailName323";
-            this.lblDatailName323.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel19
-            // 
-            this.panel19.Controls.Add(this.lblRelation322);
-            this.panel19.Controls.Add(this.lblDetailLink322);
-            this.panel19.Controls.Add(this.lblDetailId322);
-            this.panel19.Controls.Add(this.btnDelete322);
-            this.panel19.Controls.Add(this.lblDetailAddr322);
-            this.panel19.Controls.Add(this.lblDatailName322);
-            this.panel19.Location = new System.Drawing.Point(11, 174);
-            this.panel19.Name = "panel19";
-            this.panel19.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation322
-            // 
-            this.lblRelation322.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation322.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation322.Name = "lblRelation322";
-            this.lblRelation322.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink322
-            // 
-            this.lblDetailLink322.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink322.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink322.Name = "lblDetailLink322";
-            this.lblDetailLink322.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId322
-            // 
-            this.lblDetailId322.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId322.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId322.Name = "lblDetailId322";
-            this.lblDetailId322.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete322
-            // 
-            this.btnDelete322.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete322.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete322.Name = "btnDelete322";
-            this.btnDelete322.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete322.TabIndex = 68;
-            this.btnDelete322.Tag = "1";
-            this.btnDelete322.Text = "删除";
-            this.btnDelete322.Visible = false;
-            // 
-            // lblDetailAddr322
-            // 
-            this.lblDetailAddr322.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr322.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr322.Name = "lblDetailAddr322";
-            this.lblDetailAddr322.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName322
-            // 
-            this.lblDatailName322.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName322.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName322.Name = "lblDatailName322";
-            this.lblDatailName322.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel20
-            // 
-            this.panel20.Controls.Add(this.lblRelation321);
-            this.panel20.Controls.Add(this.lblDetailLink321);
-            this.panel20.Controls.Add(this.lblDetailId321);
-            this.panel20.Controls.Add(this.btnDelete321);
-            this.panel20.Controls.Add(this.lblDetailAddr321);
-            this.panel20.Controls.Add(this.lblDatailName321);
-            this.panel20.Location = new System.Drawing.Point(11, 127);
-            this.panel20.Name = "panel20";
-            this.panel20.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation321
-            // 
-            this.lblRelation321.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation321.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation321.Name = "lblRelation321";
-            this.lblRelation321.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink321
-            // 
-            this.lblDetailLink321.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink321.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink321.Name = "lblDetailLink321";
-            this.lblDetailLink321.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId321
-            // 
-            this.lblDetailId321.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId321.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId321.Name = "lblDetailId321";
-            this.lblDetailId321.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete321
-            // 
-            this.btnDelete321.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete321.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete321.Name = "btnDelete321";
-            this.btnDelete321.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete321.TabIndex = 68;
-            this.btnDelete321.Tag = "0";
-            this.btnDelete321.Text = "删除";
-            this.btnDelete321.Visible = false;
-            // 
-            // lblDetailAddr321
-            // 
-            this.lblDetailAddr321.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr321.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr321.Name = "lblDetailAddr321";
-            this.lblDetailAddr321.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName321
-            // 
-            this.lblDatailName321.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName321.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName321.Name = "lblDatailName321";
-            this.lblDatailName321.Size = new System.Drawing.Size(82, 20);
-            // 
-            // cbxRelation32
-            // 
-            this.cbxRelation32.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.cbxRelation32.Location = new System.Drawing.Point(330, 64);
-            this.cbxRelation32.Name = "cbxRelation32";
-            this.cbxRelation32.Size = new System.Drawing.Size(142, 32);
-            this.cbxRelation32.TabIndex = 169;
-            // 
-            // label76
-            // 
-            this.label76.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label76.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label76.Location = new System.Drawing.Point(269, 68);
-            this.label76.Name = "label76";
-            this.label76.Size = new System.Drawing.Size(49, 20);
-            this.label76.Text = "关系";
-            // 
-            // txtAddress32
-            // 
-            this.txtAddress32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAddress32.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtAddress32.Location = new System.Drawing.Point(57, 95);
-            this.txtAddress32.Multiline = true;
-            this.txtAddress32.Name = "txtAddress32";
-            this.txtAddress32.Size = new System.Drawing.Size(415, 31);
-            this.txtAddress32.TabIndex = 168;
-            this.txtAddress32.Tag = "House_Private/Master/Name";
-            // 
-            // label77
-            // 
-            this.label77.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label77.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label77.Location = new System.Drawing.Point(10, 101);
-            this.label77.Name = "label77";
-            this.label77.Size = new System.Drawing.Size(49, 20);
-            this.label77.Text = "地址";
-            // 
-            // txtLink32
-            // 
-            this.txtLink32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtLink32.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtLink32.Location = new System.Drawing.Point(94, 63);
-            this.txtLink32.Multiline = true;
-            this.txtLink32.Name = "txtLink32";
-            this.txtLink32.Size = new System.Drawing.Size(166, 31);
-            this.txtLink32.TabIndex = 167;
-            this.txtLink32.Tag = "House_Private/Master/Name";
-            // 
-            // label78
-            // 
-            this.label78.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label78.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label78.Location = new System.Drawing.Point(10, 69);
-            this.label78.Name = "label78";
-            this.label78.Size = new System.Drawing.Size(83, 20);
-            this.label78.Text = "联系电话";
-            // 
-            // txtLisence32
-            // 
-            this.txtLisence32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtLisence32.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtLisence32.Location = new System.Drawing.Point(257, 30);
-            this.txtLisence32.Multiline = true;
-            this.txtLisence32.Name = "txtLisence32";
-            this.txtLisence32.Size = new System.Drawing.Size(215, 31);
-            this.txtLisence32.TabIndex = 166;
-            this.txtLisence32.Tag = "House_Private/Master/Name";
-            // 
-            // label79
-            // 
-            this.label79.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label79.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label79.Location = new System.Drawing.Point(177, 36);
-            this.label79.Name = "label79";
-            this.label79.Size = new System.Drawing.Size(80, 20);
-            this.label79.Text = "身份证号";
-            // 
-            // txtName32
-            // 
-            this.txtName32.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtName32.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtName32.Location = new System.Drawing.Point(56, 30);
-            this.txtName32.Multiline = true;
-            this.txtName32.Name = "txtName32";
-            this.txtName32.Size = new System.Drawing.Size(121, 31);
-            this.txtName32.TabIndex = 165;
-            this.txtName32.Tag = "House_Private/Master/Name";
-            // 
-            // label80
-            // 
-            this.label80.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label80.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label80.Location = new System.Drawing.Point(10, 36);
-            this.label80.Name = "label80";
-            this.label80.Size = new System.Drawing.Size(49, 20);
-            this.label80.Text = "姓名";
-            // 
-            // btnAdd32
-            // 
-            this.btnAdd32.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnAdd32.Location = new System.Drawing.Point(423, 2);
-            this.btnAdd32.Name = "btnAdd32";
-            this.btnAdd32.Size = new System.Drawing.Size(49, 26);
-            this.btnAdd32.TabIndex = 164;
-            this.btnAdd32.Text = "增加";
-            // 
-            // label81
-            // 
-            this.label81.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label81.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label81.Location = new System.Drawing.Point(10, 5);
-            this.label81.Name = "label81";
-            this.label81.Size = new System.Drawing.Size(120, 19);
-            this.label81.Text = "同案或同行人员";
-            // 
-            // tabPage8
-            // 
-            this.tabPage8.Controls.Add(this.panel21);
-            this.tabPage8.Controls.Add(this.panel22);
-            this.tabPage8.Controls.Add(this.panel29);
-            this.tabPage8.Controls.Add(this.panel30);
-            this.tabPage8.Controls.Add(this.panel31);
-            this.tabPage8.Controls.Add(this.txtDetail);
-            this.tabPage8.Controls.Add(this.label5);
-            this.tabPage8.Controls.Add(this.txtPlace);
-            this.tabPage8.Controls.Add(this.label6);
-            this.tabPage8.Controls.Add(this.txtFreeDate);
-            this.tabPage8.Controls.Add(this.label17);
-            this.tabPage8.Controls.Add(this.btnAdd33);
-            this.tabPage8.Controls.Add(this.label18);
-            this.tabPage8.Location = new System.Drawing.Point(0, 0);
-            this.tabPage8.Name = "tabPage8";
-            this.tabPage8.Size = new System.Drawing.Size(480, 392);
-            this.tabPage8.Text = "前科情况";
-            // 
-            // panel21
-            // 
-            this.panel21.Controls.Add(this.label19);
-            this.panel21.Controls.Add(this.lblPlace5);
-            this.panel21.Controls.Add(this.btnDelete335);
-            this.panel21.Controls.Add(this.lblDetail5);
-            this.panel21.Controls.Add(this.lblDate5);
-            this.panel21.Location = new System.Drawing.Point(12, 292);
-            this.panel21.Name = "panel21";
-            this.panel21.Size = new System.Drawing.Size(459, 48);
-            // 
-            // label19
-            // 
-            this.label19.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label19.Location = new System.Drawing.Point(317, 2);
-            this.label19.Name = "label19";
-            this.label19.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblPlace5
-            // 
-            this.lblPlace5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblPlace5.Location = new System.Drawing.Point(102, 2);
-            this.lblPlace5.Name = "lblPlace5";
-            this.lblPlace5.Size = new System.Drawing.Size(350, 20);
-            // 
-            // btnDelete335
-            // 
-            this.btnDelete335.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete335.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete335.Name = "btnDelete335";
-            this.btnDelete335.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete335.TabIndex = 68;
-            this.btnDelete335.Tag = "4";
-            this.btnDelete335.Text = "删除";
-            this.btnDelete335.Visible = false;
-            // 
-            // lblDetail5
-            // 
-            this.lblDetail5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetail5.Location = new System.Drawing.Point(2, 24);
-            this.lblDetail5.Name = "lblDetail5";
-            this.lblDetail5.Size = new System.Drawing.Size(396, 20);
-            // 
-            // lblDate5
-            // 
-            this.lblDate5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDate5.Location = new System.Drawing.Point(2, 2);
-            this.lblDate5.Name = "lblDate5";
-            this.lblDate5.Size = new System.Drawing.Size(92, 20);
-            // 
-            // panel22
-            // 
-            this.panel22.Controls.Add(this.label24);
-            this.panel22.Controls.Add(this.lblPlace4);
-            this.panel22.Controls.Add(this.btnDelete334);
-            this.panel22.Controls.Add(this.lblDetail4);
-            this.panel22.Controls.Add(this.lblDate4);
-            this.panel22.Location = new System.Drawing.Point(12, 245);
-            this.panel22.Name = "panel22";
-            this.panel22.Size = new System.Drawing.Size(459, 48);
-            // 
-            // label24
-            // 
-            this.label24.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label24.Location = new System.Drawing.Point(317, 2);
-            this.label24.Name = "label24";
-            this.label24.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblPlace4
-            // 
-            this.lblPlace4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblPlace4.Location = new System.Drawing.Point(102, 2);
-            this.lblPlace4.Name = "lblPlace4";
-            this.lblPlace4.Size = new System.Drawing.Size(350, 20);
-            // 
-            // btnDelete334
-            // 
-            this.btnDelete334.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete334.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete334.Name = "btnDelete334";
-            this.btnDelete334.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete334.TabIndex = 68;
-            this.btnDelete334.Tag = "3";
-            this.btnDelete334.Text = "删除";
-            this.btnDelete334.Visible = false;
-            // 
-            // lblDetail4
-            // 
-            this.lblDetail4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetail4.Location = new System.Drawing.Point(2, 24);
-            this.lblDetail4.Name = "lblDetail4";
-            this.lblDetail4.Size = new System.Drawing.Size(396, 20);
-            // 
-            // lblDate4
-            // 
-            this.lblDate4.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDate4.Location = new System.Drawing.Point(2, 2);
-            this.lblDate4.Name = "lblDate4";
-            this.lblDate4.Size = new System.Drawing.Size(92, 20);
-            // 
-            // panel29
-            // 
-            this.panel29.Controls.Add(this.label29);
-            this.panel29.Controls.Add(this.lblPlace3);
-            this.panel29.Controls.Add(this.btnDelete333);
-            this.panel29.Controls.Add(this.lblDetail3);
-            this.panel29.Controls.Add(this.lblDate3);
-            this.panel29.Location = new System.Drawing.Point(12, 198);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(459, 48);
-            // 
-            // label29
-            // 
-            this.label29.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label29.Location = new System.Drawing.Point(317, 2);
-            this.label29.Name = "label29";
-            this.label29.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblPlace3
-            // 
-            this.lblPlace3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblPlace3.Location = new System.Drawing.Point(102, 2);
-            this.lblPlace3.Name = "lblPlace3";
-            this.lblPlace3.Size = new System.Drawing.Size(350, 20);
-            // 
-            // btnDelete333
-            // 
-            this.btnDelete333.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete333.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete333.Name = "btnDelete333";
-            this.btnDelete333.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete333.TabIndex = 68;
-            this.btnDelete333.Tag = "2";
-            this.btnDelete333.Text = "删除";
-            this.btnDelete333.Visible = false;
-            // 
-            // lblDetail3
-            // 
-            this.lblDetail3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetail3.Location = new System.Drawing.Point(2, 24);
-            this.lblDetail3.Name = "lblDetail3";
-            this.lblDetail3.Size = new System.Drawing.Size(396, 20);
-            // 
-            // lblDate3
-            // 
-            this.lblDate3.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDate3.Location = new System.Drawing.Point(2, 2);
-            this.lblDate3.Name = "lblDate3";
-            this.lblDate3.Size = new System.Drawing.Size(92, 20);
-            // 
-            // panel30
-            // 
-            this.panel30.Controls.Add(this.label1);
-            this.panel30.Controls.Add(this.lblPlace2);
-            this.panel30.Controls.Add(this.btnDelete332);
-            this.panel30.Controls.Add(this.lblDetail2);
-            this.panel30.Controls.Add(this.lblDate2);
-            this.panel30.Location = new System.Drawing.Point(12, 151);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(459, 48);
-            // 
-            // label1
-            // 
-            this.label1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.label1.Location = new System.Drawing.Point(317, 2);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblPlace2
-            // 
-            this.lblPlace2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblPlace2.Location = new System.Drawing.Point(102, 2);
-            this.lblPlace2.Name = "lblPlace2";
-            this.lblPlace2.Size = new System.Drawing.Size(350, 20);
-            // 
-            // btnDelete332
-            // 
-            this.btnDelete332.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete332.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete332.Name = "btnDelete332";
-            this.btnDelete332.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete332.TabIndex = 68;
-            this.btnDelete332.Tag = "1";
-            this.btnDelete332.Text = "删除";
-            this.btnDelete332.Visible = false;
-            // 
-            // lblDetail2
-            // 
-            this.lblDetail2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetail2.Location = new System.Drawing.Point(2, 24);
-            this.lblDetail2.Name = "lblDetail2";
-            this.lblDetail2.Size = new System.Drawing.Size(396, 20);
-            // 
-            // lblDate2
-            // 
-            this.lblDate2.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDate2.Location = new System.Drawing.Point(2, 2);
-            this.lblDate2.Name = "lblDate2";
-            this.lblDate2.Size = new System.Drawing.Size(92, 20);
-            // 
-            // panel31
-            // 
-            this.panel31.Controls.Add(this.lblPlace1);
-            this.panel31.Controls.Add(this.btnDelete331);
-            this.panel31.Controls.Add(this.lblDetail1);
-            this.panel31.Controls.Add(this.lblDate1);
-            this.panel31.Location = new System.Drawing.Point(12, 104);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblPlace1
-            // 
-            this.lblPlace1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblPlace1.Location = new System.Drawing.Point(102, 2);
-            this.lblPlace1.Name = "lblPlace1";
-            this.lblPlace1.Size = new System.Drawing.Size(350, 20);
-            // 
-            // btnDelete331
-            // 
-            this.btnDelete331.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete331.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete331.Name = "btnDelete331";
-            this.btnDelete331.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete331.TabIndex = 68;
-            this.btnDelete331.Tag = "0";
-            this.btnDelete331.Text = "删除";
-            this.btnDelete331.Visible = false;
-            // 
-            // lblDetail1
-            // 
-            this.lblDetail1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetail1.Location = new System.Drawing.Point(2, 24);
-            this.lblDetail1.Name = "lblDetail1";
-            this.lblDetail1.Size = new System.Drawing.Size(396, 20);
-            // 
-            // lblDate1
-            // 
-            this.lblDate1.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDate1.Location = new System.Drawing.Point(2, 2);
-            this.lblDate1.Name = "lblDate1";
-            this.lblDate1.Size = new System.Drawing.Size(92, 20);
-            // 
-            // txtDetail
-            // 
-            this.txtDetail.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtDetail.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtDetail.Location = new System.Drawing.Point(94, 68);
-            this.txtDetail.Multiline = true;
-            this.txtDetail.Name = "txtDetail";
-            this.txtDetail.Size = new System.Drawing.Size(382, 31);
-            this.txtDetail.TabIndex = 175;
-            this.txtDetail.Tag = "House_Private/Master/Name";
-            // 
-            // label5
-            // 
-            this.label5.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label5.Location = new System.Drawing.Point(10, 74);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(83, 20);
-            this.label5.Text = "前科说明";
-            // 
-            // txtPlace
-            // 
-            this.txtPlace.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtPlace.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtPlace.Location = new System.Drawing.Point(315, 35);
-            this.txtPlace.Multiline = true;
-            this.txtPlace.Name = "txtPlace";
-            this.txtPlace.Size = new System.Drawing.Size(161, 31);
-            this.txtPlace.TabIndex = 174;
-            this.txtPlace.Tag = "House_Private/Master/Name";
-            // 
-            // label6
-            // 
-            this.label6.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label6.Location = new System.Drawing.Point(234, 42);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(80, 20);
-            this.label6.Text = "服刑地点";
-            // 
-            // txtFreeDate
-            // 
-            this.txtFreeDate.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtFreeDate.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtFreeDate.Location = new System.Drawing.Point(94, 35);
-            this.txtFreeDate.Multiline = true;
-            this.txtFreeDate.Name = "txtFreeDate";
-            this.txtFreeDate.Size = new System.Drawing.Size(139, 31);
-            this.txtFreeDate.TabIndex = 173;
-            this.txtFreeDate.Tag = "House_Private/Master/Name";
-            // 
-            // label17
-            // 
-            this.label17.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label17.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label17.Location = new System.Drawing.Point(10, 41);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(78, 20);
-            this.label17.Text = "释放日期";
-            // 
-            // btnAdd33
-            // 
-            this.btnAdd33.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnAdd33.Location = new System.Drawing.Point(423, 6);
-            this.btnAdd33.Name = "btnAdd33";
-            this.btnAdd33.Size = new System.Drawing.Size(49, 26);
-            this.btnAdd33.TabIndex = 172;
-            this.btnAdd33.Text = "增加";
-            // 
-            // label18
-            // 
-            this.label18.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label18.Location = new System.Drawing.Point(10, 7);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(120, 19);
-            this.label18.Text = "前科情况";
-            // 
-            // tabPage6
-            // 
-            this.tabPage6.Controls.Add(this.panel11);
-            this.tabPage6.Controls.Add(this.panel12);
-            this.tabPage6.Controls.Add(this.panel13);
-            this.tabPage6.Controls.Add(this.panel14);
-            this.tabPage6.Controls.Add(this.panel15);
-            this.tabPage6.Controls.Add(this.cbxRelation31);
-            this.tabPage6.Controls.Add(this.label39);
-            this.tabPage6.Controls.Add(this.txtAddress31);
-            this.tabPage6.Controls.Add(this.label40);
-            this.tabPage6.Controls.Add(this.txtLink31);
-            this.tabPage6.Controls.Add(this.label41);
-            this.tabPage6.Controls.Add(this.txtLisence31);
-            this.tabPage6.Controls.Add(this.label42);
-            this.tabPage6.Controls.Add(this.txtName31);
-            this.tabPage6.Controls.Add(this.label43);
-            this.tabPage6.Controls.Add(this.btnAdd31);
-            this.tabPage6.Controls.Add(this.label44);
-            this.tabPage6.Location = new System.Drawing.Point(0, 0);
-            this.tabPage6.Name = "tabPage6";
-            this.tabPage6.Size = new System.Drawing.Size(480, 392);
-            this.tabPage6.Text = "直系亲属";
-            // 
-            // panel11
-            // 
-            this.panel11.Controls.Add(this.lblRelation315);
-            this.panel11.Controls.Add(this.lblDetailLink315);
-            this.panel11.Controls.Add(this.lblDetailId315);
-            this.panel11.Controls.Add(this.btnDelete315);
-            this.panel11.Controls.Add(this.lblDetailAddr315);
-            this.panel11.Controls.Add(this.lblDatailName315);
-            this.panel11.Location = new System.Drawing.Point(11, 318);
-            this.panel11.Name = "panel11";
-            this.panel11.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation315
-            // 
-            this.lblRelation315.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation315.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation315.Name = "lblRelation315";
-            this.lblRelation315.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink315
-            // 
-            this.lblDetailLink315.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink315.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink315.Name = "lblDetailLink315";
-            this.lblDetailLink315.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId315
-            // 
-            this.lblDetailId315.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId315.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId315.Name = "lblDetailId315";
-            this.lblDetailId315.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete315
-            // 
-            this.btnDelete315.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete315.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete315.Name = "btnDelete315";
-            this.btnDelete315.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete315.TabIndex = 68;
-            this.btnDelete315.Tag = "4";
-            this.btnDelete315.Text = "删除";
-            this.btnDelete315.Visible = false;
-            // 
-            // lblDetailAddr315
-            // 
-            this.lblDetailAddr315.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr315.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr315.Name = "lblDetailAddr315";
-            this.lblDetailAddr315.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName315
-            // 
-            this.lblDatailName315.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName315.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName315.Name = "lblDatailName315";
-            this.lblDatailName315.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel12
-            // 
-            this.panel12.Controls.Add(this.lblRelation314);
-            this.panel12.Controls.Add(this.lblDetailLink314);
-            this.panel12.Controls.Add(this.lblDetailId314);
-            this.panel12.Controls.Add(this.btnDelete314);
-            this.panel12.Controls.Add(this.lblDetailAddr314);
-            this.panel12.Controls.Add(this.lblDatailName314);
-            this.panel12.Location = new System.Drawing.Point(11, 271);
-            this.panel12.Name = "panel12";
-            this.panel12.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation314
-            // 
-            this.lblRelation314.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation314.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation314.Name = "lblRelation314";
-            this.lblRelation314.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink314
-            // 
-            this.lblDetailLink314.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink314.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink314.Name = "lblDetailLink314";
-            this.lblDetailLink314.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId314
-            // 
-            this.lblDetailId314.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId314.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId314.Name = "lblDetailId314";
-            this.lblDetailId314.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete314
-            // 
-            this.btnDelete314.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete314.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete314.Name = "btnDelete314";
-            this.btnDelete314.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete314.TabIndex = 68;
-            this.btnDelete314.Tag = "3";
-            this.btnDelete314.Text = "删除";
-            this.btnDelete314.Visible = false;
-            // 
-            // lblDetailAddr314
-            // 
-            this.lblDetailAddr314.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr314.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr314.Name = "lblDetailAddr314";
-            this.lblDetailAddr314.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName314
-            // 
-            this.lblDatailName314.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName314.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName314.Name = "lblDatailName314";
-            this.lblDatailName314.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel13
-            // 
-            this.panel13.Controls.Add(this.lblRelation313);
-            this.panel13.Controls.Add(this.lblDetailLink313);
-            this.panel13.Controls.Add(this.lblDetailId313);
-            this.panel13.Controls.Add(this.btnDelete313);
-            this.panel13.Controls.Add(this.lblDetailAddr313);
-            this.panel13.Controls.Add(this.lblDatailName313);
-            this.panel13.Location = new System.Drawing.Point(11, 224);
-            this.panel13.Name = "panel13";
-            this.panel13.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation313
-            // 
-            this.lblRelation313.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation313.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation313.Name = "lblRelation313";
-            this.lblRelation313.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink313
-            // 
-            this.lblDetailLink313.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink313.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink313.Name = "lblDetailLink313";
-            this.lblDetailLink313.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId313
-            // 
-            this.lblDetailId313.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId313.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId313.Name = "lblDetailId313";
-            this.lblDetailId313.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete313
-            // 
-            this.btnDelete313.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete313.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete313.Name = "btnDelete313";
-            this.btnDelete313.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete313.TabIndex = 68;
-            this.btnDelete313.Tag = "2";
-            this.btnDelete313.Text = "删除";
-            this.btnDelete313.Visible = false;
-            // 
-            // lblDetailAddr313
-            // 
-            this.lblDetailAddr313.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr313.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr313.Name = "lblDetailAddr313";
-            this.lblDetailAddr313.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName313
-            // 
-            this.lblDatailName313.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName313.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName313.Name = "lblDatailName313";
-            this.lblDatailName313.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel14
-            // 
-            this.panel14.Controls.Add(this.lblRelation312);
-            this.panel14.Controls.Add(this.lblDetailLink312);
-            this.panel14.Controls.Add(this.lblDetailId312);
-            this.panel14.Controls.Add(this.btnDelete312);
-            this.panel14.Controls.Add(this.lblDetailAddr312);
-            this.panel14.Controls.Add(this.lblDatailName312);
-            this.panel14.Location = new System.Drawing.Point(11, 177);
-            this.panel14.Name = "panel14";
-            this.panel14.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation312
-            // 
-            this.lblRelation312.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation312.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation312.Name = "lblRelation312";
-            this.lblRelation312.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink312
-            // 
-            this.lblDetailLink312.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink312.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink312.Name = "lblDetailLink312";
-            this.lblDetailLink312.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId312
-            // 
-            this.lblDetailId312.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId312.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId312.Name = "lblDetailId312";
-            this.lblDetailId312.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete312
-            // 
-            this.btnDelete312.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete312.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete312.Name = "btnDelete312";
-            this.btnDelete312.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete312.TabIndex = 68;
-            this.btnDelete312.Tag = "1";
-            this.btnDelete312.Text = "删除";
-            this.btnDelete312.Visible = false;
-            // 
-            // lblDetailAddr312
-            // 
-            this.lblDetailAddr312.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr312.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr312.Name = "lblDetailAddr312";
-            this.lblDetailAddr312.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName312
-            // 
-            this.lblDatailName312.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName312.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName312.Name = "lblDatailName312";
-            this.lblDatailName312.Size = new System.Drawing.Size(82, 20);
-            // 
-            // panel15
-            // 
-            this.panel15.Controls.Add(this.lblRelation311);
-            this.panel15.Controls.Add(this.lblDetailLink311);
-            this.panel15.Controls.Add(this.lblDetailId311);
-            this.panel15.Controls.Add(this.btnDelete311);
-            this.panel15.Controls.Add(this.lblDetailAddr311);
-            this.panel15.Controls.Add(this.lblDatailName311);
-            this.panel15.Location = new System.Drawing.Point(11, 130);
-            this.panel15.Name = "panel15";
-            this.panel15.Size = new System.Drawing.Size(459, 48);
-            // 
-            // lblRelation311
-            // 
-            this.lblRelation311.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblRelation311.Location = new System.Drawing.Point(338, 22);
-            this.lblRelation311.Name = "lblRelation311";
-            this.lblRelation311.Size = new System.Drawing.Size(58, 20);
-            // 
-            // lblDetailLink311
-            // 
-            this.lblDetailLink311.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailLink311.Location = new System.Drawing.Point(317, 2);
-            this.lblDetailLink311.Name = "lblDetailLink311";
-            this.lblDetailLink311.Size = new System.Drawing.Size(136, 20);
-            // 
-            // lblDetailId311
-            // 
-            this.lblDetailId311.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailId311.Location = new System.Drawing.Point(97, 2);
-            this.lblDetailId311.Name = "lblDetailId311";
-            this.lblDetailId311.Size = new System.Drawing.Size(204, 20);
-            // 
-            // btnDelete311
-            // 
-            this.btnDelete311.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnDelete311.Location = new System.Drawing.Point(404, 22);
-            this.btnDelete311.Name = "btnDelete311";
-            this.btnDelete311.Size = new System.Drawing.Size(49, 23);
-            this.btnDelete311.TabIndex = 68;
-            this.btnDelete311.Tag = "0";
-            this.btnDelete311.Text = "删除";
-            this.btnDelete311.Visible = false;
-            // 
-            // lblDetailAddr311
-            // 
-            this.lblDetailAddr311.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDetailAddr311.Location = new System.Drawing.Point(2, 24);
-            this.lblDetailAddr311.Name = "lblDetailAddr311";
-            this.lblDetailAddr311.Size = new System.Drawing.Size(319, 20);
-            // 
-            // lblDatailName311
-            // 
-            this.lblDatailName311.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.lblDatailName311.Location = new System.Drawing.Point(2, 2);
-            this.lblDatailName311.Name = "lblDatailName311";
-            this.lblDatailName311.Size = new System.Drawing.Size(82, 20);
-            // 
-            // cbxRelation31
-            // 
-            this.cbxRelation31.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Regular);
-            this.cbxRelation31.Location = new System.Drawing.Point(330, 67);
-            this.cbxRelation31.Name = "cbxRelation31";
-            this.cbxRelation31.Size = new System.Drawing.Size(142, 32);
-            this.cbxRelation31.TabIndex = 152;
-            // 
-            // label39
-            // 
-            this.label39.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label39.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label39.Location = new System.Drawing.Point(269, 71);
-            this.label39.Name = "label39";
-            this.label39.Size = new System.Drawing.Size(49, 20);
-            this.label39.Text = "关系";
-            // 
-            // txtAddress31
-            // 
-            this.txtAddress31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtAddress31.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtAddress31.Location = new System.Drawing.Point(57, 98);
-            this.txtAddress31.Multiline = true;
-            this.txtAddress31.Name = "txtAddress31";
-            this.txtAddress31.Size = new System.Drawing.Size(415, 31);
-            this.txtAddress31.TabIndex = 151;
-            this.txtAddress31.Tag = "House_Private/Master/Name";
-            // 
-            // label40
-            // 
-            this.label40.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label40.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label40.Location = new System.Drawing.Point(10, 105);
-            this.label40.Name = "label40";
-            this.label40.Size = new System.Drawing.Size(49, 20);
-            this.label40.Text = "地址";
-            // 
-            // txtLink31
-            // 
-            this.txtLink31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtLink31.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtLink31.Location = new System.Drawing.Point(94, 66);
-            this.txtLink31.Multiline = true;
-            this.txtLink31.Name = "txtLink31";
-            this.txtLink31.Size = new System.Drawing.Size(166, 31);
-            this.txtLink31.TabIndex = 150;
-            this.txtLink31.Tag = "House_Private/Master/Name";
-            // 
-            // label41
-            // 
-            this.label41.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label41.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label41.Location = new System.Drawing.Point(10, 72);
-            this.label41.Name = "label41";
-            this.label41.Size = new System.Drawing.Size(83, 20);
-            this.label41.Text = "联系电话";
-            // 
-            // txtLisence31
-            // 
-            this.txtLisence31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtLisence31.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtLisence31.Location = new System.Drawing.Point(257, 33);
-            this.txtLisence31.Multiline = true;
-            this.txtLisence31.Name = "txtLisence31";
-            this.txtLisence31.Size = new System.Drawing.Size(215, 31);
-            this.txtLisence31.TabIndex = 149;
-            this.txtLisence31.Tag = "House_Private/Master/Name";
-            // 
-            // label42
-            // 
-            this.label42.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label42.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label42.Location = new System.Drawing.Point(177, 39);
-            this.label42.Name = "label42";
-            this.label42.Size = new System.Drawing.Size(80, 20);
-            this.label42.Text = "身份证号";
-            // 
-            // txtName31
-            // 
-            this.txtName31.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.txtName31.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.txtName31.Location = new System.Drawing.Point(56, 33);
-            this.txtName31.Multiline = true;
-            this.txtName31.Name = "txtName31";
-            this.txtName31.Size = new System.Drawing.Size(121, 31);
-            this.txtName31.TabIndex = 148;
-            this.txtName31.Tag = "House_Private/Master/Name";
-            // 
-            // label43
-            // 
-            this.label43.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label43.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label43.Location = new System.Drawing.Point(10, 39);
-            this.label43.Name = "label43";
-            this.label43.Size = new System.Drawing.Size(49, 20);
-            this.label43.Text = "姓名";
-            // 
-            // btnAdd31
-            // 
-            this.btnAdd31.Font = new System.Drawing.Font("Tahoma", 5F, System.Drawing.FontStyle.Regular);
-            this.btnAdd31.Location = new System.Drawing.Point(423, 5);
-            this.btnAdd31.Name = "btnAdd31";
-            this.btnAdd31.Size = new System.Drawing.Size(49, 26);
-            this.btnAdd31.TabIndex = 147;
-            this.btnAdd31.Text = "增加";
-            // 
-            // label44
-            // 
-            this.label44.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label44.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label44.Location = new System.Drawing.Point(10, 8);
-            this.label44.Name = "label44";
-            this.label44.Size = new System.Drawing.Size(120, 19);
-            this.label44.Text = "直系亲属";
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Controls.Add(this.tabPage4);
+            this.tabControl1.Controls.Add(this.tabPage5);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 61);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(480, 394);
+            this.tabControl1.TabIndex = 231;
+            // 
+            // panel1
+            // 
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.panel1.Location = new System.Drawing.Point(0, 518);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(480, 10);
             // 
             // ucControlRsidentManager1
             // 
@@ -1933,8 +1974,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(480, 588);
             this.Controls.Add(this.tabControl1);
-            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.panel7);
+            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pictureBox8);
             this.Controls.Add(this.ucControlRsidentManager1);
             this.Location = new System.Drawing.Point(0, 0);
             this.Menu = this.mainMenu1;
@@ -1942,28 +1984,26 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.Text = "frmStressPeople";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.panel7.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.tabPage5.ResumeLayout(false);
+            this.pBBack5.ResumeLayout(false);
+            this.pBBack4.ResumeLayout(false);
+            this.pBBack3.ResumeLayout(false);
+            this.pBBack2.ResumeLayout(false);
+            this.pBBack1.ResumeLayout(false);
+            this.tabPage4.ResumeLayout(false);
+            this.pBBBack5.ResumeLayout(false);
+            this.pBBBack4.ResumeLayout(false);
+            this.pBBBack3.ResumeLayout(false);
+            this.pBBBack2.ResumeLayout(false);
+            this.pBBBack1.ResumeLayout(false);
+            this.tabPage3.ResumeLayout(false);
+            this.pBack5.ResumeLayout(false);
+            this.pBack4.ResumeLayout(false);
+            this.pBack3.ResumeLayout(false);
+            this.pBack2.ResumeLayout(false);
+            this.pBack1.ResumeLayout(false);
             this.tabPage1.ResumeLayout(false);
-            this.tabPage2.ResumeLayout(false);
-            this.tabControl3.ResumeLayout(false);
-            this.tabPage7.ResumeLayout(false);
-            this.panel16.ResumeLayout(false);
-            this.panel17.ResumeLayout(false);
-            this.panel18.ResumeLayout(false);
-            this.panel19.ResumeLayout(false);
-            this.panel20.ResumeLayout(false);
-            this.tabPage8.ResumeLayout(false);
-            this.panel21.ResumeLayout(false);
-            this.panel22.ResumeLayout(false);
-            this.panel29.ResumeLayout(false);
-            this.panel30.ResumeLayout(false);
-            this.panel31.ResumeLayout(false);
-            this.tabPage6.ResumeLayout(false);
-            this.panel11.ResumeLayout(false);
-            this.panel12.ResumeLayout(false);
-            this.panel13.ResumeLayout(false);
-            this.panel14.ResumeLayout(false);
-            this.panel15.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -1976,23 +2016,159 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private System.Windows.Forms.PictureBox btnSave;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pSave;
         private System.Windows.Forms.PictureBox pictureBox3;
         private System.Windows.Forms.PictureBox pictureBox8;
-        private System.Windows.Forms.TabControl tabControl1;
+        private PoliceMobile.LIB.ucControlRsidentManager ucControlRsidentManager1;
+        private System.Windows.Forms.TabPage tabPage5;
+        private System.Windows.Forms.Panel pBBack5;
+        private System.Windows.Forms.Label lbl2_Relation5;
+        private System.Windows.Forms.Label lbl2_Link5;
+        private System.Windows.Forms.Label lbl2_CardID5;
+        private System.Windows.Forms.Button btnDDDel5;
+        private System.Windows.Forms.Label lbl2_Address5;
+        private System.Windows.Forms.Label lbl2_Name5;
+        private System.Windows.Forms.Panel pBBack4;
+        private System.Windows.Forms.Label lbl2_Relation4;
+        private System.Windows.Forms.Label lbl2_Link4;
+        private System.Windows.Forms.Label lbl2_CardID4;
+        private System.Windows.Forms.Button btnDDDel4;
+        private System.Windows.Forms.Label lbl2_Address4;
+        private System.Windows.Forms.Label lbl2_Name4;
+        private System.Windows.Forms.Panel pBBack3;
+        private System.Windows.Forms.Label lbl2_Relation3;
+        private System.Windows.Forms.Label lbl2_Link3;
+        private System.Windows.Forms.Label lbl2_CardID3;
+        private System.Windows.Forms.Button btnDDDel3;
+        private System.Windows.Forms.Label lbl2_Address3;
+        private System.Windows.Forms.Label lbl2_Name3;
+        private System.Windows.Forms.Panel pBBack2;
+        private System.Windows.Forms.Label lbl2_Relation2;
+        private System.Windows.Forms.Label lbl2_Link2;
+        private System.Windows.Forms.Label lbl2_CardID2;
+        private System.Windows.Forms.Button btnDDDel2;
+        private System.Windows.Forms.Label lbl2_Address2;
+        private System.Windows.Forms.Label lbl2_Name2;
+        private System.Windows.Forms.Panel pBBack1;
+        private System.Windows.Forms.Label lbl2_Relation1;
+        private System.Windows.Forms.Label lbl2_Link1;
+        private System.Windows.Forms.Label lbl2_CardID1;
+        private System.Windows.Forms.Button btnDDDel1;
+        private System.Windows.Forms.Label lbl2_Address1;
+        private System.Windows.Forms.Label lbl2_Name1;
+        private System.Windows.Forms.ComboBox cbx2_Relation;
+        private System.Windows.Forms.TextBox txt2_Address;
+        private System.Windows.Forms.TextBox txt2_Link;
+        private System.Windows.Forms.TextBox txt2_CardID;
+        private System.Windows.Forms.TextBox txt2_Name;
+        private System.Windows.Forms.Label label107;
+        private System.Windows.Forms.Label label108;
+        private System.Windows.Forms.Label label109;
+        private System.Windows.Forms.Label label110;
+        private System.Windows.Forms.Label label111;
+        private System.Windows.Forms.Button btnAdd2;
+        private System.Windows.Forms.Label label112;
+        private System.Windows.Forms.TabPage tabPage4;
+        private System.Windows.Forms.Panel pBBBack5;
+        private System.Windows.Forms.Label lbl3_Address5;
+        private System.Windows.Forms.Button btnDDel5;
+        private System.Windows.Forms.Label lbl3_Remark5;
+        private System.Windows.Forms.Label lbl3_FreeData5;
+        private System.Windows.Forms.Panel pBBBack4;
+        private System.Windows.Forms.Label lbl3_Address4;
+        private System.Windows.Forms.Button btnDDel4;
+        private System.Windows.Forms.Label lbl3_Remark4;
+        private System.Windows.Forms.Label lbl3_FreeData4;
+        private System.Windows.Forms.Panel pBBBack3;
+        private System.Windows.Forms.Label lbl3_Address3;
+        private System.Windows.Forms.Button btnDDel3;
+        private System.Windows.Forms.Label lbl3_Remark3;
+        private System.Windows.Forms.Label lbl3_FreeData3;
+        private System.Windows.Forms.Panel pBBBack2;
+        private System.Windows.Forms.Label lbl3_Address2;
+        private System.Windows.Forms.Button btnDDel2;
+        private System.Windows.Forms.Label lbl3_Remark2;
+        private System.Windows.Forms.Label lbl3_FreeData2;
+        private System.Windows.Forms.Panel pBBBack1;
+        private System.Windows.Forms.Label lbl3_Address1;
+        private System.Windows.Forms.Button btnDDel1;
+        private System.Windows.Forms.Label lbl3_Remark1;
+        private System.Windows.Forms.Label lbl3_FreeData1;
+        private System.Windows.Forms.TextBox txt3_Remark;
+        private System.Windows.Forms.TextBox txt3_Address;
+        private System.Windows.Forms.TextBox txt3_FreeData;
+        private System.Windows.Forms.Label label78;
+        private System.Windows.Forms.Label label79;
+        private System.Windows.Forms.Label label80;
+        private System.Windows.Forms.Button btnAdd3;
+        private System.Windows.Forms.Label label81;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel pBack5;
+        private System.Windows.Forms.Label lbl1_Relation5;
+        private System.Windows.Forms.Label lbl1_Link5;
+        private System.Windows.Forms.Label lbl1_CardId5;
+        private System.Windows.Forms.Button btnDel5;
+        private System.Windows.Forms.Label lbl1_Address5;
+        private System.Windows.Forms.Label lbl1_Name5;
+        private System.Windows.Forms.Panel pBack4;
+        private System.Windows.Forms.Label lbl1_Relation4;
+        private System.Windows.Forms.Label lbl1_Link4;
+        private System.Windows.Forms.Label lbl1_CardId4;
+        private System.Windows.Forms.Button btnDel4;
+        private System.Windows.Forms.Label lbl1_Address4;
+        private System.Windows.Forms.Label lbl1_Name4;
+        private System.Windows.Forms.Panel pBack3;
+        private System.Windows.Forms.Label lbl1_Relation3;
+        private System.Windows.Forms.Label lbl1_Link3;
+        private System.Windows.Forms.Label lbl1_CardId3;
+        private System.Windows.Forms.Button btnDel3;
+        private System.Windows.Forms.Label lbl1_Address3;
+        private System.Windows.Forms.Label lbl1_Name3;
+        private System.Windows.Forms.Panel pBack2;
+        private System.Windows.Forms.Label lbl1_Relation2;
+        private System.Windows.Forms.Label lbl1_Link2;
+        private System.Windows.Forms.Label lbl1_CardId2;
+        private System.Windows.Forms.Button btnDel2;
+        private System.Windows.Forms.Label lbl1_Address2;
+        private System.Windows.Forms.Label lbl1_Name2;
+        private System.Windows.Forms.Panel pBack1;
+        private System.Windows.Forms.Label lbl1_Relation1;
+        private System.Windows.Forms.Label lbl1_Link1;
+        private System.Windows.Forms.Label lbl1_CardId1;
+        private System.Windows.Forms.Button btnDel1;
+        private System.Windows.Forms.Label lbl1_Address1;
+        private System.Windows.Forms.Label lbl1_Name1;
+        private System.Windows.Forms.ComboBox cbx1_Relation;
+        private System.Windows.Forms.TextBox txt1_Address;
+        private System.Windows.Forms.TextBox txt1_Link;
+        private System.Windows.Forms.TextBox txt1_CardId;
+        private System.Windows.Forms.TextBox txt1_Name;
+        private System.Windows.Forms.Label label53;
+        private System.Windows.Forms.Label label54;
+        private System.Windows.Forms.Label label55;
+        private System.Windows.Forms.Label label56;
+        private System.Windows.Forms.Label label57;
+        private System.Windows.Forms.Button btnAdd;
+        private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.Label txtIDName;
+        private System.Windows.Forms.Label txtIDSex;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.TextBox txtServiceMaster;
         private System.Windows.Forms.TextBox txtPhone;
         private System.Windows.Forms.TextBox txtQQ;
+        private System.Windows.Forms.TextBox txtServiceAddr;
+        private System.Windows.Forms.TextBox txtServiceArea;
+        private System.Windows.Forms.TextBox txtParticulars;
+        private System.Windows.Forms.TextBox txtTAddress;
+        private System.Windows.Forms.TextBox txtData;
+        private System.Windows.Forms.TextBox txtNativeplace;
+        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label lblQQ;
         private System.Windows.Forms.Label lblEmail;
-        private System.Windows.Forms.TextBox txtServiceAddr;
         private System.Windows.Forms.Label lblWorkAddr;
-        private System.Windows.Forms.TextBox txtServiceArea;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label lblWorkType;
         private System.Windows.Forms.PictureBox pictureBox7;
@@ -2008,152 +2184,11 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private System.Windows.Forms.Label txtIDInation;
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.Label label33;
-        private System.Windows.Forms.TextBox txtParticulars;
-        private System.Windows.Forms.TextBox txtTAddress;
         private System.Windows.Forms.Label label34;
-        private System.Windows.Forms.TextBox txtData;
         private System.Windows.Forms.Label label37;
-        private System.Windows.Forms.TextBox txtNativeplace;
         private System.Windows.Forms.Label label38;
-        private System.Windows.Forms.TabPage tabPage2;
-        private System.Windows.Forms.TabControl tabControl3;
-        private System.Windows.Forms.TabPage tabPage6;
-        private System.Windows.Forms.Panel panel11;
-        private System.Windows.Forms.Label lblRelation315;
-        private System.Windows.Forms.Label lblDetailLink315;
-        private System.Windows.Forms.Label lblDetailId315;
-        private System.Windows.Forms.Button btnDelete315;
-        private System.Windows.Forms.Label lblDetailAddr315;
-        private System.Windows.Forms.Label lblDatailName315;
-        private System.Windows.Forms.Panel panel12;
-        private System.Windows.Forms.Label lblRelation314;
-        private System.Windows.Forms.Label lblDetailLink314;
-        private System.Windows.Forms.Label lblDetailId314;
-        private System.Windows.Forms.Button btnDelete314;
-        private System.Windows.Forms.Label lblDetailAddr314;
-        private System.Windows.Forms.Label lblDatailName314;
-        private System.Windows.Forms.Panel panel13;
-        private System.Windows.Forms.Label lblRelation313;
-        private System.Windows.Forms.Label lblDetailLink313;
-        private System.Windows.Forms.Label lblDetailId313;
-        private System.Windows.Forms.Button btnDelete313;
-        private System.Windows.Forms.Label lblDetailAddr313;
-        private System.Windows.Forms.Label lblDatailName313;
-        private System.Windows.Forms.Panel panel14;
-        private System.Windows.Forms.Label lblRelation312;
-        private System.Windows.Forms.Label lblDetailLink312;
-        private System.Windows.Forms.Label lblDetailId312;
-        private System.Windows.Forms.Button btnDelete312;
-        private System.Windows.Forms.Label lblDetailAddr312;
-        private System.Windows.Forms.Label lblDatailName312;
-        private System.Windows.Forms.Panel panel15;
-        private System.Windows.Forms.Label lblRelation311;
-        private System.Windows.Forms.Label lblDetailLink311;
-        private System.Windows.Forms.Label lblDetailId311;
-        private System.Windows.Forms.Button btnDelete311;
-        private System.Windows.Forms.Label lblDetailAddr311;
-        private System.Windows.Forms.Label lblDatailName311;
-        private System.Windows.Forms.ComboBox cbxRelation31;
-        private System.Windows.Forms.Label label39;
-        private System.Windows.Forms.TextBox txtAddress31;
-        private System.Windows.Forms.Label label40;
-        private System.Windows.Forms.TextBox txtLink31;
-        private System.Windows.Forms.Label label41;
-        private System.Windows.Forms.TextBox txtLisence31;
-        private System.Windows.Forms.Label label42;
-        private System.Windows.Forms.TextBox txtName31;
-        private System.Windows.Forms.Label label43;
-        private System.Windows.Forms.Button btnAdd31;
-        private System.Windows.Forms.Label label44;
-        private System.Windows.Forms.TabPage tabPage7;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Label lblRelation325;
-        private System.Windows.Forms.Label lblDetailLink325;
-        private System.Windows.Forms.Label lblDetailId325;
-        private System.Windows.Forms.Button btnDelete325;
-        private System.Windows.Forms.Label lblDetailAddr325;
-        private System.Windows.Forms.Label lblDatailName325;
-        private System.Windows.Forms.Panel panel17;
-        private System.Windows.Forms.Label lblRelation324;
-        private System.Windows.Forms.Label lblDetailLink324;
-        private System.Windows.Forms.Label lblDetailId324;
-        private System.Windows.Forms.Button btnDelete324;
-        private System.Windows.Forms.Label lblDetailAddr324;
-        private System.Windows.Forms.Label lblDatailName324;
-        private System.Windows.Forms.Panel panel18;
-        private System.Windows.Forms.Label lblRelation323;
-        private System.Windows.Forms.Label lblDetailLink323;
-        private System.Windows.Forms.Label lblDetailId323;
-        private System.Windows.Forms.Button btnDelete323;
-        private System.Windows.Forms.Label lblDetailAddr323;
-        private System.Windows.Forms.Label lblDatailName323;
-        private System.Windows.Forms.Panel panel19;
-        private System.Windows.Forms.Label lblRelation322;
-        private System.Windows.Forms.Label lblDetailLink322;
-        private System.Windows.Forms.Label lblDetailId322;
-        private System.Windows.Forms.Button btnDelete322;
-        private System.Windows.Forms.Label lblDetailAddr322;
-        private System.Windows.Forms.Label lblDatailName322;
-        private System.Windows.Forms.Panel panel20;
-        private System.Windows.Forms.Label lblRelation321;
-        private System.Windows.Forms.Label lblDetailLink321;
-        private System.Windows.Forms.Label lblDetailId321;
-        private System.Windows.Forms.Button btnDelete321;
-        private System.Windows.Forms.Label lblDetailAddr321;
-        private System.Windows.Forms.Label lblDatailName321;
-        private System.Windows.Forms.ComboBox cbxRelation32;
-        private System.Windows.Forms.Label label76;
-        private System.Windows.Forms.TextBox txtAddress32;
-        private System.Windows.Forms.Label label77;
-        private System.Windows.Forms.TextBox txtLink32;
-        private System.Windows.Forms.Label label78;
-        private System.Windows.Forms.TextBox txtLisence32;
-        private System.Windows.Forms.Label label79;
-        private System.Windows.Forms.TextBox txtName32;
-        private System.Windows.Forms.Label label80;
-        private System.Windows.Forms.Button btnAdd32;
-        private System.Windows.Forms.Label label81;
-        private System.Windows.Forms.TabPage tabPage8;
-        private System.Windows.Forms.Panel panel21;
-        private System.Windows.Forms.Label label19;
-        private System.Windows.Forms.Label lblPlace5;
-        private System.Windows.Forms.Button btnDelete335;
-        private System.Windows.Forms.Label lblDetail5;
-        private System.Windows.Forms.Label lblDate5;
-        private System.Windows.Forms.Panel panel22;
-        private System.Windows.Forms.Label label24;
-        private System.Windows.Forms.Label lblPlace4;
-        private System.Windows.Forms.Button btnDelete334;
-        private System.Windows.Forms.Label lblDetail4;
-        private System.Windows.Forms.Label lblDate4;
-        private System.Windows.Forms.Panel panel29;
-        private System.Windows.Forms.Label label29;
-        private System.Windows.Forms.Label lblPlace3;
-        private System.Windows.Forms.Button btnDelete333;
-        private System.Windows.Forms.Label lblDetail3;
-        private System.Windows.Forms.Label lblDate3;
-        private System.Windows.Forms.Panel panel30;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label lblPlace2;
-        private System.Windows.Forms.Button btnDelete332;
-        private System.Windows.Forms.Label lblDetail2;
-        private System.Windows.Forms.Label lblDate2;
-        private System.Windows.Forms.Panel panel31;
-        private System.Windows.Forms.Label lblPlace1;
-        private System.Windows.Forms.Button btnDelete331;
-        private System.Windows.Forms.Label lblDetail1;
-        private System.Windows.Forms.Label lblDate1;
-        private System.Windows.Forms.TextBox txtDetail;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox txtPlace;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox txtFreeDate;
-        private System.Windows.Forms.Label label17;
-        private System.Windows.Forms.Button btnAdd33;
-        private System.Windows.Forms.Label label18;
-        private PoliceMobile.LIB.ucControlRsidentManager ucControlRsidentManager1;
-        private System.Windows.Forms.Label txtIDSex;
-        private System.Windows.Forms.Label txtIDName;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.Panel panel1;
 
 
     }

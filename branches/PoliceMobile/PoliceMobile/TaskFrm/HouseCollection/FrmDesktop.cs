@@ -34,5 +34,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         {
             FrmManager.showWindowFor_frmInfoForPeople(this);
         }
+
+        private void pQuit_Click(object sender, EventArgs e)
+        {
+            FrmManager.showWindowFor_frmLogin(this);
+        }
     }
 }

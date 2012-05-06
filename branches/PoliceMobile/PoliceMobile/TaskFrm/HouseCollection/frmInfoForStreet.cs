@@ -24,7 +24,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             _isEdit = isEdit;
             ucControlManager1.pStreet.BackColor = Color.White;
             init();
-            
+            txtTimer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:sss");
         }
 
         private void init()

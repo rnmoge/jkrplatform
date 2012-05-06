@@ -63,6 +63,7 @@
             this.txtHouseType = new System.Windows.Forms.TextBox();
             this.txtRent = new System.Windows.Forms.TextBox();
             this.ucControlManager1 = new PoliceMobile.LIB.ucControlManager();
+            this.txtTimer = new System.Windows.Forms.TextBox();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -351,11 +352,21 @@
             this.ucControlManager1.Size = new System.Drawing.Size(480, 67);
             this.ucControlManager1.TabIndex = 25;
             // 
+            // txtTimer
+            // 
+            this.txtTimer.Location = new System.Drawing.Point(140, 274);
+            this.txtTimer.Name = "txtTimer";
+            this.txtTimer.Size = new System.Drawing.Size(200, 41);
+            this.txtTimer.TabIndex = 219;
+            this.txtTimer.Tag = "CollectorInfo/time_collected";
+            this.txtTimer.Visible = false;
+            // 
             // frmInfoForStreet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
             this.ClientSize = new System.Drawing.Size(480, 588);
+            this.Controls.Add(this.txtTimer);
             this.Controls.Add(this.txtRent);
             this.Controls.Add(this.txtHouseType);
             this.Controls.Add(this.txt_streetAddress);
@@ -429,6 +440,7 @@
         private System.Windows.Forms.Label txt_streetAddress;
         private System.Windows.Forms.TextBox txtHouseType;
         private System.Windows.Forms.TextBox txtRent;
+        private System.Windows.Forms.TextBox txtTimer;
 
 
     }

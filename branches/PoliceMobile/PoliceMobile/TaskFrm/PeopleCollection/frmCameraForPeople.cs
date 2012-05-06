@@ -36,7 +36,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
 
                 ToolsHelper.BindPic(pbShow, ToolsHelper.sPath + @"\Peoples\" + ToolsHelper.sCardId + @"\pic\" + sPictureName);
             }
-
+            this.WindowState = FormWindowState.Maximized;
             ToolsHelper.SavePeopleImage(ToolsHelper.sCardId, pbShow, "image", ToolsHelper.sCardId, imgGuid, " ", " ");
         }
 

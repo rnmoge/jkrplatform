@@ -58,7 +58,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
                             continue;
                         }
 
-                        if (cli.Name.IndexOf("pUpLoad") > -1)
+                        if (cli.Name.IndexOf("pUpload") > -1)
                         {
                             cli.Tag = dt.Rows[i]["CardId"].ToString();
                             continue;
@@ -95,8 +95,10 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             Control c = (Control)sender;
             string sCardID = Convert.ToString(c.Tag);
 
+            string directoryPath = ToolsHelper.sPath + "/Peoples/" + sCardID;
+
             ToolsHelper.DelPeopleProject(sCardID);
-            ToolsHelper.DelDirectoryForPeople(sCardID);
+            ToolsHelper.DelDirectoryForPeople(directoryPath);
             c.Parent.Visible = false;
            // FrmManager.showWindowFor_frmInfoForStreet(this);
         }
@@ -105,7 +107,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         {
              Control c = (Control)sender;
             string sCardId = Convert.ToString(c.Tag);
-            ToolsHelper.sHouseGuid = sCardId;
+            ToolsHelper.sCardId = sCardId;
 
             string spath = ToolsHelper.sPath + "//Upload//" + sCardId + ".zip";
             string serverPaht = sCardId + ".zip";
@@ -113,9 +115,15 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             string p = ToolsHelper.sPath + "/Peoples/" + sCardId;
             IList<string> list = new List<string>();
             SharpZipHelper.GetFileInfo(p, p, list);
+            if (!Directory.Exists(ToolsHelper.sPath + "/Upload/"))
+            {
+                Directory.CreateDirectory(ToolsHelper.sPath + "/Upload/");
+            }
             SharpZipHelper.ZipFile(p, list.ToArray(), ToolsHelper.sPath + "/Upload/" + sCardId + ".zip", 8, null, null);
             //上传
-            ToolsHelper.Upload_Request("http://60.28.24.210:8081/FileUpload/UpFiles.jsp", spath, serverPaht, "2");
+            ToolsHelper.Upload_Request("http://218.28.80.155:8080/FileUpload/UpFiles.jsp", spath, serverPaht, "2");
+
+            MessageBox.Show("上传成功");
         }
 
         private void btnNew_Click(object sender, EventArgs e)
@@ -125,7 +133,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
 
         private void pBUploadAll_Click(object sender, EventArgs e)
         {
-            string sUrl = "http://60.28.24.210:8081/FileUpload/UpFiles.jsp";
+            string sUrl = "http://218.28.80.155:8080/FileUpload/UpFiles.jsp";
             XmlDocument xDoc = new XmlDocument();
             xDoc.Load(ToolsHelper.sPath + "/SystemData.xml");
 
@@ -162,6 +170,11 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             }
 
             MessageBox.Show("上传成功");
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            FrmManager.showWindowFor_FrmDesktop(this);
         }
 
 

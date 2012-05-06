@@ -129,7 +129,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.lblDetailAddr1 = new System.Windows.Forms.Label();
             this.lblDatailName1 = new System.Windows.Forms.Label();
             this.btnAdd = new System.Windows.Forms.Button();
-            this.label11 = new System.Windows.Forms.Label();
             this.ucControlRsidentManager1 = new PoliceMobile.LIB.ucControlRsidentManager();
             this.panel7.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -649,11 +648,10 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.tabPage2.Controls.Add(this.lblName1);
             this.tabPage2.Controls.Add(this.bgPanel);
             this.tabPage2.Controls.Add(this.btnAdd);
-            this.tabPage2.Controls.Add(this.label11);
             this.tabPage2.Location = new System.Drawing.Point(0, 0);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Size = new System.Drawing.Size(472, 483);
-            this.tabPage2.Text = "人员信息";
+            this.tabPage2.Text = "直系亲属";
             // 
             // pictureBox8
             // 
@@ -1103,15 +1101,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnAdd.Text = "增加";
             this.btnAdd.Click += new System.EventHandler(this.btnAdd_Click);
             // 
-            // label11
-            // 
-            this.label11.Font = new System.Drawing.Font("Tahoma", 6F, System.Drawing.FontStyle.Bold);
-            this.label11.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
-            this.label11.Location = new System.Drawing.Point(11, 11);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(120, 19);
-            this.label11.Text = "直系亲属";
-            // 
             // ucControlRsidentManager1
             // 
             this.ucControlRsidentManager1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -1201,7 +1190,6 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private System.Windows.Forms.Label lblName1;
         private System.Windows.Forms.Panel bgPanel;
         private System.Windows.Forms.Button btnAdd;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.PictureBox pbSpecial;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label5;

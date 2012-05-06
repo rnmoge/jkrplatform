@@ -78,35 +78,35 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lbldatetime5 = new System.Windows.Forms.Label();
             this.lblName5 = new System.Windows.Forms.Label();
             this.label16 = new System.Windows.Forms.Label();
-            this.pbUpload5 = new System.Windows.Forms.PictureBox();
+            this.pUpload5 = new System.Windows.Forms.PictureBox();
             this.pbIn5 = new System.Windows.Forms.PictureBox();
             this.pBack4 = new System.Windows.Forms.Panel();
             this.pDel4 = new System.Windows.Forms.PictureBox();
             this.lbldatetime4 = new System.Windows.Forms.Label();
             this.lblName4 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.pbUpload4 = new System.Windows.Forms.PictureBox();
+            this.pUpload4 = new System.Windows.Forms.PictureBox();
             this.pbIn4 = new System.Windows.Forms.PictureBox();
             this.pBack3 = new System.Windows.Forms.Panel();
             this.pDel3 = new System.Windows.Forms.PictureBox();
             this.lbldatetime3 = new System.Windows.Forms.Label();
             this.lblName3 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.pbUpload3 = new System.Windows.Forms.PictureBox();
+            this.pUpload3 = new System.Windows.Forms.PictureBox();
             this.pbIn3 = new System.Windows.Forms.PictureBox();
             this.pBack2 = new System.Windows.Forms.Panel();
             this.pDel2 = new System.Windows.Forms.PictureBox();
             this.lbldatetime2 = new System.Windows.Forms.Label();
             this.lblName2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
-            this.pbUpload2 = new System.Windows.Forms.PictureBox();
+            this.pUpload2 = new System.Windows.Forms.PictureBox();
             this.pbIn2 = new System.Windows.Forms.PictureBox();
             this.pBack1 = new System.Windows.Forms.Panel();
             this.pDel1 = new System.Windows.Forms.PictureBox();
             this.lbldatetime1 = new System.Windows.Forms.Label();
             this.lblName1 = new System.Windows.Forms.Label();
             this.lblId1 = new System.Windows.Forms.Label();
-            this.pbUpload1 = new System.Windows.Forms.PictureBox();
+            this.pUpload1 = new System.Windows.Forms.PictureBox();
             this.pbIn1 = new System.Windows.Forms.PictureBox();
             this.pBUploadAll = new System.Windows.Forms.PictureBox();
             this.btnReturn = new System.Windows.Forms.Button();
@@ -496,7 +496,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pBack5.Controls.Add(this.lbldatetime5);
             this.pBack5.Controls.Add(this.lblName5);
             this.pBack5.Controls.Add(this.label16);
-            this.pBack5.Controls.Add(this.pbUpload5);
+            this.pBack5.Controls.Add(this.pUpload5);
             this.pBack5.Controls.Add(this.pbIn5);
             this.pBack5.Location = new System.Drawing.Point(4, 187);
             this.pBack5.Name = "pBack5";
@@ -535,13 +535,13 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.label16.Size = new System.Drawing.Size(39, 22);
             this.label16.Text = "5";
             // 
-            // pbUpload5
+            // pUpload5
             // 
-            this.pbUpload5.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload5.Image")));
-            this.pbUpload5.Location = new System.Drawing.Point(384, 3);
-            this.pbUpload5.Name = "pbUpload5";
-            this.pbUpload5.Size = new System.Drawing.Size(55, 31);
-            this.pbUpload5.Click += new System.EventHandler(this.pbUpload_Click);
+            this.pUpload5.Image = ((System.Drawing.Image)(resources.GetObject("pUpload5.Image")));
+            this.pUpload5.Location = new System.Drawing.Point(384, 3);
+            this.pUpload5.Name = "pUpload5";
+            this.pUpload5.Size = new System.Drawing.Size(55, 31);
+            this.pUpload5.Click += new System.EventHandler(this.pbUpload_Click);
             // 
             // pbIn5
             // 
@@ -557,7 +557,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pBack4.Controls.Add(this.lbldatetime4);
             this.pBack4.Controls.Add(this.lblName4);
             this.pBack4.Controls.Add(this.label12);
-            this.pBack4.Controls.Add(this.pbUpload4);
+            this.pBack4.Controls.Add(this.pUpload4);
             this.pBack4.Controls.Add(this.pbIn4);
             this.pBack4.Location = new System.Drawing.Point(4, 141);
             this.pBack4.Name = "pBack4";
@@ -596,13 +596,13 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.label12.Size = new System.Drawing.Size(39, 22);
             this.label12.Text = "4";
             // 
-            // pbUpload4
+            // pUpload4
             // 
-            this.pbUpload4.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload4.Image")));
-            this.pbUpload4.Location = new System.Drawing.Point(384, 3);
-            this.pbUpload4.Name = "pbUpload4";
-            this.pbUpload4.Size = new System.Drawing.Size(55, 31);
-            this.pbUpload4.Click += new System.EventHandler(this.pbUpload_Click);
+            this.pUpload4.Image = ((System.Drawing.Image)(resources.GetObject("pUpload4.Image")));
+            this.pUpload4.Location = new System.Drawing.Point(384, 3);
+            this.pUpload4.Name = "pUpload4";
+            this.pUpload4.Size = new System.Drawing.Size(55, 31);
+            this.pUpload4.Click += new System.EventHandler(this.pbUpload_Click);
             // 
             // pbIn4
             // 
@@ -618,7 +618,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pBack3.Controls.Add(this.lbldatetime3);
             this.pBack3.Controls.Add(this.lblName3);
             this.pBack3.Controls.Add(this.label8);
-            this.pBack3.Controls.Add(this.pbUpload3);
+            this.pBack3.Controls.Add(this.pUpload3);
             this.pBack3.Controls.Add(this.pbIn3);
             this.pBack3.Location = new System.Drawing.Point(4, 95);
             this.pBack3.Name = "pBack3";
@@ -657,13 +657,13 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.label8.Size = new System.Drawing.Size(39, 22);
             this.label8.Text = "3";
             // 
-            // pbUpload3
+            // pUpload3
             // 
-            this.pbUpload3.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload3.Image")));
-            this.pbUpload3.Location = new System.Drawing.Point(384, 3);
-            this.pbUpload3.Name = "pbUpload3";
-            this.pbUpload3.Size = new System.Drawing.Size(55, 31);
-            this.pbUpload3.Click += new System.EventHandler(this.pbUpload_Click);
+            this.pUpload3.Image = ((System.Drawing.Image)(resources.GetObject("pUpload3.Image")));
+            this.pUpload3.Location = new System.Drawing.Point(384, 3);
+            this.pUpload3.Name = "pUpload3";
+            this.pUpload3.Size = new System.Drawing.Size(55, 31);
+            this.pUpload3.Click += new System.EventHandler(this.pbUpload_Click);
             // 
             // pbIn3
             // 
@@ -679,7 +679,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pBack2.Controls.Add(this.lbldatetime2);
             this.pBack2.Controls.Add(this.lblName2);
             this.pBack2.Controls.Add(this.label4);
-            this.pBack2.Controls.Add(this.pbUpload2);
+            this.pBack2.Controls.Add(this.pUpload2);
             this.pBack2.Controls.Add(this.pbIn2);
             this.pBack2.Location = new System.Drawing.Point(4, 49);
             this.pBack2.Name = "pBack2";
@@ -718,13 +718,13 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.label4.Size = new System.Drawing.Size(39, 22);
             this.label4.Text = "2";
             // 
-            // pbUpload2
+            // pUpload2
             // 
-            this.pbUpload2.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload2.Image")));
-            this.pbUpload2.Location = new System.Drawing.Point(384, 3);
-            this.pbUpload2.Name = "pbUpload2";
-            this.pbUpload2.Size = new System.Drawing.Size(55, 31);
-            this.pbUpload2.Click += new System.EventHandler(this.pbUpload_Click);
+            this.pUpload2.Image = ((System.Drawing.Image)(resources.GetObject("pUpload2.Image")));
+            this.pUpload2.Location = new System.Drawing.Point(384, 3);
+            this.pUpload2.Name = "pUpload2";
+            this.pUpload2.Size = new System.Drawing.Size(55, 31);
+            this.pUpload2.Click += new System.EventHandler(this.pbUpload_Click);
             // 
             // pbIn2
             // 
@@ -740,7 +740,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.pBack1.Controls.Add(this.lbldatetime1);
             this.pBack1.Controls.Add(this.lblName1);
             this.pBack1.Controls.Add(this.lblId1);
-            this.pBack1.Controls.Add(this.pbUpload1);
+            this.pBack1.Controls.Add(this.pUpload1);
             this.pBack1.Controls.Add(this.pbIn1);
             this.pBack1.Location = new System.Drawing.Point(4, 3);
             this.pBack1.Name = "pBack1";
@@ -779,13 +779,13 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.lblId1.Size = new System.Drawing.Size(39, 22);
             this.lblId1.Text = "1";
             // 
-            // pbUpload1
+            // pUpload1
             // 
-            this.pbUpload1.Image = ((System.Drawing.Image)(resources.GetObject("pbUpload1.Image")));
-            this.pbUpload1.Location = new System.Drawing.Point(384, 3);
-            this.pbUpload1.Name = "pbUpload1";
-            this.pbUpload1.Size = new System.Drawing.Size(55, 31);
-            this.pbUpload1.Click += new System.EventHandler(this.pbUpload_Click);
+            this.pUpload1.Image = ((System.Drawing.Image)(resources.GetObject("pUpload1.Image")));
+            this.pUpload1.Location = new System.Drawing.Point(384, 3);
+            this.pUpload1.Name = "pUpload1";
+            this.pUpload1.Size = new System.Drawing.Size(55, 31);
+            this.pUpload1.Click += new System.EventHandler(this.pbUpload_Click);
             // 
             // pbIn1
             // 
@@ -811,6 +811,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
             this.btnReturn.Size = new System.Drawing.Size(74, 20);
             this.btnReturn.TabIndex = 28;
             this.btnReturn.Text = "返回";
+            this.btnReturn.Click += new System.EventHandler(this.btnReturn_Click);
             // 
             // btnNew
             // 
@@ -874,7 +875,7 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.PictureBox pictureBox2;
         private System.Windows.Forms.Panel bgPanel;
         private System.Windows.Forms.Panel pBack1;
-        private System.Windows.Forms.PictureBox pbUpload1;
+        private System.Windows.Forms.PictureBox pUpload1;
         private System.Windows.Forms.PictureBox pbIn1;
         private System.Windows.Forms.Label lbldatetime1;
         private System.Windows.Forms.Label lblName1;
@@ -916,25 +917,25 @@ namespace PoliceMobile.TaskFrm.PeopleCollection
         private System.Windows.Forms.Label lbldatetime5;
         private System.Windows.Forms.Label lblName5;
         private System.Windows.Forms.Label label16;
-        private System.Windows.Forms.PictureBox pbUpload5;
+        private System.Windows.Forms.PictureBox pUpload5;
         private System.Windows.Forms.PictureBox pbIn5;
         private System.Windows.Forms.Panel pBack4;
         private System.Windows.Forms.Label lbldatetime4;
         private System.Windows.Forms.Label lblName4;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.PictureBox pbUpload4;
+        private System.Windows.Forms.PictureBox pUpload4;
         private System.Windows.Forms.PictureBox pbIn4;
         private System.Windows.Forms.Panel pBack3;
         private System.Windows.Forms.Label lbldatetime3;
         private System.Windows.Forms.Label lblName3;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.PictureBox pbUpload3;
+        private System.Windows.Forms.PictureBox pUpload3;
         private System.Windows.Forms.PictureBox pbIn3;
         private System.Windows.Forms.Panel pBack2;
         private System.Windows.Forms.Label lbldatetime2;
         private System.Windows.Forms.Label lblName2;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.PictureBox pbUpload2;
+        private System.Windows.Forms.PictureBox pUpload2;
         private System.Windows.Forms.PictureBox pbIn2;
         private System.Windows.Forms.PictureBox pDel10;
         private System.Windows.Forms.PictureBox pDel9;
