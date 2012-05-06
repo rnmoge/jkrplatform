@@ -1,317 +1,51 @@
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmMain.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.exe
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.pdb
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\XTransMobile.dll
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.exe
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.pdb
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\config.xml
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\PeopleData.xml
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHouseManager.resources
-D:\Users\Administrator\Documents\Visual Studio 2008\Projects\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmMain.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHouseManager.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmPeopleManager.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.exe
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\config.xml
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\PeopleData.xml
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.exe
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.pdb
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\XTransMobile.dll
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.pdb
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmExpandInfo.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmUsualResidents.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmStressPeople.resources
-C:\Users\Administrator.AK9NKYH98KIO3WO\Desktop\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmVisitPeople.resources
-E:\PoliceMobile\PoliceMobile\bin\Debug\config.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\PeopleData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Test\1.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Test\2.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Test\3.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Template\FunctionalBuildingData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentialHousingData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentPermanentData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentSpecialData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentTempData.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\DB\Address.db
-E:\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.exe
-E:\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.pdb
-E:\PoliceMobile\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-E:\PoliceMobile\PoliceMobile\bin\Debug\ICSharpCode.SharpZipLib.dll
-E:\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-E:\PoliceMobile\PoliceMobile\bin\Debug\System.Data.SQLite.DLL
-E:\PoliceMobile\PoliceMobile\bin\Debug\XTransMobile.dll
-E:\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-E:\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-E:\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-E:\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-E:\PoliceMobile\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmMain.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlRsidentManager.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmPermanentResident.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmResidentManager.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSpecialResident.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmTempResident.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.exe
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.pdb
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.Form1.resources
-E:\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHourseManager.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\config.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\PeopleData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\SystemData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Test\1.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Test\2.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Test\3.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\FunctionalBuildingData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentialHousingData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentPermanentData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentSpecialData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentTempData.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\DB\Address.db
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\PoliceMobile.exe
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\PoliceMobile.pdb
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\ICSharpCode.SharpZipLib.dll
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\System.Data.SQLite.DLL
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\XTransMobile.dll
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.frmMain.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlRsidentManager.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHourseManager.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.Form1.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmPermanentResident.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmResidentManager.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSpecialResident.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmTempResident.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.exe
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.pdb
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\House.xml
-C:\Documents and Settings\Administrator\桌面\PoliceMobile1111\PoliceMobile\bin\Debug\Template\PublicHouse.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\config.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\PeopleData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\SystemData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Test\1.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Test\2.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Test\3.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\FunctionalBuildingData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentialHousingData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentPermanentData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentSpecialData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentTempData.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\DB\Address.db
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\House.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\PublicHouse.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\PoliceMobile.exe
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\PoliceMobile.pdb
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\ICSharpCode.SharpZipLib.dll
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\System.Data.SQLite.DLL
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\XTransMobile.dll
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-D:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.frmMain.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlRsidentManager.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHourseManager.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.Form1.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmPermanentResident.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmResidentManager.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSpecialResident.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmTempResident.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.exe
-D:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.pdb
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\config.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\PeopleData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\SystemData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Test\1.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Test\2.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Test\3.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\FunctionalBuildingData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentialHousingData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentPermanentData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentSpecialData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\ResidentTempData.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\DB\Address.db
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\House.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Template\PublicHouse.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\PoliceMobile.exe
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\PoliceMobile.pdb
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\ICSharpCode.SharpZipLib.dll
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\System.Data.SQLite.DLL
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\XTransMobile.dll
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-E:\PoliceMobile1111\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlRsidentManager.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHourseManager.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.Form1.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmPermanentResident.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmResidentManager.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSpecialResident.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmTempResident.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.exe
-E:\PoliceMobile1111\PoliceMobile\obj\Debug\PoliceMobile.pdb
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\config.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\PeopleData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Test\1.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Test\2.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Test\3.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\FunctionalBuildingData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentialHousingData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentPermanentData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentSpecialData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentTempData.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\DB\Address.db
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\House.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Template\PublicHouse.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.exe
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.pdb
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\ICSharpCode.SharpZipLib.dll
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\System.Data.SQLite.DLL
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\XTransMobile.dll
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlRsidentManager.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHourseManager.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.Form1.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmPermanentResident.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmResidentManager.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSpecialResident.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmTempResident.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.exe
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.pdb
-F:\工作综合\正在开发项目\新系统研发\3-31\JKRPlatform\branches\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\config.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\PeopleData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\SystemData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Test\1.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Test\2.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Test\3.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\FunctionalBuildingData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentialHousingData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentPermanentData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentSpecialData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\ResidentTempData.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\DB\Address.db
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\House.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Template\PublicHouse.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.exe
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\PoliceMobile.pdb
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Bouwa.ClassLib.dll
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\ICSharpCode.SharpZipLib.dll
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.dll
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\System.Data.SQLite.DLL
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\XTransMobile.dll
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.dll
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.dll
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.Forms.xml
+E:\MyWork\PoliceMobile\PoliceMobile\bin\Debug\Microsoft.WindowsMobile.PocketOutlook.xml
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\ResolveAssemblyReference.cache
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.frmLogin.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlManager.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.LIB.ucControlRsidentManager.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.Properties.Resources.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByOutdoor.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.FrmDesktop.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmHourseManager.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPublic.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForHousePeopleByPrivate.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmCameraForHouseByIndoor.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForStreet.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.Form1.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmBaseInfoForPeople.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmCameraForPeople.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmFingerPrintForPeople.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmInfoForPeople.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmPermanentResident.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.PeopleCollection.frmResidentManager.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSpecialResident.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmTempResident.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.TaskFrm.HouseCollection.frmSearchPeople.resources
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.csproj.GenerateResource.Cache
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.exe
+E:\MyWork\PoliceMobile\PoliceMobile\obj\Debug\PoliceMobile.pdb

@@ -213,5 +213,15 @@ namespace PoliceMobile.LIB
             theForm.Dispose();
             theForm = null;
         }
+
+        public static void showWindowFor_frmLogin(Form theForm)
+        {
+            frmLogin fl = new frmLogin();
+            fl.Show();
+
+            theForm.Close();
+            theForm.Dispose();
+            theForm = null;
+        }
     }
 }
