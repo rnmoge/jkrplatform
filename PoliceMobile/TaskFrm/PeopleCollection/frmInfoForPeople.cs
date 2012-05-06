@@ -28,6 +28,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             InitializeComponent();
             ucControlRsidentManager1.pID.BackColor = Color.White;
             init();
+            lblCardId.Text = "120104198311055559";
             try
             {
                 if (OpenDevice(0) != 1) MessageBox.Show("OpenDevice error");
@@ -36,6 +37,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             {
                 lblCardId.Text = "120103198003063236";
             }
+
+
+            txtTimer.Text = DateTime.Now.ToString("yyyy-MM-dd HH:mm:sss");
         }
 
         private void init(){

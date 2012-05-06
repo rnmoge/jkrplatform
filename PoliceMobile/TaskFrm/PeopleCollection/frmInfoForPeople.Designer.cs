@@ -69,7 +69,9 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnScanIDCard = new System.Windows.Forms.PictureBox();
             this.cbxPerson = new System.Windows.Forms.ComboBox();
             this.btnDesktop = new System.Windows.Forms.Button();
+            this.txtTimer = new System.Windows.Forms.TextBox();
             this.ucControlRsidentManager1 = new PoliceMobile.LIB.ucControlRsidentManager();
+            this.label10 = new System.Windows.Forms.Label();
             this.panel7.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -111,7 +113,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             // 
             this.pictureBox2.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.pictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox2.Image")));
-            this.pictureBox2.Location = new System.Drawing.Point(0, 528);
+            this.pictureBox2.Location = new System.Drawing.Point(0, 685);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(480, 60);
             // 
@@ -166,7 +168,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.label6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(115)))), ((int)(((byte)(115)))), ((int)(((byte)(115)))));
             this.label6.Location = new System.Drawing.Point(17, 157);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(96, 18);
+            this.label6.Size = new System.Drawing.Size(85, 18);
             this.label6.Text = "户口地址:";
             // 
             // textBox1
@@ -387,7 +389,7 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.cbxPerson.Items.Add("常住人员");
             this.cbxPerson.Items.Add("暂住人员");
             this.cbxPerson.Items.Add("重点人员");
-            this.cbxPerson.Location = new System.Drawing.Point(355, 143);
+            this.cbxPerson.Location = new System.Drawing.Point(355, 125);
             this.cbxPerson.Name = "cbxPerson";
             this.cbxPerson.Size = new System.Drawing.Size(110, 32);
             this.cbxPerson.TabIndex = 156;
@@ -403,6 +405,15 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.btnDesktop.Text = "返回桌面";
             this.btnDesktop.Click += new System.EventHandler(this.btnDesktop_Click);
             // 
+            // txtTimer
+            // 
+            this.txtTimer.Location = new System.Drawing.Point(220, 464);
+            this.txtTimer.Name = "txtTimer";
+            this.txtTimer.Size = new System.Drawing.Size(200, 41);
+            this.txtTimer.TabIndex = 218;
+            this.txtTimer.Tag = "time_collected";
+            this.txtTimer.Visible = false;
+            // 
             // ucControlRsidentManager1
             // 
             this.ucControlRsidentManager1.Dock = System.Windows.Forms.DockStyle.Top;
@@ -411,11 +422,19 @@ namespace PoliceMobile.TaskFrm.HouseCollection
             this.ucControlRsidentManager1.Size = new System.Drawing.Size(480, 66);
             this.ucControlRsidentManager1.TabIndex = 53;
             // 
+            // label10
+            // 
+            this.label10.Location = new System.Drawing.Point(348, 69);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(129, 50);
+            // 
             // frmInfoForPeople
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(192F, 192F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.ClientSize = new System.Drawing.Size(480, 588);
+            this.ClientSize = new System.Drawing.Size(480, 745);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.txtTimer);
             this.Controls.Add(this.btnDesktop);
             this.Controls.Add(this.cbxPerson);
             this.Controls.Add(this.ucControlRsidentManager1);
@@ -502,6 +521,8 @@ namespace PoliceMobile.TaskFrm.HouseCollection
         private PoliceMobile.LIB.ucControlRsidentManager ucControlRsidentManager1;
         private System.Windows.Forms.ComboBox cbxPerson;
         private System.Windows.Forms.Button btnDesktop;
+        private System.Windows.Forms.TextBox txtTimer;
+        private System.Windows.Forms.Label label10;
 
 
     }
