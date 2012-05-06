@@ -156,21 +156,21 @@ namespace PoliceMobile.TaskFrm.HouseCollection
                 string sGuid = xnl[i].Attributes["Guid"].Value;
                 string sType = xnl[i].Attributes["Type"].Value;
 
-                XmlNodeList xnlPic_In = xnl[i].SelectNodes("Camera/Camera_In/PicName");
-                for (int j = 0; j < xnlPic_In.Count; j++)
-                {
-                    string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" +  xnlPic_In[j].InnerText;
-                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText,"1");
-                }
+                //XmlNodeList xnlPic_In = xnl[i].SelectNodes("Camera/Camera_In/PicName");
+                //for (int j = 0; j < xnlPic_In.Count; j++)
+                //{
+                //    string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" +  xnlPic_In[j].InnerText;
+                //    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText,"1");
+                //}
 
-                XmlNodeList xnlPic_Out = xnl[i].SelectNodes("Camera/Camera_Out/PicName");
-                for (int j = 0; j < xnlPic_Out.Count; j++)
-                {
-                    string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" + xnlPic_In[j].InnerText;
-                    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText, "1");
-                }
+                //XmlNodeList xnlPic_Out = xnl[i].SelectNodes("Camera/Camera_Out/PicName");
+                //for (int j = 0; j < xnlPic_Out.Count; j++)
+                //{
+                //    string sFile = ToolsHelper.sPath + @"/" + sGuid + @"/" + xnlPic_In[j].InnerText;
+                //    ToolsHelper.Upload_Request(sUrl, sFile, xnlPic_In[j].InnerText, "1");
+                //}
                 
-                XmlNode xnDoc = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid ='" + sGuid + "']").CloneNode(true);
+                //XmlNode xnDoc = xDoc.SelectSingleNode("Data/System/HouseDatas/House[@Guid ='" + sGuid + "']").CloneNode(true);
 
                 //string sXmlName = ToolsHelper.sPath + @"/" + sGuid + @"/" + sGuid + ".xml";
                 //XmlDocument xNewDoc = new XmlDocument();
